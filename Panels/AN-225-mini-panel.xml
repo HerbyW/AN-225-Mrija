@@ -405,6 +405,15 @@ Hacked by Lee Elliott for the AN-225 mock panel
       <w>240</w>
       <h>20</h>
     </instrument>
+
+    <instrument include="Instruments/digital-wind-speed-direction.xml">
+      <name>Wind display</name>
+      <x>564</x>
+      <y>80</y>
+      <w>124</w>
+      <h>34</h>
+    </instrument>
+
 <!--
     <instrument include="Instruments/digital-gs-info.xml">
       <name>Glideslope info display</name>
