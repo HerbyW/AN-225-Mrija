@@ -227,7 +227,7 @@ atl_touchdown = func {
 #--------------------------------------------------------------------
 atl_heading = func {
   # This script handles heading dependent actions.
-  hdnddf = getprop("/radios/nav[0]/heading-needle-deflection");
+  hdnddf = getprop("/instrumentation/nav[0]/heading-needle-deflection");
   if(hdnddf < 5) {
     if(hdnddf > -5) {
       setprop("/autopilot/locks/heading", "nav1-hold-fa");
