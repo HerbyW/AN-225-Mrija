@@ -16,6 +16,7 @@ AN-225 set file.
 
     <flight-model>yasim</flight-model>
     <status>beta</status>
+    <author>Lee Elliott</author>
     <aero>AN-225-yasim</aero>
     <fuel-fraction>0.6</fuel-fraction>
 
