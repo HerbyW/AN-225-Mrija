@@ -401,39 +401,19 @@ Hacked by Lee Elliott for the AN-225 mock panel
         <mc-select>autopilot/locks/altitude</mc-select>
       </params>
       <x>750</x>
-      <y>20</y>
+      <y>25</y>
       <w>240</w>
       <h>20</h>
     </instrument>
-
-    <instrument include="../../Instruments/radar.xml">
-      <name>Radar</name>
-      <condition>
-        <equals>
-          <property>instrumentation/radar/minimized</property>
-          <value>false</value>
-        </equals>
-      </condition>
-      <x>944</x>
-      <y>110</y>
-      <w>160</w>
-      <h>160</h>
+<!--
+    <instrument include="Instruments/digital-gs-info.xml">
+      <name>Glideslope info display</name>
+      <x>872</x>
+      <y>5</y>
+      <w>148</w>
+      <h>30</h>
     </instrument>
-
-    <instrument include="../../Instruments/radar-minimized.xml">
-      <name>Radar-minimized</name>
-      <condition>
-        <equals>
-          <property>instrumentation/radar/minimized</property>
-          <value>true</value>
-        </equals>
-      </condition>
-      <x>944</x>
-      <y>20</y>
-      <w>44</w>
-      <h>16</h>
-    </instrument>
-
+-->
   </instruments>
 
 </PropertyList>

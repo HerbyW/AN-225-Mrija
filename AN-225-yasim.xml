@@ -71,7 +71,7 @@ Lee Elliott. leee-fgfs@spatial.freeserve.co.uk
   <control-output control="SPOILER" side="left" prop="/surface-positions/L-spoiler-pos-norm"/>
   <control-output control="SPOILER" side="right" prop="/surface-positions/R-spoiler-pos-norm"/>
 
-  <control-speed control="FLAP0" transition-time="25"/>
+  <control-speed control="FLAP0" transition-time="45"/>
   <control-speed control="FLAP1" transition-time="1.0"/>
   <control-speed control="SLAT" transition-time="10.0"/>
   <control-speed control="SPOILER" transition-time="10.0"/>
@@ -86,7 +86,7 @@ Lee Elliott. leee-fgfs@spatial.freeserve.co.uk
   <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
   <control-output control="FLAP0" side="left" prop="/surface-positions/L-elevator-pos-norm"/>
   <control-output control="FLAP0" side="right" prop="/surface-positions/R-elevator-pos-norm"/>
-  <control-speed control="FLAP0" transition-time="2.0"/>
+  <control-speed control="FLAP0" transition-time="6.0"/>
  </hstab>
 <!-- VStabs -->
 <!-- Left Upper -->

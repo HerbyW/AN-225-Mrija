@@ -9,6 +9,11 @@ AN-225 set file.
 
 <PropertyList>
   <sim>
+  
+    <startup>
+      <splash-texture>Aircraft/AN-225/AN-225-splash.rgb</splash-texture>
+    </startup>
+
     <flight-model>yasim</flight-model>
     <status>beta</status>
     <aero>AN-225-yasim</aero>
@@ -71,6 +76,12 @@ AN-225 set file.
       </electrical>
     </systems>
 
+<!--sub models -->
+    <submodels>
+      <serviceable type="bool">1</serviceable>
+      <path>Aircraft/AN-225/AN-225-submodels.xml</path>
+    </submodels>
+
 <!-- Flap settings -->
     <flaps>
       <setting>0.00</setting>
@@ -89,6 +100,15 @@ AN-225 set file.
 <!-- Brakes -->
   <input>
     <keyboard>
+      <key n="75">
+        <name>K</name>
+        <desc>Toggle trajectory markers</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>AN225.toggle_traj_mkr()</script>
+        </binding>
+      </key>
+      
       <key n="100">
         <name>d</name>
         <desc>Retract Slats.</desc>

@@ -5,7 +5,7 @@ autotakeoff = func {
 
   # Re-schedule the next loop if the Take-Off function is enabled.
   if(getprop("/autopilot/locks/auto-take-off") != "Enabled") {
-    print("Auto Take-Off disabled");
+#    print("Auto Take-Off disabled");
   } else {
     settimer(autotakeoff, 0.5);
   }
@@ -21,6 +21,7 @@ ato_start = func {
       setprop("/autopilot/settings/ground-roll-heading-deg", hdgdeg);
       setprop("/autopilot/settings/true-heading-deg", hdgdeg);
       setprop("/autopilot/settings/target-AoA-deg", 0);
+      setprop("/autopilot/settings/target-speed-kt", 320);
       setprop("/autopilot/locks/altitude", "ground-roll");
       setprop("/autopilot/locks/speed", "speed-with-throttle");
       setprop("/autopilot/locks/heading", "wing-leveler");
@@ -94,7 +95,6 @@ autoland = func {
     # Glide Slope phase.
     atl_heading();
     atl_spddep();
-    atl_glideslope();
     
   } else {
     # Touch Down phase.
@@ -103,7 +103,7 @@ autoland = func {
 
   # Re-schedule the next loop if the Landing function is enabled.
   if(getprop("/autopilot/locks/auto-landing") != "Enabled") {
-    print("Auto Landing disabled");
+#    print("Auto Landing disabled");
   } else {
     settimer(autoland, 0.5);
   }
@@ -147,22 +147,15 @@ atl_spddep = func {
                 setprop("/controls/flight/spoilers", 0.8);
                 setprop("/autopilot/locks/auto-flap-control", "Engaged");
               } else {
-                setprop("/controls/flight/spoilers", 1.0);
+                if(airspeed < 280) {
+                  setprop("/autopilot/locks/altitude", "gs1-hold");
+                } else {
+                  setprop("/controls/flight/spoilers", 1.0);
+                }
               }
             }
           }
         }
-      }
-    }
-  }
-}
-#--------------------------------------------------------------------
-atl_glideslope = func {
-  # This script handles glide slope interception.
-  if(getprop("/position/altitude-agl-ft") > 200) {
-    if(getprop("/autopilot/locks/altitude") != "gs1-hold") {
-      if(getprop("/radios/nav[0]/gs-rate-of-climb") < 0) {
-        setprop("/autopilot/locks/altitude", "gs1-hold");
       }
     }
   }
@@ -186,19 +179,6 @@ atl_touchdown = func {
     setprop("/autopilot/settings/target-vfps", 0);
     interpolate("/controls/flight/elevator-trim", 0, 10.0);
   }
-  if(agl < 0.8) {
-    # Disable the AP nav1 heading hold, deploy the spoilers and cut the
-    # throttles.
-    setprop("/autopilot/locks/heading", "Off");
-    setprop("/controls/flight/spoilers", 1);
-    setprop("/autopilot/locks/speed", "Off");
-    setprop("/controls/engines/engine[0]/throttle", 0);
-    setprop("/controls/engines/engine[1]/throttle", 0);
-    setprop("/controls/engines/engine[2]/throttle", 0);
-    setprop("/controls/engines/engine[3]/throttle", 0);
-    setprop("/controls/engines/engine[4]/throttle", 0);
-    setprop("/controls/engines/engine[5]/throttle", 0);
-  }
   if(agl < 1) {
     setprop("/autopilot/settings/target-vfps", -0.1);
   } else {
@@ -210,6 +190,15 @@ atl_touchdown = func {
       } else {
         if(agl < 8) {
           setprop("/autopilot/settings/target-vfps", -2);
+          setprop("/autopilot/locks/heading", "Off");
+          setprop("/controls/flight/spoilers", 1);
+          setprop("/autopilot/locks/speed", "Off");
+          setprop("/controls/engines/engine[0]/throttle", 0);
+          setprop("/controls/engines/engine[1]/throttle", 0);
+          setprop("/controls/engines/engine[2]/throttle", 0);
+          setprop("/controls/engines/engine[3]/throttle", 0);
+          setprop("/controls/engines/engine[4]/throttle", 0);
+          setprop("/controls/engines/engine[5]/throttle", 0);
         } else {
           if(agl < 16) {
             setprop("/autopilot/settings/target-vfps", -3);
@@ -224,9 +213,7 @@ atl_touchdown = func {
                 if(agl < 80) {
                   setprop("/autopilot/settings/target-vfps", -8);
                 } else {
-                  if(vfps < -9) {
-                    setprop("/autopilot/settings/target-vfps", -9);
-                  }
+                  setprop("/autopilot/settings/target-vfps", -9);
                   setprop("/autopilot/locks/altitude", "vfps-hold-ls");
                 }
               }
@@ -249,6 +236,14 @@ atl_heading = func {
     }
   } else {
     setprop("/autopilot/locks/heading", "nav1-hold");
+  }
+}
+#--------------------------------------------------------------------
+toggle_traj_mkr = func {
+  if(getprop("ai/submodels/trajectory-markers") < 1) {
+    setprop("ai/submodels/trajectory-markers", 1);
+  } else {
+    setprop("ai/submodels/trajectory-markers", 0);
   }
 }
 #--------------------------------------------------------------------

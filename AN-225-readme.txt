@@ -74,6 +74,11 @@ are based upon a few photographs I was able to find showing the
 aircraft in what appeared to be the final approach stages, and 
 whatever info I was able to find.
 
+Special key bindings
+--------------------
+
+The 'K' (Shift-k) key toggles the trajectory markers on and off.
+
 Panels
 ------
 Currently, there are two simple 2D panels for the model, neither
