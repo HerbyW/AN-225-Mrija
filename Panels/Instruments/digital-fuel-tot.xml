@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+
+<!--
+-->
+
+<PropertyList>
+
+ <name>Digital Fuel Tot display</name>
+ <w-base>40</w-base>
+ <h-base>10</h-base>
+
+ <layers>
+
+  <layer>
+   <name>background</name>
+   <texture>
+    <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-purple-bg.rgb</path>
+   </texture>
+    <w>100</w>
+    <h>64</h>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>50</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-16</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>Title</name>
+   <type>text</type>
+   <point-size>14</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>literal</type>
+     <text>TOT FUEL: </text>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>3</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>3</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>GalTitle</name>
+   <type>text</type>
+   <point-size>14</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>literal</type>
+     <text>GAL: </text>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>3</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-13</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>GalDisplay</name>
+   <type>text</type>
+   <font>led</font>
+   <point-size>5</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>number-value</type>
+     <property>/consumables/fuel/total-fuel-gals</property>
+     <format>%06.0f</format>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>52</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-13</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>LBSTitle</name>
+   <type>text</type>
+   <point-size>14</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>literal</type>
+     <text>LBS: </text>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>3</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-29</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>LBSDisplay</name>
+   <type>text</type>
+   <font>led</font>
+   <point-size>5</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>number-value</type>
+     <property>/consumables/fuel/total-fuel-lbs</property>
+     <format>%06.0f</format>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>52</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-29</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>PropTitle</name>
+   <type>text</type>
+   <point-size>14</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>literal</type>
+     <text>PROP: </text>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>3</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-45</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+  <layer>
+   <name>PropDisplay</name>
+   <type>text</type>
+   <font>led</font>
+   <point-size>5</point-size>
+   <color>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>1.0</blue>
+   </color>
+   <chunks>
+    <chunk>
+     <type>number-value</type>
+     <property>/consumables/fuel/total-fuel-norm</property>
+     <format>%01.5f</format>
+    </chunk>
+   </chunks>
+   <transformations>
+    <transformation>
+     <type>x-shift</type>
+     <offset>52</offset>
+    </transformation>
+    <transformation>
+     <type>y-shift</type>
+     <offset>-45</offset>
+    </transformation>
+   </transformations>
+  </layer>
+
+ </layers>
+
+
+</PropertyList>

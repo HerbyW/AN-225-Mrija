@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+AN-225 set file.
+
+2004-04-28 Lee Elliott
+************************************************************************
+-->
+
+<PropertyList>
+  <sim>
+    <flight-model>yasim</flight-model>
+    <aero>AN-225-yasim</aero>
+    <fuel-fraction>0.6</fuel-fraction>
+
+    <description>Antonov AN-225 heavy/outsize cargo aircraft (YASim fdm)</description>
+
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">-0.40</x-offset-m>
+        <y-offset-m archive="y">4.64</y-offset-m>
+        <z-offset-m archive="y">-22.15</z-offset-m>
+        <pitch-offset-deg>0</pitch-offset-deg>
+        <default-field-of-view-deg>55</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <view n="2">
+      <config>
+        <x-offset-m archive="y" type="double">14.0</x-offset-m>
+      </config>
+    </view>
+
+    <current-view>
+      <field-of-view>55.0</field-of-view>
+    </current-view>
+
+    <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/AN-225/Sounds/AN-225-sound.xml</path>
+    </sound>
+
+    <panel>
+      <path>Aircraft/AN-225/Panels/AN-225-vfr-panel.xml</path>
+    </panel>
+    <panel_2>
+      <path>Aircraft/AN-225/Panels/AN-225-mini-panel.xml</path>
+    </panel_2>
+
+    <hud>
+      <path>Aircraft/AN-225/Huds/AN-225-hud1.xml</path>
+      <visibility>true</visibility>
+    </hud>
+
+    <model>
+      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
+    </model>
+
+    <systems>
+      <autopilot>
+        <path>Aircraft/AN-225/Systems/AN-225-autopilot.xml</path>
+      </autopilot>
+      <electrical>
+        <path>Aircraft/AN-225/Systems/AN-225-electrical.xml</path>
+      </electrical>
+    </systems>
+
+<!-- Flap settings -->
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.08</setting>
+      <setting>0.16</setting>
+      <setting>0.32</setting>
+      <setting>0.48</setting>
+      <setting>0.64</setting>
+      <setting>0.82</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+  </sim>
+
+<!-- Keboard changes -->
+<!-- Brakes -->
+  <input>
+    <keyboard>
+      <key n="100">
+        <name>d</name>
+        <desc>Retract Slats.</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/slats</property>
+          <step type="double">-0.25</step>
+        </binding>
+      </key>
+
+      <key n="102">
+        <name>f</name>
+        <desc>Extend Slats.</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/slats</property>
+          <step type="double">0.25</step>
+        </binding>
+      </key>
+    </keyboard>
+  </input>
+
+  <autopilot>
+    <settings>
+      <target-agl-ft type="float">1000</target-agl-ft>
+      <target-altitude-ft type="float">3000</target-altitude-ft>
+      <target-aoa-deg type="float">11</target-aoa-deg>
+      <target-pitch-deg type="float">3</target-pitch-deg>
+      <target-vfps type="float">0</target-vfps>
+      <take-off-pitch-deg type="float">0.4</take-off-pitch-deg>
+      <climb-out-pitch-deg type="float">1.0</climb-out-pitch-deg>
+      <ground-roll-heading-deg type="float">-999.9</ground-roll-heading-deg>
+      <target-speed-kt type="float">320.0</target-speed-kt>
+      <target-mach type="float">0.48</target-mach>
+      <target-vfps type="float">-1.0</target-vfps>
+      <AoA-deg type="float">1.0</AoA-deg>
+      <auto-flap-target-deg type="float">0.0</auto-flap-target-deg>
+    </settings>
+
+    <locks>
+      <auto-take-off type="string">Enabled</auto-take-off>
+      <auto-landing type="string">Enabled</auto-landing>
+      <rudder-control type="string">Initialised</rudder-control>
+      <AoA-lock type="string">Initialised</AoA-lock>
+      <auto-flap-control type="string">Manual</auto-flap-control>
+    </locks>
+  </autopilot>
+ 
+<!-- Start with the Parking Brake on -->
+  <controls>
+    <gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
+  </controls>
+  
+<!-- Engine indexes -->
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">2</engine-num>
+    </engine>
+    <engine n="3">
+      <engine-num type="int">3</engine-num>
+    </engine>
+    <engine n="4">
+      <engine-num type="int">4</engine-num>
+    </engine>
+    <engine n="5">
+      <engine-num type="int">5</engine-num>
+    </engine>
+  </engines>
+
+<!-- Fuel Tank indexes -->
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+      </tank>
+      <tank n="3">
+        <tank-num type="int">3</tank-num>
+      </tank>
+      <tank n="4">
+        <tank-num type="int">4</tank-num>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <instrumentation>
+    <radar>
+      <range type="int" archive="y">40</range>
+      <minimized type="bool" archive="y">true</minimized>
+    </radar>
+  </instrumentation>
+
+  <nasal>
+    <AN225>
+      <file>Aircraft/AN-225/Nasal/AN-225.nas</file>
+<!--      <script>nasaltest2();</script> -->
+    </AN225>
+  </nasal>
+
+</PropertyList>
