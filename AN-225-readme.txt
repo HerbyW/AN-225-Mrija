@@ -77,7 +77,9 @@ whatever info I was able to find.
 Special key bindings
 --------------------
 
-The 'K' (Shift-k) key toggles the trajectory markers on and off.
+Key               Action
+'K' (Shift-k)     Toggle trajactory markers on & off
+'U' (Shift-u)     Update the drop-view location.
 
 Panels
 ------

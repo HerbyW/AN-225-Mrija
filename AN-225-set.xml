@@ -19,10 +19,10 @@ AN-225 set file.
     <author>Lee Elliott</author>
     <aero>AN-225-yasim</aero>
     <fuel-fraction>0.6</fuel-fraction>
-
     <description>Antonov AN-225 heavy/outsize cargo aircraft (YASim fdm)</description>
-
     <virtual-cockpit archive="y">true</virtual-cockpit>
+    <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
+    <number-views type="int" archive="y">7</number-views>
 
     <view n="0">
       <internal archive="y">true</internal>
@@ -41,11 +41,33 @@ AN-225 set file.
       </config>
     </view>
 
+    <view n="6">
+      <name>Drop View</name>
+      <type>lookat</type>
+      <config>
+        <eye-lat-deg-path>/sim/view[6]/latitude-deg</eye-lat-deg-path>
+        <eye-lon-deg-path>/sim/view[6]/longitude-deg</eye-lon-deg-path>
+        <eye-alt-ft-path>/sim/view[6]/altitude-ft</eye-alt-ft-path>
+        <eye-roll-deg-path>/sim/view[6]/roll-deg</eye-roll-deg-path>
+        <eye-pitch-deg-path>/sim/view[6]/pitch-deg</eye-pitch-deg-path>
+        <eye-heading-deg-path>/sim/view[6]/heading-deg</eye-heading-deg-path>
+
+        <at-model type="bool">true</at-model>
+        <at-model-idx type="int">0</at-model-idx>
+
+        <ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+
+        <x-offset-m type="double">0</x-offset-m>
+        <y-offset-m type="double">0</y-offset-m>
+        <z-offset-m type="double">0</z-offset-m>
+        <target-z-offset-m archive="y" type="double">20.0</target-z-offset-m>
+      </config>
+    </view>
+
     <current-view>
       <field-of-view>55.0</field-of-view>
     </current-view>
-
-    <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
 
     <sound>
       <audible>true</audible>
@@ -128,6 +150,17 @@ AN-225 set file.
           <step type="double">0.25</step>
         </binding>
       </key>
+      
+<!-- Update Drop View position -->
+       <key n="85">
+        <name>U</name>
+        <desc>Update Drop View position</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>AN225.update_drop_view_pos()</script>
+        </binding>
+      </key>
+      
     </keyboard>
   </input>
 
@@ -217,7 +250,7 @@ AN-225 set file.
   <nasal>
     <AN225>
       <file>Aircraft/AN-225/Nasal/AN-225.nas</file>
-<!--      <script>nasaltest2();</script> -->
+      <script>start_up();</script>
     </AN225>
   </nasal>
 

@@ -187,9 +187,6 @@ atl_touchdown = func {
     } else {
       if(agl < 4) {
         setprop("/autopilot/settings/target-vfps", -1);
-      } else {
-        if(agl < 8) {
-          setprop("/autopilot/settings/target-vfps", -2);
           setprop("/autopilot/locks/heading", "Off");
           setprop("/controls/flight/spoilers", 1);
           setprop("/autopilot/locks/speed", "Off");
@@ -199,6 +196,18 @@ atl_touchdown = func {
           setprop("/controls/engines/engine[3]/throttle", 0);
           setprop("/controls/engines/engine[4]/throttle", 0);
           setprop("/controls/engines/engine[5]/throttle", 0);
+      } else {
+        if(agl < 8) {
+          setprop("/autopilot/settings/target-vfps", -2);
+#          setprop("/autopilot/locks/heading", "Off");
+#          setprop("/controls/flight/spoilers", 1);
+#          setprop("/autopilot/locks/speed", "Off");
+#          setprop("/controls/engines/engine[0]/throttle", 0);
+#          setprop("/controls/engines/engine[1]/throttle", 0);
+#          setprop("/controls/engines/engine[2]/throttle", 0);
+#          setprop("/controls/engines/engine[3]/throttle", 0);
+#          setprop("/controls/engines/engine[4]/throttle", 0);
+#          setprop("/controls/engines/engine[5]/throttle", 0);
         } else {
           if(agl < 16) {
             setprop("/autopilot/settings/target-vfps", -3);
@@ -245,5 +254,27 @@ toggle_traj_mkr = func {
   } else {
     setprop("ai/submodels/trajectory-markers", 0);
   }
+}
+#--------------------------------------------------------------------
+initialise_drop_view_pos = func {
+  eyelatdeg = getprop("/position/latitude-deg");
+  eyelondeg = getprop("/position/longitude-deg");
+  eyealtft = getprop("/position/altitude-ft") + 20;
+  setprop("/sim/view[6]/latitude-deg", eyelatdeg);
+  setprop("/sim/view[6]/longitude-deg", eyelondeg);
+  setprop("/sim/view[6]/altitude-ft", eyealtft);
+}
+#--------------------------------------------------------------------
+update_drop_view_pos = func {
+  eyelatdeg = getprop("/position/latitude-deg");
+  eyelondeg = getprop("/position/longitude-deg");
+  eyealtft = getprop("/position/altitude-ft") + 20;
+  interpolate("/sim/view[6]/latitude-deg", eyelatdeg, 5);
+  interpolate("/sim/view[6]/longitude-deg", eyelondeg, 5);
+  interpolate("/sim/view[6]/altitude-ft", eyealtft, 5);
+}
+#--------------------------------------------------------------------
+start_up = func {
+  settimer(initialise_drop_view_pos, 5);
 }
 #--------------------------------------------------------------------

@@ -52,7 +52,7 @@ Lee Elliott. leee-fgfs@spatial.freeserve.co.uk
  <wing x="-2.2" y="3.25" z="4.4" taper="0.2" incidence="4.0"
       length="44.7" chord="18.0" sweep="24.5" dihedral="-3.5" camber="0.15">
   <stall aoa="18.0" width="3" peak="1.3"/>
-  <flap0 start="0.0" end="0.75" lift="1.55" drag="1.5"/>
+  <flap0 start="0.0" end="0.75" lift="1.55" drag="1.45"/>
   <flap1 start="0.75" end="0.95" lift="1.15" drag="1.3"/>
   <slat start="0.15" end="0.95" lift="1.5" aoa="3" drag="1.3"/>
   <spoiler start="0.0" end="0.8" lift="0.6" drag="4.0"/>
