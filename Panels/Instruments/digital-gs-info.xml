@@ -127,7 +127,7 @@
       <chunks>
         <chunk>
           <type>number-value</type>
-          <property>/radios/nav/gs-rate-of-climb</property>
+          <property>/instrumentation/nav/gs-rate-of-climb</property>
           <format>%04.1f</format>
         </chunk>
       </chunks>
