@@ -10,6 +10,7 @@ AN-225 set file.
 <PropertyList>
   <sim>
     <flight-model>yasim</flight-model>
+    <status>beta</status>
     <aero>AN-225-yasim</aero>
     <fuel-fraction>0.6</fuel-fraction>
 
