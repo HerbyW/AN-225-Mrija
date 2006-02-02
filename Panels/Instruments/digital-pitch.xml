@@ -5,7 +5,7 @@
 
 <PropertyList>
 
- <name>Digital VSI display</name>
+ <name>Digital Pitch display</name>
  <w-base>40</w-base>
  <h-base>10</h-base>
 
@@ -35,14 +35,14 @@
    <type>text</type>
    <point-size>14</point-size>
    <color>
-    <red>0.0</red>
+    <red>1.0</red>
     <green>1.0</green>
     <blue>0.0</blue>
    </color>
    <chunks>
     <chunk>
      <type>literal</type>
-     <text>VSI: </text>
+     <text>Pitch: </text>
     </chunk>
    </chunks>
    <transformations>
@@ -58,26 +58,26 @@
   </layer>
 
   <layer>
-   <name>Vsi display</name>
+   <name>Pitch display</name>
    <type>text</type>
    <font>led</font>
    <point-size>5</point-size>
    <color>
-    <red>0.0</red>
+    <red>1.0</red>
     <green>1.0</green>
     <blue>0.0</blue>
    </color>
    <chunks>
     <chunk>
      <type>number-value</type>
-     <property>/velocities/vertical-speed-fps</property>
-     <format>%04.2f</format>
+     <property>/orientation/pitch-deg</property>
+     <format>%02.3f</format>
     </chunk>
    </chunks>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>50</offset>
+     <offset>55</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>

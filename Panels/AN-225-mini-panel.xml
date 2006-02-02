@@ -266,7 +266,15 @@ Hacked by Lee Elliott for the AN-225 mock panel
     <instrument include="Instruments/digital-roll.xml">
       <name>Roll display</name>
       <x>80</x>
-      <y>40</y>
+      <y>45</y>
+      <w>40</w>
+      <h>10</h>
+    </instrument>
+
+    <instrument include="Instruments/digital-pitch.xml">
+      <name>Pitch display</name>
+      <x>80</x>
+      <y>25</y>
       <w>40</w>
       <h>10</h>
     </instrument>

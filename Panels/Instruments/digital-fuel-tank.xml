@@ -20,7 +20,7 @@
   <layer>
    <name>background</name>
    <texture>
-    <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-purple-bg.rgb</path>
+    <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-dgrey-bg.rgb</path>
    </texture>
     <w>180</w>
     <h>32</h>

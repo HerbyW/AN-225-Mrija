@@ -35,9 +35,16 @@ AN-225 set file.
       </config>
     </view>
 
+    <view n="1">
+      <config>
+        <target-y-offset-m archive="y" type="double">3.0</target-y-offset-m>
+      </config>
+    </view>
+
     <view n="2">
       <config>
         <x-offset-m archive="y" type="double">14.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.0</y-offset-m>
       </config>
     </view>
 
@@ -56,7 +63,7 @@ AN-225 set file.
         <at-model-idx type="int">0</at-model-idx>
 
         <ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
-        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+        <default-field-of-view-deg type="double">8.0</default-field-of-view-deg>
 
         <x-offset-m type="double">0</x-offset-m>
         <y-offset-m type="double">0</y-offset-m>
@@ -185,29 +192,38 @@ AN-225 set file.
   </input>
 
   <autopilot>
+    <locks>
+      <ce-altitude-hold type="string">initialised</ce-altitude-hold>
+      <ce-aoa-hold type="string">initialised</ce-aoa-hold>
+      <ce-mach-climb-hold type="string">initialised</ce-mach-climb-hold>
+      <ce-pitch-hold type="string">initialised</ce-pitch-hold>
+      <ce-terrain-follow-hold type="string">initialised</ce-terrain-follow-hold>
+      <ce-vfps-hold type="string">initialised</ce-vfps-hold>
+      <aoa type="string">initialised</aoa>
+      <auto-flap-control type="string">manual</auto-flap-control>
+      <auto-landing type="string">enabled</auto-landing>
+      <auto-take-off type="string">enabled</auto-take-off>
+      <common-aileron-control type="string">off</common-aileron-control>
+      <common-elevator-control type="string">off</common-elevator-control>
+      <rudder-control type="string">initialised</rudder-control>
+    </locks>
+
     <settings>
+      <approach-aoa-deg type="float">2.0</approach-aoa-deg>
+      <auto-flap-target-aoa-deg type="float">0.0</auto-flap-target-aoa-deg>
+      <take-off-initial-pitch-deg type="float">0.0</take-off-initial-pitch-deg>
+      <take-off-final-pitch-deg type="float">5.0</take-off-final-pitch-deg>
+      <climb-out-pitch-trans-time-sec type="float">8.0</climb-out-pitch-trans-time-sec>
+      <ground-roll-heading-deg type="float">-999.9</ground-roll-heading-deg>
+      <take-off-pitch-deg type="float">0.0</take-off-pitch-deg>
       <target-agl-ft type="float">1000</target-agl-ft>
       <target-altitude-ft type="float">3000</target-altitude-ft>
-      <target-aoa-deg type="float">11</target-aoa-deg>
-      <target-pitch-deg type="float">3</target-pitch-deg>
-      <target-vfps type="float">0</target-vfps>
-      <take-off-pitch-deg type="float">0.4</take-off-pitch-deg>
-      <climb-out-pitch-deg type="float">1.0</climb-out-pitch-deg>
-      <ground-roll-heading-deg type="float">-999.9</ground-roll-heading-deg>
+      <target-aoa-deg type="float">1.5</target-aoa-deg>
+      <target-climb-rate-fps type="float">30</target-climb-rate-fps>
+      <target-pitch-deg type="float">0</target-pitch-deg>
       <target-speed-kt type="float">320.0</target-speed-kt>
       <target-mach type="float">0.48</target-mach>
-      <target-vfps type="float">-1.0</target-vfps>
-      <AoA-deg type="float">1.0</AoA-deg>
-      <auto-flap-target-deg type="float">0.0</auto-flap-target-deg>
     </settings>
-
-    <locks>
-      <auto-take-off type="string">Enabled</auto-take-off>
-      <auto-landing type="string">Enabled</auto-landing>
-      <rudder-control type="string">Initialised</rudder-control>
-      <AoA-lock type="string">Initialised</AoA-lock>
-      <auto-flap-control type="string">Manual</auto-flap-control>
-    </locks>
   </autopilot>
  
 <!-- Start with the Parking Brake on -->

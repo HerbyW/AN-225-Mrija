@@ -1406,7 +1406,7 @@
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/left-flap-pos-norm</property>
+      <property>/surface-positions/L-flap-pos-norm</property>
       <volume>
         <factor>0.15</factor>
       </volume>
@@ -1416,7 +1416,7 @@
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/right-flap-pos-norm</property>
+      <property>/surface-positions/R-flap-pos-norm</property>
       <volume>
         <factor>0.25</factor>
       </volume>
@@ -1427,7 +1427,7 @@
       <name>spoilers</name>
       <mode>in-transit</mode>
       <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/left-spoiler-pos-norm</property>
+      <property>/surface-positions/L-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
       </volume>
@@ -1437,7 +1437,7 @@
       <name>spoilers</name>
       <mode>in-transit</mode>
       <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/right-spoiler-pos-norm</property>
+      <property>/surface-positions/R-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
       </volume>

@@ -14,7 +14,7 @@
   <layer>
    <name>background</name>
    <texture>
-    <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-green-bg.rgb</path>
+    <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-dgrey-bg.rgb</path>
    </texture>
     <w>100</w>
     <h>16</h>
