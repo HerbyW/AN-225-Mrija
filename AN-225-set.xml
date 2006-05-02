@@ -197,7 +197,7 @@ AN-225 set file.
       <ce-aoa-hold type="string">initialised</ce-aoa-hold>
       <ce-mach-climb-hold type="string">initialised</ce-mach-climb-hold>
       <ce-pitch-hold type="string">initialised</ce-pitch-hold>
-      <ce-terrain-follow-hold type="string">initialised</ce-terrain-follow-hold>
+      <ce-agl-hold type="string">initialised</ce-agl-hold>
       <ce-vfps-hold type="string">initialised</ce-vfps-hold>
       <aoa type="string">initialised</aoa>
       <auto-flap-control type="string">manual</auto-flap-control>
