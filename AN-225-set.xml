@@ -145,6 +145,14 @@ AN-225 set file.
     </help>
 
   </sim>
+	
+  <ai>
+    <submodels>
+      <trajectory-markers type="bool">0</trajectory-markers>
+    </submodels>
+  </ai>
+  
+
 
 <!-- Keboard changes -->
   <input>
