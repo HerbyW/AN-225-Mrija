@@ -164,7 +164,8 @@ them out of my 3d modeller.
 <!-- Landing Gear -->
 <!-- Front Left -->
  <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="1.0" spring="1.1">
-  <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.7664"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 <!--
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -173,13 +174,15 @@ them out of my 3d modeller.
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="2.5"/>
   <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
   <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
  </gear>
 
 <!-- Front Right -->
  <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="1.0" spring="1.1">
-  <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1.0" dst0="-0.7664" src1="1.0" dst1="0.8052"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 <!--
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -188,6 +191,7 @@ them out of my 3d modeller.
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="2.5"/>
   <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
   <control-output control="STEER" prop="/gear/gear[1]/steering-norm"/>
  </gear>
@@ -224,43 +228,63 @@ them out of my 3d modeller.
  </gear>
 
  <gear x="-9.05" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.1453" src1="1.0" dst1="0.1135"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="15.7"/>
   <control-output control="EXTEND" prop="/gear/gear[5]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[5]/steering-norm"/>
  </gear>
 
  <gear x="-10.72" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.2169" src1="1.0" dst1="0.1694"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="10.5"/>
   <control-output control="EXTEND" prop="/gear/gear[6]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[6]/steering-norm"/>
  </gear>
 
  <gear x="-12.42" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.2876" src1="1.0" dst1="0.2264"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="7.9"/>
   <control-output control="EXTEND" prop="/gear/gear[7]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[7]/steering-norm"/>
  </gear>
 
  <gear x="-14.10" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.3546" src1="1.0" dst1="0.2808"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="6.4"/>
   <control-output control="EXTEND" prop="/gear/gear[8]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[8]/steering-norm"/>
  </gear>
 
 <!-- Main Right -->
@@ -295,43 +319,63 @@ them out of my 3d modeller.
  </gear>
 
  <gear x="-9.05" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.1135" src1="1.0" dst1="0.1453"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="15.7"/>
   <control-output control="EXTEND" prop="/gear/gear[12]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[12]/steering-norm"/>
  </gear>
 
  <gear x="-10.72" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.1694" src1="1.0" dst1="0.2169"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="10.5"/>
   <control-output control="EXTEND" prop="/gear/gear[13]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[13]/steering-norm"/>
  </gear>
 
  <gear x="-12.42" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.2264" src1="1.0" dst1="0.2876"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="7.9"/>
   <control-output control="EXTEND" prop="/gear/gear[14]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[14]/steering-norm"/>
  </gear>
 
  <gear x="-14.10" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
+  <control-input axis="/controls/flight/rudder" control="STEER"
+    src0="-1" dst0="-0.2808" src1="1.0" dst1="0.3546"
+    invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
+  <control-speed control="STEER" transition-time="6.4"/>
   <control-output control="EXTEND" prop="/gear/gear[15]/position-norm"/>
+  <control-output control="STEER" prop="/gear/gear[15]/steering-norm"/>
  </gear>
 
 <!-- Fuel tanks -->

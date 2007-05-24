@@ -1405,7 +1405,7 @@ AN225 model/animation config.
   <object-name>L-NG-Strut</object-name>
   <property>gear/gear[0]/steering-norm</property>
   <offset-deg>0</offset-deg>
-  <factor>-45</factor>
+  <factor>-57.30</factor>
   <center>
    <x-m>-20.03</x-m>
    <y-m>-0.93</y-m>
@@ -1583,7 +1583,7 @@ AN225 model/animation config.
   <object-name>R-NG-Strut</object-name>
   <property>gear/gear[1]/steering-norm</property>
   <offset-deg>0</offset-deg>
-  <factor>-45</factor>
+  <factor>-57.30</factor>
   <center>
    <x-m>-20.03</x-m>
    <y-m>0.93</y-m>
@@ -2292,6 +2292,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <property>gear/gear[5]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -2472,6 +2494,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <property>gear/gear[6]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -2652,6 +2696,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <property>gear/gear[7]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -2832,6 +2898,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <property>gear/gear[8]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -3552,6 +3640,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <property>gear/gear[12]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -3732,6 +3842,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <property>gear/gear[13]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -3912,6 +4044,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <property>gear/gear[14]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>12.72</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
@@ -4092,6 +4246,28 @@ AN225 model/animation config.
   </condition>
  </animation>
 
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <property>gear/gear[15]/steering-norm</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 <!-- Extend/Retract -->
 <!-- Swing in/out -->
  <animation>
