@@ -64,6 +64,7 @@ them out of my 3d modeller.
 
   <control-output control="FLAP0" side="left" prop="/surface-positions/L-flap-pos-norm"/>
   <control-output control="FLAP0" side="right" prop="/surface-positions/R-flap-pos-norm"/>
+  <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
   <control-output control="FLAP1" side="left" prop="/surface-positions/L-aileron-pos-norm"/>
   <control-output control="FLAP1" side="right" prop="/surface-positions/R-aileron-pos-norm"/>
   <control-output control="SLAT" side="left" prop="/surface-positions/L-slat-pos-norm"/>

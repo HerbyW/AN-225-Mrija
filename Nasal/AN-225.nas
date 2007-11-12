@@ -6,7 +6,7 @@ ato_start = func {
   # This script checks that the ground-roll-heading has been reset
   # (< -999) and that the a/c is on the ground.
   if(getprop("/autopilot/settings/ground-roll-heading-deg") < -999) {
-    if(getprop("/position/altitude-agl-ft") < 0.01) {
+    if(getprop("/position/gear-agl-ft") < 0.01) {
       hdgdeg = getprop("/orientation/heading-deg");
       setprop("/controls/flight/flaps", 1.0);
       setprop("/autopilot/settings/ground-roll-heading-deg", hdgdeg);
@@ -18,6 +18,10 @@ ato_start = func {
       setprop("/autopilot/locks/speed", "speed-with-throttle");
       setprop("/autopilot/locks/rudder-control", "rudder-hold");
       setprop("/autopilot/internal/target-roll-deg-unfiltered", 0);
+      setprop("/controls/flight/spoilers", 0.0);
+      setprop("/controls/gear/brake-left", 0.0);
+      setprop("/controls/gear/brake-right", 0.0);
+      setprop("/controls/gear/brake-parking", 0.0);
 
       # Initialise the climb-out settings.
       toiptdeg = getprop("/autopilot/settings/take-off-initial-pitch-deg");
@@ -195,7 +199,7 @@ atl_glideslope = func {
 #--------------------------------------------------------------------
 atl_touchdown = func {
   # Touch Down phase.
-  agl = getprop("/position/altitude-agl-ft");
+  agl = getprop("/position/gear-agl-ft");
   vfps = getprop("/velocities/vertical-speed-fps");
   setprop("/autopilot/locks/heading", "");
   setprop("/autopilot/locks/aoa", "off");
@@ -208,17 +212,16 @@ atl_touchdown = func {
     setprop("/autopilot/locks/auto-landing", "disabled");
     setprop("/autopilot/locks/auto-take-off", "enabled");
     setprop("/autopilot/locks/altitude", "Off");
-    setprop("/autopilot/settings/target-climb-rate-fps", -1.0);
     interpolate("/controls/flight/elevator-trim", 0, 10.0);
-  }
-  if(agl < 1) {
-    setprop("/autopilot/settings/target-climb-rate-fps", -1);
   } else {
-    if(agl < 5) {
-      setprop("/autopilot/settings/target-climb-rate-fps", -2);
+    if(agl < 1) {
+      setprop("/autopilot/settings/target-climb-rate-fps", -1);
     } else {
-      if(agl < 10) {
-        setprop("/autopilot/settings/target-climb-rate-fps", -3);
+      if(agl < 2) {
+        setprop("/autopilot/settings/target-climb-rate-fps", -2);
+      } else {
+        if(agl < 5) {
+          setprop("/autopilot/settings/target-climb-rate-fps", -3);
           setprop("/autopilot/locks/heading", "Off");
           setprop("/controls/flight/spoilers", 1);
           setprop("/autopilot/locks/speed", "Off");
@@ -228,30 +231,35 @@ atl_touchdown = func {
           setprop("/controls/engines/engine[3]/throttle", 0);
           setprop("/controls/engines/engine[4]/throttle", 0);
           setprop("/controls/engines/engine[5]/throttle", 0);
-      } else {
-        if(agl < 20) {
-          setprop("/autopilot/settings/target-climb-rate-fps", -4);
         } else {
-          if(agl < 30) {
-            setprop("/autopilot/settings/target-climb-rate-fps", -5);
+          if(agl < 10) {
+            if(vfps < -4) {
+              setprop("/autopilot/settings/target-climb-rate-fps", -4);
+            }
           } else {
-            if(agl < 60) {
-              if(vfps < -9) {
+            if(agl < 20) {
+              if(vfps < -6) {
                 setprop("/autopilot/settings/target-climb-rate-fps", -6);
               }
             } else {
-              if(agl < 100) {
-                if(vfps < -10) {
+              if(agl < 40) {
+                if(vfps < -8) {
                   setprop("/autopilot/settings/target-climb-rate-fps", -8);
                 }
               } else {
-                if(agl < 140) {
-                  if(vfps < -11) {
+                if(agl < 80) {
+                  if(vfps < -10) {
                     setprop("/autopilot/settings/target-climb-rate-fps", -10);
                   }
                 } else {
-                  if(vfps < -13) {
-                    setprop("/autopilot/settings/target-climb-rate-fps", -13);
+                  if(agl < 120) {
+                    if(vfps < -12) {
+                      setprop("/autopilot/settings/target-climb-rate-fps", -12);
+                    }
+                  } else {
+                    if(vfps < -14) {
+                      setprop("/autopilot/settings/target-climb-rate-fps", -14);
+                    }
                   }
                 }
               }
@@ -265,16 +273,16 @@ atl_touchdown = func {
 #--------------------------------------------------------------------
 atl_heading = func {
   # This script handles heading dependent actions.
-  hdnddf = getprop("/autopilot/internal/heading-needle-deflection-filtered[1]");
-  if(hdnddf < 5) {
-    if(hdnddf > -5) {
-      setprop("/autopilot/locks/heading", "nav1-hold-fa");
-    } else {
+#  hdnddf = getprop("/autopilot/internal/heading-needle-deflection-filtered[1]");
+#  if(hdnddf < 5) {
+#    if(hdnddf > -5) {
+#      setprop("/autopilot/locks/heading", "nav1-hold-fa");
+#    } else {
       setprop("/autopilot/locks/heading", "nav1-hold");
-    }
-  } else {
-    setprop("/autopilot/locks/heading", "nav1-hold");
-  }
+#    }
+#  } else {
+#    setprop("/autopilot/locks/heading", "nav1-hold");
+#  }
 }
 #--------------------------------------------------------------------
 ap_common_elevator_monitor = func {

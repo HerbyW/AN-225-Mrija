@@ -22,10 +22,7 @@ click.  Actions always modify the values of properties, either by
 adjusting them, toggling them, or swaping them with other
 properties' values.
 
-Hacked to create a single step flap quadrant - the flaps are
-extended/retracted in a single step.
 
-2003/08 Lee Elliott
 -->
 
 <PropertyList>

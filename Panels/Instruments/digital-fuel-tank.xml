@@ -22,28 +22,28 @@
    <texture>
     <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-dgrey-bg.rgb</path>
    </texture>
-    <w>180</w>
-    <h>32</h>
+    <w>196</w>
+    <h>16</h>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>90</offset>
+     <offset>98</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>0</offset>
+     <offset>8</offset>
     </transformation>
    </transformations>
   </layer>
-
+<!--
   <layer>
    <name>Title</name>
    <type>text</type>
-   <point-size>14</point-size>
+   <point-size>12</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
-    <blue>1.0</blue>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
    </color>
    <chunks>
     <chunk>
@@ -58,32 +58,32 @@
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>3</offset>
+     <offset>4</offset>
     </transformation>
    </transformations>
   </layer>
-
+-->
   <layer>
    <name>Number</name>
    <type>text</type>
    <font>led</font>
    <point-size>5</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
+    <red>1.0</red>
+    <green>1.0</green>
     <blue>1.0</blue>
    </color>
    <chunks>
     <chunk>
      <type>number-value</type>
      <property alias="../../../../../params/tank-num"/>
-     <format>%01.0f</format>
+     <format>%02.0f</format>
     </chunk>
    </chunks>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>53</offset>
+     <offset>5</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
@@ -93,28 +93,28 @@
   </layer>
 
   <layer>
-   <name>Gal-Title</name>
+   <name>Gal/LBS -Title</name>
    <type>text</type>
-   <point-size>14</point-size>
+   <point-size>12</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
-    <blue>1.0</blue>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
    </color>
    <chunks>
     <chunk>
      <type>literal</type>
-     <text>GAL: </text>
+     <text>GAL/LBS: </text>
     </chunk>
    </chunks>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>70</offset>
+     <offset>30</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>3</offset>
+     <offset>4</offset>
     </transformation>
    </transformations>
   </layer>
@@ -125,21 +125,21 @@
    <font>led</font>
    <point-size>5</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
+    <red>1.0</red>
+    <green>1.0</green>
     <blue>1.0</blue>
    </color>
    <chunks>
     <chunk>
      <type>number-value</type>
      <property alias="../../../../../params/gal-select"/>
-     <format>%05.f</format>
+     <format>%04.f</format>
     </chunk>
    </chunks>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>110</offset>
+     <offset>98</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
@@ -149,28 +149,28 @@
   </layer>
 
   <layer>
-   <name>LBS-Title</name>
+   <name>separator</name>
    <type>text</type>
-   <point-size>14</point-size>
+   <point-size>12</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
-    <blue>1.0</blue>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
    </color>
    <chunks>
     <chunk>
      <type>literal</type>
-     <text>LBS: </text>
+     <text>/</text>
     </chunk>
    </chunks>
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>70</offset>
+     <offset>130</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>-13</offset>
+     <offset>4</offset>
     </transformation>
    </transformations>
   </layer>
@@ -181,8 +181,8 @@
    <font>led</font>
    <point-size>5</point-size>
    <color>
-    <red>0.5</red>
-    <green>0.0</green>
+    <red>1.0</red>
+    <green>1.0</green>
     <blue>1.0</blue>
    </color>
    <chunks>
@@ -195,11 +195,11 @@
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>110</offset>
+     <offset>138</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>-13</offset>
+     <offset>3</offset>
     </transformation>
    </transformations>
   </layer>

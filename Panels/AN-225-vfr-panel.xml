@@ -30,6 +30,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <x>...</x> and <y>...</y> properties.
 
 Hacked by Lee Elliott for the AN-225 mock panel
+
 -->
 
 <!DOCTYPE PropertyList SYSTEM "panel.dtd">
@@ -187,7 +188,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
 <!-- end radio stack -->
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 0 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[0]/throttle</engine-throttle-select>
@@ -198,7 +199,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 1 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[1]/throttle</engine-throttle-select>
@@ -209,7 +210,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 2 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[2]/throttle</engine-throttle-select>
@@ -220,7 +221,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 3 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[3]/throttle</engine-throttle-select>
@@ -231,7 +232,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 4 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[4]/throttle</engine-throttle-select>
@@ -242,7 +243,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="Instruments/single-throttle-quadrant.xml">
+  <instrument include="Instruments/throttle-quadrant.xml">
    <name>Engine 5 throttle quadrant</name>
    <params>
     <engine-throttle-select>/controls/engines/engine[5]/throttle</engine-throttle-select>
@@ -258,7 +259,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <params>
     <flaps-select>/controls/flight/flaps</flaps-select>
    </params>
-   <x>670</x>
+   <x>700</x>
    <y>30</y>
    <w>12</w>
    <h>50</h>
@@ -278,278 +279,9 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>70</h>
   </instrument>
 
-<!-- Engine monitors -->
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 0 display</name>
-   <params>
-    <eng-num>/engines/engine[0]/engine-num</eng-num>
-    <pt-select>/engines/engine[0]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[0]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[0]/n1</n1-select>
-    <n2-select>/engines/engine[0]/n2</n2-select>
-    <ff-select>/engines/engine[0]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[0]/throttle</th-select>
-    <egt-select>/engines/engine[0]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>365</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 1 display</name>
-   <params>
-    <eng-num>/engines/engine[1]/engine-num</eng-num>
-    <pt-select>/engines/engine[1]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[1]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[1]/n1</n1-select>
-    <n2-select>/engines/engine[1]/n2</n2-select>
-    <ff-select>/engines/engine[1]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[1]/throttle</th-select>
-    <egt-select>/engines/engine[1]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>345</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 2 display</name>
-   <params>
-    <eng-num>/engines/engine[2]/engine-num</eng-num>
-    <pt-select>/engines/engine[2]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[2]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[2]/n1</n1-select>
-    <n2-select>/engines/engine[2]/n2</n2-select>
-    <ff-select>/engines/engine[2]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[1]/throttle</th-select>
-    <egt-select>/engines/engine[1]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>325</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 3 display</name>
-   <params>
-    <eng-num>/engines/engine[3]/engine-num</eng-num>
-    <pt-select>/engines/engine[3]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[3]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[3]/n1</n1-select>
-    <n2-select>/engines/engine[3]/n2</n2-select>
-    <ff-select>/engines/engine[3]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[1]/throttle</th-select>
-    <egt-select>/engines/engine[1]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>305</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 4 display</name>
-   <params>
-    <eng-num>/engines/engine[4]/engine-num</eng-num>
-    <pt-select>/engines/engine[4]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[4]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[4]/n1</n1-select>
-    <n2-select>/engines/engine[4]/n2</n2-select>
-    <ff-select>/engines/engine[4]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[1]/throttle</th-select>
-    <egt-select>/engines/engine[1]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>285</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-engine.xml">
-   <name>Engine 5 display</name>
-   <params>
-    <eng-num>/engines/engine[5]/engine-num</eng-num>
-    <pt-select>/engines/engine[5]/prop-thrust</pt-select>
-    <pt-select>/engines/engine[5]/prop-thrust</pt-select>
-    <n1-select>/engines/engine[5]/n1</n1-select>
-    <n2-select>/engines/engine[5]/n2</n2-select>
-    <ff-select>/engines/engine[5]/fuel-flow-gph</ff-select>
-    <th-select>/controls/engines/engine[1]/throttle</th-select>
-    <egt-select>/engines/engine[1]/egt-degf</egt-select>
-   </params>
-   <x>370</x>
-   <y>265</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-<!-- Fuel monitors -->
-  <instrument include="Instruments/digital-fuel-tank.xml">
-   <name>Tank 0 display</name>
-   <params>
-    <tank-num>/consumables/fuel/tank[0]/tank-num</tank-num>
-    <gal-select>/consumables/fuel/tank[0]/level-gal_us</gal-select>
-    <lbs-select>/consumables/fuel/tank[0]/level-lbs</lbs-select>
-   </params>
-   <x>370</x>
-   <y>205</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-fuel-tank.xml">
-   <name>Tank 1 display</name>
-   <params>
-    <tank-num>/consumables/fuel/tank[1]/tank-num</tank-num>
-    <gal-select>/consumables/fuel/tank[1]/level-gal_us</gal-select>
-    <lbs-select>/consumables/fuel/tank[1]/level-lbs</lbs-select>
-   </params>
-   <x>370</x>
-   <y>165</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-fuel-tank.xml">
-   <name>Tank 2 display</name>
-   <params>
-    <tank-num>/consumables/fuel/tank[2]/tank-num</tank-num>
-    <gal-select>/consumables/fuel/tank[2]/level-gal_us</gal-select>
-    <lbs-select>/consumables/fuel/tank[2]/level-lbs</lbs-select>
-   </params>
-   <x>370</x>
-   <y>125</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-fuel-tank.xml">
-   <name>Tank 3 display</name>
-   <params>
-    <tank-num>/consumables/fuel/tank[3]/tank-num</tank-num>
-    <gal-select>/consumables/fuel/tank[3]/level-gal_us</gal-select>
-    <lbs-select>/consumables/fuel/tank[3]/level-lbs</lbs-select>
-   </params>
-   <x>370</x>
-   <y>85</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-fuel-tank.xml">
-   <name>Tank 4 display</name>
-   <params>
-    <tank-num>/consumables/fuel/tank[4]/tank-num</tank-num>
-    <gal-select>/consumables/fuel/tank[4]/level-gal_us</gal-select>
-    <lbs-select>/consumables/fuel/tank[4]/level-lbs</lbs-select>
-   </params>
-   <x>370</x>
-   <y>45</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-fuel-tot.xml">
-   <name>Fuel tot display</name>
-   <x>555</x>
-   <y>205</y>
-   <w>45</w>
-   <h>11</h>
-  </instrument>
-
-<!-- Misc -->
-   <instrument include="Instruments/digital-alt.xml">
-   <name>Altitude display</name>
-   <x>370</x>
-   <y>445</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-vsi.xml">
-   <name>Vsi display</name>
-   <x>370</x>
-   <y>425</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-agl.xml">
-   <name>Elevation AGL display</name>
-   <x>370</x>
-   <y>405</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-kias.xml">
-   <name>KIAS display</name>
-   <x>475</x>
-   <y>445</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-mach.xml">
-   <name>Mach display</name>
-   <x>475</x>
-   <y>425</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-accl.xml">
-   <name>Accel display</name>
-   <x>475</x>
-   <y>405</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-wgt.xml">
-   <name>Weight display</name>
-   <x>370</x>
-   <y>385</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-aoa.xml">
-   <name>AoA display</name>
-   <x>475</x>
-   <y>385</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
-
-  <instrument include="Instruments/digital-flap.xml">
-   <name>Flap settings display</name>
-   <x>580</x>
-   <y>445</y>
-   <w>40</w>
-   <h>10</h>
-  </instrument>
 
 <!-- AP Instruments -->
-  <instrument include="Instruments/digital-ap-speed-kt.xml">
-   <name>AP Speed-Kt Instruiment</name>
-   <params>
-    <kias-disp>/autopilot/settings/target-speed-kt</kias-disp>
-    <kias-ctrl>/autopilot/settings/target-speed-kt</kias-ctrl>
-    <mach-disp>/autopilot/settings/target-mach</mach-disp>
-    <mach-ctrl>/autopilot/settings/target-mach</mach-ctrl>
-   </params>
-   <x>827</x>
-   <y>69</y>
-   <w>124</w>
-   <h>40</h>
-  </instrument>
 
-<!-- AP Instruments -->
 <!-- Text AP Block -->
   <instrument include="Instruments/text-autopilot.xml">
    <name>AP display</name>
@@ -559,10 +291,24 @@ Hacked by Lee Elliott for the AN-225 mock panel
     <to-select>autopilot/locks/altitude</to-select>
     <gs-select>autopilot/locks/altitude</gs-select>
    </params>
-   <x>865</x>
-   <y>160</y>
+   <x>864</x>
+   <y>155</y>
    <w>200</w>
    <h>20</h>
+  </instrument>
+
+  <instrument include="Instruments/digital-ap-speed-kt.xml">
+   <name>AP Speed-Kt Instruiment</name>
+   <params>
+    <kias-disp>/autopilot/settings/target-speed-kt</kias-disp>
+    <kias-ctrl>/autopilot/settings/target-speed-kt</kias-ctrl>
+    <mach-disp>/autopilot/settings/target-mach</mach-disp>
+    <mach-ctrl>/autopilot/settings/target-mach</mach-ctrl>
+   </params>
+   <x>827</x>
+   <y>122</y>
+   <w>124</w>
+   <h>40</h>
   </instrument>
 
  </instruments>

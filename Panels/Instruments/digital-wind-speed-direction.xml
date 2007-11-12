@@ -6,15 +6,8 @@
 <PropertyList>
 
   <name>Digital Wind Speed/Direction Instrument</name>
-  <w-base>124</w-base>
+  <w-base>110</w-base>
   <h-base>34</h-base>
-
- <params>
-  <kias-disp>/autopilot/settings/target-speed-kt</kias-disp>
-  <kias-ctrl>/autopilot/settings/target-speed-kt</kias-ctrl>
-  <mach-disp>/autopilot/settings/target-mach</mach-disp>
-  <mach-ctrl>/autopilot/settings/target-mach</mach-ctrl>
- </params>
 
   <layers>
 
@@ -23,7 +16,7 @@
       <texture>
         <path>Aircraft/AN-225/Panels/Instruments/Textures/trans-dgrey-bg.rgb</path>
       </texture>
-      <w>124</w>
+      <w>110</w>
       <h>34</h>
       <transformations>
         <transformation>
@@ -40,22 +33,22 @@
     <layer>
       <name>Wind Speed Title</name>
       <type>text</type>
-      <point-size>14</point-size>
+      <point-size>12</point-size>
       <color>
-        <red>0</red>
-        <green>0.9</green>
-        <blue>0</blue>
+        <red>0.8</red>
+        <green>0.8</green>
+        <blue>0.8</blue>
       </color>
       <chunks>
         <chunk>
           <type>literal</type>
-          <text>Wnd Spd:</text>
+          <text>Wind Kt:</text>
         </chunk>
       </chunks>
       <transformations>
         <transformation>
           <type>x-shift</type>
-          <offset>-59</offset>
+          <offset>-50</offset>
         </transformation>
         <transformation>
           <type>y-shift</type>
@@ -67,22 +60,22 @@
     <layer>
       <name>Wind Direction Title</name>
       <type>text</type>
-      <point-size>14</point-size>
+      <point-size>12</point-size>
       <color>
-        <red>0</red>
-        <green>0.9</green>
-        <blue>0</blue>
+        <red>0.8</red>
+        <green>0.8</green>
+        <blue>0.8</blue>
       </color>
       <chunks>
         <chunk>
           <type>literal</type>
-          <text>Wnd Dir:</text>
+          <text>Wind Dir:</text>
         </chunk>
       </chunks>
       <transformations>
         <transformation>
           <type>x-shift</type>
-          <offset>-59</offset>
+          <offset>-50</offset>
         </transformation>
         <transformation>
           <type>y-shift</type>
@@ -96,11 +89,11 @@
       <name>Wind Speed Display</name>
       <type>text</type>
       <font>led</font>
-      <point-size>6</point-size>
+      <point-size>5</point-size>
       <color>
-        <red>0</red>
-        <green>1</green>
-        <blue>0</blue>
+        <red>1.0</red>
+        <green>1.0</green>
+        <blue>1.0</blue>
       </color>
       <chunks>
         <chunk>
@@ -112,7 +105,7 @@
       <transformations>
         <transformation>
           <type>x-shift</type>
-          <offset>20</offset>
+          <offset>14</offset>
         </transformation>
         <transformation>
           <type>y-shift</type>
@@ -126,11 +119,11 @@
       <name>Wind Direction Display</name>
       <type>text</type>
       <font>led</font>
-      <point-size>6</point-size>
+      <point-size>5</point-size>
       <color>
-        <red>0</red>
-        <green>1</green>
-        <blue>0</blue>
+        <red>1.0</red>
+        <green>1.0</green>
+        <blue>1.0</blue>
       </color>
       <chunks>
         <chunk>
@@ -142,11 +135,11 @@
       <transformations>
         <transformation>
           <type>x-shift</type>
-          <offset>20</offset>
+          <offset>14</offset>
         </transformation>
         <transformation>
           <type>y-shift</type>
-          <offset>-14</offset>
+          <offset>-13</offset>
         </transformation>
       </transformations>
     </layer>
