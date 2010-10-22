@@ -116,8 +116,7 @@ AN-225 set file.
     </panel_2>
 
     <hud>
-      <path>Aircraft/AN-225/Huds/AN-225-hud1.xml</path>
-      <visibility>true</visibility>
+      <visibility n="1">true</visibility>
     </hud>
 
     <model>
