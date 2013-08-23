@@ -71,6 +71,7 @@
     <chunk>
      <type>number-value</type>
      <property>/orientation/side-slip-deg</property>
+     <scale>-1.0</scale> <!-- change in side-slip sign as reported by yasim, see bug #901 -->
      <format>%02.3f</format>
     </chunk>
    </chunks>
