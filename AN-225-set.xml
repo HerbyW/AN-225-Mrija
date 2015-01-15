@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+AN-225 set file.
+
+2004-04-28 Lee Elliott
+************************************************************************
+-->
+
+<PropertyList>
+  <sim>
+  
+    <startup>
+      <splash-texture>Aircraft/AN-225/AN-225-splash.rgb</splash-texture>
+    </startup>
+
+    <flight-model>yasim</flight-model>
+    <status>beta</status>
+    <author>Lee Elliott</author>
+    <aero>AN-225-yasim</aero>
+    <fuel-fraction>0.6</fuel-fraction>
+    <description>Antonov AN-225 heavy/outsize cargo aircraft (YASim fdm)</description>
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
+
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        
+        <float n="0" alias="/controls/flight/slats"/>
+        <float n="1" alias="/controls/flight/spoilers"/>
+        <float n="2" alias="/gear/gear/rollspeed-ms" />
+     </generic>
+    </multiplay>
+    
+    
+    <weight n="0">
+        	    <name>Crew</name>
+        	    <weight-lb type="double">600</weight-lb>
+        	    <max-lb type="double">1800</max-lb>
+        	    <min-lb type="double">600</min-lb>
+    </weight>
+    
+    <weight n="1">
+		    <name>Cargo</name>
+		    <weight-lb type="double">316000.0</weight-lb>
+		    <max-lb type="double">551155.0</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+		</weight>
+    
+    
+    
+    
+    
+    
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">-0.40</x-offset-m>
+        <y-offset-m archive="y">4.64</y-offset-m>
+        <z-offset-m archive="y">-21.6</z-offset-m>
+        <pitch-offset-deg>0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">80</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <view n="1">
+      <config>
+        <target-y-offset-m archive="y" type="double">3.0</target-y-offset-m>
+      </config>
+    </view>
+
+    <view n="2">
+      <config>
+        <x-offset-m archive="y" type="double">0.0</x-offset-m>
+        <y-offset-m archive="y" type="double">14.0</y-offset-m>
+      </config>
+    </view>
+
+    <view n="3">
+      <config>
+        <x-offset-m archive="y" type="double">14.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.0</y-offset-m>
+      </config>
+    </view>
+
+    <view n="4">
+      <config>
+        <x-offset-m archive="y" type="double">14.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.0</y-offset-m>
+      </config>
+    </view>
+
+    <view n="5">
+      <config>
+        <x-offset-m archive="y" type="double">14.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.0</y-offset-m>
+      </config>
+    </view>
+
+    <view n="6">
+      <config>
+        <x-offset-m archive="y" type="double">14.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.0</y-offset-m>
+      </config>
+    </view>
+
+    <view n="100">
+      <name>Drop View</name>
+      <type>lookat</type>
+      <config>
+        <eye-lat-deg-path>/sim/view[100]/latitude-deg</eye-lat-deg-path>
+        <eye-lon-deg-path>/sim/view[100]/longitude-deg</eye-lon-deg-path>
+        <eye-alt-ft-path>/sim/view[100]/altitude-ft</eye-alt-ft-path>
+        <eye-roll-deg-path>/sim/view[100]/roll-deg</eye-roll-deg-path>
+        <eye-pitch-deg-path>/sim/view[100]/pitch-deg</eye-pitch-deg-path>
+        <eye-heading-deg-path>/sim/view[100]/heading-deg</eye-heading-deg-path>
+
+        <at-model type="bool">true</at-model>
+        <at-model-idx type="int">0</at-model-idx>
+
+        <ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">8.0</default-field-of-view-deg>
+
+        <x-offset-m type="double">0</x-offset-m>
+        <y-offset-m type="double">0</y-offset-m>
+        <z-offset-m type="double">0</z-offset-m>
+        <target-z-offset-m archive="y" type="double">20.0</target-z-offset-m>
+      </config>
+    </view>
+
+    <current-view>
+      <field-of-view>55.0</field-of-view>
+    </current-view>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/AN-225/Sounds/AN-225-sound.xml</path>
+    </sound>
+
+    
+
+    <hud>
+      <visibility n="1">true</visibility>
+    </hud>
+
+    <model>
+      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
+    </model>
+
+    <systems>
+      <autopilot>
+        <path>Aircraft/AN-225/Systems/AN-225-autopilot.xml</path>
+      </autopilot>
+      <electrical>
+        <path>Aircraft/AN-225/Systems/AN-225-electrical.xml</path>
+      </electrical>
+    </systems>
+
+<!--sub models -->
+    <submodels>
+      <serviceable type="bool">1</serviceable>
+      <path>Aircraft/AN-225/AN-225-submodels.xml</path>
+    </submodels>
+
+<!-- Flap settings -->
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.08</setting>
+      <setting>0.16</setting>
+      <setting>0.32</setting>
+      <setting>0.48</setting>
+      <setting>0.64</setting>
+      <setting>0.82</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <help>
+      <title>Antonov AN-225</title>
+      <key>
+        <name>d/f</name>
+        <desc>retract/extend slats</desc>
+      </key>
+      <key>
+        <name>j/k</name>
+        <desc>decrease/increase spoilers</desc>
+      </key>
+      <key>
+        <name>K</name>
+        <desc>toggle trajectory markers</desc>
+      </key>
+      <key>
+        <name>U</name>
+        <desc>update drop view position</desc>
+      </key>
+      <key>
+        <name>F2</name>
+        <desc>Reverse Engines</desc>
+      </key>
+    </help>
+
+    
+    
+    
+    
+    
+  </sim>
+	
+  <ai>
+    <submodels>
+      <trajectory-markers type="bool">0</trajectory-markers>
+    </submodels>
+  </ai>
+  
+
+
+<!-- Keboard changes -->
+  <input>
+    <keyboard>
+      <key n="75">
+        <name>K</name>
+        <desc>Toggle trajectory markers</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>AN225.toggle_traj_mkr()</script>
+        </binding>
+      </key>
+      
+      <key n="100">
+        <name>d</name>
+        <desc>Retract Slats.</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/slats</property>
+          <step type="double">-0.25</step>
+        </binding>
+      </key>
+
+      <key n="102">
+        <name>f</name>
+        <desc>Extend Slats.</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/slats</property>
+          <step type="double">0.25</step>
+        </binding>
+      </key>
+      
+<!-- Update Drop View position -->
+       <key n="85">
+        <name>U</name>
+        <desc>Update Drop View position</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>AN225.update_drop_view_pos()</script>
+        </binding>
+      </key>
+ 
+ <!-- Reverser Start  -->
+ 
+  <key n="258">
+   <name>F2</name>
+   <desc>Toggle Reversers</desc>
+  
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[0]/reverser</property>
+   </binding>
+   
+  
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[1]/reverser</property>
+   </binding>
+   
+  
+  <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[2]/reverser</property>
+  </binding>
+  
+  
+  <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[3]/reverser</property>
+  </binding>
+  
+  
+  <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[4]/reverser</property>
+  </binding>
+  
+  
+  <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[5]/reverser</property>
+   </binding>
+   
+  </key>
+    
+  <!-- Reverser End -->
+  
+  </keyboard>
+  </input>
+
+  
+  <autopilot>
+    <locks>
+      <ce-altitude-hold type="string">initialised</ce-altitude-hold>
+      <ce-aoa-hold type="string">initialised</ce-aoa-hold>
+      <ce-mach-climb-hold type="string">initialised</ce-mach-climb-hold>
+      <ce-pitch-hold type="string">initialised</ce-pitch-hold>
+      <ce-agl-hold type="string">initialised</ce-agl-hold>
+      <ce-vfps-hold type="string">initialised</ce-vfps-hold>
+      <aoa type="string">initialised</aoa>
+      <auto-flap-control type="string">manual</auto-flap-control>
+      <auto-landing type="string">enabled</auto-landing>
+      <auto-take-off type="string">enabled</auto-take-off>
+      <common-aileron-control type="string">off</common-aileron-control>
+      <common-elevator-control type="string">off</common-elevator-control>
+      <rudder-control type="string">initialised</rudder-control>
+    </locks>
+
+    <settings>
+      <approach-aoa-deg type="float">2.0</approach-aoa-deg>
+      <auto-flap-target-aoa-deg type="float">0.0</auto-flap-target-aoa-deg>
+      <take-off-initial-pitch-deg type="float">0.0</take-off-initial-pitch-deg>
+      <take-off-final-pitch-deg type="float">5.0</take-off-final-pitch-deg>
+      <climb-out-pitch-trans-time-sec type="float">8.0</climb-out-pitch-trans-time-sec>
+      <ground-roll-heading-deg type="float">-999.9</ground-roll-heading-deg>
+      <take-off-pitch-deg type="float">0.0</take-off-pitch-deg>
+      <target-agl-ft type="float">1000</target-agl-ft>
+      <target-altitude-ft type="float">3000</target-altitude-ft>
+      <target-aoa-deg type="float">1.5</target-aoa-deg>
+      <target-climb-rate-fps type="float">30</target-climb-rate-fps>
+      <target-pitch-deg type="float">0</target-pitch-deg>
+      <target-speed-kt type="float">320.0</target-speed-kt>
+      <target-mach type="float">0.48</target-mach>
+    </settings>
+  </autopilot>
+ 
+<!-- Start with the Parking Brake on -->
+  <controls>
+    <gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
+  </controls>
+  
+<!-- Engine indexes -->
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">2</engine-num>
+    </engine>
+    <engine n="3">
+      <engine-num type="int">3</engine-num>
+    </engine>
+    <engine n="4">
+      <engine-num type="int">4</engine-num>
+    </engine>
+    <engine n="5">
+      <engine-num type="int">5</engine-num>
+    </engine>
+  </engines>
+
+<!-- Fuel Tank indexes -->
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+      </tank>
+      <tank n="3">
+        <tank-num type="int">3</tank-num>
+      </tank>
+      <tank n="4">
+        <tank-num type="int">4</tank-num>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <instrumentation>
+    <radar>
+      <range type="int" archive="y">40</range>
+      <minimized type="bool" archive="y">true</minimized>
+    </radar>
+  </instrumentation>
+
+  <nasal>
+    <AN225>
+      <file>Aircraft/AN-225/Nasal/AN-225.nas</file>
+      <script>start_up();</script>
+    </AN225>
+  </nasal>
+
+</PropertyList>
