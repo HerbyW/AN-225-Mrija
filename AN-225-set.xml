@@ -155,7 +155,7 @@ AN-225 set file.
       <visibility n="1">true</visibility>
     </hud>
 
-    
+  <!-- forget it if it not works!!!  
     <systems>
       <autopilot>
         <path>Aircraft/AN-225/Systems/AN-225-autopilot.xml</path>
@@ -163,7 +163,7 @@ AN-225 set file.
       <electrical>
         <path>Aircraft/AN-225/Systems/AN-225-electrical.xml</path>
       </electrical>
-    </systems>
+      </systems>                    -->
 
 <!--sub models -->
     <submodels>
@@ -203,11 +203,21 @@ AN-225 set file.
       </key>
       <key>
         <name>F2</name>
-        <desc>Reverse Engines</desc>
+        <desc>Reverse Engines on/off</desc>
       </key>
+      <text>
+	The fdm needs some adjustments,
+	instruments are to be followed,
+	have fun!	
+	
+	Maximal Speed:                459 kn = 850 km/h
+	Empty weight:              385808 lb = 175.000 kg
+	Maximal payload:           551155 lb = 250.000 kg
+	Max take off weight is: 1,322,773 lb = 600.000 kg
+      </text>
     </help>
 
-    
+
     
     
     
@@ -220,8 +230,6 @@ AN-225 set file.
     </submodels>
   </ai>
   
-
-
 <!-- Keboard changes -->
   <input>
     <keyboard>
@@ -313,6 +321,8 @@ AN-225 set file.
   </input>
 
   
+  <!-- for the moment I do not need this, maybe later
+  
   <autopilot>
     <locks>
       <ce-altitude-hold type="string">initialised</ce-altitude-hold>
@@ -346,7 +356,7 @@ AN-225 set file.
       <target-speed-kt type="float">320.0</target-speed-kt>
       <target-mach type="float">0.48</target-mach>
     </settings>
-  </autopilot>
+    </autopilot>                                                             -->
  
 <!-- Start with the Parking Brake on -->
   <controls>
@@ -405,11 +415,13 @@ AN-225 set file.
     </radar>
   </instrumentation>
 
+  <!--we need it nor now, maybe later
+  
   <nasal>
     <AN225>
       <file>Aircraft/AN-225/Nasal/AN-225.nas</file>
       <script>start_up();</script>
     </AN225>
-  </nasal>
+    </nasal>                                      -->
 
 </PropertyList>

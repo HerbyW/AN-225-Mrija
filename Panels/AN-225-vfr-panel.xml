@@ -50,28 +50,6 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
  <instruments>
    
-   
-     <!-- new -->
-  
-  
-  
-  
-  
-<instrument include="Instruments/ap-H/ap-H.xml">
-  <name>Autopilot Helper</name>  
-  <x>100</x>
-   <y>330</y>
-   <w>100</w>
-   <h>50</h>
-  </instrument>
-  
-  <!-- new- end -->
-  
-   
-   
-   
-   
-
   <instrument include="Instruments/dme.xml">
    <name>DME Display</name>
    <x>100</x>

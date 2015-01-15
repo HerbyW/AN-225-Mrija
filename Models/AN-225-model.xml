@@ -9,6 +9,19 @@ AN225 model/animation config.
 -->
 
 <PropertyList>
+  
+  
+  <model>
+    <path>Aircraft/AN-225/Panels/panel225.xml</path>
+      <offsets>
+        <x-m> -23.05 </x-m>
+        <y-m>   0.00 </y-m>
+        <z-m>  3.99 </z-m>
+      </offsets>
+   </model>
+  
+  
+  
 
   <path>AN225-003-002d14.ac</path>
   <offsets>
