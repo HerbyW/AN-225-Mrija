@@ -187,7 +187,7 @@ them out of my 3d modeller.
 
 <!-- Landing Gear -->
 <!-- Front Left -->
- <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="1.0" spring="1.1">
+ <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="0.35" spring="0.7">
   <control-input axis="/controls/flight/rudder" control="STEER"
     src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.7664"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -204,7 +204,7 @@ them out of my 3d modeller.
  </gear>
 
 <!-- Front Right -->
- <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="1.0" spring="1.1">
+ <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="0.35" spring="0.7">
   <control-input axis="/controls/flight/rudder" control="STEER"
     src0="-1.0" dst0="-0.7664" src1="1.0" dst1="0.8052"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -426,6 +426,6 @@ them out of my 3d modeller.
  <ballast x="-2.0" y="0" z="4" mass="120000"/>
 
   <weight x="-15.0" y="0" z="5.97" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="-2" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="0" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
 
 </airplane>

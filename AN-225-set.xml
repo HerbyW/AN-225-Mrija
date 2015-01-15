@@ -23,6 +23,10 @@ AN-225 set file.
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
 
+    <model>
+      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
+    </model>
+
     
     <multiplay>
       <chat_display>1</chat_display>
@@ -151,10 +155,7 @@ AN-225 set file.
       <visibility n="1">true</visibility>
     </hud>
 
-    <model>
-      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
-    </model>
-
+    
     <systems>
       <autopilot>
         <path>Aircraft/AN-225/Systems/AN-225-autopilot.xml</path>
