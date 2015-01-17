@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
 ************************************************************************
 AN-225 set file.
@@ -27,6 +27,11 @@ AN-225 set file.
       <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
     </model>
 
+    <systems>
+      <autopilot>
+        <path>Aircraft/AN-225/Nasal/An-225-autopilot-H.xml</path>
+      </autopilot>      
+    </systems>    
     
     <multiplay>
       <chat_display>1</chat_display>
@@ -155,6 +160,9 @@ AN-225 set file.
       <visibility n="1">true</visibility>
     </hud>
 
+    
+    
+    
   <!-- forget it if it not works!!!  
     <systems>
       <autopilot>
@@ -415,7 +423,7 @@ AN-225 set file.
     </radar>
   </instrumentation>
 
-  <!--we need it nor now, maybe later
+  <!--we need it not now, maybe later
   
   <nasal>
     <AN225>

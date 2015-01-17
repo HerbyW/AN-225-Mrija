@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <!--  AN225 yasim config.
 
 Notes.
@@ -415,12 +417,12 @@ them out of my 3d modeller.
      fuselage tank.
 -->
 <!-- Wing Tanks -->
- <tank x="-6.5" y="9.00" z="4.00" capacity="132271"/>
- <tank x="-6.2" y="17.0" z="3.30" capacity="132271"/>
- <tank x="-6.5" y="-9.00" z="4.00" capacity="132271"/>
- <tank x="-6.2" y="-17.0" z="3.30" capacity="132271"/>
+ <tank x="-6.5" y="6.00" z="4.00" capacity="178406"/>
+ <tank x="-6.2" y="14.0" z="3.30" capacity="66135"/>
+ <tank x="-6.5" y="-6.00" z="4.00" capacity="178406"/>
+ <tank x="-6.2" y="-14.0" z="3.30" capacity="66135"/>
 <!-- Fuselage Tank -->
- <tank x="-10.0" y="0.00" z="4.50" capacity="132271"/>
+ <tank x="-10.0" y="0.00" z="4.50" capacity="172271"/>
 
 <!-- Ballast -->
  <ballast x="-2.0" y="0" z="4" mass="120000"/>

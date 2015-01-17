@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+  <PropertyList>
+    
+    <path>quadrant.ac</path>
+   
+
+   <!--Lights-->
+  
+  <animation>      
+    <object-name>LeftMixture</object-name>
+    <object-name>RightMixture</object-name>
+    <object-name>LeftPropellerControl</object-name>
+    <object-name>RightPropellerControl</object-name>
+    <object-name>LeftThrottle</object-name>
+    <object-name>RightThrottle</object-name>
+    <object-name>box</object-name> 
+  </animation>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>LeftMixture</object-name>
+    <object-name>RightMixture</object-name>
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.7 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>LeftPropellerControl</object-name>
+    <object-name>RightPropellerControl</object-name>    
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.7 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftThrottle</object-name>
+    <object-name>RightThrottle</object-name>    
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.01 </red>
+      <green> 0.01 </green>
+      <blue>  0.01 </blue>
+    </emission>
+  </animation>  
+
+  <animation>
+    <type>material</type>
+    <object-name>box</object-name>    
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>  
+
+  
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftThrottle</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <offset-deg>60</offset-deg>
+  <factor>-60</factor>
+  <axis>
+   <x>-0.04</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightThrottle</object-name>
+  <property>controls/engines/engine[1]/throttle</property>
+  <offset-deg>60</offset-deg>
+  <factor>-60</factor>
+  <axis>
+   <x>-0.04</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <!--Slats--> 
+
+ <animation>
+    <type>rotate</type>
+    <object-name>LeftPropellerControl</object-name>
+    <property>controls/flight/slats</property>
+    <offset-deg>-60</offset-deg>
+    <factor> 60 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
+ 
+ <animation>
+    <type>rotate</type>
+    <object-name>RightPropellerControl</object-name>
+    <property>controls/flight/slats</property>
+    <offset-deg>-60</offset-deg>
+    <factor> 60 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
+
+  <!--Spoilers-->
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftMixture</object-name>
+  <property>controls/flight/spoilers</property>
+  <offset-deg>60</offset-deg>
+  <factor>-60</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>RightMixture</object-name>
+  <property>controls/flight/spoilers</property>
+  <offset-deg>60</offset-deg>
+  <factor>-60</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>

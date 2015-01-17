@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
 ************************************************************************
@@ -21,8 +21,6 @@ AN225 model/animation config.
    </model>
   
   
-  
-
   <path>AN225-003-002d14.ac</path>
   <offsets>
     <z-m>0.0</z-m>
