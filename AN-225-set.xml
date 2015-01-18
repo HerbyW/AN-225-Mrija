@@ -21,6 +21,20 @@ AN-225 set file.
     </doors>
   </instrumentation>
   
+  <controls>
+    <shuttle>
+      <door>
+  <position type="float">0</position>
+      </door>
+    </shuttle>
+  </controls>
+  
+  
+  
+  
+  controls/shuttle/door/position
+  
+  
   <sim>
   
     <startup>

@@ -2326,7 +2326,7 @@ AN225 model/animation config.
   <object-name>L-MG-4-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>3.5</factor>
   <center>
    <x-m>9.05</x-m>
    <y-m>-3.2</y-m>
@@ -2528,7 +2528,7 @@ AN225 model/animation config.
   <object-name>L-MG-5-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>7</factor>
   <center>
    <x-m>10.72</x-m>
    <y-m>-3.2</y-m>
@@ -2730,7 +2730,7 @@ AN225 model/animation config.
   <object-name>L-MG-6-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>13</factor>
   <center>
    <x-m>12.42</x-m>
    <y-m>-3.2</y-m>
@@ -2932,7 +2932,7 @@ AN225 model/animation config.
   <object-name>L-MG-7-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>26</factor>
   <center>
    <x-m>14.10</x-m>
    <y-m>-3.2</y-m>
@@ -3674,7 +3674,7 @@ AN225 model/animation config.
   <object-name>R-MG-4-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>3.5</factor>
   <center>
    <x-m>9.05</x-m>
    <y-m>3.2</y-m>
@@ -3876,7 +3876,7 @@ AN225 model/animation config.
   <object-name>R-MG-5-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>7</factor>
   <center>
    <x-m>10.72</x-m>
    <y-m>3.2</y-m>
@@ -4078,7 +4078,7 @@ AN225 model/animation config.
   <object-name>R-MG-6-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>13</factor>
   <center>
    <x-m>12.72</x-m>
    <y-m>3.2</y-m>
@@ -4280,7 +4280,7 @@ AN225 model/animation config.
   <object-name>R-MG-7-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>-57.30</factor>
+  <factor>26</factor>
   <center>
    <x-m>14.10</x-m>
    <y-m>3.2</y-m>
