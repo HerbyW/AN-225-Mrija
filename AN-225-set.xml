@@ -16,8 +16,8 @@ AN-225 set file.
   <instrumentation>
     <doors>
       <door1>
-  <position-norm type="float">0</steering-norm>
-      <door1>
+  <position-norm type="float">0</position-norm>
+      </door1>
     </doors>
   </instrumentation>
   
