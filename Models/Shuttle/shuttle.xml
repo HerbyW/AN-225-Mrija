@@ -1,0 +1,147 @@
+<PropertyList>
+	<path>shuttle.ac</path>
+		
+<offsets>          <heading-deg>0</heading-deg> </offsets>  
+
+<model>
+<path>Aircraft/AN-225/Models/Shuttle/external-fuel-tank.xml</path>
+		<offsets>
+			<x-m>-10.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-10.0</z-m>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/external-fuel-tank</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+<model>
+<path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>-6.35</y-m>
+			<z-m>-10.6</z-m>
+			<roll-deg>90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/solid-rocket-boosters</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+<model>
+<path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>6.35</y-m>
+			<z-m>-10.6</z-m>
+			<roll-deg>-90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/solid-rocket-boosters</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+
+<animation>
+    <type>pick</type>
+    <object-name>spaceshutt_spstob</object-name>
+    <object-name>spaceshutt_spstob.001</object-name>
+    
+  <visible>true</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/doors/door1/position-norm</property>
+	<min>0</min>
+        <max>1</max>
+      </binding>      
+    </action>
+  </animation>
+
+ 
+  
+
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <property>instrumentation/doors/door1/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-160</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2671</x-m>
+   <y-m> -2.4272</y-m>
+   <z-m>  -1.7034</z-m>
+   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob.001</object-name>
+  <property>instrumentation/doors/door1/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>160</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2672</x-m>
+   <y-m>  2.4272</y-m>
+   <z-m>  -1.7034</z-m>
+   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+
+</PropertyList>
+
+
+
+
+<!--
+
+<center>
+   <x-m> -2.2671</x-m>
+   <y-m> -2.5272</y-m>
+   <z-m>  0.8034</z-m>
+   
+   <x-m> -2.2672</x-m>
+   <y-m>  2.5272</y-m>
+   <z-m>  0.8034</z-m>
+   
+   
+   -->

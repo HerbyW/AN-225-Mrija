@@ -27,6 +27,19 @@ AN225 model/animation config.
     <pitch-deg>0</pitch-deg>
   </offsets>
 
+  
+  <model>
+  <name>Shuttle</name>
+  <path>Aircraft/AN-225/Models/Shuttle/shuttle.xml</path>
+  <offsets>
+   <x-m>5.0</x-m>
+   <y-m>0</y-m>
+   <z-m>11.45</z-m>
+  </offsets>
+ </model>
+  
+  
+  
 <!-- Disable shadows from the texture objects -->
   <animation>
     <type>noshadow</type>

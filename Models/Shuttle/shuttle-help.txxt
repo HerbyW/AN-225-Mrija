@@ -1,0 +1,64 @@
+ 
+menue:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Antonov An 12</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+      </item>
+    </menu>
+    <menu n="10">
+    <item n="2">
+     <label>Pushback</label>
+     <name>pushback</name>
+     <binding>
+      <command>dialog-show</command>
+      <dialog-name>pushback</dialog-name>
+     </binding>
+    </item>
+   </menu>
+  </default>
+
+</PropertyList>
+
+
+  
+    <author> Aeromatic v 0.9 </author>
+  <filecreationdate> 2009-04-09 </filecreationdate>
+  <version>$Revison: $</version>
+  <description> Models a shuttle. </description>
+ </fileheader>
+
+<!--
+  File:     shuttle.xml
+  Inputs:
+    name:          shuttle
+    type:          three-engine transonic transport
+    max weight:    240000 lb
+    wing span:     78.06 ft
+    length:        122.17 ft
+    wing area:     2691.25 sq-ft
+    gear type:     tricycle
+    retractable?:  yes
+    # engines:     3
+    engine type:   rocket
+    engine layout: aft fuselage
+    yaw damper?    yes
+  Outputs:
+    wing loading:  89.18 lb/sq-ft
+    CL-alpha:      4.4 per radian
+    CL-0:          0.2
+    CL-max:        1.2
+    CD-0:          0.019
+    K:             0.042
+
+--><flight-model>jsb</flight-model>
+  <aero>shuttle</aero>
+  <author>Gijs de Rooy, NASA (3D)</author>

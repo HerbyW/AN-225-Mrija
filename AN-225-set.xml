@@ -41,11 +41,14 @@ AN-225 set file.
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="int" n="5">  0 </int>
+	
         
         <float n="0" alias="/controls/flight/slats"/>
         <float n="1" alias="/controls/flight/spoilers"/>
         <float n="2" alias="/gear/gear/rollspeed-ms" />
+        <float n="3" alias="/instrumentation/doors/door1/position-norm" />
+        
      </generic>
     </multiplay>
     
@@ -235,6 +238,7 @@ AN-225 set file.
   <ai>
     <submodels>
       <trajectory-markers type="bool">0</trajectory-markers>
+      <shuttle type="bool">1</shuttle>
     </submodels>
   </ai>
   
