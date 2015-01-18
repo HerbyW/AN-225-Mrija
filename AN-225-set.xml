@@ -4,19 +4,28 @@
 AN-225 set file.
 
 2004-04-28 Lee Elliott
+
+Modifications on all animations,
+adding of space shuttle,
+autopilot settings,
+instrumentation                by HerbyW 01/2015
+
+https://github.com/HerbyW/Antonov-Aircrafts
 ************************************************************************
 -->
 
 <PropertyList>
+  
   <gear>
     <gear>
-  <steering-norm type="float">0</steering-norm>
+      <steering-norm type="float">0</steering-norm>
     </gear>
   </gear>
+  
   <instrumentation>
     <doors>
       <door1>
-  <position-norm type="float">0</position-norm>
+       <position-norm type="float">0</position-norm>
       </door1>
     </doors>
   </instrumentation>
@@ -24,16 +33,17 @@ AN-225 set file.
   <controls>
     <shuttle>
       <door>
-  <position type="float">0</position>
+       <position type="float">0</position>
       </door>
     </shuttle>
   </controls>
   
-  
-  
-  
-  controls/shuttle/door/position
-  
+  <!-- Start with the Parking Brake on -->
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
   
   <sim>
   
@@ -43,7 +53,7 @@ AN-225 set file.
 
     <flight-model>yasim</flight-model>
     <status>beta</status>
-    <author>Lee Elliott</author>
+    <author>Lee Elliott, HerbyW</author>
     <aero>AN-225-yasim</aero>
     <fuel-fraction>0.6</fuel-fraction>
     <description>Antonov AN-225 heavy/outsize cargo aircraft (YASim fdm)</description>
@@ -94,6 +104,13 @@ AN-225 set file.
 		    <name>Cargo</name>
 		    <weight-lb type="double">316000.0</weight-lb>
 		    <max-lb type="double">551155.0</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+		</weight>
+		
+     <weight n="2">
+		    <name>Space Shuttle</name>
+		    <weight-lb type="double">0.0</weight-lb>
+		    <max-lb type="double">240000.0</max-lb>
 		    <min-lb type="double">0.0</min-lb>
 		</weight>
     
@@ -255,6 +272,12 @@ AN-225 set file.
 	Empty weight:              385808 lb = 175.000 kg
 	Maximal payload:           551155 lb = 250.000 kg
 	Max take off weight is: 1,322,773 lb = 600.000 kg
+	
+	Shuttle doors should be closed befor take off, payload for Shuttle is set to 0 and may be adjusted as you like.
+	
+	ILS landing is not working for this aircraft, 5 mi out of runway AP should be shut down and landing is made visuall.
+	
+	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
       </text>
     </help>
 
@@ -400,12 +423,7 @@ AN-225 set file.
     </settings>
     </autopilot>                                                             -->
  
-<!-- Start with the Parking Brake on -->
-  <controls>
-    <gear>
-      <brake-parking type="double">1.0</brake-parking>
-    </gear>
-  </controls>
+
   
 <!-- Engine indexes -->
   <engines>

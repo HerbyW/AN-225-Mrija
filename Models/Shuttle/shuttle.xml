@@ -1,55 +1,46 @@
 <PropertyList>
+  
+<!--
+
+author:             Aeromatic v 0.9
+filecreationdate:        2009-04-09
+version: 
+description:       Models a shuttle
+
+  Inputs:
+    name:          shuttle
+    type:          three-engine transonic transport
+    max weight:    240000 lb
+    wing span:     78.06 ft
+    length:        122.17 ft
+    wing area:     2691.25 sq-ft
+    gear type:     tricycle
+    retractable?:  yes
+    # engines:     3
+    engine type:   rocket
+    engine layout: aft fuselage
+    yaw damper?    yes
+  Outputs:
+    wing loading:  89.18 lb/sq-ft
+    CL-alpha:      4.4 per radian
+    CL-0:          0.2
+    CL-max:        1.2
+    CD-0:          0.019
+    K:             0.042
+
+flight-model:  jsb
+author:        Gijs de Rooy, NASA (3D)
+
+download:      https://gitorious.org/space-shuttle
+wiki:          http://wiki.flightgear.org/Space_Shuttle
+
+Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/2015
+
+-->
+  
 	<path>shuttle.ac</path>
 		
 <offsets>          <heading-deg>0</heading-deg> </offsets>  
-
-<model>
-<path>Aircraft/AN-225/Models/Shuttle/external-fuel-tank.xml</path>
-		<offsets>
-			<x-m>-10.0</x-m>
-			<y-m>0.0</y-m>
-			<z-m>-10.0</z-m>
-		</offsets>
-		<condition>
-		 <greater-than>
-			<property>controls/shuttle/external-fuel-tank</property>
-			<value>0</value>
-		 </greater-than>
-		</condition>
-</model>
-
-<model>
-<path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
-		<offsets>
-			<x-m>-5.2</x-m>
-			<y-m>-6.35</y-m>
-			<z-m>-10.6</z-m>
-			<roll-deg>90.0</roll-deg>
-		</offsets>
-		<condition>
-		 <greater-than>
-			<property>controls/shuttle/solid-rocket-boosters</property>
-			<value>0</value>
-		 </greater-than>
-		</condition>
-</model>
-
-<model>
-<path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
-		<offsets>
-			<x-m>-5.2</x-m>
-			<y-m>6.35</y-m>
-			<z-m>-10.6</z-m>
-			<roll-deg>-90.0</roll-deg>
-		</offsets>
-		<condition>
-		 <greater-than>
-			<property>controls/shuttle/solid-rocket-boosters</property>
-			<value>0</value>
-		 </greater-than>
-		</condition>
-</model>
-
 
 <animation>
 <type>pick</type>
@@ -71,16 +62,13 @@
 <binding>
 <command>property-interpolate</command>
 <property>sim/multiplay/generic/float[3]</property>
-<property>/controls/shuttle/door/position</property><!-- the value to interpolate to, is 0 -->
-<rate>0.12</rate><!-- 8 seconds to 0 from 1 or -1 -->
+<property>/controls/shuttle/door/position</property> <!-- the value to interpolate to, is 1 -->
+<rate>0.12</rate><!-- 8 seconds to 0 from 1 or 1 to 0 -->
 </binding>
 </action>
 </animation>
 
  
-  
-
-
  <animation>
   <type>rotate</type>
   <object-name>spaceshutt_spstob</object-name>
@@ -137,20 +125,3 @@
  
 
 </PropertyList>
-
-
-
-
-<!--
-
-<center>
-   <x-m> -2.2671</x-m>
-   <y-m> -2.5272</y-m>
-   <z-m>  0.8034</z-m>
-   
-   <x-m> -2.2672</x-m>
-   <y-m>  2.5272</y-m>
-   <z-m>  0.8034</z-m>
-   
-   
-   -->
