@@ -61,7 +61,7 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
-        <property>instrumentation/doors/door1/position-norm</property>
+        <property>sim/multiplay/generic/float[3]</property>
 	<min>0</min>
         <max>1</max>
       </binding>      
@@ -75,7 +75,7 @@
  <animation>
   <type>rotate</type>
   <object-name>spaceshutt_spstob</object-name>
-  <property>instrumentation/doors/door1/position-norm</property>
+  <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
     <entry>
       <ind>0.2</ind>
@@ -102,7 +102,7 @@
  <animation>
   <type>rotate</type>
   <object-name>spaceshutt_spstob.001</object-name>
-  <property>instrumentation/doors/door1/position-norm</property>
+  <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
     <entry>
       <ind>0.2</ind>

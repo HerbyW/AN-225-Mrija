@@ -1427,7 +1427,7 @@ AN225 model/animation config.
   <object-name>L-NG-IS-Hub</object-name>
   <object-name>L-NG-OS-Hub</object-name>
   <object-name>L-NG-Strut</object-name>
-  <property>gear/gear[0]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -1605,7 +1605,7 @@ AN225 model/animation config.
   <object-name>R-NG-IS-Hub</object-name>
   <object-name>R-NG-OS-Hub</object-name>
   <object-name>R-NG-Strut</object-name>
-  <property>gear/gear[0]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -2324,7 +2324,7 @@ AN225 model/animation config.
   <object-name>L-MG-4-IS-Hub</object-name>
   <object-name>L-MG-4-OS-Hub</object-name>
   <object-name>L-MG-4-Strut</object-name>
-  <property>gear/gear[1]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -2526,7 +2526,7 @@ AN225 model/animation config.
   <object-name>L-MG-5-IS-Hub</object-name>
   <object-name>L-MG-5-OS-Hub</object-name>
   <object-name>L-MG-5-Strut</object-name>
-  <property>gear/gear[1]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -2728,7 +2728,7 @@ AN225 model/animation config.
   <object-name>L-MG-6-IS-Hub</object-name>
   <object-name>L-MG-6-OS-Hub</object-name>
   <object-name>L-MG-6-Strut</object-name>
-  <property>gear/gear[1]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -2930,7 +2930,7 @@ AN225 model/animation config.
   <object-name>L-MG-7-IS-Hub</object-name>
   <object-name>L-MG-7-OS-Hub</object-name>
   <object-name>L-MG-7-Strut</object-name>
-  <property>gear/gear[1]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -3672,7 +3672,7 @@ AN225 model/animation config.
   <object-name>R-MG-4-IS-Hub</object-name>
   <object-name>R-MG-4-OS-Hub</object-name>
   <object-name>R-MG-4-Strut</object-name>
-  <property>gear/gear[2]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -3874,7 +3874,7 @@ AN225 model/animation config.
   <object-name>R-MG-5-IS-Hub</object-name>
   <object-name>R-MG-5-OS-Hub</object-name>
   <object-name>R-MG-5-Strut</object-name>
-  <property>gear/gear[2]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -4076,7 +4076,7 @@ AN225 model/animation config.
   <object-name>R-MG-6-IS-Hub</object-name>
   <object-name>R-MG-6-OS-Hub</object-name>
   <object-name>R-MG-6-Strut</object-name>
-  <property>gear/gear[2]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>
@@ -4278,7 +4278,7 @@ AN225 model/animation config.
   <object-name>R-MG-7-IS-Hub</object-name>
   <object-name>R-MG-7-OS-Hub</object-name>
   <object-name>R-MG-7-Strut</object-name>
-  <property>gear/gear[2]/steering-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
   <factor>-57.30</factor>
   <center>

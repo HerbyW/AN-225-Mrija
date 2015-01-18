@@ -8,6 +8,19 @@ AN-225 set file.
 -->
 
 <PropertyList>
+  <gear>
+    <gear>
+  <steering-norm type="float">0</steering-norm>
+    </gear>
+  </gear>
+  <instrumentation>
+    <doors>
+      <door1>
+  <position-norm type="float">0</steering-norm>
+      <door1>
+    </doors>
+  </instrumentation>
+  
   <sim>
   
     <startup>
@@ -23,17 +36,7 @@ AN-225 set file.
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
 
-    <model>
-      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
-    </model>
-
-    <systems>
-      <autopilot>
-        <path>Aircraft/AN-225/Nasal/An-225-autopilot-H.xml</path>
-      </autopilot>      
-    </systems>    
-    
-    <multiplay>
+     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
         <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
@@ -48,9 +51,22 @@ AN-225 set file.
         <float n="1" alias="/controls/flight/spoilers"/>
         <float n="2" alias="/gear/gear/rollspeed-ms" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
+        <float n="4" alias="/gear/gear/steering-norm" />
         
      </generic>
     </multiplay>
+    
+    <model>
+      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
+    </model>
+
+    <systems>
+      <autopilot>
+        <path>Aircraft/AN-225/Nasal/An-225-autopilot-H.xml</path>
+      </autopilot>      
+    </systems>    
+    
+   
     
     
     <weight n="0">
