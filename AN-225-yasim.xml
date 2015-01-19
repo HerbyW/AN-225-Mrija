@@ -57,7 +57,7 @@ them out of my 3d modeller.
       length="44.7" chord="18.0" sweep="24.5" dihedral="-3.5" camber="0.0">
   <stall aoa="18.0" width="3" peak="1.3"/>
   <flap0 start="0.0" end="0.75" lift="1.3" drag="1.6"/>
-  <flap1 start="0.75" end="0.95" lift="1.15" drag="1.3"/>
+  <flap1 start="0.75" end="0.95" lift="1.3" drag="1.3"/>
   <slat start="0.15" end="0.95" lift="1.5" aoa="4" drag="1.3"/>
   <spoiler start="0.0" end="0.8" lift="0.8" drag="3"/>
 
@@ -85,16 +85,16 @@ them out of my 3d modeller.
  </wing>
 
 <!-- HStab -->
- <hstab x="-39.0" y="2.0" z="5.1" taper="0.7" effectiveness="1.0"
+ <hstab x="-39.0" y="0.0" z="4.4" taper="0.7" effectiveness="1.0"
        length="15.3" chord="10.0" sweep="32.0" dihedral="4.5" camber="0.0">
   <stall aoa="20.0" width="3" peak="1.5"/>
-  <flap0 start="0" end="1" lift="1.4" drag="1.4"/>
+  <flap0 start="0" end="1" lift="1.8" drag="1.1"/>
   <control-input axis="/controls/flight/elevator" control="FLAP0"/>
   <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   <control-output control="FLAP0" side="left" prop="/surface-positions/elevator-pos-norm"/>
   <control-output control="FLAP0" side="right" prop="/surface-positions/elevator-pos-norm"/>
-  <control-speed control="FLAP0" transition-time="3.0"/>
+  <control-speed control="FLAP0" transition-time="1.0"/>
  </hstab>
  
 <!-- VStabs -->

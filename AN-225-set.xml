@@ -110,7 +110,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
      <weight n="2">
 		    <name>Space Shuttle</name>
 		    <weight-lb type="double">0.0</weight-lb>
-		    <max-lb type="double">240000.0</max-lb>
+		    <max-lb type="double">58546</max-lb>
 		    <min-lb type="double">0.0</min-lb>
 		</weight>
     
