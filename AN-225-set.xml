@@ -69,14 +69,15 @@ https://github.com/HerbyW/Antonov-Aircrafts
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
         <int type="int" n="5">  0 </int>
-	
+	<int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
         
         <float n="0" alias="/controls/flight/slats"/>
         <float n="1" alias="/controls/flight/spoilers"/>
         <float n="2" alias="/gear/gear/rollspeed-ms" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
         <float n="4" alias="/gear/gear/steering-norm" />
-        
+        <float n="8"  alias="/controls/engines/engine[0]/throttle" />
      </generic>
     </multiplay>
     

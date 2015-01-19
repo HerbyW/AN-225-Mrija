@@ -42,6 +42,47 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
 		
 <offsets>          <heading-deg>0</heading-deg> </offsets>  
 
+
+  
+  <!--Lights-->
+                                   
+ <animation>   
+   <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>
+   <object-name>spaceshutt_spstob_eal</object-name>
+   <object-name>spaceshutt_spstob_3</object-name> 
+   <object-name>spaceshutt_spstob_2</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>
+   <object-name>spaceshutt_spstob_eal</object-name>
+   <object-name>spaceshutt_spstob_3</object-name> 
+   <object-name>spaceshutt_spstob_2</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>   
+   <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+ 
+
+
+
+
+
 <animation>
 <type>pick</type>
 <object-name>spaceshutt_spstob</object-name>
@@ -80,13 +121,13 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
     </entry>
     <entry>
       <ind>1.0</ind>
-      <dep>-160</dep>
+      <dep>-171</dep>
     </entry>
   </interpolation>
   <center>
    <x-m> -2.2671</x-m>
-   <y-m> -2.4272</y-m>
-   <z-m>  -1.7034</z-m>
+   <y-m> -2.552</y-m>
+   <z-m>  -1.52</z-m>
    
   </center>
   <axis>
@@ -107,13 +148,13 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
     </entry>
     <entry>
       <ind>1.0</ind>
-      <dep>160</dep>
+      <dep>171</dep>
     </entry>
   </interpolation>
   <center>
    <x-m> -2.2672</x-m>
-   <y-m>  2.4272</y-m>
-   <z-m>  -1.7034</z-m>
+   <y-m>  2.552</y-m>
+   <z-m>  -1.52</z-m>
    
   </center>
   <axis>

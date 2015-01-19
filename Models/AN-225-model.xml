@@ -2326,7 +2326,7 @@ AN225 model/animation config.
   <object-name>L-MG-4-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>3.5</factor>
+  <factor>7</factor>
   <center>
    <x-m>9.05</x-m>
    <y-m>-3.2</y-m>
@@ -2528,7 +2528,7 @@ AN225 model/animation config.
   <object-name>L-MG-5-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>7</factor>
+  <factor>12</factor>
   <center>
    <x-m>10.72</x-m>
    <y-m>-3.2</y-m>
@@ -2730,7 +2730,7 @@ AN225 model/animation config.
   <object-name>L-MG-6-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>13</factor>
+  <factor>20</factor>
   <center>
    <x-m>12.42</x-m>
    <y-m>-3.2</y-m>
@@ -2932,7 +2932,7 @@ AN225 model/animation config.
   <object-name>L-MG-7-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>26</factor>
+  <factor>30</factor>
   <center>
    <x-m>14.10</x-m>
    <y-m>-3.2</y-m>
@@ -3674,7 +3674,7 @@ AN225 model/animation config.
   <object-name>R-MG-4-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>3.5</factor>
+  <factor>7</factor>
   <center>
    <x-m>9.05</x-m>
    <y-m>3.2</y-m>
@@ -3876,7 +3876,7 @@ AN225 model/animation config.
   <object-name>R-MG-5-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>7</factor>
+  <factor>12</factor>
   <center>
    <x-m>10.72</x-m>
    <y-m>3.2</y-m>
@@ -4078,7 +4078,7 @@ AN225 model/animation config.
   <object-name>R-MG-6-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>13</factor>
+  <factor>20</factor>
   <center>
    <x-m>12.72</x-m>
    <y-m>3.2</y-m>
@@ -4280,7 +4280,7 @@ AN225 model/animation config.
   <object-name>R-MG-7-Strut</object-name>
   <property>sim/multiplay/generic/float[4]</property>
   <offset-deg>0</offset-deg>
-  <factor>26</factor>
+  <factor>30</factor>
   <center>
    <x-m>14.10</x-m>
    <y-m>3.2</y-m>
@@ -4972,5 +4972,67 @@ AN225 model/animation config.
       <z>  0 </z>
     </axis>
   </animation>
+  
+      
+  <!-- smoke -->
+ 
+  
+        <model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_1.xml</path>
+		<offsets>
+			<x-m> 11.0 </x-m>
+                        <y-m> 25.0 </y-m>
+                        <z-m> 0.2 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_2.xml</path>
+		<offsets>
+			<x-m> 6.7 </x-m>
+                        <y-m> 17.2 </y-m>
+                        <z-m> 0.4 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_3.xml</path>
+		<offsets>
+			<x-m> 2.0 </x-m>
+                        <y-m>  9.40 </y-m>
+                        <z-m> 0.9 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_4.xml</path>
+		<offsets>
+			<x-m> 2.0 </x-m>
+                        <y-m>  -9.40 </y-m>
+                        <z-m> 0.9 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_5.xml</path>
+		<offsets>
+			<x-m> 6.7 </x-m>
+                        <y-m> -17.2 </y-m>
+                        <z-m> 0.4 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_6.xml</path>
+		<offsets>
+			<x-m> 11.0 </x-m>
+                        <y-m> -25.0 </y-m>
+                        <z-m> 0.2 </z-m>
+		</offsets>
+	</model>
+
+  
 
 </PropertyList>

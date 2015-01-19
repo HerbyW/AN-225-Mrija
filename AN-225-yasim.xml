@@ -140,7 +140,7 @@ them out of my 3d modeller.
 <!-- Left wing engines -->
 
 <!-- Left Outer -->
- <jet x="-5.0" y="25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="4.0" y="25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
@@ -156,7 +156,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Left Inner -->
- <jet x="4.0" y="9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-5.0" y="9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[2]"/>
@@ -164,7 +164,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Right Inner -->
- <jet x="4.0" y="-9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-5.0" y="-9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[3]"/>
@@ -180,7 +180,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Right Outer -->
- <jet x="-5.0" y="-25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="4.0" y="-25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[5]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[5]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[5]"/>
