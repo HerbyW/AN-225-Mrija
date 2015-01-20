@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
  
 <!-- Generic Autopilot Configuration , softer reaction implemented by HerbyW Jan2015-->
 
@@ -45,6 +45,13 @@
 
   <!-- Heading Bug Hold.  2 stage cascade controller. -->
 
+  <!--
+  new
+   <u_min><property>instrumentation/afds/settings/bank-min</property></u_min>
+  old
+  <u_min>-20.0</u_min>        <! minimum output clamp -->
+-->
+  
   <!-- Stage #1 sets target roll based on diff between current heading -->
   <!-- and heading bug. -->
   <pid-controller>

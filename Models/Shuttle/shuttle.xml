@@ -70,7 +70,7 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
    <object-name>spaceshutt_spstob_2</object-name>
    <object-name>spaceshutt_spstob_4</object-name>   
    <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor>1</factor>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -104,7 +104,7 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
 <command>property-interpolate</command>
 <property>sim/multiplay/generic/float[3]</property>
 <property>/controls/shuttle/door/position</property> <!-- the value to interpolate to, is 1 -->
-<rate>0.12</rate><!-- 8 seconds to 0 from 1 or 1 to 0 -->
+<rate>0.15</rate><!-- 8 seconds to 0 from 1 or 1 to 0 -->
 </binding>
 </action>
 </animation>

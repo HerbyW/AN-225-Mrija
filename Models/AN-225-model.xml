@@ -11,6 +11,210 @@ AN225 model/animation config.
 <PropertyList>
   
   
+
+  
+  <path>AN225-003-002d14.ac</path>
+  <offsets>
+    <z-m>0.0</z-m>
+    <pitch-deg>0</pitch-deg>
+  </offsets>
+  
+  
+    <!--Lights, just a little bit more brilliance to the airplane-->
+                                   
+ <animation>   
+   <object-name>Fuselage</object-name>
+   <object-name>L-Wing-T</object-name>
+   <object-name>R-Wing-T</object-name>
+   <object-name>R-TailFin-OS</object-name>
+   <object-name>R-TailPlane-T</object-name> 
+   <object-name>R-Wing-B</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>L-TailPlane-T</object-name> 
+   <object-name>L-Wing-B</object-name>
+   <object-name>L-TailPlane-B</object-name>
+   <object-name>R-Elevator-T</object-name>
+   <object-name>R-Elevator-B</object-name>
+   <object-name>R-TailFin-IS</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-Elevator-T</object-name>
+   <object-name>L-Elevator-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>CP-Liner</object-name>
+   <object-name>Fuselage_RLogos</object-name>
+   <object-name>Fuselage_LLogos</object-name>
+   <object-name>UC-Blister</object-name>
+   <object-name>R-Wing-Slat</object-name>
+   <object-name>L-Wing-Slat</object-name>
+   <object-name>Engine-RO-Casing</object-name>
+   <object-name>Engine-RM-Casing</object-name>
+   <object-name>Engine-RI-Casing</object-name>
+   <object-name>Engine-LI-Casing</object-name>
+   <object-name>Engine-LM-Casing</object-name>
+   <object-name>Engine-LO-Casing</object-name>
+   <object-name>Wing_ID</object-name>
+   <object-name>TailFin_Flag</object-name>
+   <object-name>Engine_Stripes</object-name>
+   <object-name>Engine-RO-Fan</object-name>
+   <object-name>Engine-RM-Fan</object-name>
+   <object-name>Engine-RI-Fan</object-name>
+   <object-name>Engine-LI-Fan</object-name>
+   <object-name>Engine-LM-Fan</object-name>
+   <object-name>Engine-LO-Fan</object-name>
+   <object-name>Engine-RO-Mount-OS</object-name>
+   <object-name>Engine-RM-Mount-OS</object-name>
+   <object-name>Engine-RI-Mount-OS</object-name>
+   <object-name>Engine-LI-Mount-OS</object-name>
+   <object-name>Engine-LM-Mount-OS</object-name>
+   <object-name>Engine-LO-Mount-OS</object-name>
+   <object-name>Engine-RO-Mount-IS</object-name>
+   <object-name>Engine-RM-Mount-IS</object-name>
+   <object-name>Engine-RI-Mount-IS</object-name>
+   <object-name>Engine-LI-Mount-IS</object-name>
+   <object-name>Engine-LM-Mount-IS</object-name>
+   <object-name>Engine-LO-Mount-IS</object-name>
+   <object-name>Fuselage-Windows</object-name>
+   <object-name>CP-Liner-C</object-name>
+   <object-name>R-Flap-1</object-name>
+   <object-name>R-Flap-2</object-name>
+   <object-name>R-Flap-3</object-name>
+   <object-name>R-Flap-4</object-name>
+   <object-name>L-Flap-1</object-name>
+   <object-name>L-Flap-2</object-name>
+   <object-name>L-Flap-3</object-name>
+   <object-name>L-Flap-4</object-name>      
+   <object-name>R-Ailerion-B</object-name>
+   <object-name>R-Ailerion-T</object-name>
+   <object-name>L-Ailerion-B</object-name>
+   <object-name>L-Ailerion-T</object-name>
+   <object-name>R-Flap-Cover-1</object-name>
+   <object-name>R-Flap-Cover-2</object-name>
+   <object-name>R-Flap-Cover-3</object-name>
+   <object-name>R-Flap-Cover-4</object-name>
+   <object-name>L-Flap-Cover-1</object-name>
+   <object-name>L-Flap-Cover-2</object-name>
+   <object-name>L-Flap-Cover-3</object-name>
+   <object-name>L-Flap-Cover-4</object-name>
+   <object-name>Engine-LI-Mount-F</object-name>
+   <object-name>Engine-LM-Mount-F</object-name>
+   <object-name>Engine-LO-Mount-F</object-name>
+   <object-name>Engine-RI-Mount-F</object-name>
+   <object-name>Engine-RM-Mount-F</object-name>
+   <object-name>Engine-RO-Mount-F</object-name>
+   <object-name>Engine-LI-Jetpipe</object-name>
+   <object-name>Engine-LM-Jetpipe</object-name>
+   <object-name>Engine-LO-Jetpipe</object-name>
+   <object-name>Engine-RI-Jetpipe</object-name>
+   <object-name>Engine-RM-Jetpipe</object-name>
+   <object-name>Engine-RO-Jetpipe</object-name>
+   <object-name>R-NG-OS-Tyre</object-name>
+   <object-name>L-NG-OS-Tyre</object-name>
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+   <object-name>Fuselage</object-name>
+   <object-name>L-Wing-T</object-name>
+   <object-name>R-Wing-T</object-name>
+   <object-name>R-TailFin-OS</object-name>
+   <object-name>R-TailPlane-T</object-name> 
+   <object-name>R-Wing-B</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-TailFin-IS</object-name>
+   <object-name>L-TailPlane-T</object-name> 
+   <object-name>L-Wing-B</object-name>
+   <object-name>L-TailPlane-B</object-name>
+   <object-name>R-Elevator-T</object-name>
+   <object-name>R-Elevator-B</object-name>
+   <object-name>R-TailFin-IS</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-Elevator-T</object-name>
+   <object-name>L-Elevator-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>CP-Liner</object-name>
+   <object-name>Fuselage_RLogos</object-name>
+   <object-name>Fuselage_LLogos</object-name>
+   <object-name>UC-Blister</object-name>
+   <object-name>R-Wing-Slat</object-name>
+   <object-name>L-Wing-Slat</object-name>
+   <object-name>Engine-RO-Casing</object-name>
+   <object-name>Engine-RM-Casing</object-name>
+   <object-name>Engine-RI-Casing</object-name>
+   <object-name>Engine-LI-Casing</object-name>
+   <object-name>Engine-LM-Casing</object-name>
+   <object-name>Engine-LO-Casing</object-name>
+   <object-name>Wing_ID</object-name>
+   <object-name>TailFin_Flag</object-name>
+   <object-name>Engine_Stripes</object-name>
+   <object-name>Engine-RO-Fan</object-name>
+   <object-name>Engine-RM-Fan</object-name>
+   <object-name>Engine-RI-Fan</object-name>
+   <object-name>Engine-LI-Fan</object-name>
+   <object-name>Engine-LM-Fan</object-name>
+   <object-name>Engine-LO-Fan</object-name>
+   <object-name>Engine-RO-Mount-OS</object-name>
+   <object-name>Engine-RM-Mount-OS</object-name>
+   <object-name>Engine-RI-Mount-OS</object-name>
+   <object-name>Engine-LI-Mount-OS</object-name>
+   <object-name>Engine-LM-Mount-OS</object-name>
+   <object-name>Engine-LO-Mount-OS</object-name>
+   <object-name>Engine-RO-Mount-IS</object-name>
+   <object-name>Engine-RM-Mount-IS</object-name>
+   <object-name>Engine-RI-Mount-IS</object-name>
+   <object-name>Engine-LI-Mount-IS</object-name>
+   <object-name>Engine-LM-Mount-IS</object-name>
+   <object-name>Engine-LO-Mount-IS</object-name>
+   <object-name>Fuselage-Windows</object-name>
+   <object-name>CP-Liner-C</object-name>
+   <object-name>R-Flap-1</object-name>
+   <object-name>R-Flap-2</object-name>
+   <object-name>R-Flap-3</object-name>
+   <object-name>R-Flap-4</object-name>
+   <object-name>L-Flap-1</object-name>
+   <object-name>L-Flap-2</object-name>
+   <object-name>L-Flap-3</object-name>
+   <object-name>L-Flap-4</object-name>      
+   <object-name>R-Ailerion-B</object-name>
+   <object-name>R-Ailerion-T</object-name>
+   <object-name>L-Ailerion-B</object-name>
+   <object-name>L-Ailerion-T</object-name>
+   <object-name>R-Flap-Cover-1</object-name>
+   <object-name>R-Flap-Cover-2</object-name>
+   <object-name>R-Flap-Cover-3</object-name>
+   <object-name>R-Flap-Cover-4</object-name>
+   <object-name>L-Flap-Cover-1</object-name>
+   <object-name>L-Flap-Cover-2</object-name>
+   <object-name>L-Flap-Cover-3</object-name>
+   <object-name>L-Flap-Cover-4</object-name>
+   <object-name>Engine-LI-Mount-F</object-name>
+   <object-name>Engine-LM-Mount-F</object-name>
+   <object-name>Engine-LO-Mount-F</object-name>
+   <object-name>Engine-RI-Mount-F</object-name>
+   <object-name>Engine-RM-Mount-F</object-name>
+   <object-name>Engine-RO-Mount-F</object-name>
+   <object-name>Engine-LI-Jetpipe</object-name>
+   <object-name>Engine-LM-Jetpipe</object-name>
+   <object-name>Engine-LO-Jetpipe</object-name>
+   <object-name>Engine-RI-Jetpipe</object-name>
+   <object-name>Engine-RM-Jetpipe</object-name>
+   <object-name>Engine-RO-Jetpipe</object-name>
+   <object-name>R-NG-OS-Tyre</object-name>
+   <object-name>L-NG-OS-Tyre</object-name>  
+   <emission>
+      <factor>.1</factor>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+ 
   <model>
     <path>Aircraft/AN-225/Panels/panel225.xml</path>
       <offsets>
@@ -19,22 +223,14 @@ AN225 model/animation config.
         <z-m>  3.99 </z-m>
       </offsets>
    </model>
-  
-  
-  <path>AN225-003-002d14.ac</path>
-  <offsets>
-    <z-m>0.0</z-m>
-    <pitch-deg>0</pitch-deg>
-  </offsets>
-
-  
+    
   <model>
   <name>Shuttle</name>
   <path>Aircraft/AN-225/Models/Shuttle/shuttle.xml</path>
   <offsets>
    <x-m>5.0</x-m>
    <y-m>0</y-m>
-   <z-m>11.45</z-m>
+   <z-m>11.95</z-m>
   </offsets>
  </model>
   
@@ -1736,7 +1932,7 @@ AN225 model/animation config.
   <object-name>R-NG-IS-Hub</object-name>
   <object-name>R-NG-OS-Hub</object-name>
   <object-name>R-NG-Strut</object-name>
-  <property>gear/gear[0]/compression-norm</property>
+  <property>gear/gear[1]/compression-norm</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -1917,7 +2113,7 @@ AN225 model/animation config.
   <object-name>L-MG-1-IS-Hub</object-name>
   <object-name>L-MG-1-OS-Hub</object-name>
   <object-name>L-MG-1-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>gear/gear[2]/compression-norm</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -2097,7 +2293,7 @@ AN225 model/animation config.
   <object-name>L-MG-2-IS-Hub</object-name>
   <object-name>L-MG-2-OS-Hub</object-name>
   <object-name>L-MG-2-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>gear/gear[3]/compression-norm</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -2277,7 +2473,7 @@ AN225 model/animation config.
   <object-name>L-MG-3-IS-Hub</object-name>
   <object-name>L-MG-3-OS-Hub</object-name>
   <object-name>L-MG-3-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>gear/gear[4]/compression-norm</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -2479,7 +2675,7 @@ AN225 model/animation config.
   <object-name>L-MG-4-IS-Hub</object-name>
   <object-name>L-MG-4-OS-Hub</object-name>
   <object-name>L-MG-4-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>sim/multiplay/generic/float[9]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -2681,7 +2877,7 @@ AN225 model/animation config.
   <object-name>L-MG-5-IS-Hub</object-name>
   <object-name>L-MG-5-OS-Hub</object-name>
   <object-name>L-MG-5-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>sim/multiplay/generic/float[10]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -2883,7 +3079,7 @@ AN225 model/animation config.
   <object-name>L-MG-6-IS-Hub</object-name>
   <object-name>L-MG-6-OS-Hub</object-name>
   <object-name>L-MG-6-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>sim/multiplay/generic/float[11]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -3085,7 +3281,7 @@ AN225 model/animation config.
   <object-name>L-MG-7-IS-Hub</object-name>
   <object-name>L-MG-7-OS-Hub</object-name>
   <object-name>L-MG-7-Strut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+  <property>sim/multiplay/generic/float[12]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -3265,7 +3461,7 @@ AN225 model/animation config.
   <object-name>R-MG-1-IS-Hub</object-name>
   <object-name>R-MG-1-OS-Hub</object-name>
   <object-name>R-MG-1-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[13]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -3445,7 +3641,7 @@ AN225 model/animation config.
   <object-name>R-MG-2-IS-Hub</object-name>
   <object-name>R-MG-2-OS-Hub</object-name>
   <object-name>R-MG-2-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[14]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -3625,7 +3821,7 @@ AN225 model/animation config.
   <object-name>R-MG-3-IS-Hub</object-name>
   <object-name>R-MG-3-OS-Hub</object-name>
   <object-name>R-MG-3-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[15]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -3827,7 +4023,7 @@ AN225 model/animation config.
   <object-name>R-MG-4-IS-Hub</object-name>
   <object-name>R-MG-4-OS-Hub</object-name>
   <object-name>R-MG-4-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[16]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -4029,7 +4225,7 @@ AN225 model/animation config.
   <object-name>R-MG-5-IS-Hub</object-name>
   <object-name>R-MG-5-OS-Hub</object-name>
   <object-name>R-MG-5-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[17]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -4231,7 +4427,7 @@ AN225 model/animation config.
   <object-name>R-MG-6-IS-Hub</object-name>
   <object-name>R-MG-6-OS-Hub</object-name>
   <object-name>R-MG-6-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[18]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>
@@ -4433,7 +4629,7 @@ AN225 model/animation config.
   <object-name>R-MG-7-IS-Hub</object-name>
   <object-name>R-MG-7-OS-Hub</object-name>
   <object-name>R-MG-7-Strut</object-name>
-  <property>gear/gear[2]/compression-norm</property>
+  <property>sim/multiplay/generic/float[19]</property>
   <factor>1.0</factor>
   <axis>
    <x>0</x>

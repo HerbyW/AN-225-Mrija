@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
-************************************************************************
-AN-225 set file.
-
-2004-04-28 Lee Elliott
+###################################################################################
+3D-Model from Lee Elliott 2004-04-28 
 
 Modifications on all animations,
 adding of space shuttle,
 autopilot settings,
-instrumentation                by HerbyW 01/2015
+instrumentation                by HerbyW 12/2014-01/2015
+modeling                       by firefly
+fdm and autopilot adjustments  by ph-cor
+testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 
 https://github.com/HerbyW/Antonov-Aircrafts
-************************************************************************
+
+This file is licenced under the terms of the GNU General Public Licence V2 or later
+
+###################################################################################
 -->
 
 <PropertyList>
@@ -31,20 +35,20 @@ https://github.com/HerbyW/Antonov-Aircrafts
   </instrumentation>
   
   <controls>
+    <!-- Start with the Parking Brake on  -->
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
     <shuttle>
       <door>
        <position type="float">0</position>
       </door>
     </shuttle>
   </controls>
+     
+            
   
-  <!-- Start with the Parking Brake on -->
-  <controls>
-    <gear>
-      <brake-parking type="double">1</brake-parking>
-    </gear>
-  </controls>
-  
+ 
   <sim>
   
     <startup>
@@ -78,6 +82,18 @@ https://github.com/HerbyW/Antonov-Aircrafts
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
         <float n="4" alias="/gear/gear/steering-norm" />
         <float n="8"  alias="/controls/engines/engine[0]/throttle" />
+        <float n="9" alias="/gear/gear[5]/compression-norm" />
+        <float n="10" alias="/gear/gear[6]/compression-norm" />
+        <float n="11" alias="/gear/gear[7]/compression-norm" />
+        <float n="12" alias="/gear/gear[8]/compression-norm" />
+        <float n="13" alias="/gear/gear[9]/compression-norm" />
+        <float n="14" alias="/gear/gear[10]/compression-norm" />
+        <float n="15" alias="/gear/gear[11]/compression-norm" />
+        <float n="16" alias="/gear/gear[12]/compression-norm" />
+        <float n="17" alias="/gear/gear[13]/compression-norm" />
+        <float n="18" alias="/gear/gear[14]/compression-norm" />
+        <float n="19" alias="/gear/gear[15]/compression-norm" />
+        
      </generic>
     </multiplay>
     
@@ -172,6 +188,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
       </config>
     </view>
 
+<!--                        i do not know what it does so i disable it    
     <view n="100">
       <name>Drop View</name>
       <type>lookat</type>
@@ -195,8 +212,9 @@ https://github.com/HerbyW/Antonov-Aircrafts
         <target-z-offset-m archive="y" type="double">20.0</target-z-offset-m>
       </config>
     </view>
+-->
 
-    <current-view>
+<current-view>
       <field-of-view>55.0</field-of-view>
     </current-view>
 
@@ -224,11 +242,12 @@ https://github.com/HerbyW/Antonov-Aircrafts
       </electrical>
       </systems>                    -->
 
-<!--sub models -->
+<!--sub models
     <submodels>
       <serviceable type="bool">1</serviceable>
       <path>Aircraft/AN-225/AN-225-submodels.xml</path>
     </submodels>
+-->
 
 <!-- Flap settings -->
     <flaps>
@@ -276,7 +295,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
 	
 	Shuttle doors should be closed befor take off, payload for Shuttle is set to 0 and may be adjusted as you like.
 	
-	ILS landing is not working for this aircraft, 5 mi out of runway AP should be shut down and landing is made visuall.
+	ILS landing is now working for this aircraft.
 	
 	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
       </text>
@@ -288,17 +307,20 @@ https://github.com/HerbyW/Antonov-Aircrafts
     
     
   </sim>
-	
+<!--           not used for now	
   <ai>
     <submodels>
       <trajectory-markers type="bool">0</trajectory-markers>
       <shuttle type="bool">1</shuttle>
     </submodels>
   </ai>
-  
+-->  
+
 <!-- Keboard changes -->
   <input>
     <keyboard>
+      
+      <!--                                        for what is this good?
       <key n="75">
         <name>K</name>
         <desc>Toggle trajectory markers</desc>
@@ -306,11 +328,11 @@ https://github.com/HerbyW/Antonov-Aircrafts
           <command>nasal</command>
           <script>AN225.toggle_traj_mkr()</script>
         </binding>
-      </key>
+        </key>                                               -->
       
       <key n="100">
         <name>d</name>
-        <desc>Retract Slats.</desc>
+        <desc>Retract Slats</desc>
         <binding>
           <command>property-adjust</command>
           <property>/controls/flight/slats</property>
@@ -320,7 +342,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
 
       <key n="102">
         <name>f</name>
-        <desc>Extend Slats.</desc>
+        <desc>Extend Slats</desc>
         <binding>
           <command>property-adjust</command>
           <property>/controls/flight/slats</property>
@@ -328,7 +350,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
         </binding>
       </key>
       
-<!-- Update Drop View position -->
+<!-- Update Drop View position                 not activated for now
        <key n="85">
         <name>U</name>
         <desc>Update Drop View position</desc>
@@ -336,7 +358,7 @@ https://github.com/HerbyW/Antonov-Aircrafts
           <command>nasal</command>
           <script>AN225.update_drop_view_pos()</script>
         </binding>
-      </key>
+      </key>                                                    -->
  
  <!-- Reverser Start  -->
  
