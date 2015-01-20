@@ -73,14 +73,13 @@ them out of my 3d modeller.
   <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
   
   <control-output control="SLAT" prop="/surface-positions/slat-pos-norm"/>
-  <control-output control="SPOILER" side="left" prop="/surface-positions/spoiler-pos-norm"/>
-  <control-output control="SPOILER" side="right" prop="/surface-positions/spoiler-pos-norm"/>
+  
   <control-output control="SPOILER" prop="/surface-positions/spoiler-pos-norm"/>
 
   <control-speed control="FLAP0" transition-time="45"/>
   <control-speed control="FLAP1" transition-time="1.0"/>
   <control-speed control="SLAT" transition-time="10.0"/>
-  <control-speed control="SPOILER" transition-time="10.0"/>
+  <control-speed control="SPOILER" transition-time="1.0"/>
  </wing>
 
 <!-- HStab -->
