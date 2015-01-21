@@ -59,7 +59,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>controls/lighting/nav-lights</property>  
+  <property>sim/multiplay/generic/int[8]</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -127,7 +127,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("controls/lighting/nav-lights", 1.0, 0.1 );        
+        interpolate("sim/multiplay/generic/int[8]", 1.0, 0.1 );        
       </script>
     </binding>
   </action>
@@ -142,7 +142,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("controls/lighting/nav-lights", 0.0, 0.1 );        
+        interpolate("sim/multiplay/generic/int[8]", 0.0, 0.1 );        
       </script>
     </binding>
   </action>
