@@ -5229,6 +5229,75 @@ AN225 model/animation config.
 		</offsets>
 	</model>
 
-  
+	
+	<!-- Lights from 707 M.Kraus adopted by HerbyW 01/2015
+        <model>
+		<name>ExternalLights</name>
+		<path>Aircraft/AN-225/Models/Lights/AN-225_Lights.xml</path>	
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</offsets>
+	</model>     -->
 
+	<model>
+		<name>Strobe_1</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-red.xml</path>	
+		<offsets>
+			<x-m>19.25</x-m>
+			<y-m>-43.75</y-m>
+			<z-m>1.65</z-m>
+		</offsets>
+	</model>   
+	
+	<model>
+		<name>Strobe_4</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-green.xml</path>	
+		<offsets>
+			<x-m>19.25</x-m>
+			<y-m>43.75</y-m>
+			<z-m>1.65</z-m>
+		</offsets>
+	</model>  
+	
+	<model>
+		<name>Strobe_2</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>21.5</x-m>
+			<y-m>-42.95</y-m>
+			<z-m>1.7</z-m>
+		</offsets>
+	</model>   
+	
+	<model>
+		<name>Strobe_5</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>21.5</x-m>
+			<y-m>42.95</y-m>
+			<z-m>1.7</z-m>
+		</offsets>
+	</model>   
+	<model>
+		<name>Strobe_6</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>52.5</x-m>
+			<y-m>15.2</y-m>
+			<z-m>6.39</z-m>
+		</offsets>
+	</model>   
+	<model>
+		<name>Strobe_7</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>52.5</x-m>
+			<y-m>-15.2</y-m>
+			<z-m>6.39</z-m>
+		</offsets>
+	</model>   
+	
+	
 </PropertyList>

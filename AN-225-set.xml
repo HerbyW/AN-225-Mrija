@@ -44,6 +44,9 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
        <position type="float">0</position>
       </door>
     </shuttle>
+    <lighting>
+       <nav-lights type="bool">false</nav-lights>
+    </lighting>
   </controls>
      
             
@@ -93,6 +96,8 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
         <float n="17" alias="/gear/gear[13]/compression-norm" />
         <float n="18" alias="/gear/gear[14]/compression-norm" />
         <float n="19" alias="/gear/gear[15]/compression-norm" />
+        
+        
         
      </generic>
     </multiplay>
@@ -296,6 +301,8 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 	Shuttle doors should be closed befor take off, payload for Shuttle is set to 0 and may be adjusted as you like.
 	
 	ILS landing is now working for this aircraft.
+	
+	Nav Lights are on the middle switch, instrument lights on the right one, both on the pannel with the 3 switches
 	
 	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
       </text>

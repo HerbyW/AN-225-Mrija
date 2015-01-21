@@ -917,7 +917,7 @@
    <!-- Light switches block -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/bano.xml</path>
+    <path>Aircraft/AN-225/Panels/Instruments/bano/bano.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> 0.286 </y-m>
