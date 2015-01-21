@@ -169,7 +169,7 @@ AN225 model/animation config.
    <object-name>Engine-LI-Mount-IS</object-name>
    <object-name>Engine-LM-Mount-IS</object-name>
    <object-name>Engine-LO-Mount-IS</object-name>
-   <object-name>Fuselage-Windows</object-name>
+   
    <object-name>CP-Liner-C</object-name>
    <object-name>R-Flap-1</object-name>
    <object-name>R-Flap-2</object-name>
@@ -206,14 +206,23 @@ AN225 model/animation config.
    <object-name>R-NG-OS-Tyre</object-name>
    <object-name>L-NG-OS-Tyre</object-name>  
    <emission>
-      <factor>.1</factor>
+      <factor>.15</factor>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
   </animation>
 
-
+  <animation>
+    <type>material</type>
+<object-name>Fuselage-Windows</object-name>
+<emission>
+      <factor-prop>sim/multiplay/generic/int[8]</factor-prop>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
  
   <model>
     <path>Aircraft/AN-225/Panels/panel225.xml</path>
