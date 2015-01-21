@@ -71,7 +71,7 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
    <object-name>spaceshutt_spstob_4</object-name>   
    <emission>
       <factor>1</factor>
-      <red>   0.50 </red>
+      <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
