@@ -232,7 +232,8 @@ AN225 model/animation config.
         <z-m>  3.99 </z-m>
       </offsets>
    </model>
-    
+
+  
   <model>
   <name>Shuttle</name>
   <path>Aircraft/AN-225/Models/Shuttle/shuttle.xml</path>
@@ -241,8 +242,28 @@ AN225 model/animation config.
    <y-m>0</y-m>
    <z-m>11.95</z-m>
   </offsets>
+  </model>
+ 
+
+ <model>
+  <name>Rocket-Booster</name>
+  <path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
+  <offsets>
+   <x-m>4.0</x-m>
+   <y-m>0</y-m>
+   <z-m>7.95</z-m>
+  </offsets>
  </model>
   
+   <model>
+  <name>Fuel-Tank-Shuttle</name>
+  <path>Aircraft/AN-225/Models/Shuttle/external-fuel-tank.xml</path>
+  <offsets>
+   <x-m>4.0</x-m>
+   <y-m>0</y-m>
+   <z-m>10.50</z-m>
+  </offsets>
+  </model>                     <!--  it is just a little step to activate it -->
   
   
 <!-- Disable shadows from the texture objects -->

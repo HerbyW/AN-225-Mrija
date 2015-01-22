@@ -1,13 +1,18 @@
 <PropertyList>
 	<path>et.ac</path>
 		
-<offsets>          <heading-deg>-180</heading-deg> </offsets>  
+<offsets>
+  <heading-deg>0</heading-deg>
+  <pitch-deg>180</pitch-deg>
+  </offsets>  
 
 <animation>
 <type>select</type>
 <condition>
-<property>controls/shuttle/external-fuel-tank</property>
-<value>1</value>
+  <equals>
+   <property>sim/multiplay/generic/int[9]</property>
+   <value>1</value>
+  </equals>
 </condition>
 </animation>
 

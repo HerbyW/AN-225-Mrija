@@ -928,14 +928,60 @@
      <!-- Trim Neutral Placecards -->
       
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/trim-neutral/ind_8.xml</path>
+    <path>Aircraft/AN-225/Panels/Instruments/trim-neutral/ind_8.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.008 </x-m>
       <y-m> -0.92 </y-m>
       <z-m>  -0.10 </z-m>
     </offsets>
   </model>
  
+      <!-- Three Position Switch -->
+      
+  <model>
+    <path>Aircraft/AN-225/Panels/Instruments/switches/azs_3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.219 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>c</name>
+    <type type="string">literal</type>
+    <text type="string">Booster
+      Shuttle
+      Rocket</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.025</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.06 </y-m>
+      <z-m>  0.22 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>c</object-name>    
+    <emission>
+      <red>0.6</red>
+      <green>0.6</green>
+      <blue>0.9</blue>
+    </emission>
+  </animation>
 
  
 </PropertyList>

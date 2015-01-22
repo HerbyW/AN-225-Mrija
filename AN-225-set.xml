@@ -43,6 +43,7 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
       <door>
        <position type="float">0</position>
       </door>
+      <payload type="int">2</payload>            
     </shuttle>
     <lighting>
        <nav-lights type="float">0</nav-lights>
@@ -79,6 +80,7 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 	<int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
         <int type="int" n="8" alias="/controls/lighting/nav-lights"> 0 </int>
+	<int type="int" n="9" alias="/controls/shuttle/payload"> 2 </int>
 	
         <float n="0" alias="/controls/flight/slats"/>
         <float n="1" alias="/controls/flight/spoilers"/>
