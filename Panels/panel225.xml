@@ -950,9 +950,9 @@
   <text>
     <name>c</name>
     <type type="string">literal</type>
-    <text type="string">Booster
-      Shuttle
-      Rocket</text>
+    <text type="string">Fuel Tank
+      Space Shuttle
+      Rocket Booster</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>

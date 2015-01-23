@@ -54,7 +54,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[9]", 3.0, 0.1 );
+        interpolate("sim/multiplay/generic/int[9]", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -84,7 +84,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[9]", 1.0, 0.1 );
+        interpolate("sim/multiplay/generic/int[9]", 3.0, 0.1 );
       </script>
     </binding>
   </action>

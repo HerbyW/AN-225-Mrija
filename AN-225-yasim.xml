@@ -92,7 +92,7 @@ them out of my 3d modeller.
   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   <control-output control="FLAP0" side="left" prop="/surface-positions/elevator-pos-norm"/>
   <control-output control="FLAP0" side="right" prop="/surface-positions/elevator-pos-norm"/>
-  <control-speed control="FLAP0" transition-time="1.0"/>
+  <control-speed control="FLAP0" transition-time="20.0"/>
  </hstab>
  
 <!-- VStabs -->
