@@ -510,8 +510,7 @@
       <prop>/controls/engines/engine[3]/throttle</prop>
       <prop>/controls/engines/engine[4]/throttle</prop>
       <prop>/controls/engines/engine[5]/throttle</prop>
-      <prop>/controls/engines/engine[6]/throttle</prop>
-      <prop>/controls/engines/engine[7]/throttle</prop>
+      
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
