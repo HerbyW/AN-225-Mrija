@@ -207,7 +207,7 @@ AN225 model/animation config.
    <object-name>L-NG-OS-Tyre</object-name>  
    <emission>
       <factor>.15</factor>
-      <red>   0.50 </red>
+      <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
@@ -263,7 +263,7 @@ AN225 model/animation config.
    <y-m>0</y-m>
    <z-m>10.50</z-m>
   </offsets>
-  </model>                     <!--  it is just a little step to activate it -->
+  </model>
   
   
 <!-- Disable shadows from the texture objects -->

@@ -48,7 +48,7 @@ Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/
 <condition>
   <equals>
     <property>sim/multiplay/generic/int[9]</property>
-    <value>2</value>
+    <value>3</value>
   </equals>
 </condition>
 </animation>

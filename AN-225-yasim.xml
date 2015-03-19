@@ -17,7 +17,7 @@ them out of my 3d modeller.
 
 <!--reverser and all Animations for gears, flaps, slats, spoilers, rudder, aelerion, for MP-modus added HerbyW-->
 
-<airplane mass="386000">
+<airplane mass="386000" version="YASIM_VERSION_CURRENT">
 
 <!-- Approach configuration -->
  <approach speed="150" aoa="2.0" fuel="0.9">

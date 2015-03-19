@@ -96,7 +96,7 @@
   </model>
   
   
-  <!-- UAP, AOA and G-meter -->
+  <!-- UAP, AOA and G-meter
       
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
@@ -114,7 +114,7 @@
       <y-m> 0.761 </y-m>
       <z-m> -0.000 </z-m>
     </offsets>
-  </model>
+  </model>                            -->
   
   <!-- PNP, HSI Horizontal Situation Indicator -->
   
@@ -951,8 +951,8 @@
     <name>c</name>
     <type type="string">literal</type>
     <text type="string">Fuel Tank
-      Space Shuttle
-      Rocket Booster</text>
+      Top load
+      Space Shuttle</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
