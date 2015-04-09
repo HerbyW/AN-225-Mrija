@@ -46,7 +46,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
  <instruments>
 
-  <instrument include="../../Instruments/dme.xml">
+  <instrument include="Aircraft/Instruments/dme.xml">
    <name>DME Display</name>
    <x>100</x>
    <y>330</y>
@@ -54,7 +54,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="../../Instruments/clock.xml">
+  <instrument include="Aircraft/Instruments/clock.xml">
    <name>Chronometer</name>
    <x>320</x>
    <y>300</y>
@@ -62,7 +62,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>90</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn.xml">
+  <instrument include="Aircraft/Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>220</x>
    <y>225</y>
@@ -78,7 +78,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>120</h>
   </instrument>
 
-  <instrument include="../../Instruments/hsi.xml">
+  <instrument include="Aircraft/Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>220</x>
    <y>352</y>
@@ -88,7 +88,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
 <!-- controls visual feedback cluster -->
 
-  <instrument include="../../Instruments/gear-indicator.xml">
+  <instrument include="Aircraft/Instruments/gear-indicator.xml">
    <name>Gear Indicator Light</name>
    <x>320</x>
    <y>159</y>
@@ -96,7 +96,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/brakes.xml">
+  <instrument include="Aircraft/Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>320</x>
    <y>140</y>
@@ -104,7 +104,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/controls.xml">
+  <instrument include="Aircraft/Instruments/controls.xml">
    <name>Control Position Indicators</name>
    <x>320</x>
    <y>80</y>
@@ -117,7 +117,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
 <!-- radio nav instruments  -->
 
-  <instrument include="../../Instruments/nav1.xml">
+  <instrument include="Aircraft/Instruments/nav1.xml">
    <name>VOR 2 Gauge</name>
    <params>
     <nav-to-flag>/instrumentation/nav[1]/to-flag</nav-to-flag>
@@ -136,7 +136,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
 <!-- end radio nav instruments -->
 
-  <instrument include="../../Instruments/gyro.xml">
+  <instrument include="Aircraft/Instruments/gyro.xml">
    <name>Directional Gauge</name>
    <x>100</x>
    <y>99</y>
@@ -146,7 +146,7 @@ Hacked by Lee Elliott for the AN-225 mock panel
 
 <!-- radio stack -->
 
-  <instrument include="../../Instruments/markerbeacon.xml">
+  <instrument include="Aircraft/Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
    <x>798</x>
    <y>450</y>
@@ -154,13 +154,13 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>22</h>
   </instrument>
 
-  <instrument include="../../Instruments/navcom-kx155.xml">
+  <instrument include="Aircraft/Instruments/navcom-kx155.xml">
    <name>NavCom 1 Radio</name>
    <x>890</x>
    <y>395</y>
   </instrument>
 
-  <instrument include="../../Instruments/navcom-kx155.xml">
+  <instrument include="Aircraft/Instruments/navcom-kx155.xml">
    <name>NavCom 2 Radio</name>
    <params>
     <comm-freq-selected-prop>/instrumentation/comm[1]/frequencies/selected-mhz</comm-freq-selected-prop>
@@ -174,13 +174,13 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <y>309</y>
   </instrument>
 
-  <instrument include="../../Instruments/adf-radio.xml">
+  <instrument include="Aircraft/Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>890</x>
    <y>235</y>
   </instrument>
 
-  <instrument include="../../Instruments/autopilot.xml">
+  <instrument include="Aircraft/Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>890</x>
    <y>191</y>
@@ -265,13 +265,13 @@ Hacked by Lee Elliott for the AN-225 mock panel
    <h>50</h>
   </instrument>
 
-  <instrument include="../../Instruments/magcompass.xml">
+  <instrument include="Aircraft/Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
    <x>668</x>
    <y>480</y>
   </instrument>
 
-  <instrument include="../../Instruments/aoa-indexer.xml">
+  <instrument include="Aircraft/Instruments/aoa-indexer.xml">
    <name>AoA</name>
    <x>25</x>
    <y>250</y>
