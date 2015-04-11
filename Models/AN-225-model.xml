@@ -1,0 +1,5333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+************************************************************************
+AN225 model/animation config.
+
+2003-09-01 Lee Elliott
+************************************************************************
+-->
+
+<PropertyList>
+  
+  
+
+  
+  <path>AN225-003-002d14.ac</path>
+  <offsets>
+    <z-m>0.0</z-m>
+    <pitch-deg>0</pitch-deg>
+  </offsets>
+  
+  
+    <!--Lights, just a little bit more brilliance to the airplane-->
+                                   
+ <animation>   
+   <object-name>Fuselage</object-name>
+   <object-name>L-Wing-T</object-name>
+   <object-name>R-Wing-T</object-name>
+   <object-name>R-TailFin-OS</object-name>
+   <object-name>R-TailPlane-T</object-name> 
+   <object-name>R-Wing-B</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>L-TailPlane-T</object-name> 
+   <object-name>L-Wing-B</object-name>
+   <object-name>L-TailPlane-B</object-name>
+   <object-name>R-Elevator-T</object-name>
+   <object-name>R-Elevator-B</object-name>
+   <object-name>R-TailFin-IS</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-Elevator-T</object-name>
+   <object-name>L-Elevator-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>CP-Liner</object-name>
+   <object-name>Fuselage_RLogos</object-name>
+   <object-name>Fuselage_LLogos</object-name>
+   <object-name>UC-Blister</object-name>
+   <object-name>R-Wing-Slat</object-name>
+   <object-name>L-Wing-Slat</object-name>
+   <object-name>Engine-RO-Casing</object-name>
+   <object-name>Engine-RM-Casing</object-name>
+   <object-name>Engine-RI-Casing</object-name>
+   <object-name>Engine-LI-Casing</object-name>
+   <object-name>Engine-LM-Casing</object-name>
+   <object-name>Engine-LO-Casing</object-name>
+   <object-name>Wing_ID</object-name>
+   <object-name>TailFin_Flag</object-name>
+   <object-name>Engine_Stripes</object-name>
+   <object-name>Engine-RO-Fan</object-name>
+   <object-name>Engine-RM-Fan</object-name>
+   <object-name>Engine-RI-Fan</object-name>
+   <object-name>Engine-LI-Fan</object-name>
+   <object-name>Engine-LM-Fan</object-name>
+   <object-name>Engine-LO-Fan</object-name>
+   <object-name>Engine-RO-Mount-OS</object-name>
+   <object-name>Engine-RM-Mount-OS</object-name>
+   <object-name>Engine-RI-Mount-OS</object-name>
+   <object-name>Engine-LI-Mount-OS</object-name>
+   <object-name>Engine-LM-Mount-OS</object-name>
+   <object-name>Engine-LO-Mount-OS</object-name>
+   <object-name>Engine-RO-Mount-IS</object-name>
+   <object-name>Engine-RM-Mount-IS</object-name>
+   <object-name>Engine-RI-Mount-IS</object-name>
+   <object-name>Engine-LI-Mount-IS</object-name>
+   <object-name>Engine-LM-Mount-IS</object-name>
+   <object-name>Engine-LO-Mount-IS</object-name>
+   <object-name>Fuselage-Windows</object-name>
+   <object-name>CP-Liner-C</object-name>
+   <object-name>R-Flap-1</object-name>
+   <object-name>R-Flap-2</object-name>
+   <object-name>R-Flap-3</object-name>
+   <object-name>R-Flap-4</object-name>
+   <object-name>L-Flap-1</object-name>
+   <object-name>L-Flap-2</object-name>
+   <object-name>L-Flap-3</object-name>
+   <object-name>L-Flap-4</object-name>      
+   <object-name>R-Ailerion-B</object-name>
+   <object-name>R-Ailerion-T</object-name>
+   <object-name>L-Ailerion-B</object-name>
+   <object-name>L-Ailerion-T</object-name>
+   <object-name>R-Flap-Cover-1</object-name>
+   <object-name>R-Flap-Cover-2</object-name>
+   <object-name>R-Flap-Cover-3</object-name>
+   <object-name>R-Flap-Cover-4</object-name>
+   <object-name>L-Flap-Cover-1</object-name>
+   <object-name>L-Flap-Cover-2</object-name>
+   <object-name>L-Flap-Cover-3</object-name>
+   <object-name>L-Flap-Cover-4</object-name>
+   <object-name>Engine-LI-Mount-F</object-name>
+   <object-name>Engine-LM-Mount-F</object-name>
+   <object-name>Engine-LO-Mount-F</object-name>
+   <object-name>Engine-RI-Mount-F</object-name>
+   <object-name>Engine-RM-Mount-F</object-name>
+   <object-name>Engine-RO-Mount-F</object-name>
+   <object-name>Engine-LI-Jetpipe</object-name>
+   <object-name>Engine-LM-Jetpipe</object-name>
+   <object-name>Engine-LO-Jetpipe</object-name>
+   <object-name>Engine-RI-Jetpipe</object-name>
+   <object-name>Engine-RM-Jetpipe</object-name>
+   <object-name>Engine-RO-Jetpipe</object-name>
+   <object-name>R-NG-OS-Tyre</object-name>
+   <object-name>L-NG-OS-Tyre</object-name>
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+   <object-name>Fuselage</object-name>
+   <object-name>L-Wing-T</object-name>
+   <object-name>R-Wing-T</object-name>
+   <object-name>R-TailFin-OS</object-name>
+   <object-name>R-TailPlane-T</object-name> 
+   <object-name>R-Wing-B</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-TailFin-IS</object-name>
+   <object-name>L-TailPlane-T</object-name> 
+   <object-name>L-Wing-B</object-name>
+   <object-name>L-TailPlane-B</object-name>
+   <object-name>R-Elevator-T</object-name>
+   <object-name>R-Elevator-B</object-name>
+   <object-name>R-TailFin-IS</object-name>
+   <object-name>R-TailPlane-B</object-name>
+   <object-name>L-Elevator-T</object-name>
+   <object-name>L-Elevator-B</object-name>
+   <object-name>L-TailFin-OS</object-name>
+   <object-name>CP-Liner</object-name>
+   <object-name>Fuselage_RLogos</object-name>
+   <object-name>Fuselage_LLogos</object-name>
+   <object-name>UC-Blister</object-name>
+   <object-name>R-Wing-Slat</object-name>
+   <object-name>L-Wing-Slat</object-name>
+   <object-name>Engine-RO-Casing</object-name>
+   <object-name>Engine-RM-Casing</object-name>
+   <object-name>Engine-RI-Casing</object-name>
+   <object-name>Engine-LI-Casing</object-name>
+   <object-name>Engine-LM-Casing</object-name>
+   <object-name>Engine-LO-Casing</object-name>
+   <object-name>Wing_ID</object-name>
+   <object-name>TailFin_Flag</object-name>
+   <object-name>Engine_Stripes</object-name>
+   <object-name>Engine-RO-Fan</object-name>
+   <object-name>Engine-RM-Fan</object-name>
+   <object-name>Engine-RI-Fan</object-name>
+   <object-name>Engine-LI-Fan</object-name>
+   <object-name>Engine-LM-Fan</object-name>
+   <object-name>Engine-LO-Fan</object-name>
+   <object-name>Engine-RO-Mount-OS</object-name>
+   <object-name>Engine-RM-Mount-OS</object-name>
+   <object-name>Engine-RI-Mount-OS</object-name>
+   <object-name>Engine-LI-Mount-OS</object-name>
+   <object-name>Engine-LM-Mount-OS</object-name>
+   <object-name>Engine-LO-Mount-OS</object-name>
+   <object-name>Engine-RO-Mount-IS</object-name>
+   <object-name>Engine-RM-Mount-IS</object-name>
+   <object-name>Engine-RI-Mount-IS</object-name>
+   <object-name>Engine-LI-Mount-IS</object-name>
+   <object-name>Engine-LM-Mount-IS</object-name>
+   <object-name>Engine-LO-Mount-IS</object-name>
+   
+   <object-name>CP-Liner-C</object-name>
+   <object-name>R-Flap-1</object-name>
+   <object-name>R-Flap-2</object-name>
+   <object-name>R-Flap-3</object-name>
+   <object-name>R-Flap-4</object-name>
+   <object-name>L-Flap-1</object-name>
+   <object-name>L-Flap-2</object-name>
+   <object-name>L-Flap-3</object-name>
+   <object-name>L-Flap-4</object-name>      
+   <object-name>R-Ailerion-B</object-name>
+   <object-name>R-Ailerion-T</object-name>
+   <object-name>L-Ailerion-B</object-name>
+   <object-name>L-Ailerion-T</object-name>
+   <object-name>R-Flap-Cover-1</object-name>
+   <object-name>R-Flap-Cover-2</object-name>
+   <object-name>R-Flap-Cover-3</object-name>
+   <object-name>R-Flap-Cover-4</object-name>
+   <object-name>L-Flap-Cover-1</object-name>
+   <object-name>L-Flap-Cover-2</object-name>
+   <object-name>L-Flap-Cover-3</object-name>
+   <object-name>L-Flap-Cover-4</object-name>
+   <object-name>Engine-LI-Mount-F</object-name>
+   <object-name>Engine-LM-Mount-F</object-name>
+   <object-name>Engine-LO-Mount-F</object-name>
+   <object-name>Engine-RI-Mount-F</object-name>
+   <object-name>Engine-RM-Mount-F</object-name>
+   <object-name>Engine-RO-Mount-F</object-name>
+   <object-name>Engine-LI-Jetpipe</object-name>
+   <object-name>Engine-LM-Jetpipe</object-name>
+   <object-name>Engine-LO-Jetpipe</object-name>
+   <object-name>Engine-RI-Jetpipe</object-name>
+   <object-name>Engine-RM-Jetpipe</object-name>
+   <object-name>Engine-RO-Jetpipe</object-name>
+   <object-name>R-NG-OS-Tyre</object-name>
+   <object-name>L-NG-OS-Tyre</object-name>  
+   <emission>
+      <factor>.15</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+<object-name>Fuselage-Windows</object-name>
+<emission>
+      <factor-prop>sim/multiplay/generic/int[8]</factor-prop>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+ 
+  <model>
+    <path>Aircraft/AN-225/Panels/panel225.xml</path>
+      <offsets>
+        <x-m> -23.05 </x-m>
+        <y-m>   0.00 </y-m>
+        <z-m>  3.99 </z-m>
+      </offsets>
+   </model>
+
+  
+  <model>
+  <name>Shuttle</name>
+  <path>Aircraft/AN-225/Models/Shuttle/shuttle.xml</path>
+  <offsets>
+   <x-m>5.0</x-m>
+   <y-m>0</y-m>
+   <z-m>11.95</z-m>
+  </offsets>
+  </model>
+ 
+
+ <model>
+  <name>Rocket-Booster</name>
+  <path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
+  <offsets>
+   <x-m>4.0</x-m>
+   <y-m>0</y-m>
+   <z-m>7.95</z-m>
+  </offsets>
+ </model>
+  
+   <model>
+  <name>Fuel-Tank-Shuttle</name>
+  <path>Aircraft/AN-225/Models/Shuttle/external-fuel-tank.xml</path>
+  <offsets>
+   <x-m>4.0</x-m>
+   <y-m>0</y-m>
+   <z-m>10.50</z-m>
+  </offsets>
+  </model>
+  
+  
+<!-- Disable shadows from the texture objects -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Fuselage_LLogos</object-name>
+    <object-name>Fuselage_RLogos</object-name>
+    <object-name>Engine_Stripes</object-name>
+    <object-name>Wing_ID</object-name>
+    <object-name>TailFin_Flag</object-name>
+  </animation>
+
+<!-- Rudder bits -->
+<!-- Left-Upper -->
+  <animation>
+    <type>rotate</type>
+    <object-name>LU-Rudder-OS</object-name>
+    <object-name>LU-Rudder-IS</object-name>
+    <object-name>LU-Rudder-C</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>47.85</x-m>
+      <y-m>-15.09</y-m>
+      <z-m>7.50</z-m>
+    </center>
+    <axis>
+      <x>0.400</x>
+      <y>0.130</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+<!-- Left-Lower -->
+  <animation>
+    <type>rotate</type>
+    <object-name>LL-Rudder-OS</object-name>
+    <object-name>LL-Rudder-IS</object-name>
+    <object-name>LL-Rudder-C</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>48.01</x-m>
+      <y-m>-15.53</y-m>
+      <z-m>3.160</z-m>
+    </center>
+    <axis>
+      <x>-0.300</x>
+      <y>0.130</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+<!-- Right-Upper -->
+  <animation>
+    <type>rotate</type>
+    <object-name>RU-Rudder-OS</object-name>
+    <object-name>RU-Rudder-IS</object-name>
+    <object-name>RU-Rudder-C</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>47.85</x-m>
+      <y-m>15.09</y-m>
+      <z-m>7.50</z-m>
+    </center>
+    <axis>
+      <x>0.400</x>
+      <y>-0.130</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+<!-- Right-Lower -->
+  <animation>
+    <type>rotate</type>
+    <object-name>RL-Rudder-OS</object-name>
+    <object-name>RL-Rudder-IS</object-name>
+    <object-name>RL-Rudder-C</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>48.01</x-m>
+      <y-m>15.53</y-m>
+      <z-m>3.160</z-m>
+    </center>
+    <axis>
+      <x>-0.300</x>
+      <y>-0.130</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+<!-- Elevator bits -->
+<!-- Left Elevator -->
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Elevator-T</object-name>
+    <object-name>L-Elevator-B</object-name>
+    <object-name>L-Elevator-B</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>20</factor>
+    <center>
+      <x-m>40.79</x-m>
+      <y-m>-2.34</y-m>
+      <z-m>5.39</z-m>
+    </center>
+    <axis>
+      <x>-0.57</x>
+      <y>1.0</y>
+      <z>-0.04</z>
+    </axis>
+  </animation>
+
+<!-- Right Elevator -->
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Elevator-T</object-name>
+    <object-name>R-Elevator-B</object-name>
+    <object-name>R-Elevator-B</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>20</factor>
+    <center>
+      <x-m>40.79</x-m>
+      <y-m>2.34</y-m>
+      <z-m>5.39</z-m>
+    </center>
+    <axis>
+      <x>0.57</x>
+      <y>1.0</y>
+      <z>0.04</z>
+    </axis>
+  </animation>
+
+<!-- Alieron bits -->
+<!-- Left Aileron -->
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Aileron-T</object-name>
+    <object-name>L-Aileron-B</object-name>
+    <object-name>L-Aileron-C</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>25</factor>
+    <center>
+      <x-m>17.18</x-m>
+      <y-m>-34.36</y-m>
+      <z-m>2.30</z-m>
+    </center>
+    <axis>
+      <x>-0.42</x>
+      <y>1</y>
+      <z>0.06</z>
+    </axis>
+  </animation>
+
+<!-- Right Aileron -->
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Aileron-T</object-name>
+    <object-name>R-Aileron-B</object-name>
+    <object-name>R-Aileron-C</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>25</factor>
+    <center>
+      <x-m>17.18</x-m>
+      <y-m>34.36</y-m>
+      <z-m>2.30</z-m>
+    </center>
+    <axis>
+      <x>0.42</x>
+      <y>1</y>
+      <z>-0.06</z>
+    </axis>
+  </animation>
+
+<!-- Flap bits -->
+<!-- Left Flap 1 -->
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>1.3</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.30</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>8.46</x-m>
+      <y-m>-3.30</y-m>
+      <z-m>2.5</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-Cover-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br1R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>20.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>28.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>30.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>10.54</x-m>
+      <y-m>-5.12</y-m>
+      <z-m>3.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br2R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>20.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>28.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>31.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>10.54</x-m>
+      <y-m>-9.34</y-m>
+      <z-m>3.40</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Left Flap 2 -->
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>2.1</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>8.52</x-m>
+      <y-m>-10.77</y-m>
+      <z-m>3.78</z-m>
+    </center>
+    <axis>
+      <x>-0.35</x>
+      <y>1.0</y>
+      <z>-0.05</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-Cover-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br3R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>34.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>35.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>11.28</x-m>
+      <y-m>-12.33</y-m>
+      <z-m>3.33</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br4R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>34.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>35.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>12.63</x-m>
+      <y-m>-17.15</y-m>
+      <z-m>3.06</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Left Flap 3 -->
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>1.5</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>11.36</x-m>
+      <y-m>-18.00</y-m>
+      <z-m>3.35</z-m>
+    </center>
+    <axis>
+      <x>-0.35</x>
+      <y>1.0</y>
+      <z>-0.05</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-Cover-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br5R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>37.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>38.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>13.54</x-m>
+      <y-m>-19.40</y-m>
+      <z-m>2.97</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br6R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>38.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>39.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>15.03</x-m>
+      <y-m>-24.36</y-m>
+      <z-m>2.68</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Left Flap 4 -->
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.8</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>L-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>14.70</x-m>
+      <y-m>-26.50</y-m>
+      <z-m>2.84</z-m>
+    </center>
+    <axis>
+      <x>-0.33</x>
+      <y>1.0</y>
+      <z>-0.06</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>L-Flap-Cover-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br7R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>35.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>45.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>52.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>16.15</x-m>
+      <y-m>-27.75</y-m>
+      <z-m>2.51</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LW-Flap-Br8R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>35.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>50.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>55.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>17.21</x-m>
+      <y-m>-31.19</y-m>
+      <z-m>2.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Right Flap 1 -->
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>1.3</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.30</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Flap-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>8.46</x-m>
+      <y-m>3.30</y-m>
+      <z-m>2.5</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-Cover-1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br1R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>20.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>28.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>30.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>10.54</x-m>
+      <y-m>5.12</y-m>
+      <z-m>3.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br2R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>20.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>28.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>31.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>10.54</x-m>
+      <y-m>9.34</y-m>
+      <z-m>3.40</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Right Flap 2 -->
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>2.1</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Flap-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>8.52</x-m>
+      <y-m>10.77</y-m>
+      <z-m>3.78</z-m>
+    </center>
+    <axis>
+      <x>0.35</x>
+      <y>1.0</y>
+      <z>0.05</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-Cover-2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br3R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>34.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>35.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>11.28</x-m>
+      <y-m>12.33</y-m>
+      <z-m>3.33</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br4R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>34.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>35.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>12.63</x-m>
+      <y-m>17.15</y-m>
+      <z-m>3.06</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Right Flap 3 -->
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>1.5</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Flap-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>11.36</x-m>
+      <y-m>18.00</y-m>
+      <z-m>3.35</z-m>
+    </center>
+    <axis>
+      <x>0.35</x>
+      <y>1.0</y>
+      <z>0.05</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-Cover-3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br5R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>37.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>38.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>13.54</x-m>
+      <y-m>19.40</y-m>
+      <z-m>2.97</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br6R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>31.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>38.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>39.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>15.03</x-m>
+      <y-m>24.36</y-m>
+      <z-m>2.68</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Right Flap 4 -->
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.8</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-0.01</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>R-Flap-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m>14.70</x-m>
+      <y-m>26.50</y-m>
+      <z-m>2.84</z-m>
+    </center>
+    <axis>
+      <x>0.33</x>
+      <y>1.0</y>
+      <z>0.06</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>R-Flap-Cover-4</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-4.0</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br7R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>35.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>45.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>52.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>16.15</x-m>
+      <y-m>27.75</y-m>
+      <z-m>2.51</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RW-Flap-Br8R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.25</ind>
+        <dep>25.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>35.0</dep>
+      </entry>
+      <entry>
+        <ind>0.75</ind>
+        <dep>50.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>55.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>17.21</x-m>
+      <y-m>31.19</y-m>
+      <z-m>2.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- Slat bits -->
+<!-- Left Slat -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-Wing-Slat</object-name>
+  <property>sim/multiplay/generic/float[0]</property>
+  <factor>-0.5</factor>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-Wing-Slat</object-name>
+  <property>sim/multiplay/generic/float[0]</property>
+  <factor>-35</factor>
+  <center>
+   <x-m>-0.55</x-m>
+   <y-m>-8.51</y-m>
+   <z-m>4.99</z-m>
+  </center>
+  <axis>
+   <x>-0.55</x>
+   <y>1.0</y>
+   <z>0.09</z>
+  </axis>
+ </animation>
+
+<!-- Right Slat -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-Wing-Slat</object-name>
+  <property>sim/multiplay/generic/float[0]</property>
+  <factor>-0.5</factor>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-Wing-Slat</object-name>
+  <property>sim/multiplay/generic/float[0]</property>
+  <factor>-35</factor>
+  <center>
+   <x-m>-0.55</x-m>
+   <y-m>8.51</y-m>
+   <z-m>4.99</z-m>
+  </center>
+  <axis>
+   <x>0.55</x>
+   <y>1.0</y>
+   <z>-0.09</z>
+  </axis>
+ </animation>
+
+<!-- Spoiler bits -->
+<!-- Left Inner Spoilers -->
+ <animation>
+  <type>rotate</type>
+  <object-name>LW-Spoilers-Inner</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-60</factor>
+  <center>
+   <x-m>9.34</x-m>
+   <y-m>-3.26</y-m>
+   <z-m>4.06</z-m>
+  </center>
+  <axis>
+   <x>-0.005</x>
+   <y>1</y>
+   <z>0.001</z>
+  </axis>
+ </animation>
+
+<!-- Left Outer Spoilers -->
+ <animation>
+  <type>rotate</type>
+  <object-name>LW-Spoilers-Outer</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-60</factor>
+  <center>
+   <x-m>9.38</x-m>
+   <y-m>-10.77</y-m>
+   <z-m>4.02</z-m>
+  </center>
+  <axis>
+   <x>-0.326</x>
+   <y>1</y>
+   <z>0.07</z>
+  </axis>
+ </animation>
+
+<!-- Right Inner Spoilers -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RW-Spoilers-Inner</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-60</factor>
+  <center>
+   <x-m>9.34</x-m>
+   <y-m>3.26</y-m>
+   <z-m>4.06</z-m>
+  </center>
+  <axis>
+   <x>0.005</x>
+   <y>1</y>
+   <z>-0.001</z>
+  </axis>
+ </animation>
+
+<!-- Right Outer Spoilers -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RW-Spoilers-Outer</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-60</factor>
+  <center>
+   <x-m>9.38</x-m>
+   <y-m>10.77</y-m>
+   <z-m>4.02</z-m>
+  </center>
+  <axis>
+   <x>0.326</x>
+   <y>1</y>
+   <z>-0.07</z>
+  </axis>
+ </animation>
+
+<!-- Nose u/c -->
+<!-- Left -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-NG-IS-Tyre</object-name>
+  <object-name>L-NG-OS-Tyre</object-name>
+  <object-name>L-NG-IS-Hub</object-name>
+  <object-name>L-NG-OS-Hub</object-name>
+  <object-name>L-NG-Strut</object-name>
+  <object-name>L-NG-IS-Door</object-name>
+  <object-name>L-NG-OS-Door</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-NG-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-NG-IS-Tyre</object-name>
+  <object-name>L-NG-OS-Tyre</object-name>
+  <object-name>L-NG-IS-Hub</object-name>
+  <object-name>L-NG-OS-Hub</object-name>
+  <object-name>L-NG-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>-20.03</x-m>
+   <y-m>-0.93</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Extend/Retract -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-NG-IS-Tyre</object-name>
+  <object-name>L-NG-OS-Tyre</object-name>
+  <object-name>L-NG-IS-Hub</object-name>
+  <object-name>L-NG-OS-Hub</object-name>
+  <object-name>L-NG-Strut</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-19.5</x-m>
+   <y-m>-0.93</y-m>
+   <z-m>-2.20</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-NG-IS-Door</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>95.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>95.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-22.00</x-m>
+   <y-m>0.00</y-m>
+   <z-m>-2.29</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>-0.09</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-NG-OS-Door</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-80.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>-80.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-22.00</x-m>
+   <y-m>-1.78</y-m>
+   <z-m>-2.01</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>-0.09</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-NG-IS-Tyre</object-name>
+  <object-name>L-NG-OS-Tyre</object-name>
+  <object-name>L-NG-IS-Hub</object-name>
+  <object-name>L-NG-OS-Hub</object-name>
+  <object-name>L-NG-Strut</object-name>
+  <property>gear/gear[0]/compression-norm</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-NG-IS-Tyre</object-name>
+  <object-name>R-NG-OS-Tyre</object-name>
+  <object-name>R-NG-IS-Hub</object-name>
+  <object-name>R-NG-OS-Hub</object-name>
+  <object-name>R-NG-Strut</object-name>
+  <object-name>R-NG-IS-Door</object-name>
+  <object-name>R-NG-OS-Door</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-NG-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-NG-IS-Tyre</object-name>
+  <object-name>R-NG-OS-Tyre</object-name>
+  <object-name>R-NG-IS-Hub</object-name>
+  <object-name>R-NG-OS-Hub</object-name>
+  <object-name>R-NG-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>-57.30</factor>
+  <center>
+   <x-m>-20.03</x-m>
+   <y-m>0.93</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Extend/Retract -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-NG-IS-Tyre</object-name>
+  <object-name>R-NG-OS-Tyre</object-name>
+  <object-name>R-NG-IS-Hub</object-name>
+  <object-name>R-NG-OS-Hub</object-name>
+  <object-name>R-NG-Strut</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-19.5</x-m>
+   <y-m>0.93</y-m>
+   <z-m>-2.20</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-NG-IS-Door</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-95.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>-95.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-22.00</x-m>
+   <y-m>0.00</y-m>
+   <z-m>-2.29</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>-0.09</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-NG-OS-Door</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>80.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>80.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>-22.00</x-m>
+   <y-m>1.78</y-m>
+   <z-m>-2.01</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>-0.09</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-NG-IS-Tyre</object-name>
+  <object-name>R-NG-OS-Tyre</object-name>
+  <object-name>R-NG-IS-Hub</object-name>
+  <object-name>R-NG-OS-Hub</object-name>
+  <object-name>R-NG-Strut</object-name>
+  <property>gear/gear[1]/compression-norm</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Main u/c -->
+<!-- Left 1 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-1-IS-Tyre</object-name>
+  <object-name>L-MG-1-OS-Tyre</object-name>
+  <object-name>L-MG-1-IS-Hub</object-name>
+  <object-name>L-MG-1-OS-Hub</object-name>
+  <object-name>L-MG-1-Strut</object-name>
+  <object-name>L-MG-1-UDoor</object-name>
+  <object-name>L-MG-1-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-1-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-1-IS-Tyre</object-name>
+  <object-name>L-MG-1-OS-Tyre</object-name>
+  <object-name>L-MG-1-IS-Hub</object-name>
+  <object-name>L-MG-1-OS-Hub</object-name>
+  <object-name>L-MG-1-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-1-IS-Tyre</object-name>
+  <object-name>L-MG-1-OS-Tyre</object-name>
+  <object-name>L-MG-1-IS-Hub</object-name>
+  <object-name>L-MG-1-OS-Hub</object-name>
+  <object-name>L-MG-1-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-1-UDoor</object-name>
+  <object-name>L-MG-1-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-1-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-1-IS-Tyre</object-name>
+  <object-name>L-MG-1-OS-Tyre</object-name>
+  <object-name>L-MG-1-IS-Hub</object-name>
+  <object-name>L-MG-1-OS-Hub</object-name>
+  <object-name>L-MG-1-Strut</object-name>
+  <property>gear/gear[2]/compression-norm</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 2 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-2-IS-Tyre</object-name>
+  <object-name>L-MG-2-OS-Tyre</object-name>
+  <object-name>L-MG-2-IS-Hub</object-name>
+  <object-name>L-MG-2-OS-Hub</object-name>
+  <object-name>L-MG-2-Strut</object-name>
+  <object-name>L-MG-2-UDoor</object-name>
+  <object-name>L-MG-2-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-2-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-2-IS-Tyre</object-name>
+  <object-name>L-MG-2-OS-Tyre</object-name>
+  <object-name>L-MG-2-IS-Hub</object-name>
+  <object-name>L-MG-2-OS-Hub</object-name>
+  <object-name>L-MG-2-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-2-IS-Tyre</object-name>
+  <object-name>L-MG-2-OS-Tyre</object-name>
+  <object-name>L-MG-2-IS-Hub</object-name>
+  <object-name>L-MG-2-OS-Hub</object-name>
+  <object-name>L-MG-2-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-2-UDoor</object-name>
+  <object-name>L-MG-2-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-2-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-2-IS-Tyre</object-name>
+  <object-name>L-MG-2-OS-Tyre</object-name>
+  <object-name>L-MG-2-IS-Hub</object-name>
+  <object-name>L-MG-2-OS-Hub</object-name>
+  <object-name>L-MG-2-Strut</object-name>
+  <property>gear/gear[3]/compression-norm</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 3 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-3-IS-Tyre</object-name>
+  <object-name>L-MG-3-OS-Tyre</object-name>
+  <object-name>L-MG-3-IS-Hub</object-name>
+  <object-name>L-MG-3-OS-Hub</object-name>
+  <object-name>L-MG-3-Strut</object-name>
+  <object-name>L-MG-3-UDoor</object-name>
+  <object-name>L-MG-3-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-3-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-3-IS-Tyre</object-name>
+  <object-name>L-MG-3-OS-Tyre</object-name>
+  <object-name>L-MG-3-IS-Hub</object-name>
+  <object-name>L-MG-3-OS-Hub</object-name>
+  <object-name>L-MG-3-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-3-IS-Tyre</object-name>
+  <object-name>L-MG-3-OS-Tyre</object-name>
+  <object-name>L-MG-3-IS-Hub</object-name>
+  <object-name>L-MG-3-OS-Hub</object-name>
+  <object-name>L-MG-3-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-3-UDoor</object-name>
+  <object-name>L-MG-3-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-3-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-3-IS-Tyre</object-name>
+  <object-name>L-MG-3-OS-Tyre</object-name>
+  <object-name>L-MG-3-IS-Hub</object-name>
+  <object-name>L-MG-3-OS-Hub</object-name>
+  <object-name>L-MG-3-Strut</object-name>
+  <property>gear/gear[4]/compression-norm</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 4 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <object-name>L-MG-4-UDoor</object-name>
+  <object-name>L-MG-4-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-4-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>7</factor>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-UDoor</object-name>
+  <object-name>L-MG-4-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-4-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-4-IS-Tyre</object-name>
+  <object-name>L-MG-4-OS-Tyre</object-name>
+  <object-name>L-MG-4-IS-Hub</object-name>
+  <object-name>L-MG-4-OS-Hub</object-name>
+  <object-name>L-MG-4-Strut</object-name>
+  <property>sim/multiplay/generic/float[9]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 5 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <object-name>L-MG-5-UDoor</object-name>
+  <object-name>L-MG-5-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-5-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>12</factor>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-UDoor</object-name>
+  <object-name>L-MG-5-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-5-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-5-IS-Tyre</object-name>
+  <object-name>L-MG-5-OS-Tyre</object-name>
+  <object-name>L-MG-5-IS-Hub</object-name>
+  <object-name>L-MG-5-OS-Hub</object-name>
+  <object-name>L-MG-5-Strut</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 6 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <object-name>L-MG-6-UDoor</object-name>
+  <object-name>L-MG-6-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-6-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>20</factor>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-UDoor</object-name>
+  <object-name>L-MG-6-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-6-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-6-IS-Tyre</object-name>
+  <object-name>L-MG-6-OS-Tyre</object-name>
+  <object-name>L-MG-6-IS-Hub</object-name>
+  <object-name>L-MG-6-OS-Hub</object-name>
+  <object-name>L-MG-6-Strut</object-name>
+  <property>sim/multiplay/generic/float[11]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Left 7 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <object-name>L-MG-7-UDoor</object-name>
+  <object-name>L-MG-7-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>L-MG-7-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>30</factor>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-UDoor</object-name>
+  <object-name>L-MG-7-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-MG-7-LDoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>-3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>L-MG-7-IS-Tyre</object-name>
+  <object-name>L-MG-7-OS-Tyre</object-name>
+  <object-name>L-MG-7-IS-Hub</object-name>
+  <object-name>L-MG-7-OS-Hub</object-name>
+  <object-name>L-MG-7-Strut</object-name>
+  <property>sim/multiplay/generic/float[12]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 1 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-1-IS-Tyre</object-name>
+  <object-name>R-MG-1-OS-Tyre</object-name>
+  <object-name>R-MG-1-IS-Hub</object-name>
+  <object-name>R-MG-1-OS-Hub</object-name>
+  <object-name>R-MG-1-Strut</object-name>
+  <object-name>R-MG-1-UDoor</object-name>
+  <object-name>R-MG-1-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-1-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-1-IS-Tyre</object-name>
+  <object-name>R-MG-1-OS-Tyre</object-name>
+  <object-name>R-MG-1-IS-Hub</object-name>
+  <object-name>R-MG-1-OS-Hub</object-name>
+  <object-name>R-MG-1-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-1-IS-Tyre</object-name>
+  <object-name>R-MG-1-OS-Tyre</object-name>
+  <object-name>R-MG-1-IS-Hub</object-name>
+  <object-name>R-MG-1-OS-Hub</object-name>
+  <object-name>R-MG-1-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-1-UDoor</object-name>
+  <object-name>R-MG-1-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-1-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>4.10</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-1-IS-Tyre</object-name>
+  <object-name>R-MG-1-OS-Tyre</object-name>
+  <object-name>R-MG-1-IS-Hub</object-name>
+  <object-name>R-MG-1-OS-Hub</object-name>
+  <object-name>R-MG-1-Strut</object-name>
+  <property>sim/multiplay/generic/float[13]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 2 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-2-IS-Tyre</object-name>
+  <object-name>R-MG-2-OS-Tyre</object-name>
+  <object-name>R-MG-2-IS-Hub</object-name>
+  <object-name>R-MG-2-OS-Hub</object-name>
+  <object-name>R-MG-2-Strut</object-name>
+  <object-name>R-MG-2-UDoor</object-name>
+  <object-name>R-MG-2-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-2-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-2-IS-Tyre</object-name>
+  <object-name>R-MG-2-OS-Tyre</object-name>
+  <object-name>R-MG-2-IS-Hub</object-name>
+  <object-name>R-MG-2-OS-Hub</object-name>
+  <object-name>R-MG-2-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-2-IS-Tyre</object-name>
+  <object-name>R-MG-2-OS-Tyre</object-name>
+  <object-name>R-MG-2-IS-Hub</object-name>
+  <object-name>R-MG-2-OS-Hub</object-name>
+  <object-name>R-MG-2-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-2-UDoor</object-name>
+  <object-name>R-MG-2-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-2-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>5.75</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-2-IS-Tyre</object-name>
+  <object-name>R-MG-2-OS-Tyre</object-name>
+  <object-name>R-MG-2-IS-Hub</object-name>
+  <object-name>R-MG-2-OS-Hub</object-name>
+  <object-name>R-MG-2-Strut</object-name>
+  <property>sim/multiplay/generic/float[14]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 3 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-3-IS-Tyre</object-name>
+  <object-name>R-MG-3-OS-Tyre</object-name>
+  <object-name>R-MG-3-IS-Hub</object-name>
+  <object-name>R-MG-3-OS-Hub</object-name>
+  <object-name>R-MG-3-Strut</object-name>
+  <object-name>R-MG-3-UDoor</object-name>
+  <object-name>R-MG-3-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-3-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-3-IS-Tyre</object-name>
+  <object-name>R-MG-3-OS-Tyre</object-name>
+  <object-name>R-MG-3-IS-Hub</object-name>
+  <object-name>R-MG-3-OS-Hub</object-name>
+  <object-name>R-MG-3-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-3-IS-Tyre</object-name>
+  <object-name>R-MG-3-OS-Tyre</object-name>
+  <object-name>R-MG-3-IS-Hub</object-name>
+  <object-name>R-MG-3-OS-Hub</object-name>
+  <object-name>R-MG-3-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-3-UDoor</object-name>
+  <object-name>R-MG-3-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-3-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>7.41</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-3-IS-Tyre</object-name>
+  <object-name>R-MG-3-OS-Tyre</object-name>
+  <object-name>R-MG-3-IS-Hub</object-name>
+  <object-name>R-MG-3-OS-Hub</object-name>
+  <object-name>R-MG-3-Strut</object-name>
+  <property>sim/multiplay/generic/float[15]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 4 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <object-name>R-MG-4-UDoor</object-name>
+  <object-name>R-MG-4-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-4-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>7</factor>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-UDoor</object-name>
+  <object-name>R-MG-4-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-4-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>9.05</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-4-IS-Tyre</object-name>
+  <object-name>R-MG-4-OS-Tyre</object-name>
+  <object-name>R-MG-4-IS-Hub</object-name>
+  <object-name>R-MG-4-OS-Hub</object-name>
+  <object-name>R-MG-4-Strut</object-name>
+  <property>sim/multiplay/generic/float[16]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 5 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <object-name>R-MG-5-UDoor</object-name>
+  <object-name>R-MG-5-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-5-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>12</factor>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-UDoor</object-name>
+  <object-name>R-MG-5-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-5-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>10.72</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-5-IS-Tyre</object-name>
+  <object-name>R-MG-5-OS-Tyre</object-name>
+  <object-name>R-MG-5-IS-Hub</object-name>
+  <object-name>R-MG-5-OS-Hub</object-name>
+  <object-name>R-MG-5-Strut</object-name>
+  <property>sim/multiplay/generic/float[17]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 6 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <object-name>R-MG-6-UDoor</object-name>
+  <object-name>R-MG-6-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-6-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>20</factor>
+  <center>
+   <x-m>12.72</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-UDoor</object-name>
+  <object-name>R-MG-6-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-6-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>12.42</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-6-IS-Tyre</object-name>
+  <object-name>R-MG-6-OS-Tyre</object-name>
+  <object-name>R-MG-6-IS-Hub</object-name>
+  <object-name>R-MG-6-OS-Hub</object-name>
+  <object-name>R-MG-6-Strut</object-name>
+  <property>sim/multiplay/generic/float[18]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<!-- Right 7 -->
+<!-- Select/Deslect u/c and doors -->
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <object-name>R-MG-7-UDoor</object-name>
+  <object-name>R-MG-7-LDoor</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>R-MG-7-CDoor</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0.0</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Steering -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <offset-deg>0</offset-deg>
+  <factor>30</factor>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!-- Extend/Retract -->
+<!-- Swing in/out -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-110.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>2.0</y-m>
+   <z-m>-3.20</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Rotate it forwards -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>0.75</ind>
+      <dep>12.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>3.2</y-m>
+   <z-m>-2.30</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Doors -->
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-UDoor</object-name>
+  <object-name>R-MG-7-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>-100.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-100.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>3.84</y-m>
+   <z-m>-1.95</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-MG-7-LDoor</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>0.25</ind>
+      <dep>120.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>120.0</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m>14.10</x-m>
+   <y-m>3.07</y-m>
+   <z-m>-2.84</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Compression -->
+ <animation>
+  <type>translate</type>
+  <object-name>R-MG-7-IS-Tyre</object-name>
+  <object-name>R-MG-7-OS-Tyre</object-name>
+  <object-name>R-MG-7-IS-Hub</object-name>
+  <object-name>R-MG-7-OS-Hub</object-name>
+  <object-name>R-MG-7-Strut</object-name>
+  <property>sim/multiplay/generic/float[19]</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ 
+ <!--left main wheels new by HerbyW-->
+ <animation>
+    <type>spin</type>
+    <object-name>L-MG-1-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 4.10 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-1-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 4.10 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>spin</type>
+    <object-name>L-MG-2-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 5.753 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-2-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 5.753 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>spin</type>
+    <object-name>L-MG-3-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 7.408 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-3-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 7.408 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-4-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 9.020 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-4-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 9.020 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-5-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 10.721 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-5-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 10.721 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-6-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 12.411 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-6-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 12.411 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-7-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 14.11 </x-m>
+      <y-m> -3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-MG-7-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 14.11 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+  <!--right main wheels new by HerbyW-->
+ <animation>
+    <type>spin</type>
+    <object-name>R-MG-1-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 4.10 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-1-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 4.10 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>spin</type>
+    <object-name>R-MG-2-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 5.753 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-2-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 5.753 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>spin</type>
+    <object-name>R-MG-3-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 7.408 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-3-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 7.408 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-4-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 9.020 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-4-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 9.020 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-5-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 10.721 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-5-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 10.721 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-6-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 12.411 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-6-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 12.411 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-7-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 14.11 </x-m>
+      <y-m> 3.534 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-MG-7-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> 14.11 </x-m>
+      <y-m> 2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <!--front wheels new by HerbyW-->
+ <animation>
+    <type>spin</type>
+    <object-name>R-NG-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -19.617 </x-m>
+      <y-m>   0.474 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>R-NG-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -19.617 </x-m>
+      <y-m>   1.373 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>L-NG-IS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -19.617 </x-m>
+      <y-m>  -0.474 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>L-NG-OS-Tyre</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -19.617 </x-m>
+      <y-m>  -1.373 </y-m>
+      <z-m>  -4.044 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+      
+  <!-- smoke -->
+ 
+  
+        <model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_1.xml</path>
+		<offsets>
+			<x-m> 11.0 </x-m>
+                        <y-m> 25.0 </y-m>
+                        <z-m> 0.2 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_2.xml</path>
+		<offsets>
+			<x-m> 6.7 </x-m>
+                        <y-m> 17.2 </y-m>
+                        <z-m> 0.4 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_3.xml</path>
+		<offsets>
+			<x-m> 2.0 </x-m>
+                        <y-m>  9.40 </y-m>
+                        <z-m> 0.9 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_4.xml</path>
+		<offsets>
+			<x-m> 2.0 </x-m>
+                        <y-m>  -9.40 </y-m>
+                        <z-m> 0.9 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_5.xml</path>
+		<offsets>
+			<x-m> 6.7 </x-m>
+                        <y-m> -17.2 </y-m>
+                        <z-m> 0.4 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/AN-225/Models/Effects/smoke/smoke_6.xml</path>
+		<offsets>
+			<x-m> 11.0 </x-m>
+                        <y-m> -25.0 </y-m>
+                        <z-m> 0.2 </z-m>
+		</offsets>
+	</model>
+
+	
+	<!-- Lights from 707 M.Kraus adopted by HerbyW 01/2015
+        <model>
+		<name>ExternalLights</name>
+		<path>Aircraft/AN-225/Models/Lights/AN-225_Lights.xml</path>	
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</offsets>
+	</model>     -->
+
+	<model>
+		<name>Strobe_1</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-red.xml</path>	
+		<offsets>
+			<x-m>19.25</x-m>
+			<y-m>-43.75</y-m>
+			<z-m>1.65</z-m>
+		</offsets>
+	</model>   
+	
+	<model>
+		<name>Strobe_4</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-green.xml</path>	
+		<offsets>
+			<x-m>19.25</x-m>
+			<y-m>43.75</y-m>
+			<z-m>1.65</z-m>
+		</offsets>
+	</model>  
+	
+	<model>
+		<name>Strobe_2</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>21.5</x-m>
+			<y-m>-42.95</y-m>
+			<z-m>1.7</z-m>
+		</offsets>
+	</model>   
+	
+	<model>
+		<name>Strobe_5</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>21.5</x-m>
+			<y-m>42.95</y-m>
+			<z-m>1.7</z-m>
+		</offsets>
+	</model>   
+	<model>
+		<name>Strobe_6</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>52.5</x-m>
+			<y-m>15.2</y-m>
+			<z-m>6.39</z-m>
+		</offsets>
+	</model>   
+	<model>
+		<name>Strobe_7</name>
+		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<offsets>
+			<x-m>52.5</x-m>
+			<y-m>-15.2</y-m>
+			<z-m>6.39</z-m>
+		</offsets>
+	</model>   
+	
+	
+</PropertyList>

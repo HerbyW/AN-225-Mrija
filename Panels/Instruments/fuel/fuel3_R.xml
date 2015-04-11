@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<PropertyList>
+ <path>fuel1_R1.ac</path>
+
+  
+  <!--Lights-->
+                                   
+ <animation>   
+   <object-name>fuel_r</object-name>
+   <object-name>fr1</object-name>
+   <object-name>n1</object-name>      
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+    <object-name>fuel_r</object-name>
+    <object-name>fr1</object-name>
+    <object-name>n1</object-name>   
+   <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+ 
+ <!--sum of tank 3 content in kg, small needle -->
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>fr2</object-name>
+  <property>consumables/fuel/tank[2]/level-kg</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>/0</dep></entry> 
+   <entry><ind> 12500</ind><dep>  123</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <!--fuel flow in gallons per hour for tank 3, big needle -->
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>fr1</object-name>
+  <property>engines/engine[2]/fuel-flow-gph</property>
+  <interpolation>
+    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
+    <entry><ind> 220</ind><dep> 45</dep></entry>
+    <entry><ind> 470</ind><dep> 103</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ 
+ <animation>
+  <type>pick</type> 
+  <object-name>k1</object-name> 
+- <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>instrumentation/R1_fuel/k3</property>
+  <step>100</step>
+  <min>0</min>
+  <max>25000</max> 
+   </binding>
+  </action>
+  </animation>
+  
+   <animation>
+  <type>pick</type> 
+  <object-name>k1</object-name> 
+- <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>instrumentation/R1_fuel/k3</property>
+  <step>-100</step>
+  <min>0</min>
+  <max>25000</max> 
+   </binding>
+  </action>
+  </animation>
+
+ </PropertyList>
+

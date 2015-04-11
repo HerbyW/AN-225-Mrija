@@ -1,0 +1,21 @@
+<PropertyList>
+	<path>srb.ac</path>
+		
+<offsets>
+  <heading-deg>-180</heading-deg>
+</offsets>  
+
+
+<!-- not in use now -->
+
+<animation>
+<type>select</type>
+<condition>
+  <equals>
+   <property>sim/multiplay/generic/int[9]</property>
+   <value>5</value>
+  </equals>
+</condition>
+</animation>
+
+</PropertyList>

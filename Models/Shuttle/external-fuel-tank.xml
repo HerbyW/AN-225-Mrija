@@ -1,0 +1,19 @@
+<PropertyList>
+	<path>et.ac</path>
+		
+<offsets>
+  <heading-deg>0</heading-deg>
+  <pitch-deg>180</pitch-deg>
+  </offsets>  
+
+<animation>
+<type>select</type>
+<condition>
+  <equals>
+   <property>sim/multiplay/generic/int[9]</property>
+   <value>1</value>
+  </equals>
+</condition>
+</animation>
+
+</PropertyList>
