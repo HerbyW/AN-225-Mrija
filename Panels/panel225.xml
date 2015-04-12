@@ -96,36 +96,8 @@
   </model>
   
   
-  <!-- UAP, AOA and G-meter
-      
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
-    <offsets>
-      <x-m>  0.009 </x-m>
-      <y-m> -0.737 </y-m>
-      <z-m>  0.098 </z-m>
-    </offsets>
-  </model>
-    
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.761 </y-m>
-      <z-m> -0.000 </z-m>
-    </offsets>
-  </model>                            -->
-  
-  <!-- PNP, HSI Horizontal Situation Indicator -->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.320 </y-m>
-      <z-m>  0.095 </z-m>
-    </offsets>
-  </model>
+ 
+ 
   
   <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
   <model>
@@ -259,25 +231,7 @@
     </offsets>
   </model>
     
-  <!-- VOR-IND, VOR Localizer and Glidescope Indicator -->
   
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
-    <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.31 </y-m>
-      <z-m> -0.012 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
-    <offsets>
-      <x-m> 0.005 </x-m>
-      <y-m> 0.730 </y-m>
-      <z-m> 0.095 </z-m>
-    </offsets>
-  </model>
 
   <!-- DME40, NAV distance information in mi, kt and min for triangle navigation -->
   
@@ -335,15 +289,7 @@
     </offsets>
   </model>
       
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/RV_ind/RV_ind.xml</path>
-    <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.220 </y-m>
-      <z-m> -0.11 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
+  
   <!-- Air- and Groundspeed Indicator in km/h -->
   
   <model>
@@ -564,42 +510,7 @@
     </offsets>
   </model>
 
-  <!--Autopilot, provisorium but still not working 
   
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ap40/ap.xml</path>
-    <offsets>
-      <x-m>  0.002 </x-m>
-      <y-m> -0.367 </y-m>
-      <z-m> -0.144 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>0</pitch-deg>    
-    </offsets>
-  </model>
-  
-  Autopilot from TU154B 
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pn-6.xml</path>
-    <offsets>
-      <x-m>  0.085 </x-m>
-      <y-m>  0.082 </y-m>
-      <z-m> -0.328 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-37</pitch-deg>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pu-46+pn-5.xml</path>
-    <offsets>
-      <x-m>  0.143 </x-m>
-      <y-m> -0.082 </y-m>
-      <z-m> -0.405 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-37</pitch-deg>
-    </offsets>
-  </model>                                                  -->
   
 
   <!--Autopilot
@@ -939,7 +850,7 @@
       <!-- Three Position Switch -->
       
   <model>
-    <path>Aircraft/AN-225/Panels/Instruments/switches/azs_3.xml</path>
+    <path>Aircraft/AN-225/Panels/Instruments/switches-shuttle/azs_3.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.035 </y-m>
