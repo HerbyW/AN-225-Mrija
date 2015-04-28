@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Variometer
+3D instrument for Tu-154 
+
+wicota v kabine = Kabinendruckhöhe
+perepad davlenii = Unterschied des Drucks-->
+
+<PropertyList>
+
+<path>uvpd.ac</path>
+
+
+<!-- Internal instruments lighting -->
+
+<animation> 
+   <object-name>housing</object-name>
+   <object-name>needle_1</object-name>
+   <object-name>needle_2</object-name> 
+</animation>
+
+  <!-- working for Rembrandt -->
+ 
+  <animation>
+    <type>material</type>
+     <object-name>housing</object-name>
+   <object-name>needle_1</object-name>
+   <object-name>needle_2</object-name> 
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+
+
+
+<!--Needles-->
+
+<animation>
+    <type>rotate</type>
+    <object-name>needle_1</object-name>
+    <property>position/altitude-ft</property>
+    <factor>0.36</factor>
+    <interpolation>
+  	<entry><ind>    -200</ind>	<dep>       5</dep></entry>
+	<entry><ind>	   0</ind>	<dep>	    0</dep></entry>
+	<entry><ind>	8000</ind>	<dep>	-90</dep></entry>
+	<entry><ind>	25000</ind>	<dep>	-90.0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>needle_2</object-name>
+    <property>controls/pressurization/diffdruck</property>
+    <factor>1.0</factor>    
+    <interpolation>
+  	<entry><ind>	-0.04</ind>	<dep>	-40</dep></entry>
+	<entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
+        <entry><ind>	0.48</ind>	<dep>	5.4</dep></entry>        
+	<entry><ind>	3.6</ind>	<dep>	118.9</dep></entry>
+    </interpolation>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+</PropertyList>

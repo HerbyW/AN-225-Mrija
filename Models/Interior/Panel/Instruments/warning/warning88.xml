@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- indicators on captain panel
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>warning88.ac</path>
+ 
+  <!-- Internal instruments lighting -->
+
+  <effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>cover_2</object-name>
+</effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>cover_2</object-name>    
+    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+   
+<!--Indicator 34-decision height (H) -->
+
+
+<animation>
+  <type>material</type>
+  <object-name>text_2</object-name>
+   <condition>    
+      <property>controls/reverser</property>      
+  </condition> 
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>    
+  </emission>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>text_2</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/reverser</property>
+      <value>0</value>
+    </binding>
+  </action>
+</animation>
+
+</PropertyList>

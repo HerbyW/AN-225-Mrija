@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>switch.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>switch</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>switch</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/ALS/setting</property>
+      </binding>      
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch</object-name>
+    <property>controls/ALS/setting-pos</property>
+    <factor> -50 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+</PropertyList>
+

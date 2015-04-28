@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff			 	  	#
+    #    	yurik@megasignal.com					   	#
+    #    	Jul 2007						   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Radio altimeter
+3D instrument for Tu-154 -->
+<PropertyList>
+  
+  <path>rv-5m.ac</path>
+   
+<!-- Internal instruments lighting <object-name>center</object-name><object-name>blank</object-name>-->
+
+<animation>  
+  <object-name>text</object-name>
+  <object-name>needle</object-name>
+  <object-name>index</object-name>
+  <object-name>flag</object-name>  
+</animation>
+
+  <animation>
+    <type>material</type>
+     <object-name>text</object-name>
+     <object-name>needle</object-name>
+     <object-name>index</object-name>     
+     <object-name>base</object-name>
+     
+     
+     <object-name>flag</object-name>     
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+<!-- External instruments lighting -->
+<animation>
+  <type>material</type>  
+  <object-name>flag</object-name>
+  <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+  </emission>
+</animation>
+
+<!--Warning lamp-->
+<animation>
+  <type>material</type>
+  <object-name>lamp</object-name>
+  <emission>
+    <red>0.30</red>
+    <green>0.30</green>
+    <blue>0.30</blue>
+    <factor-prop>controls/switches/gauge-light</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>lamp</object-name>  
+  <condition>
+    <greater-than>
+      <property>instrumentation/altimeter/decision-height</property>
+      <value>10</value>
+      
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>  
+  <object-name>flag</object-name>
+  <condition>
+    <less-than>
+      <property>position/altitude-agl-ft</property>
+      <property>instrumentation/altimeter/decision-height</property>      
+    </less-than>
+  </condition>
+</animation>
+
+
+<!--Needles-->
+<animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>position/altitude-agl-ft</property>
+    <interpolation>
+      <entry><ind>    0.000</ind>	<dep>	0.0</dep></entry>
+    <entry><ind>  164.000</ind>	<dep>	75.0</dep></entry>
+    <entry><ind>  186.850</ind>	<dep>	91.5</dep></entry>
+    <entry><ind>  262.467</ind>	<dep>	123.0</dep></entry>
+    <entry><ind>  328.084</ind>	<dep>	155.0</dep></entry>
+    <entry><ind>  656.168</ind>	<dep>	179.0</dep></entry>
+    <entry><ind>  984.252</ind>	<dep>	203.0</dep></entry>
+    <entry><ind> 1312.336</ind>	<dep>	226.0</dep></entry>
+    <entry><ind> 1640.420</ind>	<dep>	251.0</dep></entry>
+    <entry><ind> 2296.588</ind>	<dep>	300.0</dep></entry>
+    <entry><ind> 2624.672</ind>	<dep>	325.0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>index</object-name>
+  <property>instrumentation/altimeter/decision-height</property>
+  <interpolation>
+    <entry><ind>    0.000</ind>	<dep>	0.0</dep></entry>
+    <entry><ind>  164.000</ind>	<dep>	75.0</dep></entry>
+    <entry><ind>  186.850</ind>	<dep>	91.5</dep></entry>
+    <entry><ind>  262.467</ind>	<dep>	123.0</dep></entry>
+    <entry><ind>  328.084</ind>	<dep>	155.0</dep></entry>
+    <entry><ind>  656.168</ind>	<dep>	179.0</dep></entry>
+    <entry><ind>  984.252</ind>	<dep>	203.0</dep></entry>
+    <entry><ind> 1312.336</ind>	<dep>	226.0</dep></entry>
+    <entry><ind> 1640.420</ind>	<dep>	251.0</dep></entry>
+    <entry><ind> 2296.588</ind>	<dep>	300.0</dep></entry>
+    <entry><ind> 2624.672</ind>	<dep>	325.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Controls-->
+
+<animation>
+  <type>knob</type>
+  <object-name>hs</object-name>
+  <visible>false</visible>
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/altimeter/decision-height</property>
+      <factor>16.404199475</factor>
+      <min>0</min>
+      <max>2500</max>
+    </binding>
+  </action>
+</animation>
+
+
+</PropertyList>

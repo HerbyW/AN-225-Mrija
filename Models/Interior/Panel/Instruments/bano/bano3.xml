@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Light switches block -AN-12
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>bano.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>handle_1</object-name>
+  <object-name>handle_2</object-name>
+  <object-name>handle_3</object-name>
+  <object-name>base_1</object-name>
+  <object-name>base_2</object-name>
+  <object-name>base_3</object-name>
+  <object-name>base_4</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
+    </emission>
+</animation>
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>handle_1</object-name>
+  <property>instrumentation/adf[0]/power-btn</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>handle_2</object-name>
+  <property>instrumentation/adf[1]/power-btn</property>
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>handle_3</object-name>
+  <property>instrumentation/heading-indicator[0]/serviceable</property>  
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Control-->
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_1</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+        <property>instrumentation/adf[0]/power-btn</property>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_2</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+        <property>instrumentation/adf[0]/power-btn</property>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_3</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/adf[1]/power-btn</property>
+      </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_4</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/adf[1]/power-btn</property>
+      </binding>
+  </action>
+</animation>
+
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_5</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>     
+     <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/heading-indicator[0]/serviceable</property>
+      </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_6</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>     
+     <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/heading-indicator[0]/serviceable</property>
+      </binding>
+  </action>
+</animation>
+
+</PropertyList>
+

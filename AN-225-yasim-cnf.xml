@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList include="AN-225-base.xml">
+
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+
+  <sim>
+
+    <description>Antonov AN-225 (YASim)</description>
+    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
+    <flight-model>yasim</flight-model>
+    <aero>AN-225-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+

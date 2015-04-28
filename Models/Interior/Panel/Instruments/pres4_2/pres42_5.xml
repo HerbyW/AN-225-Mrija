@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<PropertyList>
+ <path>pres4_2.ac</path>
+
+   <!--Lights-->
+                                   
+ <animation>   
+   <object-name>group</object-name>
+   <object-name>n1</object-name>
+   <object-name>n2</object-name>   
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>group</object-name>
+   <object-name>n1</object-name>
+   <object-name>n2</object-name> 
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+ 
+
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>n2</object-name>
+ <property>engines/engine[4]/oilp-norm</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>0</dep></entry> 
+
+   <entry><ind> 1.2</ind><dep> 120</dep></entry>
+  
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.019</y-m>
+   <z-m>0.019</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+   <animation>
+  <type>rotate</type>
+  <object-name>n1</object-name>
+ <property>engines/engine[4]/oilp-norm</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>0</dep></entry> 
+
+   <entry><ind> 1.2</ind><dep> 120</dep></entry>
+  
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>-0.019</y-m>
+   <z-m>-0.019</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ </PropertyList>
+

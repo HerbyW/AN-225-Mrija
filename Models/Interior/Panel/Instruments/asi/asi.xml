@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+
+<!--  Autospeed in the Autopilot activated 20 Dec 2014 HerbyW,MK1 -->
+
+<path>asi.ac</path>
+
+
+  <animation>
+    <type>material</type>
+        <object-name>ASI320.needle</object-name>
+        <object-name>mach.subdial</object-name>
+        <object-name>index.marker</object-name>
+        <object-name>ASI320</object-name>
+        <object-name>ASI320.face</object-name>
+        <object-name>ASI320.knob</object-name>
+        <object-name>ASI320.ovrspeed</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+
+
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ASI320.needle</object-name>
+        <object-name>mach.subdial</object-name>
+        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>30.0</ind><dep>0.0</dep></entry>
+            <entry><ind>40.0</ind><dep>15.0</dep></entry>
+            <entry><ind>100.0</ind><dep>82.5</dep></entry>
+            <entry><ind>160.0</ind><dep>150.0</dep></entry>
+            <entry><ind>240.0</ind><dep>240.0</dep></entry>
+            <entry><ind>320.0</ind><dep>330.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>mach.subdial</object-name>
+        <property>velocities/mach</property>
+            <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>0.4</ind><dep>264</dep></entry>
+            <entry><ind>0.75</ind><dep>474</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>index.marker</object-name>
+        <property>autopilot/settings/target-speed-kt</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>40.0</ind><dep>15.0</dep></entry>
+            <entry><ind>100.0</ind><dep>82.5</dep></entry>
+            <entry><ind>160.0</ind><dep>150.0</dep></entry>
+            <entry><ind>240.0</ind><dep>240.0</dep></entry>
+            <entry><ind>320.0</ind><dep>330.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--  Hotspots -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>ASI320.knob</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.1</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-speed-kt</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>320</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ASI320.knob</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.1</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-speed-kt</property>
+                <step>1</step>
+                <min>0</min>
+                <max>320</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ASI320.knob</object-name>
+        <action>
+            <button>3</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-speed-kt</property>
+                <step>-10</step>
+                <min>0</min>
+                <max>320</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ASI320.knob</object-name>
+        <action>
+            <button>4</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>autopilot/settings/target-speed-kt</property>
+                <step>10</step>
+                <min>0</min>
+                <max>320</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

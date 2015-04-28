@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM,                 #
+    # 2d & 3d instruments, animations, systems and over.                        #
+    #     yurik@megasignal.com                                                  #
+    #                                                                           #
+    # Updated by Helijah August 2012                                            #
+    #############################################################################
+-->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Turbine gauge UIZ-3 3D instrument for Tu-134 -->
+<PropertyList>
+
+  <path>uiz.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>infos</object-name>
+    <object-name>face</object-name>
+    <object-name>needle_1</object-name>
+    <object-name>needle_2</object-name>
+    <object-name>needle_3</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>                                        -->
+
+  <!-- Internal instruments lighting -->
+ 
+ <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>infos</object-name>
+    <object-name>face</object-name>
+    <object-name>needle_1</object-name>
+    <object-name>needle_2</object-name>
+    <object-name>needle_3</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+   <!--Needles Fuel pressure Kg/cm2-->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle_1</object-name>
+    <property>/engines/engine[1]/n2</property>
+    <factor> 0.0703 </factor>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 55 </dep></entry>
+      <entry><ind> 100 </ind><dep> 78 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00157 </x-m>
+      <y-m> 0.00005 </y-m>
+      <z-m> 0.00731 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!--Needles Oel pressure Kg/cm2-->  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle_2</object-name>
+    <property>/engines/engine[1]/n2</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00150 </x-m>
+      <y-m> -0.01697 </y-m>
+      <z-m> -0.01013 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!--Needles Oel temperatur in C -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle_3</object-name>
+    <property>/engines/engine[1]/n2</property>    
+    <interpolation>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00164 </x-m>
+      <y-m>  0.01636 </y-m>
+      <z-m> -0.01015 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

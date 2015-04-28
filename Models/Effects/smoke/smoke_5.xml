@@ -21,17 +21,17 @@
 		<condition>
 			<or>
 				<greater-than>
-					<property>sim/multiplay/generic/float[8]</property>
-					<value>0.90</value>
+					<property>engines/engine[4]/n1</property>
+					<value>90</value>
 				</greater-than>
 				<and>
 					<greater-than>
-						<property>sim/multiplay/generic/float[8]</property>
-						<value>0.08</value>
+						<property>engines/engine[4]/n1</property>
+						<value>58</value>
 					</greater-than>
 					<less-than>
-						<property>sim/multiplay/generic/float[8]</property>
-						<value>0.25</value>
+						<property>engines/engine[4]/n1</property>
+						<value>65</value>
 					</less-than>
 				</and>
 			</or>

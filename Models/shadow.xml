@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+    -->
+
+<PropertyList>
+
+  <path>shadow.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+
+    <!-- Objets transparents -->
+    <object-name>shadow</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>shadow</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadow</object-name>
+    <condition>
+     <and>
+       <property>/sim/rendering/shadows/enabled</property>
+      <not><property>sim/multiplay/generic/int[4]</property></not>      
+     </and>
+    </condition>
+  </animation>
+
+  <!-- pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>shadow</object-name>
+    <property>sim/multiplay/generic/float[3]</property>    
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- roll -->
+  <animation>
+    <type>rotate</type>
+    <object-name>shadow</object-name>
+    <property>sim/multiplay/generic/float[7]</property>    
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Translate to ground level -->
+  <animation>
+   <type>translate</type>
+   <object-name>shadow</object-name>
+   <property>sim/multiplay/generic/float[5]</property>
+   <axis>
+     <x>  0 </x>
+     <y>  0 </y>
+     <z> -1 </z>
+   </axis>
+ </animation>
+
+</PropertyList>
+

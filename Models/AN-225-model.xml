@@ -13,7 +13,7 @@ AN225 model/animation config.
   
 
   
-  <path>AN225-003-002d14.ac</path>
+  <path>AN225.ac</path>
   <offsets>
     <z-m>0.0</z-m>
     <pitch-deg>0</pitch-deg>
@@ -225,7 +225,7 @@ AN225 model/animation config.
   </animation>
  
   <model>
-    <path>Aircraft/AN-225/Panels/panel225.xml</path>
+    <path>Aircraft/AN-225/Models/Interior/Panel/panel.xml</path>
       <offsets>
         <x-m> -23.05 </x-m>
         <y-m>   0.00 </y-m>
@@ -233,31 +233,30 @@ AN225 model/animation config.
       </offsets>
    </model>
 
+     <!-- A shadow for OSG without Rembrandt  -->
+  <model>
+    <path>Aircraft/AN-225/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -8.000 </z-m>
+    </offsets>
+  </model>
+  
   
   <model>
   <name>Shuttle</name>
-  <path>Aircraft/AN-225/Models/Shuttle/shuttle.xml</path>
+  <path>Aircraft/AN-225/Models/Effects/Submodels/Shuttle/shuttle.xml</path>
   <offsets>
    <x-m>5.0</x-m>
    <y-m>0</y-m>
    <z-m>11.95</z-m>
   </offsets>
   </model>
- 
-
- <model>
-  <name>Rocket-Booster</name>
-  <path>Aircraft/AN-225/Models/Shuttle/solid-rocket-booster.xml</path>
-  <offsets>
-   <x-m>4.0</x-m>
-   <y-m>0</y-m>
-   <z-m>7.95</z-m>
-  </offsets>
- </model>
-  
+   
    <model>
   <name>Fuel-Tank-Shuttle</name>
-  <path>Aircraft/AN-225/Models/Shuttle/external-fuel-tank.xml</path>
+  <path>Aircraft/AN-225/Models/Effects/Submodels/Shuttle/external-fuel-tank.xml</path>
   <offsets>
    <x-m>4.0</x-m>
    <y-m>0</y-m>
@@ -5260,20 +5259,11 @@ AN225 model/animation config.
 	</model>
 
 	
-	<!-- Lights from 707 M.Kraus adopted by HerbyW 01/2015
-        <model>
-		<name>ExternalLights</name>
-		<path>Aircraft/AN-225/Models/Lights/AN-225_Lights.xml</path>	
-		<offsets>
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
-		</offsets>
-	</model>     -->
+	<!-- Lights from 707 M.Kraus adopted by HerbyW 01/2015 -->
 
 	<model>
 		<name>Strobe_1</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-red.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-red.xml</path>	
 		<offsets>
 			<x-m>19.25</x-m>
 			<y-m>-43.75</y-m>
@@ -5283,7 +5273,7 @@ AN225 model/animation config.
 	
 	<model>
 		<name>Strobe_4</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-green.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-green.xml</path>	
 		<offsets>
 			<x-m>19.25</x-m>
 			<y-m>43.75</y-m>
@@ -5293,7 +5283,7 @@ AN225 model/animation config.
 	
 	<model>
 		<name>Strobe_2</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-white.xml</path>	
 		<offsets>
 			<x-m>21.5</x-m>
 			<y-m>-42.95</y-m>
@@ -5303,7 +5293,7 @@ AN225 model/animation config.
 	
 	<model>
 		<name>Strobe_5</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-white.xml</path>	
 		<offsets>
 			<x-m>21.5</x-m>
 			<y-m>42.95</y-m>
@@ -5312,7 +5302,7 @@ AN225 model/animation config.
 	</model>   
 	<model>
 		<name>Strobe_6</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-white.xml</path>	
 		<offsets>
 			<x-m>52.5</x-m>
 			<y-m>15.2</y-m>
@@ -5321,7 +5311,7 @@ AN225 model/animation config.
 	</model>   
 	<model>
 		<name>Strobe_7</name>
-		<path>Aircraft/AN-225/Models/Lights/strobe-white.xml</path>	
+		<path>Aircraft/AN-225/Models/light/strobe-white.xml</path>	
 		<offsets>
 			<x-m>52.5</x-m>
 			<y-m>-15.2</y-m>

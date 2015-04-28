@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+
+<!-- AZS type 3
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>azs_3.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>handle</object-name>
+  <object-name>base</object-name>
+  <object-name>rect</object-name>
+  <object-name>sphere2</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+</animation>
+
+  
+<animation>
+  <type>rotate</type>
+  <object-name>handle</object-name>
+  <property>sim/multiplay/generic/int[7]</property>  
+  <interpolation>
+    <entry><ind>	1</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	2</ind>	<dep>	0.0</dep></entry>
+    <entry><ind>	3</ind>	<dep>	60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Control-->
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_1</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[7]", 1.0, 0.1 );
+      </script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_2</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[7]", 2.0, 0.1 );
+      </script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_3</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[7]", 3.0, 0.1 );
+      </script>
+    </binding>
+  </action>
+</animation>
+
+
+
+</PropertyList>

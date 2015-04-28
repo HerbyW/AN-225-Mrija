@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+
+3D instrument for Tu-154 -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+ <path>var-30.ac</path>
+
+ <!-- Internal instruments lighting -->
+
+ <animation>
+    <object-name>base</object-name>    
+    <object-name>needle</object-name>    
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>    
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+<!--Needles-->
+<animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <interpolation>
+  	<entry><ind>	5708.66</ind>	<dep>	177.0</dep></entry>
+	<entry><ind>	3937.0</ind>	<dep>	142.0</dep></entry>
+	<entry><ind>	1968.5</ind>	<dep>	83.0</dep></entry>
+	<entry><ind>	984.25</ind>	<dep>	44.0</dep></entry>
+	<entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
+        <entry><ind>	-984.25</ind>	<dep>	-44.0</dep></entry>
+        <entry><ind>	-1968.5</ind>	<dep>	-83.0</dep></entry>
+        <entry><ind>	-3937.0</ind>	<dep>	-142.0</dep></entry>
+        <entry><ind>	-5708.66</ind>	<dep>	-177.0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+
+
+</PropertyList>

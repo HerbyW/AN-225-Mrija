@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Heading indicator USH
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>ush.ac</path>
+
+ <!-- Internal instruments lighting -->
+
+ <animation>  
+  <object-name>index</object-name>
+  <object-name>base</object-name>
+  <object-name>compass</object-name>
+  <object-name>needle_1</object-name>
+  <object-name>needle_2</object-name>  
+</animation> 
+ 
+ <animation>
+  <type>material</type>
+  <object-name>index</object-name>
+  <object-name>base</object-name>
+  <object-name>compass</object-name>
+  <object-name>needle_1</object-name>
+  <object-name>needle_2</object-name>
+  
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>compass</object-name>
+   <property>controls/switches/gauge-light</property>   
+   <factor> 180 </factor>  
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>  
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>compass</object-name>
+  <visible>true</visible>   
+    
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Drift</tooltip-id>
+      <label>Wind Drift: %5.2f</label>
+      <property>/instrumentation/drift</property>      
+    </binding>
+  </hovered> 
+  
+</animation>
+
+
+<!--Needles
+<animation>
+  <type>rotate</type>
+  <object-name>compass</object-name>
+  <property>/orientation/heading-deg</property>  
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>needle_1</object-name>
+    <object-name>needle_2</object-name>
+    <property>instrumentation/adf/indicated-bearing-deg</property>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>-->
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>needle_1</object-name>
+  <object-name>needle_2</object-name>
+  <property>/orientation/heading-deg</property>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>needle_2</object-name>  
+  <property>/instrumentation/drift</property>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>  
+</animation>
+
+<!--mk lamp-->
+
+
+<animation>
+  <type>material</type>
+  <object-name>mk</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>mk</object-name>
+    <condition>
+     <equals>
+      <property>controls/switches/pu-11-gpk</property>
+      <value>1.0</value>
+     </equals>
+  </condition>
+</animation>
+
+
+
+<!--gpk lamp-->
+
+<animation>
+  <type>material</type>
+  <object-name>gpk</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
+
+<animation>
+  <type>select</type>
+  <object-name>gpk</object-name>
+  <condition>
+    <equals>
+      <property>controls/switches/pu-11-gpk</property>
+      <value>0.0</value>
+    </equals>
+  </condition>
+</animation>
+
+
+
+
+<!--ak lamp -->
+
+<animation>
+  <type>material</type>
+  <object-name>ak</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>ak</object-name>
+  <condition>
+    <equals>
+      <property>controls/switches/pu-11-gpk</property>
+      <value>-1.0</value>
+    </equals>
+  </condition>
+</animation>
+
+
+
+</PropertyList>

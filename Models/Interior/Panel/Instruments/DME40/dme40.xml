@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+
+<path>dme40.ac</path>
+
+   <!-- Lights -->
+
+  <animation>
+    <object-name>DME40.test</object-name>
+    <object-name>DME40.knob2</object-name>
+    <object-name>DME40.knob1</object-name>
+    <object-name>DME40.dim</object-name>
+    <object-name>DME</object-name>    
+  </animation>
+
+  <!-- working for Rembrandt -->
+
+  <animation>
+    <type>material</type>
+     <object-name>DME40.test</object-name>
+     <object-name>DME40.knob2</object-name>
+     <object-name>DME40.knob1</object-name>
+     <object-name>DME40.dim</object-name>
+     <object-name>DME</object-name>
+     <object-name>DME.invalid</object-name>         
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>     
+     <object-name>NM.1</object-name>
+     <object-name>NM1</object-name>
+     <object-name>NM10</object-name>
+     <object-name>NM100</object-name>
+     <object-name>min1</object-name>
+     <object-name>min10</object-name>
+     <object-name>min100</object-name>
+     <object-name>kt1</object-name>
+     <object-name>kt10</object-name>
+     <object-name>kt100</object-name>     
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.55 </red>
+      <green> 0.55 </green>
+      <blue>  0.55 </blue>
+    </emission>
+  </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>DME.invalid</object-name>
+		  <condition>
+			<greater-than>
+			<property>systems/electrical/outputs/dme</property>
+			<value>1</value>
+			</greater-than>
+		  </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+                  <object-name>NM.1</object-name>
+		  <object-name>NM1</object-name>
+		  <object-name>NM10</object-name>
+		  <object-name>NM100</object-name>
+		  <condition>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+			</and>
+		  </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+		  <object-name>min1</object-name>
+		  <object-name>min10</object-name>
+		  <object-name>min100</object-name>
+		  <condition>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+				<equals>
+					<property>instrumentation/dme/switch-position[1]</property>
+					<value>1</value>
+				</equals>
+			</and>
+		  </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+		  <object-name>kt1</object-name>
+		  <object-name>kt10</object-name>
+		  <object-name>kt100</object-name>
+		  <condition>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+				<equals>
+					<property>instrumentation/dme/switch-position[1]</property>
+					<value>2</value>
+				</equals>
+			</and>
+		  </condition>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>NM100</object-name>
+        <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.001</factor>
+			<step>100</step>
+			<bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>NM10</object-name>
+        <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.01</factor>
+			<step>10</step>
+			<bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>NM1</object-name>
+        <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.1</factor>
+			<step>1</step>
+			<bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>NM.1</object-name>
+        <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>1.0</factor>
+			<step>0.1</step>
+			<bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- minutes -->
+    <animation>
+        <type>textranslate</type>
+        <object-name>min100</object-name>
+        <property>instrumentation/dme/indicated-time-min</property>
+        <factor>0.001</factor>
+			<step>100</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>min10</object-name>
+        <property>instrumentation/dme/indicated-time-min</property>
+        <factor>0.01</factor>
+			<step>10</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>min1</object-name>
+        <property>instrumentation/dme/indicated-time-min</property>
+        <factor>0.1</factor>
+			<step>1</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- groundspeed -->
+    <animation>
+        <type>textranslate</type>
+        <object-name>kt100</object-name>
+        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <factor>0.001</factor>
+			<step>100</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>kt10</object-name>
+        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <factor>0.01</factor>
+			<step>10</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>kt1</object-name>
+        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <factor>0.1</factor>
+			<step>1</step>
+			<bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>DME40.knob1</object-name>
+        <property>instrumentation/dme/switch-position[0]</property>
+        <min>0</min>
+        <max>3</max>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>-25</dep></entry>
+            <entry><ind>2</ind><dep>-50</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.027</y-m>
+            <z-m>-0.029</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>DME40.knob2</object-name>
+        <property>instrumentation/dme/switch-position[1]</property>
+        <min>0</min>
+        <max>2</max>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>-25</dep></entry>
+            <entry><ind>2</ind><dep>-50</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.027</y-m>
+            <z-m>-0.029</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- hotspots -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>DME40.knob1</object-name>
+        <action>
+            <button>0</button>
+	    <button>3</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/dme/switch-position[0]</property>
+                <step>1</step>
+                <min>0</min>
+                <max>2</max>
+                <wrap>false</wrap>
+            </binding>            
+	</action>
+	<hovered>
+             <binding>
+               <command>set-tooltip</command>
+               <tooltip-id>DME1</tooltip-id>
+               <label>DME 1 only</label>            
+             </binding>
+         </hovered> 
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DME40.knob1</object-name>
+        <action>
+            <button>1</button>
+	    <button>4</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/dme/switch-position[0]</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>2</max>
+                <wrap>false</wrap>
+            </binding>             
+        </action>
+	<hovered>
+	     <binding>
+              <command>set-tooltip</command>
+              <tooltip-id>DME1</tooltip-id>
+              <label>DME 1 only</label>            
+             </binding>
+	 </hovered>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DME40.knob2</object-name>
+        <action>
+            <button>0</button>
+	    <button>3</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/dme/switch-position[1]</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>2</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DME40.knob2</object-name>
+        <action>
+            <button>1</button>
+	    <button>4</button>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/dme/switch-position[1]</property>
+                <step>1</step>
+                <min>0</min>
+                <max>2</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

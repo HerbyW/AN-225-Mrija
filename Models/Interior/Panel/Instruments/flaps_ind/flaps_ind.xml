@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+        from TU154b
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+ <path>flaps_ind.ac</path>
+
+ 
+
+  <!-- working for Rembrandt -->
+
+  <animation>
+    <type>material</type>
+     <object-name>block1</object-name>
+     <object-name>block2</object-name>
+     <object-name>block3</object-name>
+     <object-name>block4</object-name>     
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+   <type>material</type>
+   <object-name>flaps_ind</object-name>
+   <emission>
+		<red>   0.15</red>
+		<green> 0.15</green>
+		<blue>  0.15</blue>
+		<factor-prop>controls/switches/gauge-light</factor-prop>
+	</emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+     <object-name>flaps2</object-name>
+       <emission>
+		<red>   0.35 </red>
+                <green> 0.35 </green>
+                <blue>  0.35 </blue>
+		<factor-prop>controls/switches/gauge-light</factor-prop>
+       </emission>
+    </animation>
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>block1</object-name>
+  <property>controls/flight/flaps</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    -68</dep></entry> 
+   <entry><ind> 0.25</ind><dep>  -45</dep></entry>
+   <entry><ind> 0.5</ind><dep>  -35</dep></entry>
+   <entry><ind> 0.75</ind><dep> -15</dep></entry>
+   <entry><ind> 1</ind><dep>  0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.000</x-m>
+   <y-m>0.041</y-m>
+   <z-m>0.001</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>block2</object-name>
+  <property>controls/flight/flaps</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    -68</dep></entry> 
+   <entry><ind> 0.25</ind><dep>  -45</dep></entry>
+   <entry><ind> 0.5</ind><dep>  -35</dep></entry>
+   <entry><ind>0.75</ind><dep>  -15</dep></entry>
+   <entry><ind> 1</ind><dep>  0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.000</x-m>
+   <y-m>0.041</y-m>
+   <z-m>0.001</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>block3</object-name>
+  <property>controls/flight/flaps</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    -68</dep></entry>  
+   <entry><ind> 0.25</ind><dep>  -30</dep></entry>  
+   <entry><ind> 0.5</ind><dep>  0</dep></entry>
+   <entry><ind> 0.75</ind><dep>  0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.000</x-m>
+   <y-m>0.041</y-m>
+   <z-m>0.001</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>block4</object-name>
+  <property>controls/flight/flaps</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    -68</dep></entry>  
+   <entry><ind> 0.25</ind><dep>  -30</dep></entry>  
+   <entry><ind> 0.5</ind><dep>  0</dep></entry>
+   <entry><ind> 0.75</ind><dep>  0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.000</x-m>
+   <y-m>0.041</y-m>
+   <z-m>0.001</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+

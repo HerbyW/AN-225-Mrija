@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+ <path>fuel1_R1.ac</path>
+  
+    <!--Lights-->
+                                   
+ <animation>   
+    <object-name>fuel_r</object-name>
+    <object-name>fr1</object-name>
+    <object-name>fr2</object-name>    
+    <object-name>k1</object-name>
+    <object-name>rect</object-name>
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+    <object-name>fuel_r</object-name>
+    <object-name>fr1</object-name>
+    <object-name>fr2</object-name>
+    <object-name>rect</object-name> 
+    <object-name>k1</object-name>   
+   <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+
+ 
+ <!--sum of tank 1+2 content in kg, small needle -->
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>fr2</object-name>
+  <property>consumables/fuel/tank[1]/level-kg</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>/0</dep></entry> 
+   <entry><ind> 12500</ind><dep>  246</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <!--fuel flow in gallons per hour for tank 1+2, big needle -->
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>fr1</object-name>
+  <property>engines/engine[1]/fuel-flow-gph</property>
+  <interpolation>
+    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
+    <entry><ind> 220</ind><dep> 90</dep></entry>
+    <entry><ind> 470</ind><dep> 205</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+ 
+ <animation>
+  <type>pick</type> 
+  <object-name>k1</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>instrumentation/R1_fuel/k12</property>
+  <step>100</step>
+  <min>0</min>
+  <max>25000</max> 
+   </binding>
+  </action>
+ </animation>
+  
+ <animation>
+  <type>pick</type> 
+  <object-name>k1</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>instrumentation/R1_fuel/k12</property>
+  <step>-100</step>
+  <min>0</min>
+  <max>25000</max> 
+   </binding>
+  </action>
+  </animation>
+
+ </PropertyList>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Volume Control Panel by HerbyW 03-2015
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Volume Control Panel -->
+
+<PropertyList>
+
+  
+ <path>volume.ac</path>
+
+ <!--Light -->
+ <!-- working for Rembrandt -->
+
+   <animation>
+  <type>material</type>
+   <object-name>base</object-name>
+   <object-name>box</object-name>   
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+  
+  <animation>
+    <type>material</type>
+    <object-name>c1</object-name>
+    <object-name>c2</object-name>
+    <object-name>c3</object-name>
+   <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+ 
+ 
+ <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>base</object-name>    
+ </effect>
+
+<!--Volume-->
+
+<animation>
+  <type>knob</type>
+  <object-name>c1</object-name>
+  <visible>true</visible>
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/marker-beacon/volume</property>
+      <factor>0.1</factor>
+      <min>0</min>
+      <max>1</max>
+    </binding>
+  </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Marker-Volume</tooltip-id>
+      <label>Marker-Volume: %d%%</label>
+      <property>instrumentation/marker-beacon/volume</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>c2</object-name>
+  <visible>true</visible>
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property>controls/switches/cabin</property>
+      <factor>0.1</factor>
+      <min>0</min>
+      <max>1</max>
+    </binding>
+  </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Cabin-Light</tooltip-id>
+      <label>Cabin-Light: %d%%</label>
+      <property>controls/switches/cabin</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>c3</object-name>
+  <visible>true</visible>
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property>controls/switches/gauge-light</property>
+      <factor>1</factor>
+      <min>0</min>
+      <max>1</max>
+    </binding>
+  </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Instrument-Lights</tooltip-id>
+      <label>Instrument-Lights: %d%%</label>
+      <property>controls/switches/gauge-light</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Light switches block -AN-12
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>ikone.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>  
+  <object-name>base_4</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
+    </emission>
+</animation>
+
+<animation>
+ <type>select</type>	  
+  <condition>
+    <property>sim/initialized</property>
+  </condition>
+</animation>
+
+</PropertyList>
+

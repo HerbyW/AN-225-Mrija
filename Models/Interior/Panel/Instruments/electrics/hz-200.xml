@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+
+<!-- 200 V frequency indicator
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>200_hz.ac</path>
+<!-- Internal instruments lighting -->
+<animation>
+  <type>material</type>
+  <object-name>base</object-name>
+  <object-name>needle</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>cover</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+  
+<!--Needles-->
+<animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>systems/electrical/suppliers/battery</property>
+    <interpolation>
+      <entry><ind>	0.0</ind>	<dep>	-111.0</dep></entry>
+      <entry><ind>	28.0</ind>	<dep>	1.0</dep></entry>
+      <entry><ind>	35.0</ind>	<dep>	114.0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
+
+
+
+</PropertyList>
