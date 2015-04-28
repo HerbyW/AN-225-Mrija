@@ -426,7 +426,7 @@ them out of my 3d modeller.
  <ballast x="-2.0" y="0" z="4" mass="120000"/>
 
   <weight x="-15.0" y="0" z="5.97" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="0" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="-2.5" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="-5" y="0" z="8" mass-prop="/sim/weight[2]/weight-lb"/>
 
 </airplane>

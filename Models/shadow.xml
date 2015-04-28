@@ -37,6 +37,18 @@
      </and>
     </condition>
   </animation>
+  
+  <animation>
+<type>scale</type>
+<object-name>shadow</object-name>  
+<property>sim/signals/fdm-initialized</property>
+<x-min>2.80</x-min>
+<y-min>2.20</y-min>
+<z-min>2.20</z-min>
+<x-factor>2.80</x-factor>
+<y-factor>2.20</y-factor>
+<z-factor>2.20</z-factor>
+</animation>
 
   <!-- pitch -->
   <animation>

@@ -50,7 +50,7 @@
    <condition>
      <greater-than>
 	<property>yasim/gross-weight-lbs</property>
-	<value>134481</value>
+	<value>1323000</value>
      </greater-than>
     </condition>  
   <emission>

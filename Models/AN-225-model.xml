@@ -237,9 +237,10 @@ AN225 model/animation config.
   <model>
     <path>Aircraft/AN-225/Models/shadow.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m> 12.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -8.000 </z-m>
+      <z-m> -4.050 </z-m>
+      <pitch-deg>0.25</pitch-deg>
     </offsets>
   </model>
   

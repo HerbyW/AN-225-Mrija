@@ -352,3 +352,32 @@ setprop("/controls/engines/engine[5]/reverser", 1);
 }
  }
 );
+
+#################################################################################################################
+
+
+setlistener("/controls/shuttle/payload", func
+{
+  if
+    (getprop("/controls/shuttle/payload") == 3)    
+     setprop("/sim/weight[2]/weight-lb", 58546);
+  if
+    (getprop("/controls/shuttle/payload") == 2)    
+     setprop("/sim/weight[2]/weight-lb", 0);
+  if
+    (getprop("/controls/shuttle/payload") == 1)    
+     setprop("/sim/weight[2]/weight-lb", 40000);
+     
+});     
+
+
+
+
+
+
+
+
+
+
+
+

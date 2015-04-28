@@ -50,7 +50,7 @@
    <condition>
      <greater-than>
 	<property>velocities/groundspeed-kt</property>
-	<value>415</value>
+	<value>459</value>
      </greater-than>
     </condition>  
   <emission>
