@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+ <path>Aircraft/AN-225/Models/Effects/ground/choke_nose.ac</path>
+  
+ <animation>
+  <type>scale</type>
+  <object-name>choke</object-name>
+  <property>sim/multiplay/generic/int[3]</property>
+  <offset>1</offset>
+  <x-max>1.55</x-max>
+  <y-max>3.05</y-max>
+  <z-max>1.55</z-max>
+  <x-factor>1.55</x-factor>
+  <y-factor>3.05</y-factor>
+  <z-factor>1.55</z-factor>
+ </animation>
+
+
+</PropertyList>
+

@@ -27,7 +27,7 @@
 				<and>
 					<greater-than>
 						<property>engines/engine[0]/n1</property>
-						<value>31</value>
+						<value>36</value>
 					</greater-than>
 					<less-than>
 						<property>engines/engine[0]/n1</property>

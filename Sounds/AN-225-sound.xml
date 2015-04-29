@@ -3,10 +3,264 @@
 <PropertyList>
   <fx>
 
-<!-- Engines -->
+  <!-- Engines 1 - 6 starting up-->
+    <crank>
+      <name>engstart1</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </crank>
+    
+    <crank>
+      <name>engstart2</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+      <delay-sec>14</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart3</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+      <delay-sec>28</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart4</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+      <delay-sec>42</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart5</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+      <delay-sec>56</delay-sec>
+    </crank>
+    
+    <crank>
+      <name>engstart6</name>
+      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <mode>once</mode>
+       <condition>       
+         <property>sim/multiplay/generic/int[11]</property>         
+        </condition>      
+      <volume>
+        <offset>-0.45</offset>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+      <delay-sec>70</delay-sec>
+    </crank>
+  
+<!-- Engines running -->
+ <engine>
+   <name>engine1</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>  
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>14</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine2</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>   
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>28</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine3</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>   
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>42</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine4</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>   
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>56</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine5</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>   
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>70</delay-sec>
+ </engine>
+ 
+ <engine>
+   <name>engine6</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+        <condition>
+	 <greater-than>
+          <property>sim/multiplay/generic/int[11]</property>
+	  <value>0</value>
+	 </greater-than>
+        </condition>   
+      <volume>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.0075</factor>
+        <min>0.06</min>
+        <max>0.75</max>        
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/n1</property>
+        <factor>0.004</factor>
+        <min>0.0</min>
+        <max>0.4</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>84</delay-sec>
+ </engine>
+
+ <!--old
+
     <engine>
       <name>engine0</name>
-      <path>Sounds/jet.wav</path>
+      <path>Aircraft/AN-225/Sounds/jet.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[0]/running</property>
@@ -213,775 +467,102 @@
         <offset>0.15</offset>
       </pitch>
     </engine>
+    
+    -->
 
 <!-- Rumble -->
     <rumble>
       <name>rumble0</name>
       <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
+      <path>Aircraft/AN-225/Sounds/rumble.wav</path>
       <condition>
-        <property>/gear/gear[0]/wow</property>
+        <property>sim/multiplay/generic/float[2]</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <type>log</type>
-        <factor>0.12</factor>
+        <factor>0.15</factor>
       </volume>
     </rumble>
 
     <rumble>
       <name>rumble1</name>
       <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
+      <path>Aircraft/AN-225/Sounds/rumble.wav</path>
       <condition>
-        <property>/gear/gear[1]/wow</property>
+        <property>sim/multiplay/generic/float[2]</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <type>log</type>
-        <factor>0.12</factor>
+        <factor>0.15</factor>
       </volume>
     </rumble>
 
     <rumble>
       <name>rumble2</name>
       <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
+      <path>Aircraft/AN-225/Sounds/rumble.wav</path>
       <condition>
-        <property>/gear/gear[2]/wow</property>
+        <property>sim/multiplay/generic/float[2]</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <type>log</type>
-        <factor>0.12</factor>
+        <factor>0.15</factor>
       </volume>
     </rumble>
 
     <rumble>
       <name>rumble3</name>
       <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
+      <path>Aircraft/AN-225/Sounds/rumble.wav</path>
       <condition>
-        <property>/gear/gear[3]/wow</property>
+        <property>sim/multiplay/generic/float[2]</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <type>log</type>
-        <factor>0.12</factor>
+        <factor>0.15</factor>
       </volume>
     </rumble>
 
     <rumble>
       <name>rumble4</name>
       <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
+      <path>Aircraft/AN-225/Sounds/rumble.wav</path>
       <condition>
-        <property>/gear/gear[4]/wow</property>
+        <property>sim/multiplay/generic/float[2]</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <type>log</type>
-        <factor>0.12</factor>
+        <factor>0.15</factor>
       </volume>
     </rumble>
 
-    <rumble>
-      <name>rumble5</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[5]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble6</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[6]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble7</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[7]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble8</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[8]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble9</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[9]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble10</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[10]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble11</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[11]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble12</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[12]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble13</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[13]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble14</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[14]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
-    <rumble>
-      <name>rumble15</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[15]/wow</property>
-      </condition>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-    </rumble>
-
+    
 <!-- Gear -->
     <gear>
-      <name>gear0</name>
+      <name>gear</name>
       <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
+      <path>Aircraft/AN-225/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
-      <name>gear-lock0</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[0]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock0a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[0]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear1</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[1]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock1</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[1]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock1a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[1]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear2</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[2]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock2</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[2]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock2a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[2]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear3</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[3]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock3</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[3]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock3a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[3]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-    
-    <gear>
-      <name>gear4</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[4]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock4</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[4]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock4a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[4]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear5</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[5]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock5</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[5]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock5a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[5]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear6</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[6]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock6</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[6]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock6a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[6]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear7</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[7]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock7</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[7]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock7a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[7]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-    
-    <gear>
-      <name>gear8</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[8]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock8</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[8]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock8a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[8]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear9</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[9]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock9</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[9]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock9a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[9]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear10</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[10]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock10</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[10]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock10a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[10]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear11</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[11]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock11</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[11]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock11a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[11]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-    
-    <gear>
-      <name>gear12</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[12]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock12</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[12]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock12a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[12]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear13</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[13]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0010</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock13</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[13]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock13a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[13]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear14</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[14]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock14</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[14]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock14a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[14]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear15</name>
-      <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
-      <property>/gear/gear[15]/position-norm</property>
-      <pitch>
-        <internal>dt_play</internal>
-        <offset>1.0</offset>
-        <factor>-0.0011</factor>
-      </pitch>
-    </gear>
-
-    <gear>
-      <name>gear-lock15</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[15]/position-norm</property>
-          <value>0</value>
-        </equals>
-      </condition>
-    </gear>
-
-    <gear>
-      <name>gear-lock15a</name>
-      <path>Sounds/gear-lck.wav</path>
-      <condition>
-        <equals>
-          <property>/gear/gear[15]/position-norm</property>
-          <value>1</value>
-        </equals>
-      </condition>
+     <name>gear-lock</name>
+     <path>Aircraft/AN-225/Sounds/gear-lck.wav</path>
+     <condition>
+       <greater-than>
+         <property>/gear/gear[0]/position-norm</property>
+         <value>0.96</value>
+       </greater-than>
+     </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
     
 <!-- Squeal -->

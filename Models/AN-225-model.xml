@@ -5322,6 +5322,56 @@ AN225 model/animation config.
 			<z-m>6.39</z-m>
 		</offsets>
 	</model>   
+
+	        <!-- Chokes -->
+
+<model>
+	<name>choke_nose</name>
+	<path>Aircraft/AN-225/Models/Effects/ground/choke_nose.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> 5.037 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> 4.035 </z-m>
+	</offsets>
 	
-	
+</model>
+
+<model>
+	<name>choke_left</name>
+	<path>Aircraft/AN-225/Models/Effects/ground/choke_left.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> -15.6 </x-m>
+         <y-m> 3.7 </y-m>
+         <z-m> 2.39 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>choke_right</name>
+	<path>Aircraft/AN-225/Models/Effects/ground/choke_right.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> -15.6 </x-m>
+         <y-m> -3.7 </y-m>
+         <z-m> 2.39 </z-m>
+	</offsets>
+</model>
+
 </PropertyList>

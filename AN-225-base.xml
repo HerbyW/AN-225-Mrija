@@ -131,6 +131,7 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
+	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
 	
         <float n="0" alias="/controls/flight/slats"/>
         <float n="1" alias="/controls/flight/spoilers"/>
