@@ -22,16 +22,16 @@
 			<or>
 				<greater-than>
 					<property>engines/engine[4]/n1</property>
-					<value>90</value>
+					<value>89</value>
 				</greater-than>
 				<and>
 					<greater-than>
 						<property>engines/engine[4]/n1</property>
-						<value>58</value>
+						<value>31</value>
 					</greater-than>
 					<less-than>
 						<property>engines/engine[4]/n1</property>
-						<value>65</value>
+						<value>46</value>
 					</less-than>
 				</and>
 			</or>

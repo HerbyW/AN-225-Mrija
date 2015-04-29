@@ -138,7 +138,7 @@ them out of my 3d modeller.
 <!-- Left wing engines -->
 
 <!-- Left Outer -->
- <jet x="4.0" y="25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="4.0" y="25.0" z="0.2" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
@@ -146,7 +146,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Left Mid -->
- <jet x="-0.7" y="17.2" z="0.4" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-0.7" y="17.2" z="0.4" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
@@ -154,7 +154,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Left Inner -->
- <jet x="-5.0" y="9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-5.0" y="9.40" z="0.9" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[2]"/>
@@ -162,7 +162,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Right Inner -->
- <jet x="-5.0" y="-9.40" z="0.9" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-5.0" y="-9.40" z="0.9" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[3]"/>
@@ -170,7 +170,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Rihgt Mid -->
- <jet x="-0.7" y="-17.2" z="0.4" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="-0.7" y="-17.2" z="0.4" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[4]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[4]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[4]"/>
@@ -178,7 +178,7 @@ them out of my 3d modeller.
  </jet>
 
 <!-- Right Outer -->
- <jet x="4.0" y="-25.0" z="0.2" mass="8000" tsfc="0.5" thrust="51700" reverse="0.2">
+ <jet x="4.0" y="-25.0" z="0.2" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
   <control-input axis="/controls/engines/engine[5]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[5]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[5]"/>
@@ -187,7 +187,7 @@ them out of my 3d modeller.
 
 <!-- Landing Gear -->
 <!-- Front Left -->
- <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="0.35" spring="0.7">
+ <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="0.3" spring="1">
   <control-input axis="/controls/flight/rudder" control="STEER"
     src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -204,7 +204,7 @@ them out of my 3d modeller.
  </gear>
 
 <!-- Front Right -->
- <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="0.35" spring="0.7">
+ <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="0.3" spring="1">
   <control-input axis="/controls/flight/rudder" control="STEER"
     src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -423,10 +423,10 @@ them out of my 3d modeller.
  <tank x="-10.0" y="0.00" z="4.50" capacity="172271"/>
 
 <!-- Ballast -->
- <ballast x="-2.0" y="0" z="4" mass="120000"/>
+ <ballast x="-2.2" y="0" z="4" mass="120000"/>
 
   <weight x="-15.0" y="0" z="5.97" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="-2.5" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="-2.6" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="-5" y="0" z="8" mass-prop="/sim/weight[2]/weight-lb"/>
 
 </airplane>

@@ -102,12 +102,7 @@ setlistener("/controls/switches/fuel", func
         setprop("/consumables/fuel/tank[2]/selected", 0);
         setprop("/consumables/fuel/tank[3]/selected", 0);
 	setprop("/consumables/fuel/tank[4]/selected", 0);
-	setprop("/controls/engines/engine[0]/condition", 0);
-	setprop("/controls/engines/engine[1]/condition", 0);
-	setprop("/controls/engines/engine[2]/condition", 0);
-	setprop("/controls/engines/engine[3]/condition", 0);
-	setprop("/controls/engines/engine[4]/condition", 0);
-	setprop("/controls/engines/engine[5]/condition", 0);
+
       }
   
   }
@@ -370,14 +365,4 @@ setlistener("/controls/shuttle/payload", func
      
 });     
 
-
-
-
-
-
-
-
-
-
-
-
+#########################################################################################################

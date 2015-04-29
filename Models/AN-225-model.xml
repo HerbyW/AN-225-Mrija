@@ -19,6 +19,9 @@ AN225 model/animation config.
     <pitch-deg>0</pitch-deg>
   </offsets>
   
+  <sound>      
+      <path>Aircraft/AN-225/Sounds/AN-225-sound.xml</path>
+  </sound>
   
     <!--Lights, just a little bit more brilliance to the airplane-->
                                    

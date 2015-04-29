@@ -218,28 +218,22 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
   <!-- Engine indexes -->
   <engines>
     <engine n="0">
-      <engine-num type="int">0</engine-num>
-      <running>false</running>
+      <engine-num type="int">0</engine-num>      
     </engine>
     <engine n="1">
-      <engine-num type="int">1</engine-num>
-      <running>false</running>
+      <engine-num type="int">1</engine-num>      
     </engine>
     <engine n="2">
-      <engine-num type="int">2</engine-num>
-      <running>false</running>
+      <engine-num type="int">2</engine-num>      
     </engine>
     <engine n="3">
-      <engine-num type="int">3</engine-num>
-      <running>false</running>
+      <engine-num type="int">3</engine-num>      
     </engine>
     <engine n="4">
-      <engine-num type="int">4</engine-num>
-      <running>false</running>
+      <engine-num type="int">4</engine-num>      
     </engine>
     <engine n="5">
-      <engine-num type="int">5</engine-num>
-      <running>false</running>
+      <engine-num type="int">5</engine-num>      
     </engine>
   </engines>
 

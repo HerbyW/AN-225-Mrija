@@ -51,8 +51,8 @@
   <object-name>_d_2</object-name>
    <condition>
     <equals>
-     <property>/engines/engine[1]/running</property>    
-     <value>1</value>
+     <property>/engines/engine[1]/out-of-fuel</property>    
+     <value>0</value>
     </equals>
   </condition>
 </animation>
