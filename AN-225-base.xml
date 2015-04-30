@@ -83,6 +83,7 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
   <gear>
     <gear>
       <steering-norm type="float">0</steering-norm>
+      <position-norm type="float">1</position-norm>
     </gear>
   </gear>
    
@@ -133,9 +134,9 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
 	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
 	
-        <float n="0" alias="/controls/flight/slats"/>
-        <float n="1" alias="/controls/flight/spoilers"/>
-        <float n="2" alias="/gear/gear/rollspeed-ms" />
+        <float n="0" alias="/surface-positions/slat-pos-norm"/>
+        <float n="1" alias="/surface-positions/spoiler-pos-norm"/>
+        <float n="2" alias="/gear/gear[8]/rollspeed-ms" />
         <float n="3" alias="/orientation/pitch-deg"/>
         <float n="4" alias="/gear/gear/steering-norm" />
         <float n="5" alias="/position/gear-agl-m"> 0 </float>                    <!-- altitude for MP shadow -->

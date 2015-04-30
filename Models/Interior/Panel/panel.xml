@@ -2030,55 +2030,7 @@ Lights</text>
 
     
   <!-- rear panel -->
-  
-  <!-- TNV-15, OUtside Temperatur Indicator -->
-  
-  <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> 0.145 </y-m>
-      <z-m>  2.865 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-  <!-- Paratroopers Switch-->
  
- <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/switch/parachute_signal.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> 0.142 </y-m>
-      <z-m>  2.93 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>parachute_signal</name>
-    <type type="string">literal</type>
-    <text type="string">Parachut Signal</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> 0.142 </y-m>
-      <z-m>  2.91 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
   <!--Parachuter/Cargo Signal Lamps -->
 
 <model>
@@ -2111,60 +2063,6 @@ Lights</text>
     </offsets>
   </model>
 
-  
-   <!--Variometer, For Cabine and Outside pressure control--> 
-  
-  <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> 0.085 </y-m>
-      <z-m>  2.94 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-  <!-- IAS/groundspeed indicator USVP -->
-  
-  <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/usvp/usvp.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m>  2.94 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-  
-  <!-- Air- and Groundspeed Indicator in km/h -->
-  
-  <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> -0.088 </y-m>
-      <z-m>  2.94 </z-m>
-      <heading-deg>0.0</heading-deg>
-    </offsets>
-  </model>
-  
-
-  
-      <!-- UVO, Altimeter Electric -->
-  
-  <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
-    <offsets>
-      <x-m>  29.475 </x-m>
-      <y-m> -0.155 </y-m>
-      <z-m>  2.88 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
- 
-
-  
   <!--Map case from TU-154B-->
 
         <!-- Mapcase -->

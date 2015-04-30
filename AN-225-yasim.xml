@@ -78,7 +78,7 @@ them out of my 3d modeller.
 
   <control-speed control="FLAP0" transition-time="45"/>
   <control-speed control="FLAP1" transition-time="1.0"/>
-  <control-speed control="SLAT" transition-time="10.0"/>
+  <control-speed control="SLAT" transition-time="10"/>
   <control-speed control="SPOILER" transition-time="1.0"/>
  </wing>
 

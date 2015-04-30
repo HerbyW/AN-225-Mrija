@@ -242,8 +242,8 @@ AN225 model/animation config.
     <offsets>
       <x-m> 12.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -4.050 </z-m>
-      <pitch-deg>0.25</pitch-deg>
+      <z-m> -4.39 </z-m>
+      <pitch-deg>0.0</pitch-deg>
     </offsets>
   </model>
   
@@ -5335,9 +5335,9 @@ AN225 model/animation config.
 		</equals>
 	</condition>
 	<offsets>
-	 <x-m> 5.037 </x-m>
+	 <x-m> 3.55 </x-m>
          <y-m> 0.0 </y-m>
-         <z-m> 4.035 </z-m>
+         <z-m> 4.0 </z-m>
 	</offsets>
 	
 </model>
@@ -5352,9 +5352,9 @@ AN225 model/animation config.
 		</equals>
 	</condition>
 	<offsets>
-	 <x-m> -15.6 </x-m>
-         <y-m> 3.7 </y-m>
-         <z-m> 2.39 </z-m>
+	 <x-m> -13.2 </x-m>
+         <y-m> 4.1 </y-m>
+         <z-m> 5.55 </z-m>
 	</offsets>
 </model>
 
@@ -5368,9 +5368,9 @@ AN225 model/animation config.
 		</equals>
 	</condition>
 	<offsets>
-	 <x-m> -15.6 </x-m>
-         <y-m> -3.7 </y-m>
-         <z-m> 2.39 </z-m>
+	 <x-m> -13.2 </x-m>
+         <y-m> -4.1 </y-m>
+         <z-m> 5.55 </z-m>
 	</offsets>
 </model>
 

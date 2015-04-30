@@ -20,10 +20,10 @@
   <object-name>choke</object-name>
   <property>sim/multiplay/generic/int[3]</property>
   <offset>1</offset>
-  <x-max>1.55</x-max>
+  <x-max>1.45</x-max>
   <y-max>3.05</y-max>
   <z-max>1.55</z-max>
-  <x-factor>1.55</x-factor>
+  <x-factor>1.45</x-factor>
   <y-factor>3.05</y-factor>
   <z-factor>1.55</z-factor>
  </animation>
