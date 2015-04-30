@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+ <PropertyList>
+   
+   <path>lights-cone-taxi-707.ac</path>
+   
+   <animation>
+     <object-name>Spot</object-name>
+     <object-name>Spot.001</object-name>
+     <object-name>Spot.002</object-name>
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name>  
+   </animation> 
+   
+<animation>
+  <type>select</type>
+     <object-name>Spot</object-name>
+     <object-name>Spot.001</object-name>
+     <object-name>Spot.002</object-name>
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name>
+  <condition>
+    <and>
+    	<not><property>/sim/rendering/rembrandt/enabled</property></not>
+	    <property>sim/multiplay/generic/int[10]</property>
+    </and>
+  </condition>
+</animation>
+  
+  
+   <animation>
+     <type>material</type>
+     <object-name>Spot</object-name>
+     <object-name>Spot.001</object-name>
+     <object-name>Spot.002</object-name>
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name> 
+     <emission>
+       <red>   1 </red>
+       <green> 1 </green>
+       <blue>  1 </blue>
+     </emission>
+   </animation>
+
+
+
+</PropertyList>

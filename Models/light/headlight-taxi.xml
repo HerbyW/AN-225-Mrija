@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2008, 2013 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik.nsk@gmail.com					   	#
+    #############################################################################	  
+
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+    -->
+
+<PropertyList>
+ <path>lightcone-taxi.ac</path>
+
+    <!--Lights-->
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>lightcone-taxi</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>lightcone-taxi</object-name>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
+  
+ <animation>  
+   <object-name>lightcone-taxi</object-name> 
+</animation>
+
+  <!-- working for Rembrandt --> 
+
+  <animation>
+    <type>material</type>
+    <object-name>lightcone-taxi</object-name>
+    <emission>
+      <property>sim/multiplay/generic/int[10]</property>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation> 
+ 
+<!--Spot lights-->
+
+<animation>
+   <type>light</type>
+   <light-type>spot</light-type>
+   <object-name>lightcone-taxi</object-name>
+   <nopreview/>
+   <position>
+     <x>0.0</x>
+     <y>0.0</y>
+     <z>0.0</z>
+   </position>
+   <direction>
+     <x>0.0</x>
+     <y>0.0</y>
+     <z>-1.0</z>
+   </direction>
+   <ambient>
+     <r>0.03</r>
+     <g>0.03</g>
+     <b>0.03</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.7</r>
+     <g>0.7</g>
+     <b>0.6</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.7</r>
+     <g>0.7</g>
+     <b>0.7</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.002</l>
+     <q>0.00005</q>
+   </attenuation>
+   <exponent>30.0</exponent>
+   <cutoff>60</cutoff>
+   <near-m>1</near-m>
+   <far-m>200</far-m>
+ </animation>
+ 
+  <animation>
+	  <type>select</type>
+	  <condition>
+		  <property>sim/multiplay/generic/int[10]</property>		  
+	  </condition>
+  </animation> 
+
+</PropertyList> 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <PropertyList>
+   
+   <path>light-cone.ac</path>
+   
+   <animation>
+     <object-name>Cone</object-name>
+     <object-name>Cone-texture</object-name>
+     <object-name>Light</object-name>
+   </animation> 
+   
+   <effect>
+     <inherits-from>Effects/model-transparent</inherits-from>
+     <object-name>Cone</object-name>
+     <object-name>Cone-texture</object-name>
+     <condition>
+       <property>sim/rendering/rembrandt/enabled</property>
+     </condition>
+   </effect>
+  
+     <animation>
+    <type>select</type>
+    <object-name>Cone</object-name>
+    <object-name>Cone-texture</object-name>
+    <object-name>Light</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[8]</property>
+    </condition>
+  </animation>
+  
+   <effect>
+     <inherits-from>Effects/light-cone</inherits-from>
+     <object-name>Cone</object-name>
+     <object-name>Cone-texture</object-name>
+   </effect>
+   
+   <animation>
+     <type>material</type>
+     <object-name>Light</object-name>     
+     <emission>
+       <red>   2 </red>
+       <green> 2 </green>
+       <blue>  2 </blue>
+     </emission>
+   </animation>
+
+
+
+</PropertyList>
