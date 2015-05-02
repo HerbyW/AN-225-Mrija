@@ -56,7 +56,7 @@
       <script>
         interpolate("sim/multiplay/generic/int[7]", 1.0, 0.1 );
       </script>
-    </binding>
+    </binding>    
   </action>
 </animation>
 <animation>
@@ -72,6 +72,12 @@
         interpolate("sim/multiplay/generic/int[7]", 2.0, 0.1 );
       </script>
     </binding>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[6]", 1200, 20.0 );
+      </script>
+    </binding>
   </action>
 </animation>
 <animation>
@@ -85,6 +91,12 @@
       <command>nasal</command>
       <script>
         interpolate("sim/multiplay/generic/int[7]", 3.0, 0.1 );
+      </script>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("sim/multiplay/generic/int[6]", 0.0, 20.0 );
       </script>
     </binding>
   </action>

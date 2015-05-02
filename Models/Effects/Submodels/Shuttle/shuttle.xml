@@ -40,16 +40,61 @@
   
   <path>shuttle.ac</path>
   
-  <offsets>          <heading-deg>0</heading-deg> </offsets>  
+  <animation>
+    <name>spaceshuttle</name>    
+  </animation>  
   
   <animation>
-    <type>select</type>
-    
+    <type>translate</type>
+    <name>spaceshuttle</name>
+    <property>sim/multiplay/generic/int[6]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 150 </ind><dep> -0.5 </dep></entry>
+      <entry><ind> 250 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 850 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 1100 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 1200 </ind><dep> -60.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <name>spaceshuttle</name>
+    <property>sim/multiplay/generic/int[6]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 150 </ind><dep>  -1.0 </dep></entry>
+      <entry><ind> 250 </ind><dep>  -2.0 </dep></entry>
+      <entry><ind> 850 </ind><dep>  -2.0 </dep></entry>
+      <entry><ind> 1100 </ind><dep>  10.0 </dep></entry>
+      <entry><ind> 1200 </ind><dep>  11.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>select</type>    
     <condition>
+      <or>
       <equals>
 	<property>sim/multiplay/generic/int[7]</property>
 	<value>3</value>
       </equals>
+      <less-than>
+	<property>sim/multiplay/generic/int[6]</property>
+	<value>1200</value>
+      </less-than>
+      </or>
     </condition>
   </animation>
   
@@ -63,12 +108,10 @@
     <object-name>spaceshutt_spstob_3</object-name> 
     <object-name>spaceshutt_spstob_2</object-name>
     <object-name>spaceshutt_spstob_4</object-name>
-  </animation>
-  
+  </animation>  
   
   <!-- working for Rembrandt -->
-  
-  
+    
   <animation>
     <type>material</type>
     <object-name>spaceshutt_spstob_1</object-name>
@@ -89,8 +132,7 @@
   <animation>
     <type>pick</type>
     <object-name>spaceshutt_spstob</object-name>
-    <object-name>spaceshutt_spstob.001</object-name>
-    
+    <object-name>spaceshutt_spstob.001</object-name>    
     <visible>true</visible>    
     <action>
       <button>0</button>      

@@ -2400,5 +2400,14 @@ SKAWK</text>
     </emission>
   </animation>
 
+  <model>
+    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/redlamp/shuttleload-red.xml</path>
+    <offsets>
+      <x-m>  -0.0205 </x-m>
+      <y-m>  0.185 </y-m>
+      <z-m>  0.175 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
 
 </PropertyList>

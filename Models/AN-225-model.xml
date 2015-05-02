@@ -236,16 +236,19 @@ AN225 model/animation config.
       </offsets>
    </model>
 
-     <!-- A shadow for OSG without Rembrandt  -->
+     <!-- A shadow for OSG without Rembrandt, you may uncomment it,
+     but as it is a very big airplane it is not possible to get a value
+     for the hight so that the shadow looks good
+     
   <model>
     <path>Aircraft/AN-225/Models/shadow.xml</path>
     <offsets>
       <x-m> 12.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -4.39 </z-m>
-      <pitch-deg>0.0</pitch-deg>
+      <z-m> -4.20 </z-m>
+      <pitch-deg>-0.15</pitch-deg>
     </offsets>
-  </model>
+  </model>                                              -->
   
   
   <model>
