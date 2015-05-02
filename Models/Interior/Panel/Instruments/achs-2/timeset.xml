@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--###################################################################################
+		Lake of Constance Hangar :: M.Kraus
+		Septemper 2013
+		This file is licenced under the terms of the GNU General Public Licence V2 or later
+		###################################################################################
+		added and modifyed by HerbyW for russian achs-2 clock to add the function of stop watch 05/2015
+-->
+
+<PropertyList>
+ <path>timeset.ac</path>
+ 
+ 
+ <animation>
+   <object-name>time.set</object-name>
+   <object-name>time.stop</object-name>		
+ </animation>
+ 
+ <animation>
+   <type>material</type>
+   <object-name>time.set</object-name>
+   <object-name>time.stop</object-name>
+   <emission>
+     <factor-prop>controls/switches/gauge-light</factor-prop>
+     <red>   0.35 </red>
+     <green> 0.35 </green>
+     <blue>  0.35 </blue>
+   </emission>
+ </animation>
+ 
+ 
+ <!-- knobs -->  
+ <!-- start stop and reset the stopwatch-->
+ <animation>
+   <type>translate</type>
+   <object-name>time.stop</object-name>
+   <property>/instrumentation/stopwatch/running</property>
+   <factor>0.005</factor>
+   <axis>
+     <x> 1.0</x>
+     <y> 0.0</y>
+     <z> 0.0</z>
+   </axis>
+   <center>
+     <x-m> 0.0</x-m>
+     <y-m> 0.03</y-m>
+     <z-m>-0.03</z-m>
+   </center>
+ </animation>
+ 
+ <animation>
+   <type>pick</type>
+   <object-name>time.stop</object-name>
+   <action>
+     <button>0</button>
+     <repeatable>true</repeatable>
+     <interval-sec>0.1</interval-sec>
+     <binding>
+       <command>nasal</command>
+       <script>instruments.sw_start_stop();</script>
+     </binding>
+     
+   </action>
+ </animation>
+ 
+ <animation>
+   <type>pick</type>
+   <object-name>time.set</object-name>
+   <action>
+     <button>0</button>
+     <repeatable>true</repeatable>
+     <interval-sec>0.1</interval-sec>
+     <binding>
+       <command>nasal</command>
+       <script>instruments.sw_reset();</script>
+     </binding>
+     
+   </action>
+ </animation>
+ 
+
+ 
+</PropertyList>

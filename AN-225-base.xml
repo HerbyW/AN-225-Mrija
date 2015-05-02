@@ -367,6 +367,22 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
    </door1>
 </doors>
 
+<!-- B707 Stopwatch  -->
+<stopwatch>
+  <running type="bool">0</running>
+  <btn-mode type="bool">0</btn-mode>
+  <btn-reset type="bool">0</btn-reset>
+  <btn-start-stop type="bool">0</btn-start-stop>
+  <flight-time>
+    <start-time type="double">0</start-time>
+    <accu type="double">0</accu>
+    <total type="double">0</total>
+    <hours type="int">0</hours>
+    <minutes type="int">0</minutes>
+    <seconds type="int">0</seconds>
+  </flight-time>
+</stopwatch>
+
 </instrumentation>
 
 <input>

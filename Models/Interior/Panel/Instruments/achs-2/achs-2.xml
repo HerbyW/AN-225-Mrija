@@ -31,6 +31,9 @@
     <object-name>hour_needle</object-name>
     <object-name>min_needle</object-name>
     <object-name>sec_needle</object-name>
+    <object-name>secundomer_needle</object-name>
+    <object-name>timer_hour_needle</object-name>
+    <object-name>timer_min_needle</object-name>
   </animation>
 
   <animation>
@@ -39,6 +42,9 @@
     <object-name>hour_needle</object-name>
     <object-name>min_needle</object-name>
     <object-name>sec_needle</object-name>
+    <object-name>secundomer_needle</object-name>
+    <object-name>timer_hour_needle</object-name>
+    <object-name>timer_min_needle</object-name>
    <emission>
       <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -60,6 +66,7 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>hour_needle</object-name>
@@ -71,6 +78,7 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>min_needle</object-name>
@@ -82,6 +90,7 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>sec_needle</object-name>
@@ -93,4 +102,67 @@
     <z>0.0</z>
   </axis>
 </animation>
+
+<!-- new function: stop watch time.set time.stop-->
+
+<animation>
+  <type>rotate</type>
+  <object-name>timer_hour_needle</object-name>
+  <property>/instrumentation/stopwatch/flight-time/hours</property>
+  <interpolation>
+		    <entry><ind> 0</ind><dep> 0 </dep></entry>
+		    <entry><ind>60</ind><dep>360</dep></entry>
+		  </interpolation>
+  <center>
+   <x-m>-0.0</x-m>
+   <y-m>-0.0008</y-m>
+   <z-m>0.01350</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>timer_min_needle</object-name>
+  <property>/instrumentation/stopwatch/flight-time/minutes</property>
+			<interpolation>
+				<entry><ind> 0</ind><dep>  0</dep></entry>
+				<entry><ind>60</ind><dep>360</dep></entry>
+			</interpolation>
+  <center>
+   <x-m>-0.0</x-m>
+   <y-m>-0.0008</y-m>
+   <z-m>0.01350</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>secundomer_needle</object-name>
+  <property>/instrumentation/stopwatch/flight-time/seconds</property>
+		  <interpolation>
+		    <entry><ind> 0</ind><dep>  0</dep></entry>
+		    <entry><ind>60</ind><dep>360</dep></entry>
+		  </interpolation>
+  <center>
+   <x-m>0.0003</x-m>
+   <y-m>-0.0005</y-m>
+   <z-m>-0.0165</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
 </PropertyList>

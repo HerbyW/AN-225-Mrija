@@ -473,6 +473,15 @@
       <z-m>  0.109 </z-m>
     </offsets>
   </model>
+  
+    <model>
+    <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/achs-2/timeset.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
 
   <!-- RPM, 1-Engine N2 RPM indicators, 2-Power to propeller -->
   

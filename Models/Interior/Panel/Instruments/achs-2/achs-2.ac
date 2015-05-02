@@ -80,7 +80,7 @@ refs 4
 kids 0
 OBJECT poly
 name "timer_hour_needle"
-loc 0.00051754 0.01884 0.00046363
+loc 0.00031754 0.01884 0.00046363
 texture "achs-2_2.png"
 crease 100.000000
 numvert 4
@@ -99,7 +99,7 @@ refs 4
 kids 0
 OBJECT poly
 name "timer_min_needle"
-loc 0.000599622 0.020685 0.000455208
+loc 0.000399622 0.020685 0.000455208
 texture "achs-2_2.png"
 crease 100.000000
 numvert 4
