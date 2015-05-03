@@ -1,13 +1,17 @@
-
-
-#    ###################################################################################
-#    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+#############################################################################
+#    (C) 2008, 2013 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+#	2d & 3d instruments, animations, systems and over.		   	#
+#    	yurik.nsk@gmail.com					   	#
+#############################################################################  
+####################################################################################################
+#    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
 #    Development is ongoing, see latest version: www.github.com/HerbyW
 #    This file is licenced under the terms of the GNU General Public Licence V3 or later
 #    
-#    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-#    Eagel: Liveries
-#    ###################################################################################
+#    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+#    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+#    Thanks for helping with some coding: D-LEON
+###################################################################################################
 
 
 #UVID-15 Control for Pressure in mmhg and inhg

@@ -7,15 +7,14 @@
     #############################################################################	  
     -->
 <!--
-
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-    Eagel: Liveries
-    ###################################################################################
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
 -->
 <!-- KM-5 gauge from TKS compass system
 3D instrument for Tu-154 -->
@@ -30,7 +29,8 @@
   <type>material</type>
   <object-name>text</object-name>
   <object-name>needle</object-name>
-  <object-name>index</object-name>  
+  <object-name>index</object-name>
+  <object-name>handle_2</object-name>    
 </animation>
 
 
@@ -41,7 +41,7 @@
     <type>material</type>
      <object-name>text</object-name>
      <object-name>needle</object-name>
-     
+     <object-name>handle_2</object-name>     
     <emission>
       <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -87,9 +87,54 @@
 </animation>
 
 <animation>
+  <type>rotate</type>
+  <object-name>handle_2</object-name>
+  <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+  <factor>50</factor>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+  <center>
+     <x-m> 0.0</x-m>
+     <y-m> 0.03735</y-m>
+     <z-m> -0.05057</z-m>
+   </center>  
+</animation>
+
+<animation>
   <type>pick</type>
-  <object-name>hs</object-name>
-  <visible>false</visible>
+  <object-name>handle_2</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <interval-sec>0.15</interval-sec>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+      <step>0.5</step>
+      <min>-180.0</min>
+      <max>180.0</max>
+      <wrap>false</wrap>
+    </binding>    
+   </action>    
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Variation</tooltip-id>
+      <label>Variation set to: %5.2f</label>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>      
+    </binding>
+  </hovered>  
+  
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>handle_2</object-name>
+  <visible>true</visible>
   <action>
     <button>0</button>
     <repeatable>true</repeatable>
@@ -109,8 +154,8 @@
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>Variation</tooltip-id>
-      <label>Magnetic Variation: %5.2f</label>
-      <property>environment/magnetic-variation-deg</property>      
+      <label>Variation set to: %5.2f</label>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>      
     </binding>
   </hovered>  
   
@@ -118,8 +163,8 @@
 
 <animation>
   <type>pick</type>
-  <object-name>hs</object-name>
-  <visible>false</visible>
+  <object-name>handle_2</object-name>
+  <visible>true</visible>
   <action>
     <button>1</button>
     <repeatable>true</repeatable>
@@ -139,8 +184,8 @@
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>Variation</tooltip-id>
-      <label>Magnetic Variation: %5.2f</label>
-      <property>environment/magnetic-variation-deg</property>      
+      <label>Variation set to: %5.2f</label>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>      
     </binding>
   </hovered>    
   
@@ -148,8 +193,8 @@
 
 <animation>
   <type>pick</type>
-  <object-name>hs</object-name>
-  <visible>false</visible>
+  <object-name>handle_2</object-name>
+  <visible>true</visible>
   <action>
     <button>3</button>
     <repeatable>false</repeatable>
@@ -168,8 +213,8 @@
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>Variation</tooltip-id>
-      <label>Magnetic Variation: %5.2f</label>
-      <property>environment/magnetic-variation-deg</property>      
+      <label>Variation set to: %5.2f</label>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>      
     </binding>
   </hovered> 
     
@@ -178,8 +223,8 @@
 
 <animation>
   <type>pick</type>
-  <object-name>hs</object-name>
-  <visible>false</visible>
+  <object-name>handle_2</object-name>
+  <visible>true</visible>
   <action>
     <button>4</button>
     <repeatable>false</repeatable>
@@ -198,6 +243,24 @@
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>Variation</tooltip-id>
+      <label>Variation set to: %5.2f</label>
+      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>      
+    </binding>
+  </hovered> 
+    
+  
+</animation>
+
+<!--show variation by hoovering the mouse to the center -->
+
+<animation>
+  <type>pick</type>
+  <object-name>hs</object-name>
+  <visible>false</visible>   
+    <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Variation-is</tooltip-id>
       <label>Magnetic Variation: %5.2f</label>
       <property>environment/magnetic-variation-deg</property>      
     </binding>

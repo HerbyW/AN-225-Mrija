@@ -2,6 +2,15 @@
 #
 # Map case inserted paper images (.svg or .png in Instruments-3d/mapcase/).
 # From TU154B
+###################################################################################################
+#    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+#    Development is ongoing, see latest version: www.github.com/HerbyW
+#    This file is licenced under the terms of the GNU General Public Licence V3 or later
+#    
+#    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+#    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+####################################################################################################
+
 
 var mapcase = canvas.new({
     name: "MapCase",

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--  AN225 yasim config.
-
 Notes.
-
 AN225 with full fuel load, no weapon load.
-
 This config cannot be regarded as an accurate representation
 of an AN225.  I've used the real numbers, where I've been able
 to find them, but a lot of this config is semi-educated
@@ -14,8 +11,16 @@ many of the numbers were obtained either by measuring a h/c
 of the 3-view I used as a template for modelling or by reading
 them out of my 3d modeller.
 -->
-
-<!--reverser and all Animations for gears, flaps, slats, spoilers, rudder, aelerion, for MP-modus added HerbyW-->
+<!--
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
+-->
 
 <airplane mass="386000" version="YASIM_VERSION_CURRENT">
 

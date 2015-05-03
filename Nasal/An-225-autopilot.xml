@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
  
-<!-- Generic Autopilot Configuration , softer reaction implemented by HerbyW Jan2015-->
+<!--
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
+-->
 
 <!-- Each component is evaluated in the order specified.  You can make up -->
 <!-- property names to pass the result of one component on to a subsequent -->
