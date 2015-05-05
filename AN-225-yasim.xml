@@ -428,7 +428,8 @@ them out of my 3d modeller.
  <tank x="-10.0" y="0.00" z="4.50" capacity="172271"/>
 
 <!-- Ballast -->
- <ballast x="-2.2" y="0" z="4" mass="120000"/>
+ <ballast x="13.0" y="0" z="3.5" mass="80000"/>
+ <ballast x="-23.5" y="0" z="3.5" mass="100000"/>
 
   <weight x="-15.0" y="0" z="5.97" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="-2.6" y="0" z="3" mass-prop="/sim/weight[1]/weight-lb"/>

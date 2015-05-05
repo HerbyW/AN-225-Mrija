@@ -39,7 +39,7 @@
     </emission>
 </animation>
 
-
+<!--Controls not used now, later
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
@@ -67,7 +67,8 @@
     <y>-1.0</y>
     <z>0.0</z>
   </axis>
-</animation>
+</animation>                                                     -->
+
 <animation>
   <type>rotate</type>
   <object-name>handle_3</object-name>
@@ -83,63 +84,35 @@
   </axis>
 </animation>
 
-<!--Control-->
+<!--Controls not used now, later -->
 <animation>
   <type>pick</type>
   <object-name>hotspot_1</object-name>
   <visible>false</visible>
-  <action>
-    <button>0</button>
-    <repeatable>false</repeatable>
-    <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("sim/multiplay/generic/float[12]", 1.0, 2.0 );
-      </script>
-    </binding>
-  </action>
-</animation>
-<animation>
-  <type>pick</type>
-  <object-name>hotspot_2</object-name>
-  <visible>false</visible>
-  <action>
-    <button>0</button>
-    <repeatable>false</repeatable>
-    <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("sim/multiplay/generic/float[12]", 0.0, 2.0 );
-      </script>
-    </binding>
-  </action>
+  
 </animation>
 
 <animation>
   <type>pick</type>
+  <object-name>hotspot_2</object-name>
+  <visible>false</visible>
+  
+</animation>
+
+
+<!--Controls not used now, later -->
+<animation>
+  <type>pick</type>
   <object-name>hotspot_3</object-name>
   <visible>false</visible>
-  <action>
-    <button>0</button>
-    <repeatable>false</repeatable>
-    <binding>
-        <command>property-toggle</command>
-        <property>controls/paratroopers/jump-signal</property>
-      </binding>
-  </action>
+  
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hotspot_4</object-name>
   <visible>false</visible>
-  <action>
-    <button>0</button>
-    <repeatable>false</repeatable>
-    <binding>
-        <command>property-toggle</command>
-        <property>controls/paratroopers/jump-signal</property>
-      </binding>
-  </action>
+  
 </animation>
 
 

@@ -1748,7 +1748,7 @@
     <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/bano/bano1.xml</path>
     <offsets>
       <x-m>  0.003 </x-m>
-      <y-m> -0.086 </y-m>
+      <y-m> -0.091 </y-m>
       <z-m>  0.200 </z-m>
     </offsets>
   </model>
@@ -1774,7 +1774,7 @@ Battery</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  -0.138 </y-m>
+      <y-m>  -0.143 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
@@ -1812,7 +1812,7 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  -0.086 </y-m>
+      <y-m>  -0.091 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
@@ -1849,7 +1849,7 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  -0.035 </y-m>
+      <y-m>  -0.041 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
@@ -1920,12 +1920,12 @@ Lights</text>
     <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/bano/bano2.xml</path>
     <offsets>
       <x-m>  0.003 </x-m>
-      <y-m>  0.086 </y-m>
+      <y-m>  0.081 </y-m>
       <z-m>  0.200 </z-m>
     </offsets>
   </model>  
 
- <!-- Cargo Door Switch Text--> 
+ <!-- Cargo Door Switch Text
 
   <text>
     <name>CargoDoor</name>
@@ -1946,7 +1946,7 @@ Door</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.034 </y-m>
+      <y-m>  0.029 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
@@ -1960,10 +1960,10 @@ Door</text>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
     </emission>
-  </animation>
+  </animation>                           --> 
    
   
- <!-- Paratroopers Switch Text--> 
+ <!-- Paratroopers Switch Text 
 
   <text>
     <name>parachute_signal</name>
@@ -1983,7 +1983,7 @@ Door</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.086 </y-m>
+      <y-m>  0.081 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
@@ -1997,7 +1997,7 @@ Door</text>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
     </emission>
-  </animation>
+  </animation>                      -->
   
  <!-- ALS-Lighting Switch Text--> 
 
@@ -2020,7 +2020,7 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.137 </y-m>
+      <y-m>  0.132 </y-m>
       <z-m>  0.17 </z-m>
     </offsets>
   </text>
@@ -2359,7 +2359,7 @@ SKAWK</text>
     <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/switches-shuttle/azs_3.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m>  0.185 </y-m>
+      <y-m>  0.18 </y-m>
       <z-m>  0.199 </z-m>
     </offsets>
   </model>
@@ -2384,7 +2384,7 @@ SKAWK</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> 0.21 </y-m>
+      <y-m> 0.205 </y-m>
       <z-m>  0.20 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -2404,7 +2404,7 @@ SKAWK</text>
     <path>Aircraft/AN-225/Models/Interior/Panel/Instruments/redlamp/shuttleload-red.xml</path>
     <offsets>
       <x-m>  -0.0205 </x-m>
-      <y-m>  0.185 </y-m>
+      <y-m>  0.18 </y-m>
       <z-m>  0.175 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>

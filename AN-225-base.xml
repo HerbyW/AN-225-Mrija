@@ -109,11 +109,11 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     <fuel-fraction>0.6</fuel-fraction>
     
     <startup>
-      <splash-texture>Aircraft/AN-225/AN-225-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/AN-225/AN-225-Mrija-splash.png</splash-texture>
     </startup>
     
     <model>
-      <path>Aircraft/AN-225/Models/AN-225-model.xml</path>
+      <path>Aircraft/AN-225/Models/AN-225-Mrija.xml</path>
     </model>
     
     <sound>      
@@ -181,7 +181,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     </flaps>
 
     <help>
-      <title>Antonov AN-225</title>
+      <title>Antonov AN-225-Mrija</title>
       <key>
         <name>d/f</name>
         <desc>retract/extend slats</desc>
@@ -189,36 +189,34 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
       <key>
         <name>j/k</name>
         <desc>decrease/increase spoilers</desc>
-      </key>
-      <key>
-        <name>K</name>
-        <desc>toggle trajectory markers</desc>
-      </key>
-      <key>
-        <name>U</name>
-        <desc>update drop view position</desc>
-      </key>
+      </key>      
       <key>
         <name>Delete</name>
         <desc>Reverser on/off</desc>
       </key>
       <text>
-	The fdm needs some adjustments,
-	instruments are to be followed,
-	have fun!	
+	Autostart: s
+	Manual start up: turn the fuel knob on, start engines one by one,
+	adjust the reference compass in the engineer panel,  adjust the high or pressure.
+	
+	More information on all instruments are in the AN-12BK or AN-22A,
+	ongoing development, so do not miss to get the latest version here: github.com/HerbyW
 	
 	Maximal Speed:                459 kn = 850 km/h
 	Empty weight:              385808 lb = 175.000 kg
 	Maximal payload:           551155 lb = 250.000 kg
 	Max take off weight is: 1,322,773 lb = 600.000 kg
 	
-	Shuttle doors should be closed befor take off, payload for Shuttle is set to 0 and may be adjusted as you like.
+	Shuttle doors should be closed befor take off, payload for Shuttle is set by loading it with the switch at the panel.
 	
-	ILS landing is now working for this aircraft.
+	ILS landing is now working for this aircraft, as every other instruments for radios and navigation.
 	
 	Nav Lights are on the middle switch, instrument lights on the right one, both on the pannel with the 3 switches
 	
 	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
+	Flying with empty cargo may be very tricky!
+	
+	Have fun!
       </text>
     </help>
     
