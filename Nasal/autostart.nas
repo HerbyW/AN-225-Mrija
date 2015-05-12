@@ -1,5 +1,5 @@
 #
-# Autostart for AN-225
+# Autostart for AN-225-Mrija
 #
 #    ###################################################################################
 #    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015

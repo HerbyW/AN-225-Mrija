@@ -30,7 +30,7 @@ AN225 model/animation config.
   </offsets>
   
   <sound>      
-    <path>Aircraft/AN-225/Sounds/AN-225-sound.xml</path>
+    <path>Aircraft/AN-225-Mrija/Sounds/AN-225-Mrija-sound.xml</path>
   </sound>
   
   <!--Lights, just a little bit more brilliance to the airplane-->
@@ -238,7 +238,7 @@ AN225 model/animation config.
   </animation>
   
   <model>
-    <path>Aircraft/AN-225/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -23.05 </x-m>
       <y-m>   0.00 </y-m>
@@ -251,7 +251,7 @@ AN225 model/animation config.
   for the hight so that the shadow looks good
   
   <model>
-  <path>Aircraft/AN-225/Models/shadow.xml</path>
+  <path>Aircraft/AN-225-Mrija/Models/shadow.xml</path>
   <offsets>
   <x-m> 12.000 </x-m>
   <y-m>  0.000 </y-m>
@@ -263,7 +263,7 @@ AN225 model/animation config.
   
   <model>
     <name>Shuttle</name>
-    <path>Aircraft/AN-225/Models/Effects/Submodels/Shuttle/shuttle.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/Shuttle/shuttle.xml</path>
     <offsets>
       <x-m>5.0</x-m>
       <y-m>0</y-m>
@@ -273,7 +273,7 @@ AN225 model/animation config.
   
   <model>
     <name>Fuel-Tank-Shuttle</name>
-    <path>Aircraft/AN-225/Models/Effects/Submodels/Shuttle/external-fuel-tank.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/Shuttle/external-fuel-tank.xml</path>
     <offsets>
       <x-m>4.0</x-m>
       <y-m>0</y-m>
@@ -5220,7 +5220,7 @@ AN225 model/animation config.
   
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_6.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_6.xml</path>
     <offsets>
       <x-m> 11.0 </x-m>
       <y-m> 25.0 </y-m>
@@ -5229,7 +5229,7 @@ AN225 model/animation config.
   </model>
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_5.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_5.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
       <y-m> 17.2 </y-m>
@@ -5238,7 +5238,7 @@ AN225 model/animation config.
   </model>
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_4.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_4.xml</path>
     <offsets>
       <x-m> 2.0 </x-m>
       <y-m>  9.40 </y-m>
@@ -5248,7 +5248,7 @@ AN225 model/animation config.
   
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_3.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_3.xml</path>
     <offsets>
       <x-m> 2.0 </x-m>
       <y-m>  -9.40 </y-m>
@@ -5257,7 +5257,7 @@ AN225 model/animation config.
   </model>
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_2.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_2.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
       <y-m> -17.2 </y-m>
@@ -5267,7 +5267,7 @@ AN225 model/animation config.
   
   
   <model>
-    <path>Aircraft/AN-225/Models/Effects/smoke/smoke_1.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_1.xml</path>
     <offsets>
       <x-m> 11.0 </x-m>
       <y-m> -25.0 </y-m>
@@ -5279,7 +5279,7 @@ AN225 model/animation config.
   
   <model>
     <name>choke_nose</name>
-    <path>Aircraft/AN-225/Models/Effects/ground/choke_nose.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/ground/choke_nose.xml</path>
     <condition>
       <equals>
 	<property>sim/multiplay/generic/int[3]</property>
@@ -5296,7 +5296,7 @@ AN225 model/animation config.
     
     <model>
       <name>choke_left</name>
-      <path>Aircraft/AN-225/Models/Effects/ground/choke_left.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/Effects/ground/choke_left.xml</path>
       <condition>
 	<equals>
 	  <property>sim/multiplay/generic/int[3]</property>
@@ -5312,7 +5312,7 @@ AN225 model/animation config.
     
     <model>
       <name>choke_right</name>
-      <path>Aircraft/AN-225/Models/Effects/ground/choke_right.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/Effects/ground/choke_right.xml</path>
       <condition>
 	<equals>
 	  <property>sim/multiplay/generic/int[3]</property>
@@ -5329,7 +5329,7 @@ AN225 model/animation config.
     <!-- Lighting effects -->
     <!-- Beacon: red-orange at top and bottom of fuselage -->
     <model>
-      <path>Aircraft/AN-225/Models/light/beacon.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/beacon.xml</path>
       <offsets>
 	<x-m> 15.0 </x-m>
 	<y-m>  0.00000 </y-m>
@@ -5337,7 +5337,7 @@ AN225 model/animation config.
       </offsets>
     </model>
     <model>
-      <path>Aircraft/AN-225/Models/light/beacon.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/beacon.xml</path>
       <offsets>
 	<x-m> -5.29 </x-m>
 	<y-m>  0.000 </y-m>
@@ -5347,7 +5347,7 @@ AN225 model/animation config.
     
     <!-- VavLights: green-right, red-left -->
     <model>
-      <path>Aircraft/AN-225/Models/light/RedLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/RedLight.xml</path>
       <offsets>
 	<x-m>19.25</x-m>
 	<y-m>-43.75</y-m>
@@ -5355,7 +5355,7 @@ AN225 model/animation config.
       </offsets>
     </model>  
     <model>
-      <path>Aircraft/AN-225/Models/light/GreenLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/GreenLight.xml</path>
       <offsets>
 	<x-m>19.25</x-m>
 	<y-m>43.75</y-m>
@@ -5367,7 +5367,7 @@ AN225 model/animation config.
     
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>    
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>52.5</x-m>
 	<y-m>15.2</y-m>
@@ -5376,7 +5376,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>    
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>52.5</x-m>
 	<y-m>-15.2</y-m>
@@ -5385,7 +5385,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <offsets>
 	<x-m>-3.45</x-m>
 	<y-m>8.34</y-m>
@@ -5394,7 +5394,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <offsets>
 	<x-m>-3.45</x-m>
 	<y-m>-8.34</y-m>
@@ -5403,7 +5403,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>    
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>-27.95 </x-m>
 	<y-m>  1.50 </y-m>
@@ -5412,7 +5412,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>    
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>-27.95 </x-m>
 	<y-m> -1.50 </y-m>
@@ -5421,7 +5421,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <offsets>
 	<x-m>17.25</x-m>
 	<y-m>42.034</y-m>
@@ -5430,7 +5430,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <offsets>
 	<x-m>17.25</x-m>
 	<y-m>-42.034</y-m>
@@ -5440,7 +5440,7 @@ AN225 model/animation config.
     
     <!-- StrobeLights: white-pulse, left-right wings and ruder-->
     <model>
-      <path>Aircraft/AN-225/Models/light/StrobeLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/StrobeLight.xml</path>
       <offsets>
 	<x-m>21.5</x-m>
 	<y-m>42.95</y-m>
@@ -5449,7 +5449,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/StrobeLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/StrobeLight.xml</path>
       <offsets>
 	<x-m>21.5</x-m>
 	<y-m>-42.95</y-m>
@@ -5458,7 +5458,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/StrobeLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/StrobeLight.xml</path>
       <offsets>
 	<x-m> 51.20 </x-m>
 	<y-m>-14.32 </y-m>
@@ -5467,7 +5467,7 @@ AN225 model/animation config.
     </model>
     
     <model>
-      <path>Aircraft/AN-225/Models/light/StrobeLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/StrobeLight.xml</path>
       <offsets>
 	<x-m> 51.20 </x-m>
 	<y-m> 14.32 </y-m>
@@ -5479,7 +5479,7 @@ AN225 model/animation config.
     
     <!-- Lighting Landing without Rembrand-->
     <model>
-      <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <condition>
 	
 	<or>
@@ -5496,7 +5496,7 @@ AN225 model/animation config.
       </model> 
       
       <model>
-	<path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+	<path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
 	<condition>
 	  
 	  <or>
@@ -5513,7 +5513,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>  
-	  <path>Aircraft/AN-225/Models/light/WhiteLight.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
 	  
 	  <condition>
 	    <and>
@@ -5534,7 +5534,7 @@ AN225 model/animation config.
 	
 	<!-- Lighting Landing 154 beginn, External lights for Rembrand-->
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-landing.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
 	  <name>headlight_c</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5548,7 +5548,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-landing.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
 	  <name>headlight_l</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5562,7 +5562,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-landing.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
 	  <name>headlight_r</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5576,7 +5576,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-taxi.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
 	  <name>taxilight_c</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5590,7 +5590,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-taxi.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
 	  <name>taxilight_l</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5604,7 +5604,7 @@ AN225 model/animation config.
 	</model>
 	
 	<model>
-	  <path>Aircraft/AN-225/Models/light/headlight-taxi.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
 	  <name>taxilight_r</name>
 	  <condition>
 	    <property>/sim/rendering/rembrandt/enabled</property>
@@ -5620,7 +5620,7 @@ AN225 model/animation config.
 	
 	<!-- Lighting Landing without Rembrand -->
 	<model>
-	  <path>Aircraft/AN-225/Models/light/light-cone-707.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/light-cone-707.xml</path>
 	  <name>taxilight_r</name>
 	  <offsets>
 	    <x-m> -8.0 </x-m>
@@ -5630,7 +5630,7 @@ AN225 model/animation config.
 	  </offsets>
 	</model>
 	<model>
-	  <path>Aircraft/AN-225/Models/light/light-cone-taxi-707.xml</path>
+	  <path>Aircraft/AN-225-Mrija/Models/light/light-cone-taxi-707.xml</path>
 	  <name>taxilight_r</name>
 	  <offsets>
 	    <x-m> -8.0 </x-m>

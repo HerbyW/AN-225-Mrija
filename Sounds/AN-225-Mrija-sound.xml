@@ -17,7 +17,7 @@
   <!-- Engines 1 - 6 starting up-->
     <crank>
       <name>engstart1</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -31,7 +31,7 @@
     
     <crank>
       <name>engstart2</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -46,7 +46,7 @@
     
     <crank>
       <name>engstart3</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -61,7 +61,7 @@
     
     <crank>
       <name>engstart4</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -76,7 +76,7 @@
     
     <crank>
       <name>engstart5</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -91,7 +91,7 @@
     
     <crank>
       <name>engstart6</name>
-      <path>Aircraft/AN-225/Sounds/turbine_start.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
          <property>sim/multiplay/generic/int[11]</property>         
@@ -108,7 +108,7 @@
  <engine>
    <name>engine1</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -135,7 +135,7 @@
  <engine>
    <name>engine2</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -162,7 +162,7 @@
  <engine>
    <name>engine3</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -189,7 +189,7 @@
  <engine>
    <name>engine4</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -216,7 +216,7 @@
  <engine>
    <name>engine5</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -243,7 +243,7 @@
  <engine>
    <name>engine6</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>      
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
@@ -271,7 +271,7 @@
 
     <engine>
       <name>engine0</name>
-      <path>Aircraft/AN-225/Sounds/jet.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[0]/running</property>
@@ -485,7 +485,7 @@
     <rumble>
       <name>rumble1</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/24roll.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/24roll.wav</path>
       <condition>
           <property>/gear/gear[0]/wow</property>
       </condition>
@@ -502,7 +502,7 @@
     <rumble>
       <name>rumble2</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/24roll.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/24roll.wav</path>
       <condition>
         <or>          
           <property>/gear/gear[2]/wow</property>
@@ -523,7 +523,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/AN-225/Sounds/gear.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -531,7 +531,7 @@
 
     <gear>
      <name>gear-lock</name>
-     <path>Aircraft/AN-225/Sounds/gear-lck.wav</path>
+     <path>Aircraft/AN-225-Mrija/Sounds/gear-lck.wav</path>
      <condition>
        <greater-than>
          <property>/gear/gear[0]/position-norm</property>
@@ -546,7 +546,7 @@
     <squeal>
       <name>squeal0</name>
       <mode>once</mode>
-      <path>Aircraft/AN-225/Sounds/squeal.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/squeal.wav</path>
       <condition>
         <property>/gear/gear[0]/wow</property>
       </condition>
@@ -575,7 +575,7 @@
     <squeal>
       <name>squeal1</name>
       <mode>once</mode>
-      <path>Aircraft/AN-225/Sounds/squeal.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/squeal.wav</path>
       <condition>
         <or>          
           <property>/gear/gear[2]/wow</property>
@@ -610,7 +610,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/AN-225/Sounds/flaps.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <factor>0.4</factor>
@@ -623,7 +623,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/AN-225/Sounds/flaps.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/flaps.wav</path>
       <property>/surface-positions/spoiler-pos-norm</property>
       <volume>
         <factor>0.4</factor>
@@ -635,7 +635,7 @@
     <slats>
       <name>slats</name>
       <mode>in-transit</mode>
-      <path>Aircraft/AN-225/Sounds/flaps.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/flaps.wav</path>
       <property>/surface-positions/slat-pos-norm</property>
       <volume>
         <factor>0.4</factor>
@@ -649,7 +649,7 @@
     <speedwarn>
       <name>warn1</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/dinamik_pr2.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/dinamik_pr2.wav</path>
        <condition>
         <greater-than>
 	 <property>velocities/groundspeed-kt</property>
@@ -670,7 +670,7 @@
     <stall>
       <name>stall</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/stall.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/stall.wav</path>
       <property>/sim/alarms/stall-warning</property>
       <volume>
         <property>/sim/alarms/stall-warning</property>
@@ -685,7 +685,7 @@
 -    <decision>
 -      <name>decision</name>
 -      <mode>once</mode>
--      <path>Aircraft/AN-225/Sounds/omi_1.wav</path>
+-      <path>Aircraft/AN-225-Mrija/Sounds/omi_1.wav</path>
 -      <condition>
 -    <less-than>
 -      <property>position/altitude-agl-ft</property>
@@ -708,7 +708,7 @@
     <wind>
       <name>wind</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/wind.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/wind.wav</path>
       <property>/environment/wind-speed-kt</property>
       <volume>
         <property>/environment/wind-speed-kt</property>
@@ -731,7 +731,7 @@
     <rain>
       <name>rain</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/rain_canopy.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/rain_canopy.wav</path>
       <condition>
         <greater-than>
           <property>/environment/metar/rain-norm</property>
@@ -759,7 +759,7 @@
     <ADF>
       <name>ADF1</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/Morse.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/Morse.wav</path>
        <condition>        
           <property>/instrumentation/adf[0]/in-range</property>         
        </condition>
@@ -775,7 +775,7 @@
     <ADF>
       <name>ADF2</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-225/Sounds/Morse.wav</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/Morse.wav</path>
        <condition>        
           <property>/instrumentation/adf[1]/in-range</property>        
        </condition>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--  AN225 yasim config.
+<!--  AN-225-Mrija yasim config.
 Notes.
 AN225 with full fuel load, no weapon load.
 This config cannot be regarded as an accurate representation
@@ -14,7 +14,7 @@ them out of my 3d modeller.
 <!--
     ###################################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
+    Development is ongoing, see latest version: github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,

@@ -6,7 +6,7 @@
 Modifications on all animations,
 adding of space shuttle,
 autopilot settings,
-instrumentation                by HerbyW 12/2014-01/2015
+instrumentation                by HerbyW 12/2014-05/2015
 modeling                       by firefly
 fdm and autopilot adjustments  by ph-cor
 testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
@@ -94,11 +94,11 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
    
   <sim include="Systems/views.xml">
   
-   <description>Antonov AN-225 heavy/outsize cargo aircraft (YASim fdm)</description>
+   <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
    <aircraft-version>3.4.2</aircraft-version>    
    <status>advanced production</status>
-   <aero>AN-225-yasim</aero>
+   <aero>AN-225-Mrija-yasim</aero>
     <rating>
      <FDM type="int">3</FDM>
      <systems type="int">3</systems>
@@ -109,19 +109,19 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     <fuel-fraction>0.6</fuel-fraction>
     
     <startup>
-      <splash-texture>Aircraft/AN-225/AN-225-Mrija-splash.png</splash-texture>
+      <splash-texture>Aircraft/AN-225-Mrija/AN-225-Mrija-splash.png</splash-texture>
     </startup>
     
     <model>
-      <path>Aircraft/AN-225/Models/AN-225-Mrija.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/AN-225-Mrija.xml</path>
     </model>
     
     <sound>      
-      <path>Aircraft/AN-225/Sounds/AN-225-sound.xml</path>
+      <path>Aircraft/AN-225-Mrija/Sounds/AN-225-Mrija-sound.xml</path>
     </sound>
     
     <instrumentation>
-       <path>Aircraft/AN-225/Systems/instrumentation.xml</path>
+       <path>Aircraft/AN-225-Mrija/Systems/instrumentation.xml</path>
     </instrumentation>
         
 
@@ -392,22 +392,22 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 </instrumentation>
 
 <input>
-    <keyboard include="Nasal/AN-225-keyboard.xml"/>
+    <keyboard include="Nasal/AN-225-Mrija-keyboard.xml"/>
 </input>
 
   <nasal>    
     <an225>      
-      <file>Aircraft/AN-225/Nasal/light.nas</file>
-      <file>Aircraft/AN-225/Nasal/autostart.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/light.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/autostart.nas</file>
     </an225>
     <instruments>
-      <file>Aircraft/AN-225/Nasal/setprop.nas</file>      
+      <file>Aircraft/AN-225-Mrija/Nasal/setprop.nas</file>      
     </instruments>    
     <help>
-      <file>Aircraft/AN-225/Nasal/km-5-1.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/km-5-1.nas</file>
     </help>
     <mapcase>
-      <file>Aircraft/AN-225/Nasal/mapcase.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/mapcase.nas</file>
     </mapcase>
   </nasal>   
 

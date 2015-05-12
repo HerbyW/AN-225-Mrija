@@ -209,7 +209,7 @@
       
       <model>
 	<name>Strobe_1</name>
-	<path>Aircraft/AN-225/Models/light/RedLight.xml</path>	
+	<path>Aircraft/AN-225-Mrija/Models/light/RedLight.xml</path>	
 	<offsets>
 	  <x-m>9.45</x-m>
 	  <y-m>-11.9</y-m>
@@ -219,7 +219,7 @@
       
       <model>
 	<name>Strobe_4</name>
-	<path>Aircraft/AN-225/Models/light/GreenLight.xml</path>	
+	<path>Aircraft/AN-225-Mrija/Models/light/GreenLight.xml</path>	
 	<offsets>
 	  <x-m>9.45</x-m>
 	  <y-m>11.9</y-m>
@@ -228,7 +228,7 @@
       </model>   
       <model>
 	<name>Strobe_3</name>
-	<path>Aircraft/AN-225/Models/light/strobe-yellow.xml</path>	
+	<path>Aircraft/AN-225-Mrija/Models/light/strobe-yellow.xml</path>	
 	<offsets>
 	  <x-m>-8.9</x-m>
 	  <y-m>0</y-m>

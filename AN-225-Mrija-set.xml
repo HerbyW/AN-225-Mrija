@@ -11,11 +11,11 @@
     ###################################################################################################
 -->
 
-<PropertyList include="AN-225-yasim-cnf.xml">
+<PropertyList include="AN-225-Mrija-yasim-cnf.xml">
 
 <sim>
 
-    <description>Antonov AN-225 (YASim)</description>
+    <description>Antonov AN-225-Mrija (YASim)</description>
     <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
 
     
@@ -50,7 +50,7 @@
    
    <systems>
       <autopilot>
-        <path>Aircraft/AN-225/Nasal/An-225-autopilot.xml</path>
+        <path>Aircraft/AN-225-Mrija/Nasal/AN-225-Mrija-autopilot.xml</path>
       </autopilot>      
     </systems> 
    

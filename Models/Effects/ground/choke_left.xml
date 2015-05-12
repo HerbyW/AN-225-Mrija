@@ -12,7 +12,7 @@
 -->
 
 <PropertyList>
- <path>Aircraft/AN-225/Models/Effects/ground/choke_left.ac</path>
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/choke_left.ac</path>
  
  <animation>
   <type>scale</type>
