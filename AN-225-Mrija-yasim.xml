@@ -234,7 +234,7 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[1]/steering-norm"/>
+
  </gear>
 
  <gear x="-5.75" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
@@ -245,7 +245,7 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[1]/steering-norm"/>
+
  </gear>
 
  <gear x="-7.41" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
@@ -256,12 +256,12 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[1]/steering-norm"/>
+
  </gear>
 
  <gear x="-9.05" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.1453" src1="1.0" dst1="0.1135"
+    src0="-1" dst0="-0.14" src1="1.0" dst1="0.14"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -276,7 +276,7 @@ them out of my 3d modeller.
 
  <gear x="-10.72" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.2169" src1="1.0" dst1="0.1694"
+    src0="-1" dst0="-0.21" src1="1.0" dst1="0.21"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -291,7 +291,7 @@ them out of my 3d modeller.
 
  <gear x="-12.42" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.2876" src1="1.0" dst1="0.2264"
+    src0="-1" dst0="-0.28" src1="1.0" dst1="0.28"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -306,7 +306,7 @@ them out of my 3d modeller.
 
  <gear x="-14.10" y="3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.3546" src1="1.0" dst1="0.2808"
+    src0="-1" dst0="-0.35" src1="1.0" dst1="0.35"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -328,7 +328,7 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[2]/steering-norm"/>
+
  </gear>
 
  <gear x="-5.75" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
@@ -339,7 +339,7 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[2]/steering-norm"/>
+
  </gear>
 
  <gear x="-7.41" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
@@ -350,12 +350,12 @@ them out of my 3d modeller.
   <control-speed control="EXTEND" transition-time="10"/>
   <control-speed control="BRAKE" transition-time="0.7"/>
   <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
-  <control-output control="STEER" prop="/gear/gear[2]/steering-norm"/>
+
  </gear>
 
  <gear x="-9.05" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.1135" src1="1.0" dst1="0.1453"
+    src0="-1" dst0="-0.14" src1="1.0" dst1="0.14"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
  
@@ -370,7 +370,7 @@ them out of my 3d modeller.
 
  <gear x="-10.72" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.1694" src1="1.0" dst1="0.2169"
+    src0="-1" dst0="-0.21" src1="1.0" dst1="0.21"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   
@@ -385,7 +385,7 @@ them out of my 3d modeller.
 
  <gear x="-12.42" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.2264" src1="1.0" dst1="0.2876"
+    src0="-1" dst0="-0.28" src1="1.0" dst1="0.28"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   
@@ -400,7 +400,7 @@ them out of my 3d modeller.
 
  <gear x="-14.10" y="-3.2" z="-4.6" retract-time="10" compression="1.0" spring="0.6">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1" dst0="-0.2808" src1="1.0" dst1="0.3546"
+    src0="-1" dst0="-0.35" src1="1.0" dst1="0.35"
     invert="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   
