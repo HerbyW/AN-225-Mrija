@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################
+    Antonov and Topolev Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later    
+    ###################################################################################
+-->
+
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+
+<!-- PU-46 & PN-5 ABSU (autopilot) control
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>pitch-set.ac</path>
+
+ <!--External panel lighting-->
+<animation>
+  <type>material</type>   
+  <object-name>pitch_wheel</object-name>
+  <object-name>pitch_nandle_base</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+<!--Autopilot wheels-->
+<animation>
+  <type>rotate</type>
+  <object-name>pitch_wheel</object-name>
+  <property>autopilot/settings/vertical-speed-fpm</property>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.14988</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Wheels-->
+
+<animation>
+  <type>pick</type>
+  <object-name>pitch_wheel</object-name>
+  <visible>true</visible>
+  <action>
+    <button>3</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>autopilot/settings/vertical-speed-fpm</property>
+      <step>-100</step>
+      <max>5000</max>
+    </binding>    
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>pitch_wheel</object-name>
+  <visible>true</visible>
+  <action>
+    <button>4</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>autopilot/settings/vertical-speed-fpm</property>
+      <step>100.0</step>
+      <min>-5000</min>
+    </binding>    
+  </action>
+</animation>
+
+</PropertyList>
