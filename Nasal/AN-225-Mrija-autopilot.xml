@@ -318,7 +318,7 @@
       <value>altitude-hold</value>
     </enable>
     <input>
-      <prop>/position/altitude-ft</prop>
+      <prop>/instrumentation/altimeter/indicated-altitude-ft</prop>
     </input>
     <reference>
       <prop>/autopilot/settings/target-altitude-ft</prop>
