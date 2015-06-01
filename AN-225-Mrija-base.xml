@@ -194,13 +194,79 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
         <name>Delete</name>
         <desc>Reverser on/off</desc>
       </key>
-      <text>
-	Autostart: s
-	Manual start up: turn the fuel knob on, start engines one by one,
-	adjust the reference compass in the engineer panel,  adjust the high or pressure.
+      <text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija
 	
-	More information on all instruments are in the AN-12BK or AN-22A,
-	ongoing development, so do not miss to get the latest version here: github.com/HerbyW
+	        Autostart: press s and make the 2 additional settings!
+		
+		Manual start up:
+		
+		- Middle top panel: Right switch group: all in upper position: Battery, Lights for Instruments and NAV lights on.
+		- Bottom middle panel: round knob for fuel in any right position - activates the tanks and pumps, a green lamp shows up.
+		- 4 Engine starter switches above the fuel knob - one to four in upper position - starting the engines, each engine needs 17 sec for running.
+		- Red lamps showing running engines, green lamps showing idle rpm.
+		- Overhead panel: all switches in up position, power for navigation radios (ADF and VOR), compass and skawk.
+		- Engineer panel: check red lamps going to green, then engines are ready to go, move throttle to idle position.
+		- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading cargo and paratroopers.
+		
+		Additional Settings:
+		
+		1. Reference Compass at engineer panel, magnetic variation is shown as tooltip, set needle to marker position.
+		2. Altitude and/or pressure settings in the Altimeters in inHG, mmHG or hPa (as tooltip), the Autopilot will work with this values (not with the HUD-infos).
+		
+		Shut down: Fuel knob to left position or engine starter switches down.
+		
+		Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation.
+		
+		Some instruments will show you metric values, some ft/knots.
+		
+		There is a 3 knob panel at the left side, marker volume, instrument lights and for rembrandt - cabin lights.
+		
+		The switch right from the Lights panel is for landing and taxi lights.
+		Then there is the switch for activating the parachuters and a switch for the cargo door.
+		Right from the Parachuters-switch is a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
+		
+		On the very left side you have a panel with 5 green lamps, the lower 3 are for trim-neutralisation, used after the Autopilot is dissabled.
+		The upper two you may press to get the latest METAR infos on screen.
+		
+		Reverser initialisation by the switch at the throttle or key "Delete", a red lamp shows the activ reverser. Also a placecard "R" is comming up
+		at top of the panel, the switch and the placecard can be used to deactivate the reverser. Any throttle change activates/deactivates the reverser then.
+		
+		The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values:
+		- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator (with 4 green markers),
+		- Velocity Control: Speed with Throttle are set in the Speed Indicator, push IAS and turn needle (left from HSI)
+		- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS, pitch wheel changes values.
+		- Wing leveler is activ when you push the AP button, it is also the AP activating/deactivating Button,
+		- APRP is used for intersepting the Glide Scope,
+		- GPS for flying routes from the Route Manager,
+		- ALT is holding your attitude.
+		
+		For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
+		ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
+		
+		Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side), if the white strips are in the
+		middle position (1-2 for starting, 2-4 for landing).
+		
+		Trails are now working only above 14000 ft, on ground it is not realistic.
+		
+		There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
+		the upper one is in meter and mmHG, a tooltip shows you the Value in hPa, the lower one is in ft and inHG,
+		they are connected and you should set them to the ATIS information of the airport befor starting or landing.
+		
+		The compasses are cleared of the magnetic variation if you set the reference compass in the engineer panel to the orange marker position.
+		
+		On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning, over-loading, parking brake,
+		outer, middle and inner marker, brake-chokes, decission hight and reverser.
+		
+		There is a warning light for overload on top of the compasses (sign: BEC).
+		
+		Radios, DMEs, ADFs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
+		
+		Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
+		
+		Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
+		
+		Have fun and get the latest version at:
+		github.com/HerbyW
 	
 	Maximal Speed:                459 kn = 850 km/h
 	Empty weight:              385808 lb = 175.000 kg
@@ -208,11 +274,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	Max take off weight is: 1,322,773 lb = 600.000 kg
 	
 	Shuttle doors should be closed befor take off, payload for Shuttle is set by loading it with the switch at the panel.
-	
-	ILS landing is now working for this aircraft, as every other instruments for radios and navigation.
-	
-	Nav Lights are on the middle switch, instrument lights on the right one, both on the pannel with the 3 switches
-	
+		
 	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
 	Flying with empty cargo may be very tricky!
 	

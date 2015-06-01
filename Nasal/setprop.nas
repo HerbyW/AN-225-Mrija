@@ -430,5 +430,51 @@ var sw_show = func(s) {
 }
 
 #############################################################################################################
+var adjustStep = func(value,amount,step=10){
+
+if (math.abs(amount) >= step){
+if (math.mod(value,step) != 0){
+if (amount > 0){
+value = math.ceil(value/step)*step;
+}else{
+value = math.floor(value/step)*step;
+}
+}else{
+value += amount;
+}
+}else{
+value += amount;
+}
+return value;
+};
+
+
+var adjustAlt = func(amount,step=100){
+
+var value = getprop("/autopilot/setting/target-altitude-ft");
+value = adjustStep(value,amount,100);
+setprop("/autopilot/setting/target-altitude-ft",value);
+
+
+};
+
+
+var adjustPitch = func(amount,step=100){
+
+var value = getprop("/autopilot/settings/vertical-speed-fpm");
+value = adjustStep(value,amount,100);
+setprop("/autopilot/settings/vertical-speed-fpm",value);
+
+
+};
+
+##############################################################################################################
+
+
+setlistener("/sim/airport/closest-airport-id", func
+{
+  setprop("/controls/switches/metar",1);  
+}
+);
 
 

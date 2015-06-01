@@ -58,14 +58,26 @@
   <object-name>pitch_wheel</object-name>
   <visible>true</visible>
   <action>
-    <button>3</button>
-    <repeatable>false</repeatable>
+    <button>0</button>
     <binding>
-      <command>property-adjust</command>
-      <property>autopilot/settings/vertical-speed-fpm</property>
-      <step>-100</step>
-      <max>5000</max>
-    </binding>    
+      <command>property-assign</command>
+      <property>/autopilot/settings/vertical-speed-fpm</property>
+      <value>0.0</value>
+    </binding> 
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>pitch_wheel</object-name>
+  <visible>true</visible>
+  <action>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+       <command>nasal</command>
+       <script>instruments.adjustPitch(-100,100);</script>
+     </binding>  
   </action>
 </animation>
 
@@ -75,13 +87,11 @@
   <visible>true</visible>
   <action>
     <button>4</button>
-    <repeatable>false</repeatable>
+    <repeatable>true</repeatable>
     <binding>
-      <command>property-adjust</command>
-      <property>autopilot/settings/vertical-speed-fpm</property>
-      <step>100.0</step>
-      <min>-5000</min>
-    </binding>    
+       <command>nasal</command>
+       <script>instruments.adjustPitch(100,100);</script>
+     </binding>    
   </action>
 </animation>
 

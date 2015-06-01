@@ -56,6 +56,10 @@
 <animation>
   <type>material</type>
   <object-name>text_1</object-name>
+   <condition>    
+      <property>controls/switches/metar</property>
+      <value>1</value>     
+   </condition>
   <emission>
     <red>1.0</red>
     <green>1.0</green>
@@ -198,5 +202,44 @@
   </action>
 </animation>
 
+<animation>
+  <type>pick</type>
+  <object-name>text_1</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Latest Metar-Data:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/data"));</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Minimal ground visibility in meter:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/min-visibility-m"));</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Closest Airport:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/sim/airport/closest-airport-id"));</script>
+    </binding>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/switches/metar</property>
+      <value>0</value>
+    </binding>  
+    
+    </action>
+  </animation>
 
 </PropertyList>
