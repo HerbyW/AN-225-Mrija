@@ -451,9 +451,9 @@ return value;
 
 var adjustAlt = func(amount,step=100){
 
-var value = getprop("/autopilot/setting/target-altitude-ft");
+var value = getprop("/autopilot/settings/target-altitude-ft");
 value = adjustStep(value,amount,100);
-setprop("/autopilot/setting/target-altitude-ft",value);
+setprop("/autopilot/settings/target-altitude-ft",value);
 
 
 };

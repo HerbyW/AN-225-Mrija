@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
+-->
+
+<PropertyList>
+
+  <path>ramp.ac</path>
+  <offsets>
+      <x-m> -22.1 </x-m>
+      <y-m> 0.10 </y-m>
+      <z-m> -1.47</z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+
+  <!-- pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ramp</object-name>
+    <property>sim/multiplay/generic/int[12]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 700 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 800 </ind><dep>  105.0 </dep></entry>      
+    </interpolation>    
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

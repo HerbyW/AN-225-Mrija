@@ -23,7 +23,7 @@ AN225 model/animation config.
   
   
   
-  <path>AN225.ac</path>
+  <path>AN225-a.ac</path>
   <offsets>
     <z-m>0.0</z-m>
     <pitch-deg>0</pitch-deg>
@@ -37,6 +37,7 @@ AN225 model/animation config.
   
   <animation>   
     <object-name>Fuselage</object-name>
+    <object-name>FrontCargoDoor</object-name>
     <object-name>L-Wing-T</object-name>
     <object-name>R-Wing-T</object-name>
     <object-name>R-TailFin-OS</object-name>
@@ -57,6 +58,8 @@ AN225 model/animation config.
     <object-name>CP-Liner</object-name>
     <object-name>Fuselage_RLogos</object-name>
     <object-name>Fuselage_LLogos</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>UC-Blister</object-name>
     <object-name>R-Wing-Slat</object-name>
     <object-name>L-Wing-Slat</object-name>
@@ -123,6 +126,7 @@ AN225 model/animation config.
     <object-name>Engine-RO-Jetpipe</object-name>
     <object-name>R-NG-OS-Tyre</object-name>
     <object-name>L-NG-OS-Tyre</object-name>
+    <object-name>CP-Bulkheads</object-name>
   </animation>
   
   
@@ -132,6 +136,7 @@ AN225 model/animation config.
   <animation>
     <type>material</type>
     <object-name>Fuselage</object-name>
+    <object-name>FrontCargoDoor</object-name>
     <object-name>L-Wing-T</object-name>
     <object-name>R-Wing-T</object-name>
     <object-name>R-TailFin-OS</object-name>
@@ -152,6 +157,8 @@ AN225 model/animation config.
     <object-name>CP-Liner</object-name>
     <object-name>Fuselage_RLogos</object-name>
     <object-name>Fuselage_LLogos</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>UC-Blister</object-name>
     <object-name>R-Wing-Slat</object-name>
     <object-name>L-Wing-Slat</object-name>
@@ -217,7 +224,8 @@ AN225 model/animation config.
     <object-name>Engine-RM-Jetpipe</object-name>
     <object-name>Engine-RO-Jetpipe</object-name>
     <object-name>R-NG-OS-Tyre</object-name>
-    <object-name>L-NG-OS-Tyre</object-name>  
+    <object-name>L-NG-OS-Tyre</object-name>
+    <object-name>CP-Bulkheads</object-name>
     <emission>
       <factor>.15</factor>
       <red>   0.25 </red>
@@ -244,6 +252,16 @@ AN225 model/animation config.
       <y-m>   0.00 </y-m>
       <z-m>  3.99 </z-m>
     </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/ramp.xml</path>    
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/ramp2.xml</path>    
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/ramp3.xml</path>    
   </model>
   
   <!-- A shadow for OSG without Rembrandt, you may uncomment it,
@@ -287,10 +305,86 @@ AN225 model/animation config.
     <type>noshadow</type>
     <object-name>Fuselage_LLogos</object-name>
     <object-name>Fuselage_RLogos</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>Engine_Stripes</object-name>
     <object-name>Wing_ID</object-name>
     <object-name>TailFin_Flag</object-name>
   </animation>
+  
+  
+  
+  <!-- Front Cargo Door -->
+  <animation>
+    <type>translate</type>
+    <object-name>NG-WheelWell</object-name>    
+    <property>sim/multiplay/generic/int[12]</property>
+    <factor>0.001</factor>    
+    <axis>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>-1.0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>FrontCargoDoor</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
+    <object-name>noselamps1</object-name>
+    <object-name>noselamps2</object-name>
+    <property>sim/multiplay/generic/int[12]</property>
+    <factor>0.09</factor>
+    <center>
+      <x-m>-21.361</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>2.670</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>FrontCargoDoor</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-interpolate</command>
+	<property>sim/multiplay/generic/int[12]</property>
+	<value type="int">1000</value>
+	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>FrontCargoDoor</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
+    <visible>true</visible>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-interpolate</command>
+	<property>sim/multiplay/generic/int[12]</property>
+	<value type="int">0</value>
+	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+      </binding>
+    </action>
+  </animation>
+  
+  
   
   <!-- Rudder bits -->
   <!-- Left-Upper -->
@@ -5402,7 +5496,8 @@ AN225 model/animation config.
       </offsets>
     </model>
     
-    <model>
+    <model><!--noselamps -->
+      <name>noselamps1</name>
       <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>-27.95 </x-m>
@@ -5412,6 +5507,7 @@ AN225 model/animation config.
     </model>
     
     <model>
+      <name>noselamps2</name>
       <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
       <offsets>
 	<x-m>-27.95 </x-m>

@@ -39,14 +39,14 @@
     </emission>
 </animation>
 
-<!--Controls not used now, later
+<!--Controls 1=CargoDoor 2=not-used 3=ALS Lights-->
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>sim/multiplay/generic/float[12]</property>  
+  <property>sim/multiplay/generic/int[12]</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
-    <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
+    <entry><ind>	15.0</ind>	<dep>	60.0</dep></entry>
   </interpolation>
   <axis>
     <x>0.0</x>
@@ -67,7 +67,7 @@
     <y>-1.0</y>
     <z>0.0</z>
   </axis>
-</animation>                                                     -->
+</animation>
 
 <animation>
   <type>rotate</type>
@@ -89,14 +89,32 @@
   <type>pick</type>
   <object-name>hotspot_1</object-name>
   <visible>false</visible>
-  
+  <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-interpolate</command>
+	<property>sim/multiplay/generic/int[12]</property>
+	<value type="int">1000</value>
+	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+      </binding>
+    </action>
 </animation>
 
 <animation>
   <type>pick</type>
   <object-name>hotspot_2</object-name>
   <visible>false</visible>
-  
+  <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-interpolate</command>
+	<property>sim/multiplay/generic/int[12]</property>
+	<value type="int">0</value>
+	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+      </binding>
+    </action>
 </animation>
 
 

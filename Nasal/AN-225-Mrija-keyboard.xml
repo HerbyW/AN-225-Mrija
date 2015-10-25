@@ -62,9 +62,32 @@
   <binding>
     <command>property-toggle</command>
     <property>controls/reverser</property>
-   </binding>   
-  
-   
+   </binding>
 </key>
   
+  <key n="101">
+    <name>e</name>
+    <desc>Front Cargo Door</desc>
+    <binding>
+      <command>property-interpolate</command>
+      <property>sim/multiplay/generic/int[12]</property>
+      <value type="int">1000</value>
+      <rate>10</rate><!-- 20 seconds to 0 to 100 -->
+    </binding>
+    
+  </key>
+  
+  <key n="69">
+    <name>E</name>
+    <desc>Front Cargo Door</desc>
+    
+      <binding>
+	<command>property-interpolate</command>
+	<property>sim/multiplay/generic/int[12]</property>
+	<value type="int">0</value>
+	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+      </binding>
+    
+  </key>
+
 </PropertyList>

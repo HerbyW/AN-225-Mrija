@@ -489,7 +489,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.126 </y-m>
+      <y-m> -0.208 </y-m>
       <z-m> -0.006 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets> 
@@ -499,7 +499,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.042 </y-m>
+      <y-m> -0.126 </y-m>
       <z-m> -0.006 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
@@ -509,7 +509,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.042 </y-m>
+      <y-m> -0.044 </y-m>
       <z-m> -0.006 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
@@ -519,51 +519,31 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.126 </y-m>
+      <y-m>  0.038 </y-m>
       <z-m> -0.006 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
-    
-  <!-- UIZ, Fuel and Oil Pressure, Oil Temp (calculated, not too realistic) -->
   
   <model>
-    <name>uiz-1</name>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>    
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm5.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.126 </y-m>
-      <z-m> -0.089 </z-m>      
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.042 </y-m>
-      <z-m> -0.089 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.042 </y-m>
-      <z-m> -0.089 </z-m>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
   
   <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm6.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.126 </y-m>
-      <z-m> -0.089 </z-m>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.202 </y-m>
+      <z-m> -0.006 </z-m>
+      <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
-
 
   <!-- Fuel Control: Knob (activates the fuel system)
                      Total Fuel Sum below 10 t for all tanks combined
@@ -636,7 +616,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine0.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.33 </y-m>
+      <y-m> -0.208 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -646,7 +626,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green1.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.33 </y-m>
+      <y-m> -0.208 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -656,7 +636,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine1.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.30 </y-m>
+      <y-m> -0.118 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -666,7 +646,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green2.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.30 </y-m>
+      <y-m> -0.118 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -676,7 +656,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine2.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.27 </y-m>
+      <y-m> -0.029 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -686,7 +666,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green3.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.27 </y-m>
+      <y-m> -0.029 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -696,7 +676,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine3.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.24 </y-m>
+      <y-m>  0.060 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -706,7 +686,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green4.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.24 </y-m>
+      <y-m>  0.060 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -716,7 +696,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine4.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.21 </y-m>
+      <y-m>  0.149 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -726,7 +706,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green5.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.21 </y-m>
+      <y-m>  0.149 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -736,7 +716,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine5.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.18 </y-m>
+      <y-m>  0.236 </y-m>
       <z-m> -0.112 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -746,7 +726,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/lamp-engine-green6.xml</path>
     <offsets>
       <x-m>  -0.015 </x-m>
-      <y-m> -0.18 </y-m>
+      <y-m>  0.236 </y-m>
       <z-m> -0.062 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -756,7 +736,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine0.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.33 </y-m>
+      <y-m> -0.208 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -766,7 +746,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine1.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.30 </y-m>
+      <y-m> -0.118 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -776,7 +756,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine2.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.27 </y-m>
+      <y-m> -0.029 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -786,7 +766,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine3.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.24 </y-m>
+      <y-m>  0.060 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -796,7 +776,7 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine4.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.21 </y-m>
+      <y-m>  0.149 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
@@ -806,11 +786,76 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/engine5.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.18 </y-m>
+      <y-m>  0.236 </y-m>
       <z-m> -0.087 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
-  </model> 
+  </model>
+  
+  <!-- UIZ, Fuel and Oil Pressure, Oil Temp (calculated, not too realistic) -->
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.253 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+  
+  <model>
+    <name>uiz-1</name>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.0735 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>     
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-5.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.1035 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-6.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.192 </y-m>
+      <z-m> -0.087 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
 
    <!--Variometer, For Cabine and Outside pressure control--> 
   
@@ -1945,7 +1990,7 @@ Lights</text>
     </offsets>
   </model>  
 
- <!-- Cargo Door Switch Text
+ <!-- Cargo Door Switch Text -->
 
   <text>
     <name>CargoDoor</name>
@@ -1980,7 +2025,18 @@ Door</text>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
     </emission>
-  </animation>                           --> 
+  </animation> 
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-cargodoor.xml</path>
+    <offsets>
+      <x-m>  -0.015 </x-m>
+      <y-m>  0.026 </y-m>
+      <z-m>  0.223 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
    
   
  <!-- Paratroopers Switch Text 
@@ -2101,7 +2157,7 @@ Lights</text>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
     <offsets>
       <x-m>  -0.545 </x-m>
-      <y-m> 0.13 </y-m>
+      <y-m> 0.157 </y-m>
       <z-m>  -0.55 </z-m>      
     </offsets>
   </model> 

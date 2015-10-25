@@ -38,12 +38,12 @@ setlistener("/controls/autostart", func
         setprop("/consumables/fuel/tank[3]/selected", 1);
 	setprop("/consumables/fuel/tank[4]/selected", 1);
         
-	interpolate("controls/engines/engine[0]/throttle", 0.1, 17);
-	interpolate("controls/engines/engine[5]/throttle", 0.1, 34);
-	interpolate("controls/engines/engine[1]/throttle", 0.1, 51);
-	interpolate("controls/engines/engine[4]/throttle", 0.1, 68);
-	interpolate("controls/engines/engine[2]/throttle", 0.1, 85);
-	interpolate("controls/engines/engine[3]/throttle", 0.1, 102);
+	interpolate("controls/engines/engine[0]/throttle", 0.13, 17);
+	interpolate("controls/engines/engine[5]/throttle", 0.13, 34);
+	interpolate("controls/engines/engine[1]/throttle", 0.13, 51);
+	interpolate("controls/engines/engine[4]/throttle", 0.13, 68);
+	interpolate("controls/engines/engine[2]/throttle", 0.13, 85);
+	interpolate("controls/engines/engine[3]/throttle", 0.13, 102);
 	
 	interpolate("controls/engines/engine[0]/condition", 1, 1);
 	interpolate("controls/engines/engine[5]/condition", 1, 17);

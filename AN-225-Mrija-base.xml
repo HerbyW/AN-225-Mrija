@@ -68,6 +68,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
       <adf-2-selector type="double">0</adf-2-selector>
       <ushdb-sel-1 type="double">0</ushdb-sel-1>
       <ushdb-sel-2 type="double">0</ushdb-sel-2>
+      <metar type="bool">0</metar>
     </switches>
     <chokes>
       <activ type="int">0</activ>
@@ -140,6 +141,9 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
 	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
+	<int type="int" n="12" alias="/sim/model/cargodoor">  0 </int>
+	
+	
 	
         <float n="0" alias="/surface-positions/slat-pos-norm"/>
         <float n="1" alias="/surface-positions/spoiler-pos-norm"/>
@@ -193,6 +197,10 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
       <key>
         <name>Delete</name>
         <desc>Reverser on/off</desc>
+      </key>
+      <key>
+        <name>e / E</name>
+        <desc>Open/Close Front Cargo Door</desc>
       </key>
       <text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija
 	

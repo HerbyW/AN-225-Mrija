@@ -52,7 +52,7 @@
   <condition>
     <greater-than>
     <property>/engines/engine[1]/n2</property>
-    <value> 64.7 </value>
+    <value> 63.5 </value>
     </greater-than>
   </condition>
 </animation>
