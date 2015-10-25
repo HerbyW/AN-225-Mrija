@@ -299,6 +299,16 @@ AN225 model/animation config.
     </offsets>
   </model>
   
+  <model>
+    <name>ICE</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcar.xml</path>
+    <offsets>
+      <x-m>5.0</x-m>
+      <y-m>0</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
   
   <!-- Disable shadows from the texture objects -->
   <animation>
@@ -348,7 +358,7 @@ AN225 model/animation config.
     </axis>
   </animation>
   
-  <animation>
+ <!-- <animation>
     <type>pick</type>
     <object-name>FrontCargoDoor</object-name>
     <object-name>Fuselage_LLogos.001</object-name>
@@ -361,7 +371,7 @@ AN225 model/animation config.
 	<command>property-interpolate</command>
 	<property>sim/multiplay/generic/int[12]</property>
 	<value type="int">1000</value>
-	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+	<rate>10</rate>
       </binding>
     </action>
   </animation>
@@ -379,10 +389,10 @@ AN225 model/animation config.
 	<command>property-interpolate</command>
 	<property>sim/multiplay/generic/int[12]</property>
 	<value type="int">0</value>
-	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+	<rate>10</rate>
       </binding>
     </action>
-  </animation>
+    </animation>         -->
   
   
   

@@ -29,8 +29,8 @@
     <property>sim/multiplay/generic/int[12]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 800 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 850 </ind><dep>  105.0 </dep></entry>      
+      <entry><ind> 725 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 750 </ind><dep>  105.0 </dep></entry>      
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -45,8 +45,8 @@
    <property>sim/multiplay/generic/int[12]</property>
    <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 900 </ind><dep>  3.8 </dep></entry>      
+      <entry><ind> 750 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 775 </ind><dep>  3.8 </dep></entry>      
     </interpolation>    
    <axis>
      <x> -1 </x>
