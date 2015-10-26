@@ -64,3 +64,5 @@ setlistener("/controls/autostart", func
       }  
   }
   );
+
+# gui.popupTip("Autostarting...");

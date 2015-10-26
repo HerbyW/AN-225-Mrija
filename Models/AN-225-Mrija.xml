@@ -309,6 +309,16 @@ AN225 model/animation config.
     </offsets>
   </model>
   
+  <model>
+    <name>ICE</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2.xml</path>
+    <offsets>
+      <x-m>5.0</x-m>
+      <y-m>-5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
   
   <!-- Disable shadows from the texture objects -->
   <animation>

@@ -327,7 +327,7 @@
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>0.3</Kp>          <!-- proportional gain -->
+      <Kp>0.2</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -->
       <u_max>25.0</u_max>   <!-- maximum output clamp -->
@@ -352,7 +352,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.0039</Kp>      <!-- proportional gain -0.003-->
+      <Kp>-0.0030</Kp>      <!-- proportional gain -0.003-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -442,7 +442,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.01</Kp>      <!-- proportional gain -->
+      <Kp>-0.005</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -473,7 +473,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.01</Kp>      <!-- proportional gain -->
+      <Kp>-0.005</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -515,7 +515,7 @@
       
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
+      <Kp>0.05</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->

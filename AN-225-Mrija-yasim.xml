@@ -64,7 +64,7 @@ them out of my 3d modeller.
   <flap0 start="0.0" end="0.75" lift="1.3" drag="1.6"/>
   <flap1 start="0.75" end="0.95" lift="1.3" drag="1.3"/>
   <slat start="0.15" end="0.95" aoa="4" drag="1.4"/>
-  <spoiler start="0.0" end="0.8" lift="0.8" drag="3"/>
+  <spoiler start="0.0" end="0.8" lift="0.8" drag="4"/>
 
   <control-input axis="/controls/flight/flaps" control="FLAP0"/>
   <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -420,10 +420,10 @@ them out of my 3d modeller.
      fuselage tank.
 -->
 <!-- Wing Tanks -->
- <tank x="-6.5" y="6.00" z="4.00" capacity="178406"/>
- <tank x="-6.2" y="14.0" z="3.30" capacity="66135"/>
- <tank x="-6.5" y="-6.00" z="4.00" capacity="178406"/>
- <tank x="-6.2" y="-14.0" z="3.30" capacity="66135"/>
+ <tank x="-6.5" y="6.00" z="4.00" capacity="178406" jet="true"/>
+ <tank x="-6.2" y="14.0" z="3.30" capacity="66135" jet="true"/>
+ <tank x="-6.5" y="-6.00" z="4.00" capacity="178406" jet="true"/>
+ <tank x="-6.2" y="-14.0" z="3.30" capacity="66135" jet="true"/>
 <!-- Fuselage Tank -->
  <tank x="-10.0" y="0.00" z="4.50" capacity="172271"/>
 

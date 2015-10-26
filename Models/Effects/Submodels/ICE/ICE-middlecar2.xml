@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <PropertyList>
 
-	<path>ICE3firstcar.ac</path>
+	<path>ICE3middlecar2.ac</path>
 	
 	<offsets>
 		<x-m>0</x-m>
@@ -9,11 +9,6 @@
 		<z-m>0</z-m>
 		<pitch-deg>0</pitch-deg>
 	</offsets>
-
-	<animation>
-		<type>select</type>
-		<object-name>marker</object-name>
-	</animation>
 
 	<animation>
 		<enable-hot type="bool">false</enable-hot>
@@ -27,7 +22,7 @@
 	
 	<animation> 
     <type>textranslate</type> 
-    <object-name>Plane</object-name> 
+    <object-name>Cube.001_1</object-name> 
     <property>/sim/time/sun-angle-rad</property>
     <step> 1.57 </step>
     <factor>0.318471338</factor>
@@ -45,7 +40,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>Plane</object-name>
+    <object-name>Cube.001_1</object-name>
     <condition>
       <less-than>
         <property>/sim/time/sun-angle-rad</property>
@@ -62,7 +57,7 @@
   
 <animation>
     <type>material</type>
-    <object-name>Plane</object-name>
+    <object-name>Cube.001_1</object-name>
     <condition>
       <greater-than>
         <property>/sim/time/sun-angle-rad</property>
@@ -71,22 +66,40 @@
     </condition>
     <emission>
       <red>   1.0</red>
-      <green>1.0 </green>
+      <green> 1.0 </green>
       <blue>  1.0 </blue>
     </emission>
   </animation>
+
+  <animation>
+    <type>translate</type>
+    
+    <property>sim/multiplay/generic/int[12]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  5.0 </dep></entry>
+      <entry><ind> 800 </ind><dep>  5.0 </dep></entry>
+      <entry><ind> 825 </ind><dep>  5.0 </dep></entry> 
+      <entry><ind> 875 </ind><dep>  5.0 </dep></entry>
+      <entry><ind> 900 </ind><dep>  0.0 </dep></entry>
+    </interpolation>    
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
   
-    <!-- up-down -->
+      <!-- up-down -->
   <animation>
     <type>translate</type>
     
     <property>sim/multiplay/generic/int[12]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 900 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 925 </ind><dep>  0.0 </dep></entry> 
-      <entry><ind> 950 </ind><dep>  1.40 </dep></entry>
-      <entry><ind> 975 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 800 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 825 </ind><dep>  0.0 </dep></entry> 
+      <entry><ind> 850 </ind><dep>  1.40 </dep></entry>
+      <entry><ind> 875 </ind><dep>  3.40 </dep></entry>
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -102,11 +115,11 @@
    
    <property>sim/multiplay/generic/int[12]</property>
    <interpolation>
-      <entry><ind> 0.0 </ind><dep>  -12.0 </dep></entry>
-      <entry><ind> 900 </ind><dep>  -12.0 </dep></entry>
-      <entry><ind> 925 </ind><dep> 30.0 </dep></entry> 
-      <entry><ind> 950 </ind><dep> 45.0 </dep></entry>
-      <entry><ind> 975 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  14.0 </dep></entry>
+      <entry><ind> 800 </ind><dep>  14.0 </dep></entry>
+      <entry><ind> 825 </ind><dep> 30.0 </dep></entry> 
+      <entry><ind> 850 </ind><dep> 45.0 </dep></entry>
+      <entry><ind> 875 </ind><dep> 60.0 </dep></entry>
     </interpolation>    
    <axis>
      <x> -1 </x>
@@ -114,4 +127,6 @@
      <z>  0 </z>
    </axis>
  </animation>
+
+
 </PropertyList>
