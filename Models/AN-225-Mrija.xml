@@ -301,20 +301,40 @@ AN225 model/animation config.
   
   <model>
     <name>ICE</name>
-    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcar.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcarL.xml</path>
     <offsets>
-      <x-m>5.0</x-m>
-      <y-m>0</y-m>
+      <x-m>-21.0</x-m>
+      <y-m>-3.5</y-m>
       <z-m>-1.4</z-m>
     </offsets>
   </model>
   
   <model>
     <name>ICE</name>
-    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2L.xml</path>
     <offsets>
       <x-m>5.0</x-m>
-      <y-m>-5</y-m>
+      <y-m>-3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>ICE</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcarR.xml</path>
+    <offsets>
+      <x-m>-21.0</x-m>
+      <y-m>3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>ICE</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2R.xml</path>
+    <offsets>
+      <x-m>5.0</x-m>
+      <y-m>3.5</y-m>
       <z-m>-1.4</z-m>
     </offsets>
   </model>
@@ -339,7 +359,11 @@ AN225 model/animation config.
     <type>translate</type>
     <object-name>NG-WheelWell</object-name>    
     <property>sim/multiplay/generic/int[12]</property>
-    <factor>0.001</factor>    
+    <factor>0.001</factor>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 200 </ind><dep>  1.3 </dep></entry>      
+    </interpolation>      
     <axis>
       <x>0.0</x>
       <y>0.0</y>
@@ -356,6 +380,10 @@ AN225 model/animation config.
     <object-name>noselamps2</object-name>
     <property>sim/multiplay/generic/int[12]</property>
     <factor>0.09</factor>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 600 </ind><dep>  90 </dep></entry>      
+    </interpolation>  
     <center>
       <x-m>-21.361</x-m>
       <y-m> 0.0</y-m>

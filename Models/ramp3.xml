@@ -29,8 +29,8 @@
     <property>sim/multiplay/generic/int[12]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 775 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 800 </ind><dep>  105.0 </dep></entry>      
+      <entry><ind> 550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 575 </ind><dep>  105.0 </dep></entry>      
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -45,8 +45,8 @@
    <property>sim/multiplay/generic/int[12]</property>
    <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 800 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 825 </ind><dep>  7.6 </dep></entry>      
+      <entry><ind> 575 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 600 </ind><dep>  7.6 </dep></entry>      
     </interpolation>    
    <axis>
      <x> -1 </x>
@@ -54,6 +54,24 @@
      <z>  0 </z>
    </axis>
  </animation>
+ 
+ <animation>
+    <type>translate</type>
+    
+    <property>sim/multiplay/generic/int[12]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 570 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 580 </ind><dep>  0.70 </dep></entry>
+      <entry><ind> 600 </ind><dep>  0.70 </dep></entry>
+      <entry><ind> 610 </ind><dep>  0.0 </dep></entry>  
+    </interpolation>    
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  -1 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 
