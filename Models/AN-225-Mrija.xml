@@ -5784,7 +5784,39 @@ AN225 model/animation config.
 	  </offsets>
 	</model>
 	
-	
+	<text>
+        <name>Version</name>
+        <offsets>
+            <x-m>-18.10</x-m>
+            <y-m>-3.55</y-m>
+            <z-m>1.40</z-m>
+            <roll-deg>-22</roll-deg>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>0</heading-deg>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>xz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/generic/string[1]</property>
+        <format type="string">%.7s</format>
+        <font>arial_black.txf</font>
+        <character-size>0.30</character-size>
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">128</width>
+            <height type="int">128</height>
+        </font-resolution>
+  </text>
+    
+    <animation>
+        <type>material</type>
+         <object-name>Version</object-name>         
+        <emission>
+            <red>0.15</red>
+            <green>0.15</green>
+            <blue>0.3</blue>
+        </emission>        
+    </animation>
 	
 	</PropertyList>
 	

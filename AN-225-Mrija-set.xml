@@ -28,8 +28,8 @@
     
     <weight n="1">
 		    <name>Cargo</name>
-		    <weight-lb type="double">316000.0</weight-lb>
-		    <max-lb type="double">551155.0</max-lb>
+		    <weight-lb type="double">100000.0</weight-lb><!--316000.0-->
+		    <max-lb type="double">551155.0.0</max-lb>
 		    <min-lb type="double">0.0</min-lb>
      </weight>
 		
@@ -39,13 +39,20 @@
 		    <max-lb type="double">58546</max-lb>
 		    <min-lb type="double">0.0</min-lb>
      </weight>
+     
+     <weight n="3">
+		    <name>ICE2</name>
+		    <weight-lb type="double">0.0</weight-lb>
+		    <max-lb type="double">264000</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+     </weight>
     
     
     <rating>
       <FDM type="int">     3 </FDM>
       <systems type="int"> 3 </systems>
       <cockpit type="int"> 3 </cockpit>
-      <model type="int">   3 </model>
+      <model type="int">   4 </model>
     </rating>
    
    <systems>

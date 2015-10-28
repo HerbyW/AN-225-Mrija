@@ -353,6 +353,7 @@ setprop("/controls/engines/engine[5]/reverser", 1);
 );
 
 #################################################################################################################
+# payload
 
 
 setlistener("/controls/shuttle/payload", func
@@ -369,6 +370,16 @@ setlistener("/controls/shuttle/payload", func
      
 });     
 
+if
+    (getprop("/sim/model/cargodoor") == 0)    
+     setprop("/sim/weight[3]/weight-lb", 264000);
+
+
+setlistener("/sim/model/cargodoor", func
+{ 
+  weight = 264000 - (getprop("/sim/model/cargodoor") *264);
+  setprop("/sim/weight[3]/weight-lb", weight);  
+});   
 
 #############################################################################################################
 # Lake of Constance Hangar :: M.Kraus

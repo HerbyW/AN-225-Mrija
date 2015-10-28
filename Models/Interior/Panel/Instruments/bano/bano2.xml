@@ -84,7 +84,7 @@
   </axis>
 </animation>
 
-<!--Controls not used now, later -->
+<!--Controls Cargo Door -->
 <animation>
   <type>pick</type>
   <object-name>hotspot_1</object-name>
@@ -96,7 +96,7 @@
 	<command>property-interpolate</command>
 	<property>sim/multiplay/generic/int[12]</property>
 	<value type="int">1000</value>
-	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+	<rate>10</rate><!-- 100 seconds to 1000 -->
       </binding>
     </action>
 </animation>
@@ -112,13 +112,13 @@
 	<command>property-interpolate</command>
 	<property>sim/multiplay/generic/int[12]</property>
 	<value type="int">0</value>
-	<rate>10</rate><!-- 20 seconds to 0 to 100 -->
+	<rate>10</rate><!-- 100 seconds to 0 -->
       </binding>
     </action>
 </animation>
 
 
-<!--Controls not used now, later -->
+<!--Controls not used -->
 <animation>
   <type>pick</type>
   <object-name>hotspot_3</object-name>
@@ -133,6 +133,7 @@
   
 </animation>
 
+<!--Controls ALS -->
 
 <animation>
   <type>pick</type>
