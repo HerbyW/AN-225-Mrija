@@ -55,6 +55,17 @@
   </binding>
 </key>
 
+<key n="121">
+	<name>y</name>
+	<desc>Change Pilot Ramp View</desc>
+  <binding>
+      <command>property-cycle</command>
+      <property>sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>10</value>
+  </binding>
+</key>
+
 <key n="127">
 	<name>Delete</name>
 	<desc>Toggle Reversers</desc>

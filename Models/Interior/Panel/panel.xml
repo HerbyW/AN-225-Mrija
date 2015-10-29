@@ -2485,5 +2485,18 @@ SKAWK</text>
       <heading-deg>0.0</heading-deg>
     </offsets>
   </model>
+  
+      <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
+    <offsets>
+      <x-m>  2.2 </x-m>
+      <y-m> 3.46</y-m>
+      <z-m> -3.30 </z-m>
+      <heading-deg>100.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
 
 </PropertyList>

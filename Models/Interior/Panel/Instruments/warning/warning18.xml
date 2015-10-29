@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- indicators on captain panel
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>warning18.ac</path>
+ 
+  <!-- Internal instruments lighting -->
+
+  <effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>cover</object-name>
+</effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>cover</object-name>    
+    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+   
+<!--Indicators 18 Cargo Storage Check -->
+
+<animation>
+  <type>material</type>
+  <object-name>text</object-name>
+   <condition>
+    <less-than>
+      <property>/sim/weight[3]/weight-lb</property>
+      <value>1</value>      
+    </less-than>
+  </condition> 
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>    
+  </emission>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>text</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>/sim/weight[3]/weight-lb</property>
+      <value>1</value>
+    </binding>
+  </action>
+</animation>
+
+    <animation>
+  <type>scale</type>
+  <object-name>cover</object-name>
+  <object-name>text</object-name>
+    <object-name>switch</object-name>
+  <property>sim/signals/fdm-initialized</property>
+  <offset>1</offset>
+  <x-max>2.5</x-max>
+  <y-max>2.5</y-max>
+  <z-max>2.5</z-max>
+  <x-factor>2.5</x-factor>
+  <y-factor>2.5</y-factor>
+  <z-factor>2.5</z-factor>
+ </animation>
+
+
+</PropertyList>

@@ -56,6 +56,31 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 ######################################################################################################################
 
 #
+#ICE2 4 wagons roll out and jump
+#
+setlistener("/controls/ice/jump-signal", func(v) {
+ if(v.getValue()){
+    interpolate("/controls/ice/jump-signal-pos", 1, 0.25);
+    
+  }else{
+    interpolate("/controls/ice/jump-signal-pos", 0, 0.25);
+  }
+});
+
+#
+#ICE2 4 wagons loading
+#
+setlistener("/controls/ice/load-signal", func(v) {
+  if(v.getValue()){
+    interpolate("/sim/weight[3]/weight-lb", 264000, 40);
+  }else{
+    interpolate("/sim/weight[3]/weight-lb", 0, 40);
+  }
+});
+
+######################################################################################################################
+
+#
 # Air and Groundspeed selector for USVP-Instrument
 #
 setlistener("/controls/switches/usvp-selector-trans", func 
@@ -370,16 +395,7 @@ setlistener("/controls/shuttle/payload", func
      
 });     
 
-if
-    (getprop("/sim/model/cargodoor") == 0)    
-     setprop("/sim/weight[3]/weight-lb", 264000);
-
-
-setlistener("/sim/model/cargodoor", func
-{ 
-  weight = 264000 - (getprop("/sim/model/cargodoor") *264);
-  setprop("/sim/weight[3]/weight-lb", weight);  
-});   
+ 
 
 #############################################################################################################
 # Lake of Constance Hangar :: M.Kraus

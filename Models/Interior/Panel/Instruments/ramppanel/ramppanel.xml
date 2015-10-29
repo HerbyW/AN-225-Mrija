@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
+<!-- Engines start panel
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>ramppanel.ac</path>
+<!-- Internal instruments lighting -->
+<animation>
+  <type>material</type>
+  <object-name>RCbase</object-name>
+  <object-name>RCcover</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+</animation>
+
+<!--Cover-->
+
+<animation>
+    <type>rotate</type>
+    <object-name>RCcover</object-name>
+    <property>switches/startpanel-cover</property>
+    <factor>120.0</factor>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.1</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>1.0</z>
+    </axis>
+</animation>
+
+<!--Cover-->
+
+<animation>
+  <type>pick</type>
+  <object-name>RCcover</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        if( getprop("switches/startpanel-cover" ) == 0.0 )
+        	interpolate("switches/startpanel-cover", 1.0, 0.7 );
+        else 	interpolate("switches/startpanel-cover", 0.0, 0.7 );
+      </script>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>scale</type>
+  <object-name>RCbase</object-name>
+  <object-name>RCcover</object-name>    
+  <property>sim/signals/fdm-initialized</property>
+  <offset>2.7</offset>
+  <x-max>2.7</x-max>
+  <y-max>2.7</y-max>
+  <z-max>2.7</z-max>
+  <x-factor>2.7</x-factor>
+  <y-factor>2.7</y-factor>
+  <z-factor>2.7</z-factor>
+ </animation>
+
+ <!--Instrumentation-->
+ 
+    <!-- Bradle Tank Signal Switch
+ 
+ <model>
+   <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/tank_signal.xml</path>
+   <offsets>
+     <x-m> 0.005 </x-m>
+     <y-m> -0.05 </y-m>
+     <z-m> 0.0 </z-m>
+     <heading-deg>180.0</heading-deg>
+     <pitch-deg>180</pitch-deg>
+   </offsets>
+ </model>  
+ 
+ <text>
+   <name>tank_signal</name>
+   <type type="string">literal</type>
+   <text type="string">Bradle Signal</text>
+   <draw-text type="bool">true</draw-text>
+   <font>Helvetica.txf</font>
+   <character-size type="double">0.012</character-size>
+   <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+   <axis-alignment>yz-plane</axis-alignment>
+   <max-height>0.09</max-height>
+   <max-width>0.05</max-width>
+   <font-resolution>
+     <width type="int">32</width>
+     <height type="int">32</height>
+   </font-resolution>
+   <alignment>center-center</alignment>
+   <offsets>
+     <x-m> 0.005 </x-m>
+     <y-m> -0.05 </y-m>
+     <z-m> -0.035 </z-m>
+     <heading-deg>180.0</heading-deg>
+     <pitch-deg>180</pitch-deg>
+   </offsets>
+ </text>
+ 
+ <animation>
+   <type>material</type>    
+   <object-name>tank_signal</object-name>    
+   <emission>
+     <factor-prop>controls/switches/gauge-light</factor-prop>
+     <red>   0.6 </red>
+     <green> 0.6 </green>
+     <blue>  0.6 </blue>
+   </emission>
+ </animation>                         -->
+ 
+ <!-- ICE Load Switch-->
+ 
+ <model>
+   <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/ice_load.xml</path>
+   <offsets>
+     <x-m> 0.005 </x-m>
+     <y-m> -0.10 </y-m>
+     <z-m> 0.0 </z-m>
+     <heading-deg>180.0</heading-deg>
+     <pitch-deg>180</pitch-deg>
+   </offsets>
+ </model>  
+ 
+  <text>
+    <name>ice_load</name>
+    <type type="string">literal</type>
+    <text type="string">
+      ICE2
+      Loading
+      
+      
+      
+      
+      Unloading</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.20</max-height>
+    <max-width>0.09</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.083 </y-m>
+      <z-m> -0.004 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>ice_load</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Paratroopers Switch
+ 
+ <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/parachute_signal-big.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.05 </y-m>
+      <z-m> 0.14 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>  
+  
+  <text>
+    <name>parachute_signal</name>
+    <type type="string">literal</type>
+    <text type="string">Parachuter Signal</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.09</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.09 </y-m>
+      <z-m> 0.14 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>parachute_signal</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>                        -->
+  
+  <!-- Cargo Check Placecard-->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/warning/warning18.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.04 </y-m>
+      <z-m> 0.0 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Cargo Overload Warning -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/warning/warning85b.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.04 </y-m>
+      <z-m> 0.057 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Loading 200 Paratroopers
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/warning/warning19.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.04 </y-m>
+      <z-m> 0.14 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>                  -->
+  
+  <!-- TNV-15, OUtside Temperatur Indicator -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.10 </y-m>
+      <z-m> -0.12 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- IAS/groundspeed indicator USVP -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/usvp/usvp.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.02 </y-m>
+      <z-m> -0.12 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- UVO, Altimeter Electric -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.075 </y-m>
+      <z-m> -0.12 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Weight Indicator -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/weight.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.055 </y-m>
+      <z-m> 0.057 </z-m>
+      <heading-deg>0.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+ 
+</PropertyList>

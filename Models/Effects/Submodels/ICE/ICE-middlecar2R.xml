@@ -76,13 +76,14 @@
     <animation>
     <type>translate</type>
     
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[3]</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  -2 </dep></entry>
-      <entry><ind> 900 </ind><dep>  -2 </dep></entry>
-      <entry><ind> 925 </ind><dep>  -3.5 </dep></entry> 
-      <entry><ind> 950 </ind><dep>  -3.5 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 66000 </ind><dep>  -2 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  -2 </dep></entry>
+      <entry><ind> 33000 </ind><dep>  -3.5 </dep></entry> 
+      <entry><ind> 16500 </ind><dep>  -3.5 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -96,13 +97,14 @@
   <animation>
     <type>translate</type>
     
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[3]</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 900 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 940 </ind><dep>  0.0 </dep></entry> 
-      <entry><ind> 970 </ind><dep>  3.40 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 66000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 25000 </ind><dep>  0.0 </dep></entry> 
+      <entry><ind> 10500 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 1 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 0 </ind><dep>  3.40 </dep></entry>
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -116,13 +118,14 @@
  <animation>
    <type>translate</type>
    
-   <property>sim/multiplay/generic/int[12]</property>
+   <property>sim/multiplay/generic/float[3]</property>
    <interpolation>
-      <entry><ind> 0.0 </ind><dep>  -11.13 </dep></entry>
-      <entry><ind> 900 </ind><dep>  -11.13 </dep></entry>
-      <entry><ind> 925 </ind><dep> 30.0 </dep></entry> 
-      <entry><ind> 950 </ind><dep> 45.0 </dep></entry>
-      <entry><ind> 1000 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 66000 </ind><dep>  -11.13 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  -11.13 </dep></entry>
+      <entry><ind> 33000 </ind><dep> 30.0 </dep></entry> 
+      <entry><ind> 16500 </ind><dep> 45.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60.0 </dep></entry>
     </interpolation>    
    <axis>
      <x> -1 </x>

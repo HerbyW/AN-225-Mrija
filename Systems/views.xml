@@ -56,12 +56,12 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">   -2.69 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  0.29 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -18.85 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">   2.70 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  0.80 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -20.72 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
       <default-field-of-view-deg type="double"> 105 </default-field-of-view-deg>
-      <heading-offset-deg type="double">0 </heading-offset-deg>
+      <heading-offset-deg type="double">10 </heading-offset-deg>
     </config>
   </view>  
   

@@ -81,13 +81,14 @@
   <animation>
     <type>translate</type>
     
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[3]</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  2.0 </dep></entry>
-      <entry><ind> 600 </ind><dep>  2.0 </dep></entry>
-      <entry><ind> 625 </ind><dep>  2.0 </dep></entry> 
-      <entry><ind> 650 </ind><dep>  2.0 </dep></entry>
-      <entry><ind> 700 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 264000 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 247500 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 231000 </ind><dep>  2.0 </dep></entry> 
+      <entry><ind> 214500 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 198001 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -101,12 +102,13 @@
   <animation>
     <type>translate</type>
     
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[3]</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 615 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 622 </ind><dep>  3.40 </dep></entry>      
-      <entry><ind> 700 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 264000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 240500 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 235000 </ind><dep>  3.40 </dep></entry>      
+      <entry><ind> 198001 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 0 </ind><dep>  3.40 </dep></entry>
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -120,13 +122,14 @@
  <animation>
    <type>translate</type>
    
-   <property>sim/multiplay/generic/int[12]</property>
+   <property>sim/multiplay/generic/float[3]</property>
    <interpolation>
-      <entry><ind> 0.0 </ind><dep>  -12.5 </dep></entry>
-      <entry><ind> 600 </ind><dep>  -12.5 </dep></entry>
-      <entry><ind> 625 </ind><dep> 30.0 </dep></entry> 
-      <entry><ind> 650 </ind><dep> 45.0 </dep></entry>
-      <entry><ind> 700 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 264000 </ind><dep>  -12.5 </dep></entry>
+      <entry><ind> 257500 </ind><dep>  -12.5 </dep></entry>
+      <entry><ind> 231000 </ind><dep> 30.0 </dep></entry> 
+      <entry><ind> 214500 </ind><dep> 45.0 </dep></entry>
+      <entry><ind> 198001 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60.0 </dep></entry>
     </interpolation>    
    <axis>
      <x> -1 </x>

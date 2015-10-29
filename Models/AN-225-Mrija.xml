@@ -302,6 +302,22 @@ AN225 model/animation config.
   <model>
     <name>ICE</name>
     <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcarL.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
     <offsets>
       <x-m>-21.0</x-m>
       <y-m>-3.5</y-m>
@@ -312,6 +328,22 @@ AN225 model/animation config.
   <model>
     <name>ICE</name>
     <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2L.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
     <offsets>
       <x-m>5.0</x-m>
       <y-m>-3.5</y-m>
@@ -322,6 +354,22 @@ AN225 model/animation config.
   <model>
     <name>ICE</name>
     <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcarR.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
     <offsets>
       <x-m>-21.0</x-m>
       <y-m>3.5</y-m>
@@ -332,6 +380,22 @@ AN225 model/animation config.
   <model>
     <name>ICE</name>
     <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-middlecar2R.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
     <offsets>
       <x-m>5.0</x-m>
       <y-m>3.5</y-m>
