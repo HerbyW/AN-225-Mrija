@@ -26,11 +26,11 @@
   <animation>
     <type>rotate</type>
     <object-name>ramp</object-name>
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[7]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 600 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 625 </ind><dep>  105.0 </dep></entry>      
+      <entry><ind> 0.800 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.825 </ind><dep>  107.0 </dep></entry>      
     </interpolation>    
     <axis>
       <x>  0 </x>
@@ -42,11 +42,11 @@
  <animation>
    <type>translate</type>
    <object-name>ramp</object-name>
-   <property>sim/multiplay/generic/int[12]</property>
+   <property>sim/multiplay/generic/float[7]</property>
    <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 625 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 650 </ind><dep>  3.8 </dep></entry>      
+      <entry><ind> 0.825 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.850 </ind><dep>  3.75 </dep></entry>      
     </interpolation>    
    <axis>
      <x> -1 </x>
@@ -56,15 +56,14 @@
  </animation>
  
  <animation>
-    <type>translate</type>
-    
-    <property>sim/multiplay/generic/int[12]</property>
+    <type>translate</type>    
+    <property>sim/multiplay/generic/float[7]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 620 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 630 </ind><dep>  0.70 </dep></entry>
-      <entry><ind> 650 </ind><dep>  0.70 </dep></entry>
-      <entry><ind> 660 </ind><dep>  0.0 </dep></entry>  
+      <entry><ind> 0.820 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.830 </ind><dep>  0.50 </dep></entry>
+      <entry><ind> 0.850 </ind><dep>  0.30 </dep></entry>
+      <entry><ind> 0.860 </ind><dep>  0.0 </dep></entry>  
     </interpolation>    
     <axis>
       <x>  0 </x>

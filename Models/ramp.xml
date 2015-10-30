@@ -26,11 +26,11 @@
   <animation>
     <type>rotate</type>
     <object-name>ramp</object-name>
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[7]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 550 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 600 </ind><dep>  105.0 </dep></entry>      
+      <entry><ind> 0.750 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.800 </ind><dep>  107.0 </dep></entry>      
     </interpolation>    
     <axis>
       <x>  0 </x>

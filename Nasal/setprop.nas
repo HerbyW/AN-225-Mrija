@@ -254,6 +254,27 @@ setlistener("/controls/chokes/activ", func
 }});
 
 ########################################################################################################
+# Cargo Door Control
+#
+#controls/cargodoor/signal
+#  {
+
+
+setlistener("controls/cargodoor/signal", func
+
+{ 
+  if (getprop("/controls/chokes/activ") == 0)
+  {
+     setprop("sim/messages/copilot", "Cargo Door can only move if chokes and brake are set!");
+      
+  } 
+  else doors.cargo.toggle()
+});
+
+
+
+
+########################################################################################################
 
 # Landing Gears Control with help from: 707 Hangar of Constance
 

@@ -59,9 +59,7 @@
       <autopilot>
         <path>Aircraft/AN-225-Mrija/Nasal/AN-225-Mrija-autopilot.xml</path>
       </autopilot>      
-    </systems> 
-    <model><cargodoor type="int">0</cargodoor></model>
-   
+    </systems>   
    
   </sim>
 

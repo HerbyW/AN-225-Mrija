@@ -422,11 +422,11 @@ AN225 model/animation config.
   <animation>
     <type>translate</type>
     <object-name>NG-WheelWell</object-name>    
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[7]</property>
     <factor>0.001</factor>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 180 </ind><dep>  1.3 </dep></entry>      
+      <entry><ind> 0.10 </ind><dep>  1.3 </dep></entry>      
     </interpolation>      
     <axis>
       <x>0.0</x>
@@ -442,11 +442,11 @@ AN225 model/animation config.
     <object-name>Fuselage_RLogos.001</object-name>
     <object-name>noselamps1</object-name>
     <object-name>noselamps2</object-name>
-    <property>sim/multiplay/generic/int[12]</property>
+    <property>sim/multiplay/generic/float[7]</property>
     <factor>0.09</factor>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 950 </ind><dep>  90 </dep></entry>      
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep>  90 </dep></entry>      
     </interpolation>  
     <center>
       <x-m>-21.361</x-m>
@@ -5435,6 +5435,15 @@ AN225 model/animation config.
   </model>
   
   <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail6.xml</path>
+    <offsets>
+      <x-m> 11.0 </x-m>
+      <y-m> 25.0 </y-m>
+      <z-m> 0.2 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_5.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
@@ -5444,7 +5453,25 @@ AN225 model/animation config.
   </model>
   
   <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail5.xml</path>
+    <offsets>
+      <x-m> 6.7 </x-m>
+      <y-m> 17.2 </y-m>
+      <z-m> 0.4 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_4.xml</path>
+    <offsets>
+      <x-m> 2.0 </x-m>
+      <y-m>  9.40 </y-m>
+      <z-m> 0.9 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail4.xml</path>
     <offsets>
       <x-m> 2.0 </x-m>
       <y-m>  9.40 </y-m>
@@ -5463,7 +5490,25 @@ AN225 model/animation config.
   </model>
   
   <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail3.xml</path>
+    <offsets>
+      <x-m> 2.0 </x-m>
+      <y-m>  -9.40 </y-m>
+      <z-m> 0.9 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_2.xml</path>
+    <offsets>
+      <x-m> 6.7 </x-m>
+      <y-m> -17.2 </y-m>
+      <z-m> 0.4 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail2.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
       <y-m> -17.2 </y-m>
@@ -5474,6 +5519,15 @@ AN225 model/animation config.
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_1.xml</path>
+    <offsets>
+      <x-m> 11.0 </x-m>
+      <y-m> -25.0 </y-m>
+      <z-m> 0.2 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail1.xml</path>
     <offsets>
       <x-m> 11.0 </x-m>
       <y-m> -25.0 </y-m>
@@ -5876,8 +5930,8 @@ AN225 model/animation config.
         <type>material</type>
          <object-name>Version</object-name>         
         <emission>
-            <red>0.15</red>
-            <green>0.15</green>
+            <red>0.35</red>
+            <green>0.05</green>
             <blue>0.3</blue>
         </emission>        
     </animation>

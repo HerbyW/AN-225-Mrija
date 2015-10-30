@@ -3,4 +3,4 @@
 # =====
 
 crew = aircraft.door.new("/sim/model/door-positions/crew", 2, 0 );
-baie = aircraft.door.new("/sim/model/door-positions/baie", 2, 0 )
+cargo = aircraft.door.new("/sim/model/door-positions/cargo", 40, 0 )
