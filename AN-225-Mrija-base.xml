@@ -103,7 +103,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   
    <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-   <aircraft-version>3.4.5</aircraft-version>    
+   <aircraft-version>3.4.6</aircraft-version>    
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
@@ -121,7 +121,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     
     <model>
       <path>Aircraft/AN-225-Mrija/Models/AN-225-Mrija.xml</path>
-      <an225><version type="string">3.4.5</version></an225>
+      <an225><version type="string">3.4.6</version></an225>
     </model>
     
     <sound>      
@@ -270,8 +270,8 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 		For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
 		ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
 		
-		Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side), if the white strips are in the
-		middle position (1-2 for starting, 2-4 for landing).
+		Flaps Controll Panel will give you the right level for slats (on the right side) and flaps (on the left side), if the white strips are in the
+		middle position with normal cargo.
 		
 		Trails are now working only above 14000 ft, on ground it is not realistic.
 		

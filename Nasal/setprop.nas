@@ -293,7 +293,24 @@ setlistener("controls/gear/gear-down", func
   }
  });
  
+var gearstate = 0;
+setlistener("gear/gear/position-norm", func
+  { if (getprop("gear/gear/position-norm") == 1)
+    { gearstate = 0 ;}
+    if (getprop("gear/gear/position-norm") < 1)
+    { gearstate = 1 ;}
+    if (getprop("gear/gear/position-norm") == 0)
+    { gearstate = 0 ;}
+    setprop("gear/state", gearstate)
+  }
+);
 
+setlistener("position/gear-agl-m", func
+  {
+    if ((getprop("gear/gear/position-norm") == 0) and (getprop("position/gear-agl-m") < 100))
+    {setprop("gear/warning", 1);}
+      else setprop("gear/warning", 0)
+  });
 
 #############################################################################################################
 #

@@ -417,6 +417,15 @@
     </offsets>
   </model>
   
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/gear-warning/ind_14.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m>  -0.30 </y-m>
+      <z-m>  -0.15 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Flaps Indicator for Landing and Starting -->  
  
   <model>
