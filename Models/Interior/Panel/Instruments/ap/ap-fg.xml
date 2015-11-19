@@ -15,7 +15,7 @@ simplyfied by HerbyW Jan2015  -->
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
     Eagel: Liveries
     ###################################################################################
--->
+225-->
 
 
 <PropertyList>
@@ -352,11 +352,11 @@ simplyfied by HerbyW Jan2015  -->
         <action>
             <button>0</button>
             <binding>
-              <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
-              <value type="string"></value>
-            </binding>            
-        </action>
+               <command>property-assign</command>
+                <property>/autopilot/locks/heading</property>
+                <value type="string">wing-leveler</value>
+            </binding>
+         </action>
     </animation>
 
     <!-- Vertical Speed Hold -->
@@ -443,11 +443,11 @@ simplyfied by HerbyW Jan2015  -->
         <action>
             <button>0</button>
             <binding>
-              <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
-              <value type="string"></value>
-            </binding>            
-        </action>
+               <command>property-assign</command>
+                <property>/autopilot/locks/heading</property>
+                <value type="string">wing-leveler</value>
+            </binding>
+         </action>
     </animation>
 
     <!-- Approach / Glideslope -->
