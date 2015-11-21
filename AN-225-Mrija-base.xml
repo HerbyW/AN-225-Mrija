@@ -354,6 +354,23 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     </fuel>
   </consumables>
 
+  <autopilot>
+    <settings>
+      <target-agl-ft type="double">0</target-agl-ft>
+      <target-aoa-deg type="double">0</target-aoa-deg>
+      <target-speed-kt type="double">0</target-speed-kt>
+      <target-pitch-deg type="double">0</target-pitch-deg>
+      <target-altitude-ft type="double">0</target-altitude-ft>
+      <vertical-speed-fpm type="double">0</vertical-speed-fpm>
+      <true-heading-deg type="double">0</true-heading-deg>
+    </settings>
+    <internal>
+      <target-climb-rate-fps type="double">0</target-climb-rate-fps>
+      <target-roll-deg type="double">0</target-roll-deg>
+    </internal>
+  </autopilot>
+  
+  
  <instrumentation>
 
 <dme n="0">
