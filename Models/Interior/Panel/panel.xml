@@ -1450,6 +1450,16 @@
       <heading-deg>90.0</heading-deg>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel4_R.xml</path>
+    <offsets>
+      <x-m>  1.40 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.257 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
 
  <!-- Pressuremeters 4-2 and 8-2  -->
   
@@ -1799,7 +1809,7 @@
     <offsets>
       <x-m>  1.29 </x-m>
       <y-m>  1.277 </y-m>
-      <z-m> -0.30 </z-m>
+      <z-m> -0.36 </z-m>
       <heading-deg>270.0</heading-deg>
     </offsets>
   </model>
@@ -1809,7 +1819,7 @@
     <offsets>
       <x-m>  1.37 </x-m>
       <y-m>  1.277 </y-m>
-      <z-m> -0.30 </z-m>
+      <z-m> -0.36 </z-m>
       <heading-deg>270.0</heading-deg>
     </offsets>
   </model>

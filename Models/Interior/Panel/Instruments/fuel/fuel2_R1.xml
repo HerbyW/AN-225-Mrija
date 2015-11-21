@@ -49,10 +49,10 @@
  <animation>
   <type>rotate</type>
   <object-name>fr2</object-name>
-  <property>consumables/fuel/tank[1]/level-kg</property>
+  <property>consumables/fuel/tank[2]/level-kg</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry> 
-   <entry><ind> 12500</ind><dep>  123</dep></entry>
+   <entry><ind> 25500</ind><dep>  322</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>
@@ -66,16 +66,16 @@
   </axis>
  </animation>
  
- <!--fuel flow in gallons per hour for tank 2, big needle -->
+ <!--fuel flow in gallons per hour for engine 2, big needle -->
  
  <animation>
   <type>rotate</type>
   <object-name>fr1</object-name>
-  <property>engines/engine[1]/fuel-flow-gph</property>
+  <property>engines/engine[2]/fuel-flow-gph</property>
   <interpolation>
     <entry><ind>  0.0</ind><dep>  0   </dep></entry>
     <entry><ind> 220</ind><dep> 45</dep></entry>
-    <entry><ind> 470</ind><dep> 103</dep></entry>
+    <entry><ind> 1540</ind><dep> 315</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>

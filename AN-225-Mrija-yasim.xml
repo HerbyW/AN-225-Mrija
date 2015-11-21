@@ -414,12 +414,9 @@ them out of my 3d modeller.
   <control-output control="STEER" prop="/gear/gear[2]/steering-norm"/>
  </gear>
 
-<!-- Fuel tanks -->
-<!-- Max fuel load is greater than 300000kg (661356lbs)
-
-     I've distributed it, in equal amounts, in four wing tanks and one
-     fuselage tank.
--->
+<!-- Fuel tanks
+     Max fuel load is greater than 300000kg (661356lbs)
+     I've distributed it, in four wing tanks and one fuselage tank.-->
 <!-- Wing Tanks -->
  <tank x="-6.5" y="6.00" z="4.00" capacity="178406" jet="true"/>
  <tank x="-6.2" y="14.0" z="3.30" capacity="66135" jet="true"/>
