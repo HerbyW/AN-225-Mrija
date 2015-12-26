@@ -5739,7 +5739,7 @@ AN225 model/animation config.
     
     
     
-    <!-- Lighting Landing without Rembrand-->
+    <!-- Lighting Landing and Taxi, 3 lamps-->
     <model>
       <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <condition>

@@ -17,6 +17,13 @@
 
 
 <PropertyList>
+  
+  <predict-simple>
+     <input>/autopilot/internal/nav1-heading-error-deg</input>
+     <output>/autopilot/internal/nav1-heading-error-lookahead-deg</output>
+     <seconds>8.0</seconds>
+     <filter-gain>0.0</filter-gain>
+  </predict-simple>
 
   <!-- =============================================================== -->
   <!-- Roll Axis Modes                                                 -->
@@ -190,7 +197,7 @@
       <value>nav1-hold</value>
     </enable>
     <input>
-      <prop>/autopilot/internal/nav1-heading-error-deg</prop>
+      <prop>/autopilot/internal/nav1-heading-error-lookahead-deg</prop>
     </input>
     <reference>
       <value>0.0</value>
@@ -206,8 +213,8 @@
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-20.0</u_min> <!-- minimum output clamp -->
-      <u_max>20.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-18.0</u_min> <!-- minimum output clamp -->
+      <u_max>18.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -329,8 +336,8 @@
     <config>
       <Kp>0.2</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
-      <u_min>-25.0</u_min> <!-- minimum output clamp -->
-      <u_max>25.0</u_max>   <!-- maximum output clamp -->
+      <u_min>-20.0</u_min> <!-- minimum output clamp -->
+      <u_max>20.0</u_max>   <!-- maximum output clamp -->
     </config>
   </pi-simple-controller>
 
