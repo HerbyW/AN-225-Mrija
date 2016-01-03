@@ -283,7 +283,7 @@ setlistener("controls/gear/gear-down", func
  {
  var down = props.globals.getNode("controls/gear/gear-down").getBoolValue();
  var crashed = getprop("sim/crashed") or 0;
- if (!down and (getprop("gear/gear[0]/wow") or getprop("gear/gear[1]/wow") or getprop("gear/gear[2]/wow")))
+ if (!down and (getprop("gear/gear[0]/wow") or getprop("gear/gear[2]/wow") or getprop("gear/gear[15]/wow")))
   {
     if(!crashed){
   		props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
@@ -542,4 +542,45 @@ setlistener("/sim/airport/closest-airport-id", func
 }
 );
 
+########################################################################################################
 
+# Flaps Control with speed limits
+# prevent demage of flaps due to speed
+
+setlistener("controls/flight/flaps", func
+ { 
+ if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 280  ))
+  {
+    setprop("controls/flight/flaps", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed????");    
+  }
+});
+
+########################################################################################################
+
+# Slats Control with speed limits
+# prevent demage of slats due to speed
+
+setlistener("controls/flight/slats", func
+ { 
+ if ((getprop("controls/flight/slats") > 0  ) and (getprop("velocities/groundspeed-kt") > 280  ))
+  {
+    setprop("controls/flight/slats", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the slats due to overspeed????");    
+  }
+});
+ 
+########################################################################################################
+
+# Spoiler Control with speed limits
+# prevent demage of spoilers due to speed
+
+setlistener("controls/flight/spoilers", func
+ { 
+ if ((getprop("controls/flight/spoilers") > 0  ) and (getprop("velocities/groundspeed-kt") > 320  ))
+  {
+    setprop("controls/flight/spoilers", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed????");    
+  }
+});
+ 

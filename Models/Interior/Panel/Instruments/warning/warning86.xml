@@ -60,4 +60,20 @@
   </emission>
 </animation>
 
+<animation>
+  <type>pick</type>
+  <object-name>text</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-cycle</command>
+      <property>controls/gear/brake-parking</property>
+      <value> 0 </value>
+      <value> 1 </value>
+    </binding>
+  </action>
+</animation>
+
 </PropertyList>

@@ -431,7 +431,6 @@
 
   <!-- Glideslope hold. -->
 
-  <!-- Stage #2 drives the elevator-trim to achieve the desired climb rate. -->
   <pid-controller>
     <name>Glideslop Hold</name>
     <debug>false</debug>

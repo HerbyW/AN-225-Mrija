@@ -154,16 +154,18 @@
     </offsets>
   </model>
   
-  <!-- AI2, Artificial Horizont -->
-    
+  <!-- UAP-12, AOA indicator --> 
+  
   <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
     <offsets>
       <x-m> 0.002 </x-m>
-      <y-m> -0.40 </y-m>
-      <z-m> -0.105 </z-m>
+      <y-m> -0.395 </y-m>
+      <z-m> -0.085 </z-m>
     </offsets>
   </model>
+  
+  <!-- AI2, Artificial Horizont -->
 
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
@@ -409,20 +411,22 @@
   <!-- Gear Indicator -->
   
   <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/Gear_ind/gear_ind2.xml</path>
-    <offsets>
-      <x-m>  0.008 </x-m>
-      <y-m> -0.060 </y-m>
-      <z-m>  0.096 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/gear-warning/ind_14.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m>  -0.30 </y-m>
-      <z-m>  -0.15 </z-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.086 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Spoiler Indicator -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/warning/warning40.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.125 </z-m>
     </offsets>
   </model>
   

@@ -18,31 +18,19 @@
 
  <PropertyList>
    
-   <path>lights-cone-12.ac</path>
+   <path>lights-cone-707.ac</path>
    
    <animation>
-     <object-name>Spot</object-name>
-      
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name>  
    </animation> 
-
-<animation>
- <type>scale</type>
-     <object-name>Spot</object-name>     
-  <property>sim/multiplay/generic/int[9]</property>
-  <offset>0</offset>
-  <x-max>6</x-max>
-  <y-max>3</y-max>
-  <z-max>1</z-max>
-  <x-factor>6</x-factor>
-  <y-factor>3</y-factor>
-  <z-factor>1</z-factor>
-  </animation>
-
-
    
 <animation>
   <type>select</type>
-     <object-name>Spot</object-name>     
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name>
   <condition>
     <and>
     	<not><property>/sim/rendering/rembrandt/enabled</property></not>
@@ -54,11 +42,13 @@
   
    <animation>
      <type>material</type>
-     <object-name>Spot</object-name>     
+     <object-name>Cone-texture</object-name>
+     <object-name>Cone-texture.001</object-name>
+     <object-name>Cone-texture.002</object-name> 
      <emission>
-       <red>   0.61 </red>
-       <green> 0.61 </green>
-       <blue>  0.51 </blue>
+       <red>   0.75 </red>
+       <green> 0.75 </green>
+       <blue>  0.75 </blue>
      </emission>
    </animation>
 

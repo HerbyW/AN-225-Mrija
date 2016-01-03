@@ -21,9 +21,6 @@
    <path>lights-cone-taxi-707.ac</path>
    
    <animation>
-     <object-name>Spot</object-name>
-     <object-name>Spot.001</object-name>
-     <object-name>Spot.002</object-name>
      <object-name>Cone-texture</object-name>
      <object-name>Cone-texture.001</object-name>
      <object-name>Cone-texture.002</object-name>  
@@ -31,9 +28,6 @@
    
 <animation>
   <type>select</type>
-     <object-name>Spot</object-name>
-     <object-name>Spot.001</object-name>
-     <object-name>Spot.002</object-name>
      <object-name>Cone-texture</object-name>
      <object-name>Cone-texture.001</object-name>
      <object-name>Cone-texture.002</object-name>
@@ -48,9 +42,6 @@
   
    <animation>
      <type>material</type>
-     <object-name>Spot</object-name>
-     <object-name>Spot.001</object-name>
-     <object-name>Spot.002</object-name>
      <object-name>Cone-texture</object-name>
      <object-name>Cone-texture.001</object-name>
      <object-name>Cone-texture.002</object-name> 

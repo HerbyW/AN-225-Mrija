@@ -696,18 +696,26 @@
 
   <!-- Stall -->
  
-    <stall>
-      <name>stall</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-225-Mrija/Sounds/stall.wav</path>
-      <property>/sim/alarms/stall-warning</property>
-      <volume>
-        <property>/sim/alarms/stall-warning</property>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </stall>
+ <stall>
+   <name>stall</name>
+   <mode>looped</mode>
+   <path>Aircraft/AN-225-Mrija/Sounds/stall.wav</path>
+   <condition>
+     <and>
+       <property>instrumentation/alerts/stall</property>
+       <greater-than>
+	 <property>sim/time/elapsed-sec</property>
+	 <value>100</value>
+       </greater-than>
+     </and>
+   </condition>    
+   <volume>
+     <property>instrumentation/alerts/stall</property>
+     <max>1.0</max>
+   </volume>
+   <reference-dist>10</reference-dist>
+   <max-dist>100</max-dist>
+ </stall>
     
     <!-- Decision Height Warning -->
 - 
@@ -816,6 +824,23 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </ADF>
+    
+            <!-- Gear Warning -->
+ 
+    <decision>
+      <name>gearwarning</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-225-Mrija/Sounds/sirena.wav</path>
+      <condition>    
+      <property>/gear/warning</property>
+      </condition>
+      <volume>
+        <min>0.8</min>
+        <max>0.8</max>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </decision>
     
   </fx>
 
