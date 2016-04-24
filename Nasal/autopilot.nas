@@ -3,12 +3,12 @@
 #  frank-deng committed on 22 Nov 
 #
 var next_waypoint = func {
-	if ('true-heading-hold' == getprop('/autopilot/locks/heading')
-		and getprop('/autopilot/route-manager/active')) {
+	if ("true-heading-hold" == getprop("/autopilot/locks/heading")
+		and getprop("/autopilot/route-manager/active")) {
 
 		var max_wpt=getprop("/autopilot/route-manager/route/num");
 		var atm_wpt=getprop("/autopilot/route-manager/current-wp");
-		var eta_seconds = getprop('/autopilot/route-manager/wp/eta-seconds');
+		var eta_seconds = getprop("/autopilot/route-manager/wp/eta-seconds");
 		var wp_dist = getprop("/autopilot/route-manager/wp/dist");
 
 		if (eta_seconds != nil and wp_dist != nil

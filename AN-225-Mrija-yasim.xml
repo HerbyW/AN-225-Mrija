@@ -195,7 +195,7 @@ them out of my 3d modeller.
 <!-- Front Left -->
  <gear x="20.0" y="1.0" z="-4.6" retract-time="10" compression="0.3" spring="1">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052"/>
+    src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052" square="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -212,7 +212,7 @@ them out of my 3d modeller.
 <!-- Front Right -->
  <gear x="20.0" y="-1.0" z="-4.6" retract-time="10" compression="0.3" spring="1">
   <control-input axis="/controls/flight/rudder" control="STEER"
-    src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052"/>
+    src0="-1.0" dst0="-0.8052" src1="1.0" dst1="0.8052" square="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
   

@@ -17,6 +17,8 @@
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
 
+setprop("/instrumentation/altimeter/setting-hapa", getprop("/instrumentation/altimeter/setting-hpa"));
+
 setlistener("/instrumentation/altimeter/setting-inhg", func(v)
 {
   if(v.getValue())
@@ -549,10 +551,11 @@ setlistener("/sim/airport/closest-airport-id", func
 
 setlistener("controls/flight/flaps", func
  { 
- if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 280  ))
+ if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 240  ))
   {
     setprop("controls/flight/flaps", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed????");    
+    setprop("sim/flaps/current-setting", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 240)????");    
   }
 });
 
@@ -563,10 +566,10 @@ setlistener("controls/flight/flaps", func
 
 setlistener("controls/flight/slats", func
  { 
- if ((getprop("controls/flight/slats") > 0  ) and (getprop("velocities/groundspeed-kt") > 280  ))
+ if ((getprop("controls/flight/slats") > 0  ) and (getprop("velocities/groundspeed-kt") > 260  ))
   {
     setprop("controls/flight/slats", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the slats due to overspeed????");    
+    setprop("sim/messages/copilot", "Do you want to destroy the slats due to overspeed (max 260)????");    
   }
 });
  
@@ -577,10 +580,11 @@ setlistener("controls/flight/slats", func
 
 setlistener("controls/flight/spoilers", func
  { 
- if ((getprop("controls/flight/spoilers") > 0  ) and (getprop("velocities/groundspeed-kt") > 320  ))
+ if ((getprop("controls/flight/spoilers") > 0  ) and (getprop("velocities/groundspeed-kt") > 280  ))
   {
     setprop("controls/flight/spoilers", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed????");    
+    setprop("sim/spoilers/current-setting", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed (max 280)????");    
   }
 });
  
