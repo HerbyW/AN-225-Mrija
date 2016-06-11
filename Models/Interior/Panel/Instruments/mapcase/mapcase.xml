@@ -9,16 +9,17 @@
     ###################################################################
 -->
 <!--
-    ###################################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
-    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
-    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
-    ###################################################################################################
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
 -->
-<!-- Mapcase for AN-225-Mrija -->
+<!-- Mapcase for AN-12 -->
 <PropertyList>
   
   <path>mapcase2.ac</path>  
@@ -52,6 +53,136 @@
       <script>mapcase.switch_page(-1)</script>
     </binding>
   </decrease>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs.001</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(-1)</script>
+    </binding>
+  </increase>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs.002</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(1)</script>
+    </binding>
+  </increase>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs.004</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(-10)</script>
+    </binding>
+  </increase>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs.003</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(10)</script>
+    </binding>
+  </increase>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs.005</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(100)</script>
+    </binding>
+  </increase>
   <hovered>
     <binding>
       <command>set-tooltip</command>

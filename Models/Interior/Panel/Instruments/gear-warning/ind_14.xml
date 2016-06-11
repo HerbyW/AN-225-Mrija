@@ -11,16 +11,17 @@
 3D instrument for Tu-154 -->
 <PropertyList>
  <path>ind_14.ac</path>
-<!--External panel lighting-->
-<!--<animation>
-  <type>material</type>
-  <object-name>base</object-name>
-  <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
-  </emission>
-</animation>-->
+ 
+<animation>
+    <type>material</type>
+     <object-name>base</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
 
 <effect>
  <inherits-from>Effects/model-transparent</inherits-from>
