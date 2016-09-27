@@ -497,6 +497,8 @@ var sw_show = func(s) {
 }
 
 #############################################################################################################
+setprop("/autopilot/settings/target-altitude-ft", 0);
+
 var adjustStep = func(value,amount,step=10){
 
 if (math.abs(amount) >= step){
