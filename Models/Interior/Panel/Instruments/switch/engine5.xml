@@ -38,16 +38,26 @@
     <action>
       <button>0</button>
       <binding>
-        <command>property-toggle</command>
-        <property>/controls/engines/engine[5]/condition</property>
-      </binding>      
+            <command>property-toggle</command>
+            <property>controls/engines/engine[5]/ignition</property>
+        </binding>
+        <binding>
+        <condition>
+            <not>
+                <property>controls/engines/engine[5]/ignition</property>
+            </not>
+        </condition>
+            <command>property-assign</command>
+            <property>controls/engines/engine[5]/cutoff</property>
+        <value>1</value>
+        </binding>     
     </action>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>/controls/engines/engine[5]/condition</property>
+    <property>controls/engines/engine[5]/ignition</property>
     <factor> -50 </factor>
     <center>
       <x-m> 0 </x-m>

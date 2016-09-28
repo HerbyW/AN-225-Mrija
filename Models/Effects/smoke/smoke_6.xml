@@ -19,33 +19,14 @@
 <PropertyList>
 	<particlesystem>
 		<name>engine-smoke</name>
-		<offsets>
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
-			<roll-deg>0</roll-deg>
-			<pitch-deg>0</pitch-deg>
-			<heading-deg>0</heading-deg>
-		</offsets>
+		
 		<texture>smoke.png</texture>
 		
 		<condition>
-			<or>
-				<greater-than>
-					<property>engines/engine[5]/n1</property>
-					<value>89</value>
-				</greater-than>
-				<and>
-					<greater-than>
-						<property>engines/engine[5]/n1</property>
-						<value>35</value>
-					</greater-than>
-					<less-than>
-						<property>engines/engine[5]/n1</property>
-						<value>46</value>
-					</less-than>
-				</and>
-			</or>
+		  <greater-than>
+		    <property>sim/multiplay/generic/float[19]</property>
+		    <value>30</value>
+		  </greater-than>
 		</condition>
 		
 		<emissive>false</emissive>
@@ -56,21 +37,27 @@
 			<type>point</type>
 		</placer>
 		<shooter>
-			<theta-min-deg>20</theta-min-deg>
-			<theta-max-deg>35</theta-max-deg>
+			<theta-min-deg>-1</theta-min-deg>
+			<theta-max-deg>1</theta-max-deg>
 			<phi-min-deg>-15</phi-min-deg>
 			<phi-max-deg> 15</phi-max-deg>
 			<speed-mps>
-				<value>1.8</value>
-				<spread>3.5</spread>
+			  <expression>
+			  <product>
+				<property>sim/multiplay/generic/float[19]</property>
+				<property>sim/multiplay/generic/float[14]</property>
+				<value>1.4</value>
+			  </product>
+			  </expression>
+				<spread>18</spread>
 			</speed-mps>
 			<rotation-speed>
 				<x-min-deg-sec>0</x-min-deg-sec>
 				<y-min-deg-sec>0</y-min-deg-sec>
-				<z-min-deg-sec>-180</z-min-deg-sec>
+				<z-min-deg-sec>0</z-min-deg-sec>
 				<x-max-deg-sec>0</x-max-deg-sec>
 				<y-max-deg-sec>0</y-max-deg-sec>
-				<z-max-deg-sec>180</z-max-deg-sec>
+				<z-max-deg-sec>0</z-max-deg-sec>
 			</rotation-speed>
 		</shooter>
 		<counter>
@@ -82,35 +69,35 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>0.1</value></red>
-					<green><value>0.1</value></green>
-					<blue><value>0.11</value></blue>
+					<red><value>0.28</value></red>
+					<green><value>0.28</value></green>
+					<blue><value>0.30</value></blue>
 					<alpha><value>0.2</value></alpha>
 				</color>
 				<size>
-					<value>0.2</value>
+					<value>0.45</value>
 				</size>
 			</start>
 			<end>
 				<color>
-					<red><value>0.1</value></red>
-					<green><value>0.1</value></green>
-					<blue><value>0.11</value></blue>
+					<red><value>0.37</value></red>
+					<green><value>0.37</value></green>
+					<blue><value>0.39</value></blue>
 					<alpha><value>0</value></alpha>
 				</color>
 				<size>
-					<value>5.0</value>
+					<value>7.0</value>
 				</size>
 			</end>
 			<life-sec>
-				<value>3</value>
+				<value>4</value>
 			</life-sec>
-			<mass-kg>1.2</mass-kg>
-			<radius-m>0.40</radius-m>
+			<mass-kg>0.5</mass-kg>
+			<radius-m>0.05</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>
-			<gravity>true</gravity>
+			<gravity>false</gravity>
 			<wind>true</wind>
 		</program>
 	</particlesystem>

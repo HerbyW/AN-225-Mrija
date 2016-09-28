@@ -1830,7 +1830,7 @@
     
   <!-- Switches and Buttons -->
   
-   <!-- Light switches block 1 -->
+   <!-- Light switches block 1 Beacon-NAV-Instrument Lights-->
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano1.xml</path>
@@ -1841,20 +1841,20 @@
     </offsets>
   </model>
  
-    <!-- Main Text--> 
+    <!-- Beacon Text--> 
 
   <text>
-    <name>Main</name>
+    <name>Beacon</name>
     <type type="string">literal</type>
-    <text type="string">Main
-Battery</text>
+    <text type="string">Beacon
+Lights</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
+    <max-width>0.045</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>
@@ -1862,14 +1862,14 @@ Battery</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  -0.143 </y-m>
+      <y-m>  -0.14 </y-m>
       <z-m>  0.170 </z-m>
     </offsets>
   </text>
  
  <animation>
     <type>material</type>    
-    <object-name>Main</object-name>    
+    <object-name>Beacon</object-name>    
     <emission>
       <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
@@ -1877,8 +1877,7 @@ Battery</text>
       <blue>  0.6 </blue>
     </emission>
   </animation>
-  
- 
+   
    <!-- NAV Lights Text--> 
 
   <text>
@@ -2170,6 +2169,178 @@ Lights</text>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
+  
+  
+  <!-- 6 Generator Switches -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator1.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator2.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.42 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator3.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.38 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator4.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.34 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator5.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/generator6.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.26 </y-m>
+      <z-m>  -0.16 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>GEN</name>
+    <type type="string">literal</type>
+    <text type="string">Generator 1 - 6</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.08</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.36 </y-m>
+      <z-m>  -0.138 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>GEN</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  <!-- 6 Starter Buttons -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter1.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter2.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.42 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter3.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.38 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter4.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.34 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter5.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/starter6.xml</path>
+    <offsets>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.26 </y-m>
+      <z-m>  -0.192 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>START</name>
+    <type type="string">literal</type>
+    <text type="string">Engine Starter 1 - 6</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.12</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  -0.36 </y-m>
+      <z-m>  -0.215 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>START</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
 
   <!--Map case from TU-154B-->
 
@@ -2186,6 +2357,131 @@ Lights</text>
   </model> 
 
     <!-- Overhead Panel -->
+    
+    <!-- Switches block 5 MainBattery HelpBattery Inverter-->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
+    <offsets>
+      <x-m>  0.350 </x-m>
+      <y-m>  -0.45 </y-m>
+      <z-m>  0.475 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Text 1--> 
+
+  <text>
+    <name>text1</name>
+    <type type="string">literal</type>
+    <text type="string">Main
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.505 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text1</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Text 2--> 
+
+  <text>
+    <name>text2</name>
+    <type type="string">literal</type>
+    <text type="string">Help
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.453 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text2</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 3--> 
+
+  <text>
+    <name>text3</name>
+    <type type="string">literal</type>
+    <text type="string">Inverter</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.401 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text3</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
   
    <!-- Switches block 3 -->
   
@@ -2193,7 +2489,7 @@ Lights</text>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano3.xml</path>
     <offsets>
       <x-m>  0.350 </x-m>
-      <y-m>  -0.45 </y-m>
+      <y-m>  -0.278 </y-m>
       <z-m>  0.475 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2220,7 +2516,7 @@ ADF 1</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.505 </y-m>
+      <y-m>  -0.333 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2258,7 +2554,7 @@ ADF 2</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.453 </y-m>
+      <y-m>  -0.281 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2296,7 +2592,7 @@ HSI</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.401 </y-m>
+      <y-m>  -0.229 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2320,7 +2616,7 @@ HSI</text>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano4.xml</path>
     <offsets>
       <x-m>  0.350 </x-m>
-      <y-m>  -0.278 </y-m>
+      <y-m>  -0.106 </y-m>
       <z-m>  0.475 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2347,7 +2643,7 @@ Kurs-MP1</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.333 </y-m>
+      <y-m>  -0.161 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2385,7 +2681,7 @@ Kurs-MP2</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.281 </y-m>
+      <y-m>  -0.109 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>
@@ -2423,7 +2719,7 @@ SKAWK</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.332 </x-m>
-      <y-m>  -0.229 </y-m>
+      <y-m>  -0.057 </y-m>
       <z-m>  0.460 </z-m>
       <pitch-deg>56</pitch-deg>
     </offsets>

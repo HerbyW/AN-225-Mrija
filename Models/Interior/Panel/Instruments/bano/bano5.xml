@@ -43,7 +43,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>controls/lighting/beacon</property>  
+  <property>controls/electric/battery-switch</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -57,7 +57,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>sim/multiplay/generic/int[8]</property>   
+  <property>controls/electric/battery-switch[1]</property>   
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -71,7 +71,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_3</object-name>
-  <property>controls/switches/gauge-light</property>  
+  <property>controls/electric/inverter-switch</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -94,7 +94,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("controls/lighting/beacon", 1.0, 0.1 );
+        interpolate("controls/electric/battery-switch", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -109,7 +109,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("controls/lighting/beacon", 0.0, 0.1 );
+        interpolate("controls/electric/battery-switch", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -125,7 +125,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[8]", 1.0, 0.1 );
+        interpolate("controls/electric/battery-switch[1]", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -140,7 +140,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[8]", 0.0, 0.1 );
+        interpolate("controls/electric/battery-switch[1]", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -159,7 +159,8 @@
      <binding>
         <command>nasal</command>
           <script>
-             interpolate("controls/switches/gauge-light", 1.0, 0.1 );
+             interpolate("controls/electric/inverter-switch", 1.0, 0.1 );
+	     interpolate("controls/electric/avionics-switch", 1.0, 0.1 );
           </script>
      </binding>
   </action>
@@ -177,7 +178,8 @@
      <binding>
         <command>nasal</command>
           <script>
-             interpolate("controls/switches/gauge-light", 0.0, 0.1 );
+             interpolate("controls/electric/inverter-switch", 0.0, 0.1 );
+	     interpolate("controls/electric/avionics-switch", 0.0, 0.1 );
           </script>
      </binding>
   </action>

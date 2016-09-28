@@ -27,7 +27,8 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   <controls>
     <autostart type="int">0</autostart>
     <lighting>
-       <nav-lights type="int">0</nav-lights>    
+       <nav-lights type="int">0</nav-lights>
+       <beacon type="int">0</beacon>
        <landing-lights type="int">0</landing-lights>
        <taxi-lights type="int">0</taxi-lights>
     </lighting>
@@ -35,6 +36,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
       <engine n="0">
         <boost type="double">0</boost>
 	<condition>0</condition>
+	<reverserminus type="float">1.0</reverserminus>
       </engine>
       <engine n="1">
 	<boost type="double">0</boost>
@@ -104,7 +106,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   
    <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-   <aircraft-version>3.5.0</aircraft-version>    
+   <aircraft-version>4.0.1</aircraft-version>    
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
@@ -122,7 +124,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     
     <model>
       <path>Aircraft/AN-225-Mrija/Models/AN-225-Mrija.xml</path>
-      <an225><version type="string">3.5.0</version></an225>
+      <an225><version type="string">4.0.1</version></an225>
     </model>
     
     <sound>      
@@ -150,9 +152,14 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
 	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
-	
-	<int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
-	
+	<int type="int" n="12" alias="/controls/lighting/beacon"/>
+	<int type="int" n="13" alias="/controls/engines/engine[0]/starting">  0 </int>	
+	<int type="int" n="14" alias="/controls/engines/engine[1]/starting">  0 </int>	
+	<int type="int" n="15" alias="/controls/engines/engine[2]/starting">  0 </int>	
+	<int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>	
+	<int type="int" n="17" alias="/controls/engines/engine[3]/starting">  0 </int>	
+	<int type="int" n="18" alias="/controls/engines/engine[4]/starting">  0 </int>	
+	<int type="int" n="19" alias="/controls/engines/engine[5]/starting">  0 </int>	
 	
         <float n="0" alias="/surface-positions/slat-pos-norm"/>
         <float n="1" alias="/surface-positions/spoiler-pos-norm"/>
@@ -160,23 +167,20 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
         <float n="3" alias="/sim/weight[3]/weight-lb"/>        
         <float n="4" alias="/gear/gear/steering-norm" />
         <float n="5" alias="/position/gear-agl-m"> 0 </float>                    <!-- altitude for MP shadow -->
-        <float n="6" alias="/position/altitude-ft"> 0 </float>                          <!-- altitude for MP -->        
+        <float n="6" alias="/engines/engine[0]/fan" />        
 	<float n="7"  alias="/sim/model/door-positions/cargo/position-norm"/>
-        <float n="8" alias="/controls/engines/engine[0]/throttle" />
+        <float n="8" alias="/engines/engine[1]/fan" />
         <float n="9" alias="/gear/gear[5]/compression-norm" />
-        <float n="10" alias="/gear/gear[6]/compression-norm" />
+        <float n="10" alias="/engines/engine[2]/fan" />
         <float n="11" alias="/gear/gear[7]/compression-norm" />
-        <float n="12" alias="/gear/gear[8]/compression-norm" />
+        <float n="12" alias="/engines/engine[3]/fan" />
         <float n="13" alias="/gear/gear[9]/compression-norm" />
-        <float n="14" alias="/gear/gear[10]/compression-norm" />
+        <float n="14" alias="/controls/engines/engine[0]/reverserminus">  1.0 </float>
         <float n="15" alias="/gear/gear[11]/compression-norm" />
         <float n="16" alias="/gear/gear[12]/compression-norm" />
-        <float n="17" alias="/gear/gear[13]/compression-norm" />
+        <float n="17" alias="/engines/engine[4]/fan" />
         <float n="18" alias="/gear/gear[14]/compression-norm" />
-        <float n="19" alias="/gear/gear[15]/compression-norm" />
-        
-        
-        
+        <float n="19" alias="/engines/engine[5]/fan" />    
              
         <string  alias="/sim/multiplay/callsign"/>
         <string n="1" type="string" alias="/sim/model/an225/version"/>
@@ -211,9 +215,41 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<setting>0.75</setting>
 	<setting>1.00</setting>
       </spoilers>
+      
+      <menubar>
+        <default>
+            <menu n="10">
+                <label>AN-225-Mrija</label>
+                <enabled type="bool">true</enabled>
+                <item>
+                    <label>Autostart</label>
+                    <binding>
+                        <command>property-toggle</command>
+                        <property>sim/model/autostart</property>
+                    </binding>
+                </item>
+            </menu>
+        </default>
+    </menubar>
 
     <help>
-      <title>Antonov AN-225-Mrija</title>
+      <title>Antonov AN-225-Mrija</title>      
+      <key>
+	<name>s</name>
+        <desc>Autostart</desc>
+      </key>
+      <key>
+	<name>g/G</name>
+        <desc>Gear up/down</desc>
+      </key>
+      <key>
+	<name>B</name>
+        <desc>Parking Brake</desc>
+      </key>
+      <key>
+	<name>[/]</name>
+        <desc>Flaps up/down</desc>
+      </key>
       <key>
 	<name>d/f</name>
 	<desc>retract/extend slats</desc>
@@ -238,93 +274,96 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<name>y</name>
 	<desc>Change Pilot Ramp View</desc>
       </key>
-      <text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 3.5.0
-	
-	        Autostart: press s and make the 2 additional settings!
-		
-		Manual start up:
-		
-		- Middle top panel: Right switch group: all in upper position: Battery, Lights for Instruments and NAV lights on.
-		- Bottom middle panel: round knob for fuel in any right position - activates the tanks and pumps, a green lamp shows up.
-		- 4 Engine starter switches above the fuel knob - one to four in upper position - starting the engines, each engine needs 17 sec for running.
-		- Red lamps showing running engines, green lamps showing idle rpm.
-		- Overhead panel: all switches in up position, power for navigation radios (ADF and VOR), compass and skawk.
-		- Engineer panel: check red lamps going to green, then engines are ready to go, move throttle to idle position.
-		- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading cargo.
-		
-		Additional Settings:
-		
-		1. Reference Compass at engineer panel, magnetic variation is shown as tooltip, set needle to marker position.
-		2. Altitude and/or pressure settings in the Altimeters in inHG, mmHG or hPa (as tooltip), the Autopilot will work with this values (not with the HUD-infos).
-		
-		Shut down: Fuel knob to left position or engine starter switches down.
-		
-		Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation.
-		
-		Some instruments will show you metric values, some ft/knots.
-		
-		There is a 3 knob panel at the left side, marker volume, instrument lights and for rembrandt - cabin lights.
-		
-		The switch right from the Lights panel is for landing and taxi lights.
-		Then there is the switch for activating the cargo door.
-		And a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
-		
-		On the very left side you have a panel with 5 green lamps, the lower 3 are for trim-neutralisation, used after the Autopilot is dissabled.
-		The upper two you may press to get the latest METAR infos on screen.
-		
-		Reverser initialisation by the switch at the throttle or key "Delete", a red lamp shows the activ reverser. Also a placecard "R" is comming up
-		at top of the panel, the switch and the placecard can be used to deactivate the reverser. Any throttle change activates/deactivates the reverser then.
-		
-		The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values:
-		- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator (with 4 green markers),
-		- Velocity Control: Speed with Throttle are set in the Speed Indicator, push IAS and turn needle (left from HSI)
-		- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS, pitch wheel changes values.
-		- Wing leveler is activ when you push the AP button, it is also the AP activating/deactivating Button,
-		- APRP is used for intersepting the Glide Scope,
-		- GPS for flying routes from the Route Manager,
-		- ALT is holding your attitude.
-		
-		For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
-		ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
-		
-		Flaps Controll Panel will give you the right level for slats (on the right side) and flaps (on the left side), if the white strips are in the
-		middle position with normal cargo.
-		
-		Trails are now working only above 14000 ft, on ground it is not realistic.
-		
-		There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
-		the upper one is in meter and mmHG, a tooltip shows you the Value in hPa, the lower one is in ft and inHG,
-		they are connected and you should set them to the ATIS information of the airport befor starting or landing.
-		
-		The compasses are cleared of the magnetic variation if you set the reference compass in the engineer panel to the orange marker position.
-		
-		On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning, over-loading, parking brake,
-		outer, middle and inner marker, brake-chokes, decission hight and reverser.
-		
-		There is a warning light for overload on top of the compasses (sign: BEC).
-		
-		Radios, DMEs, ADFs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
-		
-		Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
-		
-		Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
-		
-		Have fun and get the latest version at:
-		github.com/HerbyW
-	
-	Maximal Speed:                459 kn = 850 km/h
-	Empty weight:              385808 lb = 175.000 kg
-	Maximal payload:           551155 lb = 250.000 kg
-	Max take off weight is: 1,322,773 lb = 600.000 kg
-	
-	Shuttle doors should be closed befor take off, payload for Shuttle is set by loading it with the switch at the panel.
-		
-	7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
-	Flying with empty cargo may be very tricky!
-	
-	Have fun!
-      </text>
-    </help>
+<text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 4.0.1
+
+Autostart: press s and make the 2 additional settings!
+
+Manual start up:
+
+- Set throttles to "IDLE" position
+- Overhead panel: Main and Help Batteries and Inverter
+- Switch on Generators
+- Middle top panel: Switch on Beacons, NAV and Instrument lights
+- Overhead panel: Switch on all Radio and Navigation Instruments and the Transponder
+- Bottom middle panel: round knob for fuel in any right position - activates the tanks and pumps, a green lamp shows up.
+- Switch on all 4 Ignitions
+- Push starter buttons and wait for each engine 17 seconds to spool up
+- Switch on taxi-light
+- Engineer panel: check red lamps going to green, then engines are ready to go, move throttle to idle position.
+- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading cargo.
+
+Additional Settings:
+
+1. Reference Compass at engineer panel, magnetic variation is shown as tooltip, set needle to marker position.
+2. Altitude and/or pressure settings in the Altimeters in inHG, mmHG or hPa (as tooltip), the Autopilot will work with this values (not with the HUD-infos).
+
+Shut down: Fuel knob to left position or engine starter switches down.
+
+Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation.
+
+Some instruments will show you metric values, some ft/knots.
+
+There is a 3 knob panel at the left side, marker volume, instrument lights and for rembrandt - cabin lights.
+
+The switch right from the Lights panel is for landing and taxi lights.
+Then there is the switch for activating the cargo door.
+And a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
+
+On the very left side you have a panel with 5 green lamps, the lower 3 are for trim-neutralisation, used after the Autopilot is dissabled.
+The upper two you may press to get the latest METAR infos on screen.
+
+Reverser initialisation by the switch at the throttle or key "Delete", a red lamp shows the activ reverser. Also a placecard "R" is comming up
+at top of the panel, the switch and the placecard can be used to deactivate the reverser. Any throttle change activates/deactivates the reverser then.
+
+The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values:
+- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator (with 4 green markers),
+- Velocity Control: Speed with Throttle are set in the Speed Indicator, push IAS and turn needle (left from HSI)
+- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS, pitch wheel changes values.
+- Wing leveler is activ when you push the AP button, it is also the AP activating/deactivating Button,
+- APRP is used for intersepting the Glide Scope,
+- GPS for flying routes from the Route Manager,
+- ALT is holding your attitude.
+
+For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
+ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
+
+Flaps Controll Panel will give you the right level for slats (on the right side) and flaps (on the left side), if the white strips are in the
+middle position with normal cargo.
+
+Trails are now working only above 14000 ft, on ground it is not realistic.
+
+There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
+the upper one is in meter and mmHG, a tooltip shows you the Value in hPa, the lower one is in ft and inHG,
+they are connected and you should set them to the ATIS information of the airport befor starting or landing.
+
+The compasses are cleared of the magnetic variation if you set the reference compass in the engineer panel to the orange marker position.
+
+On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning, over-loading, parking brake,
+outer, middle and inner marker, brake-chokes, decission hight and reverser.
+
+There is a warning light for overload on top of the compasses (sign: BEC).
+
+Radios, DMEs, ADFs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
+
+Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
+
+Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
+
+Have fun and get the latest version at:
+github.com/HerbyW
+Maximal Speed:                459 kn = 850 km/h
+Empty weight:              385808 lb = 175.000 kg
+Maximal payload:           551155 lb = 250.000 kg
+Max take off weight is: 1,322,773 lb = 600.000 kg
+
+Shuttle doors should be closed befor take off, payload for Shuttle is set by loading it with the switch at the panel.
+
+7 steps of flaps, 4 steps of slats, 4 steps of spoilers, landing speed is about 150 kt.
+Flying with empty cargo may be very tricky!
+
+Have fun!
+</text>
+</help>
     
 </sim>  
 
@@ -515,8 +554,9 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   <nasal>    
     <an225>      
       <file>Aircraft/AN-225-Mrija/Nasal/light.nas</file>
-      <file>Aircraft/AN-225-Mrija/Nasal/autostart.nas</file>
       <file>Aircraft/AN-225-Mrija/Nasal/autopilot.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/AN225engines.nas</file>
+      <file>Aircraft/AN-225-Mrija/Nasal/Electrical.nas</file>
     </an225>
     <instruments>
       <file>Aircraft/AN-225-Mrija/Nasal/setprop.nas</file>      

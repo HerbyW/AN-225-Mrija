@@ -61,7 +61,7 @@
       <red>   1 </red>
       <green> 1 </green>
       <blue>  1 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>sim/multiplay/generic/int[12]</factor-prop>
     </emission>
   </animation>
 

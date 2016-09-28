@@ -20,13 +20,22 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[13]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
         </condition>      
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </crank>
     
     <crank>
@@ -34,14 +43,23 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[14]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
         </condition>      
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-      <delay-sec>15</delay-sec>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
     </crank>
     
     <crank>
@@ -49,14 +67,23 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[15]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
         </condition>      
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-      <delay-sec>29</delay-sec>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
     </crank>
     
     <crank>
@@ -64,14 +91,23 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
-        </condition>      
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[17]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
+        </condition>     
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-      <delay-sec>43</delay-sec>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
     </crank>
     
     <crank>
@@ -79,14 +115,23 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[18]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
         </condition>      
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-      <delay-sec>57</delay-sec>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
     </crank>
     
     <crank>
@@ -94,14 +139,23 @@
       <path>Aircraft/AN-225-Mrija/Sounds/turbine_start.wav</path>
       <mode>once</mode>
        <condition>       
-         <property>sim/multiplay/generic/int[11]</property>         
-        </condition>      
+	 <and>
+         <equals>
+          <property>sim/multiplay/generic/int[11]</property>    
+          <value>1</value>
+         </equals>
+	 <equals>
+          <property>sim/multiplay/generic/int[19]</property>    
+          <value>1</value>
+         </equals>
+	 </and>
+        </condition>     
       <volume>
         <offset>-0.45</offset>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-      <delay-sec>71</delay-sec>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <delay-sec>1</delay-sec>
     </crank>
   
 <!-- Engines running -->
@@ -110,26 +164,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
+	 <greater-than>
+          <property>sim/multiplay/generic/float[6]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
         </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[6]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[6]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>14</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <engine>
@@ -137,26 +197,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
-        </condition>   
+	 <greater-than>
+          <property>sim/multiplay/generic/float[8]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>28</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <engine>
@@ -164,26 +230,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
-        </condition>   
+	 <greater-than>
+          <property>sim/multiplay/generic/float[10]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>42</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <engine>
@@ -191,26 +263,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
-        </condition>   
+	 <greater-than>
+          <property>sim/multiplay/generic/float[12]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[12]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[12]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>56</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <engine>
@@ -218,26 +296,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
-        </condition>   
+	 <greater-than>
+          <property>sim/multiplay/generic/float[17]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[17]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[17]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>70</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <engine>
@@ -245,26 +329,32 @@
       <mode>looped</mode>
       <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>      
         <condition>
+	  <and>
 	 <greater-than>
           <property>sim/multiplay/generic/int[11]</property>
 	  <value>0</value>
 	 </greater-than>
-        </condition>   
+	 <greater-than>
+          <property>sim/multiplay/generic/float[19]</property>    
+          <value>34</value>
+         </greater-than>
+	 </and>
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0035</factor>
-        <min>0.01</min>
-        <max>0.2</max>        
+        <property>sim/multiplay/generic/float[19]</property>
+        <factor>0.007</factor>
+        <min>0.06</min>
+        <max>0.70</max>         
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.0003</factor>
+        <property>sim/multiplay/generic/float[19]</property>
+        <factor>0.005</factor>
         <min>0.0</min>
-        <max>0.65</max>
+        <max>0.5</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>2000</max-dist>
-      <delay-sec>84</delay-sec>
+      <max-dist>10000</max-dist>
+      <delay-sec>0</delay-sec>
  </engine>
  
  <flyby>

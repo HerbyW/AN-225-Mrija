@@ -37,12 +37,11 @@
       <blue>  0.35 </blue>
     </emission>
   </animation>
-
  
  <animation>
   <type>rotate</type>
   <object-name>rect1</object-name>
-  <property>engines/engine/n1</property>
+  <property>engines/engine/fan</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry> 
    <entry><ind> 30</ind><dep>  90</dep></entry>
@@ -65,7 +64,7 @@
  <animation>
   <type>rotate</type>
   <object-name>rect2</object-name>
-  <property>engines/engine/n2</property>
+  <property>engines/engine/turbine</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry>   
    <entry><ind> 110</ind><dep>  340</dep></entry>

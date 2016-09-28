@@ -13,7 +13,6 @@
 #    Thanks for helping with some coding: D-LEON
 ###################################################################################################
 
-
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
 
@@ -41,19 +40,6 @@ var timerDiff = maketimer(0.5, func
 
 # start the timer (with 0.5 second inverval)
 timerDiff.start();
-
-######################################################################################################################
-
-#
-#Paratroopers
-#
-setlistener("/controls/paratroopers/jump-signal", func(v) {
-  if(v.getValue()){
-    interpolate("/controls/paratroopers/jump-signal-pos", 1, 0.25);
-  }else{
-    interpolate("/controls/paratroopers/jump-signal-pos", 0, 0.25);
-  }
-});
 
 ######################################################################################################################
 
@@ -376,17 +362,20 @@ setprop("sim/messages/copilot", "For Autostart hit the s key!");
 # Reverser
 #
 
+
 setlistener("/controls/engines/engine[0]/reverser", func
  {
 if
 (  getprop("/controls/engines/engine[0]/reverser") == 0) 
 {
 setprop("/controls/reverser", 0);
+setprop("/controls/engines/engine[0]/reverserminus", 1.0);
 
 }
 else
 {  
 setprop("/controls/reverser", 1);
+setprop("/controls/engines/engine[0]/reverserminus", -0.150);
 }
  }
 );
@@ -403,7 +392,7 @@ setprop("/controls/engines/engine[2]/reverser", 0);
 setprop("/controls/engines/engine[3]/reverser", 0);
 setprop("/controls/engines/engine[4]/reverser", 0);
 setprop("/controls/engines/engine[5]/reverser", 0);
-
+setprop("/controls/engines/engine[0]/reverserminus", 1.0);
 }
 else
 {  
@@ -413,9 +402,11 @@ setprop("/controls/engines/engine[2]/reverser", 1);
 setprop("/controls/engines/engine[3]/reverser", 1);
 setprop("/controls/engines/engine[4]/reverser", 1);
 setprop("/controls/engines/engine[5]/reverser", 1);
+setprop("/controls/engines/engine[0]/reverserminus", -0.150);
 }
  }
 );
+
 
 #################################################################################################################
 # payload
@@ -589,4 +580,130 @@ setlistener("controls/flight/spoilers", func
     setprop("sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed (max 280)????");    
   }
 });
- 
+
+########################################################################################################
+
+# Engine running or not
+
+setprop("controls/engines/running", 0);
+
+setlistener("engines/engine/out-of-fuel", func
+ { 
+ if (getprop("engines/engine/out-of-fuel") == 1  )
+  {
+    setprop("controls/engines/running", 0);    
+  }
+  else 
+  {
+    setprop("controls/engines/running", 1);
+  }
+});
+
+#####################################################################################################
+# the starter sound is not playing once, so i have to make it playing once
+#
+#/controls/engines/engine[0]/starting
+
+setprop("controls/engines/engine[0]/starting", 0);
+setprop("controls/engines/engine[1]/starting", 0);
+setprop("controls/engines/engine[2]/starting", 0);
+setprop("controls/engines/engine[3]/starting", 0);
+setprop("controls/engines/engine[4]/starting", 0);
+setprop("controls/engines/engine[5]/starting", 0);
+
+setlistener("controls/engines/engine[0]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[0]/starter") == 1) and (getprop("controls/engines/engine[0]/ignition") == 1) and  (getprop("controls/electric/engine[0]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[0]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[0]/starting", 0);
+  #}
+});
+
+setlistener("controls/engines/engine[1]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[1]/starter") == 1) and (getprop("controls/engines/engine[1]/ignition") == 1) and  (getprop("controls/electric/engine[1]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[1]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[1]/starting", 0);
+  #}
+});
+
+setlistener("controls/engines/engine[2]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[2]/starter") == 1) and (getprop("controls/engines/engine[2]/ignition") == 1) and  (getprop("controls/electric/engine[2]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[2]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[2]/starting", 0);
+  #}
+});
+
+setlistener("controls/engines/engine[3]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[3]/starter") == 1) and (getprop("controls/engines/engine[3]/ignition") == 1) and  (getprop("controls/electric/engine[3]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[3]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[3]/starting", 0);
+  #}
+});
+
+setlistener("controls/engines/engine[4]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[4]/starter") == 1) and (getprop("controls/engines/engine[4]/ignition") == 1) and  (getprop("controls/electric/engine[4]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[4]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[4]/starting", 0);
+  #}
+});
+
+setlistener("controls/engines/engine[5]/starter", func
+ { 
+   if ((getprop("controls/engines/engine[5]/starter") == 1) and (getprop("controls/engines/engine[5]/ignition") == 1) and  (getprop("controls/electric/engine[5]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
+   setprop("controls/engines/engine[5]/starting", 1);
+  # else 
+  #{
+  #  setprop("controls/engines/engine[3]/starting", 0);
+  #}
+});
+
+
+setlistener("controls/engines/engine[0]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[0]/ignition") == 0)
+   setprop("controls/engines/engine[0]/starting", 0);
+});
+
+setlistener("controls/engines/engine[1]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[1]/ignition") == 0)
+   setprop("controls/engines/engine[1]/starting", 0);
+});
+
+setlistener("controls/engines/engine[2]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[2]/ignition") == 0)
+   setprop("controls/engines/engine[2]/starting", 0);
+});
+
+setlistener("controls/engines/engine[3]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[3]/ignition") == 0)
+   setprop("controls/engines/engine[3]/starting", 0);
+});
+
+setlistener("controls/engines/engine[4]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[4]/ignition") == 0)
+   setprop("controls/engines/engine[4]/starting", 0);
+});
+
+setlistener("controls/engines/engine[5]/ignition", func
+ { 
+   if (getprop("controls/engines/engine[5]/ignition") == 0)
+   setprop("controls/engines/engine[5]/starting", 0);
+});

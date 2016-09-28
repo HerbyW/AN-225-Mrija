@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
+-->
+<!-- AZS type 4
+3D instrument for Tu-154 -->
+<PropertyList>
+ 
+ <path>azs_3.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>handle</object-name>
+  <object-name>base_1</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.21 </red>
+      <green> 0.21 </green>
+      <blue>  0.21 </blue>
+    </emission>
+</animation>
+
+  
+<animation>
+  <type>rotate</type>
+  <object-name>handle</object-name>
+  <property>controls/electric/engine[3]/generator</property>   
+  <interpolation>
+    <entry><ind>	1.0</ind>	<dep>	-60.0</dep></entry>
+    <entry><ind>	0.0</ind>	<dep>	 60.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Control-->
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_1</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("controls/electric/engine[3]/generator", 1.0, 0.1 );
+      </script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_3</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("controls/electric/engine[3]/generator", 0.0, 0.1 );
+      </script>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hotspot_2</object-name>
+  <visible>false</visible>
+</animation>
+
+
+
+</PropertyList>

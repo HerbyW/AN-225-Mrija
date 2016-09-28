@@ -39,7 +39,7 @@
     <desc>Autostart</desc>
     <binding>
       <command>property-toggle</command>
-      <property>controls/autostart</property>
+      <property>sim/model/autostart</property>
       <value>true</value>
     </binding>
   </key>

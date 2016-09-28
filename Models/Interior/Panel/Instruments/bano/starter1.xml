@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+
+<!-- APU stop button
+3D instrument for Tu-154 
+now starter knob for Tu-160 Herbert Wagner 01/2016-->
+<PropertyList>
+ <path>knob_2.ac</path>
+<!--External panel lighting-->
+<animation>
+  <type>material</type>
+  <object-name>base</object-name>
+  <object-name>button</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.21 </red>
+      <green> 0.21 </green>
+      <blue>  0.21 </blue>
+    </emission>
+</animation>
+
+  
+<animation>
+  <type>translate</type>
+  <object-name>button</object-name>
+  <property>controls/engines/engine[0]/starter</property>  
+  <factor>0.001</factor>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!--Control-->
+<animation>
+  <type>pick</type>
+  <object-name>button</object-name>
+  <visible>true</visible>
+  <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+     <binding>
+       <command>property-assign</command>
+       <property>controls/engines/engine[0]/starter</property>
+       <value>1</value>
+     </binding>
+     <mod-up>
+       <binding>
+         <command>property-assign</command>
+         <property>controls/engines/engine[0]/starter</property>
+         <value>0</value>
+       </binding>
+     </mod-up>
+    </action>
+</animation>
+
+
+
+</PropertyList>

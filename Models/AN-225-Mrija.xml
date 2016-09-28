@@ -3129,7 +3129,7 @@ AN225 model/animation config.
     <object-name>L-MG-5-IS-Hub</object-name>
     <object-name>L-MG-5-OS-Hub</object-name>
     <object-name>L-MG-5-Strut</object-name>
-    <property>sim/multiplay/generic/float[10]</property>
+    <property>sim/multiplay/generic/float[9]</property>
     <factor>1.0</factor>
     <axis>
       <x>0</x>
@@ -3533,7 +3533,7 @@ AN225 model/animation config.
     <object-name>L-MG-7-IS-Hub</object-name>
     <object-name>L-MG-7-OS-Hub</object-name>
     <object-name>L-MG-7-Strut</object-name>
-    <property>sim/multiplay/generic/float[12]</property>
+    <property>sim/multiplay/generic/float[11]</property>
     <factor>1.0</factor>
     <axis>
       <x>0</x>
@@ -3893,7 +3893,7 @@ AN225 model/animation config.
     <object-name>R-MG-2-IS-Hub</object-name>
     <object-name>R-MG-2-OS-Hub</object-name>
     <object-name>R-MG-2-Strut</object-name>
-    <property>sim/multiplay/generic/float[14]</property>
+    <property>sim/multiplay/generic/float[13]</property>
     <factor>1.0</factor>
     <axis>
       <x>0</x>
@@ -4477,7 +4477,7 @@ AN225 model/animation config.
     <object-name>R-MG-5-IS-Hub</object-name>
     <object-name>R-MG-5-OS-Hub</object-name>
     <object-name>R-MG-5-Strut</object-name>
-    <property>sim/multiplay/generic/float[17]</property>
+    <property>sim/multiplay/generic/float[16]</property>
     <factor>1.0</factor>
     <axis>
       <x>0</x>
@@ -4881,7 +4881,7 @@ AN225 model/animation config.
     <object-name>R-MG-7-IS-Hub</object-name>
     <object-name>R-MG-7-OS-Hub</object-name>
     <object-name>R-MG-7-Strut</object-name>
-    <property>sim/multiplay/generic/float[19]</property>
+    <property>sim/multiplay/generic/float[18]</property>
     <factor>1.0</factor>
     <axis>
       <x>0</x>
@@ -5431,6 +5431,7 @@ AN225 model/animation config.
       <x-m> 11.0 </x-m>
       <y-m> 25.0 </y-m>
       <z-m> 0.2 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
@@ -5449,6 +5450,7 @@ AN225 model/animation config.
       <x-m> 6.7 </x-m>
       <y-m> 17.2 </y-m>
       <z-m> 0.4 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
@@ -5467,6 +5469,7 @@ AN225 model/animation config.
       <x-m> 2.0 </x-m>
       <y-m>  9.40 </y-m>
       <z-m> 0.9 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
@@ -5486,6 +5489,7 @@ AN225 model/animation config.
       <x-m> 2.0 </x-m>
       <y-m>  -9.40 </y-m>
       <z-m> 0.9 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
@@ -5504,6 +5508,7 @@ AN225 model/animation config.
       <x-m> 6.7 </x-m>
       <y-m> -17.2 </y-m>
       <z-m> 0.4 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
@@ -5523,6 +5528,7 @@ AN225 model/animation config.
       <x-m> 11.0 </x-m>
       <y-m> -25.0 </y-m>
       <z-m> 0.2 </z-m>
+      <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
   
