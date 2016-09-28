@@ -59,7 +59,7 @@
     </config>
   </pid-controller>
 
-  <!-- Heading Bug Hold.  2 stage cascade controller. -->
+  <!-- Heading Bug Hold.  3 stage cascade controller. -->
 
   <!-- Stage #1 sets target roll based on diff between current heading -->
   <!-- and heading bug. -->
@@ -80,12 +80,12 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </output>
     <config>
-      <Kp>-1.0</Kp>        <!-- proportional gain -->
+      <Kp>-3.0</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>     <!-- input value weighing factor -->
       <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>   <!-- input value weighing factor for -->
                            <!-- unfiltered derivative error -->
-      <Ti>3.0</Ti>        <!-- integrator time -->
+      <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
       <u_min>-20.0</u_min> <!-- minimum output clamp -->
       <u_max>20.0</u_max>  <!-- maximum output clamp -->
@@ -107,10 +107,10 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
+      <Kp>0.65</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -121,6 +121,31 @@
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
+  
+  <!--Stage 3 -->
+  
+  <filter>
+    <name>AILERON Trim FILTER</name>
+    <debug>false</debug>
+    <feedback-if-disabled>false</feedback-if-disabled>
+    <initialize-to>output</initialize-to>
+    <enable>
+      <condition>
+	
+	  <equals> 
+	    <property>/autopilot/locks/heading</property>
+	    <value>dg-heading-hold</value>
+	  </equals> 
+	
+      </condition>
+    </enable>
+    <input>
+      <property>/controls/flight/aileron-trim-filter</property>
+    </input>
+    <output>/controls/flight/aileron-trim</output>
+    <type>noise-spike</type>
+    <max-rate-of-change>2.0</max-rate-of-change>
+  </filter>
 
   <!-- True Heading hold.  2 stage cascade controller. -->
 
@@ -429,14 +454,18 @@
     </config>
   </pid-controller>
 
-  <!-- Glideslope hold. -->
+  <!-- Glideslope hold 3 Stage controler -->
 
-  <pid-controller>
-    <name>Glideslop Hold</name>
+  <pi-simple-controller>
+    <name>Glideslope Hold</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/locks/altitude</prop>
-      <value>gs1-hold</value>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value>gs1-hold</value>
+	</equals>
+      </condition>
     </enable>
     <input>
       <prop>/velocities/vertical-speed-fps</prop>
@@ -444,21 +473,73 @@
     <reference>
       <prop>/instrumentation/nav[0]/gs-rate-of-climb</prop>
     </reference>
-     <output>
-      <prop>/controls/flight/elevator-trim</prop>
+    <output>
+      <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>-0.005</Kp>      <!-- proportional gain -->
-      <beta>1.0</beta>    <!-- input value weighing factor -->
-      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
-      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
-                          <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>       <!-- integrator time -->
-      <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>-1.0</u_min> <!-- minimum output clamp -->
-      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+      <Kp>1.50</Kp>          <!-- proportional gain -->
+      <Ki>0.0</Ki>          <!-- integral gain -->
+      <u_min>-25.0</u_min> <!-- minimum output clamp -->
+      <u_max>15.0</u_max>   <!-- maximum output clamp -->
+    </config>
+  </pi-simple-controller>  
+  
+  <!--Stage 2 -->
+  
+  <pid-controller>
+    <name>Elevator Trim Filter Controler</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	  <equals>
+	    <property>/autopilot/locks/altitude</property>
+	    <value>gs1-hold</value>
+	  </equals>  
+      </condition>
+    </enable>
+    <input>
+      <prop>/velocities/vertical-speed-fps</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/internal/target-climb-rate-fps</prop>
+    </reference>
+    <output>
+      <prop>/controls/flight/elevator-trim-filter</prop>
+    </output>
+    <config>
+      <Kp>-0.0015</Kp><!-- 0.065 -->
+      <beta>1.0</beta>
+      <alpha>0.1</alpha>
+      <gamma>0.0</gamma>
+      <Ti>10.0</Ti>
+      <Td>0.00001</Td>
+      <u_min>-1.0</u_min>
+      <u_max> 1.0</u_max>
     </config>
   </pid-controller>
+  
+  <!--Stage 3 -->
+  
+  <filter>
+    <name>PITCH FILTER</name>
+    <debug>false</debug>
+    <feedback-if-disabled>false</feedback-if-disabled>
+    <initialize-to>output</initialize-to>
+    <enable>
+      <condition>
+	  <equals>
+	    <property>/autopilot/locks/altitude</property>
+	    <value>gs1-hold</value>
+	  </equals>  
+      </condition>
+    </enable>
+    <input>
+      <property>/controls/flight/elevator-trim-filter</property>
+    </input>
+    <output>/controls/flight/elevator-trim</output>
+    <type>noise-spike</type>
+    <max-rate-of-change>1.0</max-rate-of-change>
+  </filter>
 
   <!-- vertical speed hold -->
   <pid-controller>
