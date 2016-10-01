@@ -145,7 +145,7 @@ them out of my 3d modeller.
 
 <!-- Left Outer -->
  <jet x="4.0" y="25.0" z="0.2" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
@@ -153,7 +153,7 @@ them out of my 3d modeller.
 
 <!-- Left Mid -->
  <jet x="-0.7" y="17.2" z="0.4" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
@@ -161,7 +161,7 @@ them out of my 3d modeller.
 
 <!-- Left Inner -->
  <jet x="-5.0" y="9.40" z="0.9" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[2]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
@@ -169,7 +169,7 @@ them out of my 3d modeller.
 
 <!-- Right Inner -->
  <jet x="-5.0" y="-9.40" z="0.9" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[3]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
@@ -177,7 +177,7 @@ them out of my 3d modeller.
 
 <!-- Rihgt Mid -->
  <jet x="-0.7" y="-17.2" z="0.4" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[4]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[4]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[4]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[4]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
@@ -185,7 +185,7 @@ them out of my 3d modeller.
 
 <!-- Right Outer -->
  <jet x="4.0" y="-25.0" z="0.2" mass="8000" n1-idle="30" n2-idle="60" n1-max="99.2" n2-max="102.5" tsfc="0.5" thrust="51700" reverse="0.2">
-  <control-input axis="/controls/engines/engine[5]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[5]/throttle" control="THROTTLE" src0="0" src1="1" dst0="0.07" dst1="1"/>
   <control-input axis="/controls/engines/engine[5]/reverser" control="REVERSE_THRUST"/>
  <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[5]"/>
  <control-speed control="REVERSE_THRUST" transition-time="1.5"/>
