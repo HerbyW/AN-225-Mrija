@@ -49,7 +49,7 @@
   <object-name>text</object-name>
    <condition>
      <greater-than>
-	<property>velocities/groundspeed-kt</property>
+	<property>intrumentation/airspeed-indicator/true-speed-kt</property>
 	<value>459</value>
      </greater-than>
     </condition>  
