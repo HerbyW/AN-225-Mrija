@@ -5959,6 +5959,117 @@ AN225 model/animation config.
             <blue>0.3</blue>
         </emission>        
     </animation>
+    
+    <!-- Engine Schaufelräder
+    <object-name>Engine-RO-Fan</object-name>
+    <object-name>Engine-RM-Fan</object-name>
+    <object-name>Engine-RI-Fan</object-name>
+    <object-name>Engine-LI-Fan</object-name>
+    <object-name>Engine-LM-Fan</object-name>
+    <object-name>Engine-LO-Fan</object-name>
+    -->
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-LO-Fan</object-name>
+      <property>sim/multiplay/generic/float[6]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> 3.524 </x-m>
+	<y-m> -24.882 </y-m>
+	<z-m>  0.427 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-LM-Fan</object-name>
+      <property>sim/multiplay/generic/float[8]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> -0.931 </x-m>
+	<y-m> -17.284 </y-m>
+	<z-m>  0.706 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-LI-Fan</object-name>
+      <property>sim/multiplay/generic/float[10]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> -5.685 </x-m>
+	<y-m> -9.461 </y-m>
+	<z-m>  1.074 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-RI-Fan</object-name>
+      <property>sim/multiplay/generic/float[12]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> -5.685 </x-m>
+	<y-m> 9.461 </y-m>
+	<z-m>  1.074 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-RM-Fan</object-name>
+      <property>sim/multiplay/generic/float[17]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> -0.931 </x-m>
+	<y-m> 17.284 </y-m>
+	<z-m>  0.706 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
+    
+    <animation>
+      <type>spin</type>
+      <object-name>Engine-RO-Fan</object-name>
+      <property>sim/multiplay/generic/float[19]</property>
+      <factor> -30 </factor>
+      <center>
+	<x-m> 3.524 </x-m>
+	<y-m> 24.882 </y-m>
+	<z-m>  0.427 </z-m>
+      </center>
+      <axis>
+	<x>  1 </x>
+	<y>  0 </y>
+	<z>  0 </z>
+      </axis>
+    </animation>
 	
 	</PropertyList>
 	

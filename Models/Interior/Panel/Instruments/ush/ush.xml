@@ -51,7 +51,7 @@
 <animation>
   <type>rotate</type>
   <object-name>compass</object-name>
-   <property>controls/switches/gauge-light</property>   
+   <property>sim/signals/fdm-initialized</property>   
    <factor> 180 </factor>  
   <axis>
     <x>-1.0</x>
