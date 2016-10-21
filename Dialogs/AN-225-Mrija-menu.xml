@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <default>
+    <menu n="10">
+      <label>Antonov AN-225-Mrija</label>
+      <enabled type="bool">true</enabled>
+      
+      <item>
+	<label>Select livery</label>
+	<binding>
+	  <command>nasal</command>
+	  <script>aircraft.livery.dialog.open()</script>
+	</binding>
+      </item>
+      
+      <item>
+	<label>Autostart</label>
+	<binding>
+	  <command>property-toggle</command>
+	  <property>sim/model/autostart</property>
+	</binding>
+      </item>      
+      
+      </menu>
+      
+      </default>
+      
+      </PropertyList>
+      

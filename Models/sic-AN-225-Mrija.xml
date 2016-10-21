@@ -35,14 +35,18 @@ AN225 model/animation config.
       livery_update.stop();
     </unload>
   </nasal>
-
+  
+  <offsets>
+    <z-m>0.0</z-m>
+    <pitch-deg>0</pitch-deg>
+  </offsets>
+  
   <sound>      
     <path>Aircraft/AN-225-Mrija/Sounds/AN-225-Mrija-sound.xml</path>
   </sound>
   
   <!--Lights, just a little bit more brilliance to the airplane-->
   
-  
   <animation>
     <type>material</type>
     <object-name>Fuselage</object-name>
@@ -53,7 +57,7 @@ AN225 model/animation config.
     <object-name>R-TailPlane-T</object-name> 
     <object-name>R-Wing-B</object-name>
     <object-name>R-TailPlane-B</object-name>
-    <object-name>L-TailFin-IS</object-name>
+    <object-name>L-TailFin-OS</object-name>
     <object-name>L-TailPlane-T</object-name> 
     <object-name>L-Wing-B</object-name>
     <object-name>L-TailPlane-B</object-name>
@@ -65,14 +69,21 @@ AN225 model/animation config.
     <object-name>L-Elevator-B</object-name>
     <object-name>L-TailFin-OS</object-name>
     <object-name>CP-Liner</object-name>
+    <object-name>Fuselage_RLogos</object-name>
+    <object-name>Fuselage_LLogos</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>UC-Blister</object-name>
-    
+    <object-name>R-Wing-Slat</object-name>
+    <object-name>L-Wing-Slat</object-name>
     <object-name>Engine-RO-Casing</object-name>
     <object-name>Engine-RM-Casing</object-name>
     <object-name>Engine-RI-Casing</object-name>
     <object-name>Engine-LI-Casing</object-name>
     <object-name>Engine-LM-Casing</object-name>
     <object-name>Engine-LO-Casing</object-name>
+    <object-name>Wing_ID</object-name>
+    <object-name>TailFin_Flag</object-name>
     <object-name>Engine_Stripes</object-name>
     <object-name>Engine-RO-Fan</object-name>
     <object-name>Engine-RM-Fan</object-name>
@@ -92,7 +103,7 @@ AN225 model/animation config.
     <object-name>Engine-LI-Mount-IS</object-name>
     <object-name>Engine-LM-Mount-IS</object-name>
     <object-name>Engine-LO-Mount-IS</object-name>
-    
+    <object-name>Fuselage-Windows</object-name>
     <object-name>CP-Liner-C</object-name>
     <object-name>R-Flap-1</object-name>
     <object-name>R-Flap-2</object-name>
@@ -128,231 +139,19 @@ AN225 model/animation config.
     <object-name>Engine-RO-Jetpipe</object-name>
     <object-name>R-NG-OS-Tyre</object-name>
     <object-name>L-NG-OS-Tyre</object-name>
-    <object-name>L-NG-IS-Tyre</object-name>
-    <object-name>R-NG-IS-Tyre</object-name>
-    <object-name>L-MG-1-OS-Tyre</object-name>
-    <object-name>L-MG-2-OS-Tyre</object-name>
-    <object-name>L-MG-3-OS-Tyre</object-name>
-    <object-name>L-MG-4-OS-Tyre</object-name>
-    <object-name>L-MG-5-OS-Tyre</object-name>
-    <object-name>L-MG-6-OS-Tyre</object-name>
-    <object-name>L-MG-7-OS-Tyre</object-name>
-    <object-name>L-MG-1-IS-Tyre</object-name>
-    <object-name>L-MG-2-IS-Tyre</object-name>
-    <object-name>L-MG-3-IS-Tyre</object-name>
-    <object-name>L-MG-4-IS-Tyre</object-name>
-    <object-name>L-MG-5-IS-Tyre</object-name>
-    <object-name>L-MG-6-IS-Tyre</object-name>
-    <object-name>L-MG-7-IS-Tyre</object-name>
-    <object-name>R-MG-1-IS-Tyre</object-name>
-    <object-name>R-MG-2-IS-Tyre</object-name>
-    <object-name>R-MG-3-IS-Tyre</object-name>
-    <object-name>R-MG-4-IS-Tyre</object-name>
-    <object-name>R-MG-5-IS-Tyre</object-name>
-    <object-name>R-MG-6-IS-Tyre</object-name>
-    <object-name>R-MG-7-IS-Tyre</object-name>
-    <object-name>R-MG-1-OS-Tyre</object-name>
-    <object-name>R-MG-2-OS-Tyre</object-name>
-    <object-name>R-MG-3-OS-Tyre</object-name>
-    <object-name>R-MG-4-OS-Tyre</object-name>
-    <object-name>R-MG-5-OS-Tyre</object-name>
-    <object-name>R-MG-6-OS-Tyre</object-name>
-    <object-name>R-MG-7-OS-Tyre</object-name>
-    <object-name>L-NG-OS-Hub</object-name>
-    <object-name>R-NG-OS-Hub</object-name>
-    <object-name>L-MG-1-OS-Hub</object-name>
-    <object-name>L-MG-2-OS-Hub</object-name>
-    <object-name>L-MG-3-OS-Hub</object-name>
-    <object-name>L-MG-4-OS-Hub</object-name>
-    <object-name>L-MG-5-OS-Hub</object-name>
-    <object-name>L-MG-6-OS-Hub</object-name>
-    <object-name>L-MG-7-OS-Hub</object-name>
-    <object-name>R-MG-1-OS-Hub</object-name>
-    <object-name>R-MG-2-OS-Hub</object-name>
-    <object-name>R-MG-3-OS-Hub</object-name>
-    <object-name>R-MG-4-OS-Hub</object-name>
-    <object-name>R-MG-5-OS-Hub</object-name>
-    <object-name>R-MG-6-OS-Hub</object-name>
-    <object-name>R-MG-7-OS-Hub</object-name>
-    <object-name>L-NG-IS-Hub</object-name>
-    <object-name>R-NG-IS-Hub</object-name>
-    <object-name>L-MG-1-IS-Hub</object-name>
-    <object-name>L-MG-2-IS-Hub</object-name>
-    <object-name>L-MG-3-IS-Hub</object-name>
-    <object-name>L-MG-4-IS-Hub</object-name>
-    <object-name>L-MG-5-IS-Hub</object-name>
-    <object-name>L-MG-6-IS-Hub</object-name>
-    <object-name>L-MG-7-IS-Hub</object-name>
-    <object-name>R-MG-1-IS-Hub</object-name>
-    <object-name>R-MG-2-IS-Hub</object-name>
-    <object-name>R-MG-3-IS-Hub</object-name>
-    <object-name>R-MG-4-IS-Hub</object-name>
-    <object-name>R-MG-5-IS-Hub</object-name>
-    <object-name>R-MG-6-IS-Hub</object-name>
-    <object-name>R-MG-7-IS-Hub</object-name>
-    <object-name>L-NG-Strut</object-name>
-    <object-name>R-NG-Strut</object-name>
-    <object-name>L-MG-1-Strut</object-name>
-    <object-name>L-MG-2-Strut</object-name>
-    <object-name>L-MG-3-Strut</object-name>
-    <object-name>L-MG-4-Strut</object-name>
-    <object-name>L-MG-5-Strut</object-name>
-    <object-name>L-MG-6-Strut</object-name>
-    <object-name>L-MG-7-Strut</object-name>
-    <object-name>R-MG-1-Strut</object-name>
-    <object-name>R-MG-2-Strut</object-name>
-    <object-name>R-MG-3-Strut</object-name>
-    <object-name>R-MG-4-Strut</object-name>
-    <object-name>R-MG-5-Strut</object-name>
-    <object-name>R-MG-6-Strut</object-name>
-    <object-name>R-MG-7-Strut</object-name>
-    <object-name>L-NG-OS-Door</object-name>
-    <object-name>L-NG-IS-Door</object-name>
-    <object-name>R-NG-IS-Door</object-name>
-    <object-name>R-NG-OS-Door</object-name>
-    <object-name>L-MG-WheelWell</object-name>
-    <object-name>R-MG-WheelWell</object-name>
-    <object-name>L-MG-1-UDoor</object-name>
-    <object-name>L-MG-2-UDoor</object-name>
-    <object-name>L-MG-3-UDoor</object-name>
-    <object-name>L-MG-4-UDoor</object-name>
-    <object-name>L-MG-5-UDoor</object-name>
-    <object-name>L-MG-6-UDoor</object-name>
-    <object-name>L-MG-7-UDoor</object-name>
-    <object-name>L-MG-1-LDoor</object-name>
-    <object-name>L-MG-2-LDoor</object-name>
-    <object-name>L-MG-3-LDoor</object-name>
-    <object-name>L-MG-4-LDoor</object-name>
-    <object-name>L-MG-5-LDoor</object-name>
-    <object-name>L-MG-6-LDoor</object-name>
-    <object-name>L-MG-7-LDoor</object-name>
-    <object-name>R-MG-1-UDoor</object-name>
-    <object-name>R-MG-2-UDoor</object-name>
-    <object-name>R-MG-3-UDoor</object-name>
-    <object-name>R-MG-4-UDoor</object-name>
-    <object-name>R-MG-5-UDoor</object-name>
-    <object-name>R-MG-6-UDoor</object-name>
-    <object-name>R-MG-7-UDoor</object-name>
-    <object-name>R-MG-1-LDoor</object-name>
-    <object-name>R-MG-2-LDoor</object-name>
-    <object-name>R-MG-3-LDoor</object-name>
-    <object-name>R-MG-4-LDoor</object-name>
-    <object-name>R-MG-5-LDoor</object-name>
-    <object-name>R-MG-6-LDoor</object-name>
-    <object-name>R-MG-7-LDoor</object-name>
-    <object-name>Engine-LO-Intake-Liner</object-name>
-    <object-name>Engine-LM-Intake-Liner</object-name>
-    <object-name>Engine-LI-Intake-Liner</object-name>
-    <object-name>Engine-RO-Intake-Liner</object-name>
-    <object-name>Engine-RM-Intake-Liner</object-name>
-    <object-name>Engine-RI-Intake-Liner</object-name>
-    <object-name>Engine-LO-Bypass-C</object-name>
-    <object-name>Engine-LM-Bypass-C</object-name>
-    <object-name>Engine-LI-Bypass-C</object-name>
-    <object-name>Engine-RO-Bypass-C</object-name>
-    <object-name>Engine-RM-Bypass-C</object-name>
-    <object-name>Engine-RI-Bypass-C</object-name>
-    <object-name>Engine-LO-Jetpipe-C</object-name>
-    <object-name>Engine-LM-Jetpipe-C</object-name>
-    <object-name>Engine-LI-Jetpipe-C</object-name>
-    <object-name>Engine-RO-Jetpipe-C</object-name>
-    <object-name>Engine-RM-Jetpipe-C</object-name>
-    <object-name>Engine-RI-Jetpipe-C</object-name>
-    <object-name>Engine-LO-Bypass-Liner</object-name>
-    <object-name>Engine-LM-Bypass-Liner</object-name>
-    <object-name>Engine-LI-Bypass-Liner</object-name>
-    <object-name>Engine-RO-Bypass-Liner</object-name>
-    <object-name>Engine-RM-Bypass-Liner</object-name>
-    <object-name>Engine-RI-Bypass-Liner</object-name>
-    <object-name>Engine-LO-Jetpipe-Liner</object-name>
-    <object-name>Engine-LM-Jetpipe-Liner</object-name>
-    <object-name>Engine-LI-Jetpipe-Liner</object-name>
-    <object-name>Engine-RO-Jetpipe-Liner</object-name>
-    <object-name>Engine-RM-Jetpipe-Liner</object-name>
-    <object-name>Engine-RI-Jetpipe-Liner</object-name>
-    <object-name>LW-Flap-Br1R</object-name>
-    <object-name>LW-Flap-Br2R</object-name>
-    <object-name>LW-Flap-Br3R</object-name>
-    <object-name>LW-Flap-Br4R</object-name>
-    <object-name>LW-Flap-Br5R</object-name>
-    <object-name>LW-Flap-Br6R</object-name>
-    <object-name>LW-Flap-Br7R</object-name>
-    <object-name>LW-Flap-Br8R</object-name>
-    <object-name>LW-Flap-Br1F</object-name>
-    <object-name>LW-Flap-Br2F</object-name>
-    <object-name>LW-Flap-Br3F</object-name>
-    <object-name>LW-Flap-Br4F</object-name>
-    <object-name>LW-Flap-Br5F</object-name>
-    <object-name>LW-Flap-Br6F</object-name>
-    <object-name>LW-Flap-Br7F</object-name>
-    <object-name>LW-Flap-Br8F</object-name>    
-    <object-name>RW-Flap-Br1R</object-name>
-    <object-name>RW-Flap-Br2R</object-name>
-    <object-name>RW-Flap-Br3R</object-name>
-    <object-name>RW-Flap-Br4R</object-name>
-    <object-name>RW-Flap-Br5R</object-name>
-    <object-name>RW-Flap-Br6R</object-name>
-    <object-name>RW-Flap-Br7R</object-name>
-    <object-name>RW-Flap-Br8R</object-name>
-    <object-name>RW-Flap-Br1F</object-name>
-    <object-name>RW-Flap-Br2F</object-name>
-    <object-name>RW-Flap-Br3F</object-name>
-    <object-name>RW-Flap-Br4F</object-name>
-    <object-name>RW-Flap-Br5F</object-name>
-    <object-name>RW-Flap-Br6F</object-name>
-    <object-name>RW-Flap-Br7F</object-name>
-    <object-name>RW-Flap-Br8F</object-name>
-    <object-name>LU-Rudder-OS</object-name>
-    <object-name>LL-Rudder-OS</object-name>
-    <object-name>RU-Rudder-OS</object-name>
-    <object-name>RL-Rudder-OS</object-name>
-    <object-name>LU-Rudder-IS</object-name>
-    <object-name>LL-Rudder-IS</object-name>
-    <object-name>RU-Rudder-IS</object-name>
-    <object-name>RL-Rudder-IS</object-name>
-    <object-name>NG-WheelWell</object-name>
-    <object-name>LW-Spoilers-Outer</object-name>
-    <object-name>RW-Spoilers-Outer</object-name>
-    <object-name>RW-Spoilers-Inner</object-name>
-    <object-name>LW-Spoilers-Inner</object-name>
     <object-name>CP-Bulkheads</object-name>
-    <object-name>L-MG-1-CDoor</object-name>
-    <object-name>L-MG-2-CDoor</object-name>
-    <object-name>L-MG-3-CDoor</object-name>
-    <object-name>L-MG-4-CDoor</object-name>
-    <object-name>L-MG-5-CDoor</object-name>
-    <object-name>L-MG-6-CDoor</object-name>
-    <object-name>L-MG-7-CDoor</object-name>
-    <object-name>R-MG-1-CDoor</object-name>
-    <object-name>R-MG-2-CDoor</object-name>
-    <object-name>R-MG-3-CDoor</object-name>
-    <object-name>R-MG-4-CDoor</object-name>
-    <object-name>R-MG-5-CDoor</object-name>
-    <object-name>R-MG-6-CDoor</object-name>
-    <object-name>R-MG-7-CDoor</object-name>
-    <object-name>L-NG-CDoor</object-name>
-    <object-name>R-NG-CDoor</object-name>
     
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>AN225-tx-001.png</texture>
-
-    <emission>
-      <factor-prop>sim/time/sun-angle-rad</factor-prop>
-      <red>   0.1 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
-      </emission>
   </animation>
   
 
   <!-- working for Rembrandt -->
   
+  
   <effect>
     <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/c182sreflect-uber_body</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
     <object-name>L-Wing-T</object-name>
@@ -373,6 +172,10 @@ AN225 model/animation config.
     <object-name>L-Elevator-B</object-name>
     <object-name>L-TailFin-OS</object-name>
     <object-name>CP-Liner</object-name>
+    <object-name>Fuselage_RLogos</object-name>
+    <object-name>Fuselage_LLogos</object-name>
+    <object-name>Fuselage_LLogos.001</object-name>
+    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>UC-Blister</object-name>
     
     <object-name>Engine-RO-Casing</object-name>
@@ -381,6 +184,8 @@ AN225 model/animation config.
     <object-name>Engine-LI-Casing</object-name>
     <object-name>Engine-LM-Casing</object-name>
     <object-name>Engine-LO-Casing</object-name>
+    <object-name>Wing_ID</object-name>
+    <object-name>TailFin_Flag</object-name>
     <object-name>Engine_Stripes</object-name>
     <object-name>Engine-RO-Fan</object-name>
     <object-name>Engine-RM-Fan</object-name>
@@ -623,30 +428,11 @@ AN225 model/animation config.
     <object-name>RW-Spoilers-Outer</object-name>
     <object-name>RW-Spoilers-Inner</object-name>
     <object-name>LW-Spoilers-Inner</object-name>
-    <object-name>CP-Bulkheads</object-name>
-    <object-name>L-MG-1-CDoor</object-name>
-    <object-name>L-MG-2-CDoor</object-name>
-    <object-name>L-MG-3-CDoor</object-name>
-    <object-name>L-MG-4-CDoor</object-name>
-    <object-name>L-MG-5-CDoor</object-name>
-    <object-name>L-MG-6-CDoor</object-name>
-    <object-name>L-MG-7-CDoor</object-name>
-    <object-name>R-MG-1-CDoor</object-name>
-    <object-name>R-MG-2-CDoor</object-name>
-    <object-name>R-MG-3-CDoor</object-name>
-    <object-name>R-MG-4-CDoor</object-name>
-    <object-name>R-MG-5-CDoor</object-name>
-    <object-name>R-MG-6-CDoor</object-name>
-    <object-name>R-MG-7-CDoor</object-name>
-    <object-name>L-NG-CDoor</object-name>
-    <object-name>R-NG-CDoor</object-name>
+    <object-name>CP-Bulkheads</object-name>    
   </effect>
   
 <effect>
-    <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/c182sreflect-uber</inherits-from> 
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>    
+    <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/c182sreflect-uber</inherits-from>  
     <object-name>L-Wing-Slat</object-name>
     <object-name>R-Wing-Slat</object-name>
     <object-name>Engine-LI-Casing.001</object-name>
@@ -660,346 +446,15 @@ AN225 model/animation config.
     <object-name>Engine-RI-Intake-Liner.001</object-name>
     <object-name>Engine-LO-Intake-Liner.001</object-name>
     <object-name>Engine-LM-Intake-Liner.001</object-name>
-    <object-name>Engine-LI-Intake-Liner.001</object-name>    
+    <object-name>Engine-LI-Intake-Liner.001</object-name>
+    
 </effect>
 
-<effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>Fuselage</object-name>
-    <object-name>FrontCargoDoor</object-name>
-    <object-name>L-Wing-T</object-name>
-    <object-name>R-Wing-T</object-name>
-    <object-name>R-TailFin-OS</object-name>
-    <object-name>R-TailPlane-T</object-name> 
-    <object-name>R-Wing-B</object-name>
-    <object-name>R-TailPlane-B</object-name>
-    <object-name>L-TailFin-IS</object-name>
-    <object-name>L-TailPlane-T</object-name> 
-    <object-name>L-Wing-B</object-name>
-    <object-name>L-TailPlane-B</object-name>
-    <object-name>R-Elevator-T</object-name>
-    <object-name>R-Elevator-B</object-name>
-    <object-name>R-TailFin-IS</object-name>
-    <object-name>R-TailPlane-B</object-name>
-    <object-name>L-Elevator-T</object-name>
-    <object-name>L-Elevator-B</object-name>
-    <object-name>L-TailFin-OS</object-name>
-    <object-name>CP-Liner</object-name>
-    <object-name>UC-Blister</object-name>
-    
-    <object-name>Engine-RO-Casing</object-name>
-    <object-name>Engine-RM-Casing</object-name>
-    <object-name>Engine-RI-Casing</object-name>
-    <object-name>Engine-LI-Casing</object-name>
-    <object-name>Engine-LM-Casing</object-name>
-    <object-name>Engine-LO-Casing</object-name>
-    <object-name>Engine_Stripes</object-name>
-    <object-name>Engine-RO-Fan</object-name>
-    <object-name>Engine-RM-Fan</object-name>
-    <object-name>Engine-RI-Fan</object-name>
-    <object-name>Engine-LI-Fan</object-name>
-    <object-name>Engine-LM-Fan</object-name>
-    <object-name>Engine-LO-Fan</object-name>
-    <object-name>Engine-RO-Mount-OS</object-name>
-    <object-name>Engine-RM-Mount-OS</object-name>
-    <object-name>Engine-RI-Mount-OS</object-name>
-    <object-name>Engine-LI-Mount-OS</object-name>
-    <object-name>Engine-LM-Mount-OS</object-name>
-    <object-name>Engine-LO-Mount-OS</object-name>
-    <object-name>Engine-RO-Mount-IS</object-name>
-    <object-name>Engine-RM-Mount-IS</object-name>
-    <object-name>Engine-RI-Mount-IS</object-name>
-    <object-name>Engine-LI-Mount-IS</object-name>
-    <object-name>Engine-LM-Mount-IS</object-name>
-    <object-name>Engine-LO-Mount-IS</object-name>
-    
-    <object-name>CP-Liner-C</object-name>
-    <object-name>R-Flap-1</object-name>
-    <object-name>R-Flap-2</object-name>
-    <object-name>R-Flap-3</object-name>
-    <object-name>R-Flap-4</object-name>
-    <object-name>L-Flap-1</object-name>
-    <object-name>L-Flap-2</object-name>
-    <object-name>L-Flap-3</object-name>
-    <object-name>L-Flap-4</object-name>      
-    <object-name>R-Ailerion-B</object-name>
-    <object-name>R-Ailerion-T</object-name>
-    <object-name>L-Ailerion-B</object-name>
-    <object-name>L-Ailerion-T</object-name>
-    <object-name>R-Flap-Cover-1</object-name>
-    <object-name>R-Flap-Cover-2</object-name>
-    <object-name>R-Flap-Cover-3</object-name>
-    <object-name>R-Flap-Cover-4</object-name>
-    <object-name>L-Flap-Cover-1</object-name>
-    <object-name>L-Flap-Cover-2</object-name>
-    <object-name>L-Flap-Cover-3</object-name>
-    <object-name>L-Flap-Cover-4</object-name>
-    <object-name>Engine-LI-Mount-F</object-name>
-    <object-name>Engine-LM-Mount-F</object-name>
-    <object-name>Engine-LO-Mount-F</object-name>
-    <object-name>Engine-RI-Mount-F</object-name>
-    <object-name>Engine-RM-Mount-F</object-name>
-    <object-name>Engine-RO-Mount-F</object-name>
-    <object-name>Engine-LI-Jetpipe</object-name>
-    <object-name>Engine-LM-Jetpipe</object-name>
-    <object-name>Engine-LO-Jetpipe</object-name>
-    <object-name>Engine-RI-Jetpipe</object-name>
-    <object-name>Engine-RM-Jetpipe</object-name>
-    <object-name>Engine-RO-Jetpipe</object-name>
-    <object-name>R-NG-OS-Tyre</object-name>
-    <object-name>L-NG-OS-Tyre</object-name>
-    <object-name>L-NG-IS-Tyre</object-name>
-    <object-name>R-NG-IS-Tyre</object-name>
-    <object-name>L-MG-1-OS-Tyre</object-name>
-    <object-name>L-MG-2-OS-Tyre</object-name>
-    <object-name>L-MG-3-OS-Tyre</object-name>
-    <object-name>L-MG-4-OS-Tyre</object-name>
-    <object-name>L-MG-5-OS-Tyre</object-name>
-    <object-name>L-MG-6-OS-Tyre</object-name>
-    <object-name>L-MG-7-OS-Tyre</object-name>
-    <object-name>L-MG-1-IS-Tyre</object-name>
-    <object-name>L-MG-2-IS-Tyre</object-name>
-    <object-name>L-MG-3-IS-Tyre</object-name>
-    <object-name>L-MG-4-IS-Tyre</object-name>
-    <object-name>L-MG-5-IS-Tyre</object-name>
-    <object-name>L-MG-6-IS-Tyre</object-name>
-    <object-name>L-MG-7-IS-Tyre</object-name>
-    <object-name>R-MG-1-IS-Tyre</object-name>
-    <object-name>R-MG-2-IS-Tyre</object-name>
-    <object-name>R-MG-3-IS-Tyre</object-name>
-    <object-name>R-MG-4-IS-Tyre</object-name>
-    <object-name>R-MG-5-IS-Tyre</object-name>
-    <object-name>R-MG-6-IS-Tyre</object-name>
-    <object-name>R-MG-7-IS-Tyre</object-name>
-    <object-name>R-MG-1-OS-Tyre</object-name>
-    <object-name>R-MG-2-OS-Tyre</object-name>
-    <object-name>R-MG-3-OS-Tyre</object-name>
-    <object-name>R-MG-4-OS-Tyre</object-name>
-    <object-name>R-MG-5-OS-Tyre</object-name>
-    <object-name>R-MG-6-OS-Tyre</object-name>
-    <object-name>R-MG-7-OS-Tyre</object-name>
-    <object-name>L-NG-OS-Hub</object-name>
-    <object-name>R-NG-OS-Hub</object-name>
-    <object-name>L-MG-1-OS-Hub</object-name>
-    <object-name>L-MG-2-OS-Hub</object-name>
-    <object-name>L-MG-3-OS-Hub</object-name>
-    <object-name>L-MG-4-OS-Hub</object-name>
-    <object-name>L-MG-5-OS-Hub</object-name>
-    <object-name>L-MG-6-OS-Hub</object-name>
-    <object-name>L-MG-7-OS-Hub</object-name>
-    <object-name>R-MG-1-OS-Hub</object-name>
-    <object-name>R-MG-2-OS-Hub</object-name>
-    <object-name>R-MG-3-OS-Hub</object-name>
-    <object-name>R-MG-4-OS-Hub</object-name>
-    <object-name>R-MG-5-OS-Hub</object-name>
-    <object-name>R-MG-6-OS-Hub</object-name>
-    <object-name>R-MG-7-OS-Hub</object-name>
-    <object-name>L-NG-IS-Hub</object-name>
-    <object-name>R-NG-IS-Hub</object-name>
-    <object-name>L-MG-1-IS-Hub</object-name>
-    <object-name>L-MG-2-IS-Hub</object-name>
-    <object-name>L-MG-3-IS-Hub</object-name>
-    <object-name>L-MG-4-IS-Hub</object-name>
-    <object-name>L-MG-5-IS-Hub</object-name>
-    <object-name>L-MG-6-IS-Hub</object-name>
-    <object-name>L-MG-7-IS-Hub</object-name>
-    <object-name>R-MG-1-IS-Hub</object-name>
-    <object-name>R-MG-2-IS-Hub</object-name>
-    <object-name>R-MG-3-IS-Hub</object-name>
-    <object-name>R-MG-4-IS-Hub</object-name>
-    <object-name>R-MG-5-IS-Hub</object-name>
-    <object-name>R-MG-6-IS-Hub</object-name>
-    <object-name>R-MG-7-IS-Hub</object-name>
-    <object-name>L-NG-Strut</object-name>
-    <object-name>R-NG-Strut</object-name>
-    <object-name>L-MG-1-Strut</object-name>
-    <object-name>L-MG-2-Strut</object-name>
-    <object-name>L-MG-3-Strut</object-name>
-    <object-name>L-MG-4-Strut</object-name>
-    <object-name>L-MG-5-Strut</object-name>
-    <object-name>L-MG-6-Strut</object-name>
-    <object-name>L-MG-7-Strut</object-name>
-    <object-name>R-MG-1-Strut</object-name>
-    <object-name>R-MG-2-Strut</object-name>
-    <object-name>R-MG-3-Strut</object-name>
-    <object-name>R-MG-4-Strut</object-name>
-    <object-name>R-MG-5-Strut</object-name>
-    <object-name>R-MG-6-Strut</object-name>
-    <object-name>R-MG-7-Strut</object-name>
-    <object-name>L-NG-OS-Door</object-name>
-    <object-name>L-NG-IS-Door</object-name>
-    <object-name>R-NG-IS-Door</object-name>
-    <object-name>R-NG-OS-Door</object-name>
-    <object-name>L-MG-WheelWell</object-name>
-    <object-name>R-MG-WheelWell</object-name>
-    <object-name>L-MG-1-UDoor</object-name>
-    <object-name>L-MG-2-UDoor</object-name>
-    <object-name>L-MG-3-UDoor</object-name>
-    <object-name>L-MG-4-UDoor</object-name>
-    <object-name>L-MG-5-UDoor</object-name>
-    <object-name>L-MG-6-UDoor</object-name>
-    <object-name>L-MG-7-UDoor</object-name>
-    <object-name>L-MG-1-LDoor</object-name>
-    <object-name>L-MG-2-LDoor</object-name>
-    <object-name>L-MG-3-LDoor</object-name>
-    <object-name>L-MG-4-LDoor</object-name>
-    <object-name>L-MG-5-LDoor</object-name>
-    <object-name>L-MG-6-LDoor</object-name>
-    <object-name>L-MG-7-LDoor</object-name>
-    <object-name>R-MG-1-UDoor</object-name>
-    <object-name>R-MG-2-UDoor</object-name>
-    <object-name>R-MG-3-UDoor</object-name>
-    <object-name>R-MG-4-UDoor</object-name>
-    <object-name>R-MG-5-UDoor</object-name>
-    <object-name>R-MG-6-UDoor</object-name>
-    <object-name>R-MG-7-UDoor</object-name>
-    <object-name>R-MG-1-LDoor</object-name>
-    <object-name>R-MG-2-LDoor</object-name>
-    <object-name>R-MG-3-LDoor</object-name>
-    <object-name>R-MG-4-LDoor</object-name>
-    <object-name>R-MG-5-LDoor</object-name>
-    <object-name>R-MG-6-LDoor</object-name>
-    <object-name>R-MG-7-LDoor</object-name>
-    <object-name>Engine-LO-Intake-Liner</object-name>
-    <object-name>Engine-LM-Intake-Liner</object-name>
-    <object-name>Engine-LI-Intake-Liner</object-name>
-    <object-name>Engine-RO-Intake-Liner</object-name>
-    <object-name>Engine-RM-Intake-Liner</object-name>
-    <object-name>Engine-RI-Intake-Liner</object-name>
-    <object-name>Engine-LO-Bypass-C</object-name>
-    <object-name>Engine-LM-Bypass-C</object-name>
-    <object-name>Engine-LI-Bypass-C</object-name>
-    <object-name>Engine-RO-Bypass-C</object-name>
-    <object-name>Engine-RM-Bypass-C</object-name>
-    <object-name>Engine-RI-Bypass-C</object-name>
-    <object-name>Engine-LO-Jetpipe-C</object-name>
-    <object-name>Engine-LM-Jetpipe-C</object-name>
-    <object-name>Engine-LI-Jetpipe-C</object-name>
-    <object-name>Engine-RO-Jetpipe-C</object-name>
-    <object-name>Engine-RM-Jetpipe-C</object-name>
-    <object-name>Engine-RI-Jetpipe-C</object-name>
-    <object-name>Engine-LO-Bypass-Liner</object-name>
-    <object-name>Engine-LM-Bypass-Liner</object-name>
-    <object-name>Engine-LI-Bypass-Liner</object-name>
-    <object-name>Engine-RO-Bypass-Liner</object-name>
-    <object-name>Engine-RM-Bypass-Liner</object-name>
-    <object-name>Engine-RI-Bypass-Liner</object-name>
-    <object-name>Engine-LO-Jetpipe-Liner</object-name>
-    <object-name>Engine-LM-Jetpipe-Liner</object-name>
-    <object-name>Engine-LI-Jetpipe-Liner</object-name>
-    <object-name>Engine-RO-Jetpipe-Liner</object-name>
-    <object-name>Engine-RM-Jetpipe-Liner</object-name>
-    <object-name>Engine-RI-Jetpipe-Liner</object-name>
-    <object-name>LW-Flap-Br1R</object-name>
-    <object-name>LW-Flap-Br2R</object-name>
-    <object-name>LW-Flap-Br3R</object-name>
-    <object-name>LW-Flap-Br4R</object-name>
-    <object-name>LW-Flap-Br5R</object-name>
-    <object-name>LW-Flap-Br6R</object-name>
-    <object-name>LW-Flap-Br7R</object-name>
-    <object-name>LW-Flap-Br8R</object-name>
-    <object-name>LW-Flap-Br1F</object-name>
-    <object-name>LW-Flap-Br2F</object-name>
-    <object-name>LW-Flap-Br3F</object-name>
-    <object-name>LW-Flap-Br4F</object-name>
-    <object-name>LW-Flap-Br5F</object-name>
-    <object-name>LW-Flap-Br6F</object-name>
-    <object-name>LW-Flap-Br7F</object-name>
-    <object-name>LW-Flap-Br8F</object-name>    
-    <object-name>RW-Flap-Br1R</object-name>
-    <object-name>RW-Flap-Br2R</object-name>
-    <object-name>RW-Flap-Br3R</object-name>
-    <object-name>RW-Flap-Br4R</object-name>
-    <object-name>RW-Flap-Br5R</object-name>
-    <object-name>RW-Flap-Br6R</object-name>
-    <object-name>RW-Flap-Br7R</object-name>
-    <object-name>RW-Flap-Br8R</object-name>
-    <object-name>RW-Flap-Br1F</object-name>
-    <object-name>RW-Flap-Br2F</object-name>
-    <object-name>RW-Flap-Br3F</object-name>
-    <object-name>RW-Flap-Br4F</object-name>
-    <object-name>RW-Flap-Br5F</object-name>
-    <object-name>RW-Flap-Br6F</object-name>
-    <object-name>RW-Flap-Br7F</object-name>
-    <object-name>RW-Flap-Br8F</object-name>
-    <object-name>LU-Rudder-OS</object-name>
-    <object-name>LL-Rudder-OS</object-name>
-    <object-name>RU-Rudder-OS</object-name>
-    <object-name>RL-Rudder-OS</object-name>
-    <object-name>LU-Rudder-IS</object-name>
-    <object-name>LL-Rudder-IS</object-name>
-    <object-name>RU-Rudder-IS</object-name>
-    <object-name>RL-Rudder-IS</object-name>
-    <object-name>NG-WheelWell</object-name>
-    <object-name>LW-Spoilers-Outer</object-name>
-    <object-name>RW-Spoilers-Outer</object-name>
-    <object-name>RW-Spoilers-Inner</object-name>
-    <object-name>LW-Spoilers-Inner</object-name>
-    <object-name>CP-Bulkheads</object-name>
-    <object-name>L-MG-1-CDoor</object-name>
-    <object-name>L-MG-2-CDoor</object-name>
-    <object-name>L-MG-3-CDoor</object-name>
-    <object-name>L-MG-4-CDoor</object-name>
-    <object-name>L-MG-5-CDoor</object-name>
-    <object-name>L-MG-6-CDoor</object-name>
-    <object-name>L-MG-7-CDoor</object-name>
-    <object-name>R-MG-1-CDoor</object-name>
-    <object-name>R-MG-2-CDoor</object-name>
-    <object-name>R-MG-3-CDoor</object-name>
-    <object-name>R-MG-4-CDoor</object-name>
-    <object-name>R-MG-5-CDoor</object-name>
-    <object-name>R-MG-6-CDoor</object-name>
-    <object-name>R-MG-7-CDoor</object-name>
-    <object-name>L-NG-CDoor</object-name>
-    <object-name>R-NG-CDoor</object-name>
-    
-    <object-name>L-Wing-Slat</object-name>
-    <object-name>R-Wing-Slat</object-name>
-    <object-name>Engine-LI-Casing.001</object-name>
-    <object-name>Engine-LM-Casing.001</object-name>
-    <object-name>Engine-LO-Casing.001</object-name>
-    <object-name>Engine-RI-Casing.001</object-name>
-    <object-name>Engine-RM-Casing.001</object-name>
-    <object-name>Engine-RO-Casing.001</object-name>
-    <object-name>Engine-RO-Intake-Liner.001</object-name>
-    <object-name>Engine-RM-Intake-Liner.001</object-name>
-    <object-name>Engine-RI-Intake-Liner.001</object-name>
-    <object-name>Engine-LO-Intake-Liner.001</object-name>
-    <object-name>Engine-LM-Intake-Liner.001</object-name>
-    <object-name>Engine-LI-Intake-Liner.001</object-name> 
-  </effect>
 
-<!--
 <effect>
     <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/Glass/glass</inherits-from>
     <object-name>Fuselage-Windows</object-name>   
 </effect>
--->
-<animation>
-    <type>material</type>
-       <object-name>Fuselage-Windows</object-name>      
-       <emission>
-    <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.6 </blue>
-    </emission>
-</animation>
-
-<effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>Fuselage-Windows</object-name>
-  </effect>
-  
-  <animation>
-    <object-name>Fuselage-Windows</object-name>
-</animation>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/panel.xml</path>
@@ -6641,7 +6096,43 @@ AN225 model/animation config.
    <pitch-deg>90</pitch-deg>
   </offsets>
  </model>  
-
+  
+	<!-- Version -->
+	
+	<text>
+        <name>Version</name>
+        <offsets>
+            <x-m>-18.10</x-m>
+            <y-m>-3.55</y-m>
+            <z-m>1.40</z-m>
+            <roll-deg>-22</roll-deg>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>0</heading-deg>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>xz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/generic/string[1]</property>
+        <format type="string">%.7s</format>
+        <font>arial_black.txf</font>
+        <character-size>0.30</character-size>
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">128</width>
+            <height type="int">128</height>
+        </font-resolution>
+  </text>
+    
+    <animation>
+        <type>material</type>
+         <object-name>Version</object-name>         
+        <emission>
+            <red>0.35</red>
+            <green>0.05</green>
+            <blue>0.3</blue>
+        </emission>        
+    </animation>
+    
         <!-- Engine Schaufelräder -->
     
     <animation>

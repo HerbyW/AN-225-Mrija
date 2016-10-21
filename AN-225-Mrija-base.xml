@@ -124,6 +124,10 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     
     <model>
       <path>Aircraft/AN-225-Mrija/Models/AN-225-Mrija.xml</path>
+      <livery archive="y">
+	  <file type="string">AN-225-Mrija</file>
+	  <!--liveries from: eagel 10/2016 -->
+	  </livery>
       <an225><version type="string">4.0.1</version></an225>
     </model>
     
@@ -215,22 +219,8 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<setting>0.75</setting>
 	<setting>1.00</setting>
       </spoilers>
-      
-      <menubar>
-        <default>
-            <menu n="10">
-                <label>AN-225-Mrija</label>
-                <enabled type="bool">true</enabled>
-                <item>
-                    <label>Autostart</label>
-                    <binding>
-                        <command>property-toggle</command>
-                        <property>sim/model/autostart</property>
-                    </binding>
-                </item>
-            </menu>
-        </default>
-    </menubar>
+
+      <menubar include="Dialogs/AN-225-Mrija-menu.xml"/>
 
     <help>
       <title>Antonov AN-225-Mrija</title>      
@@ -552,7 +542,8 @@ Have fun!
 </input>
 
   <nasal>    
-    <an225>      
+    <an225>
+      <file>Aircraft/AN-225-Mrija/Nasal/liveries.nas</file>      
       <file>Aircraft/AN-225-Mrija/Nasal/light.nas</file>
       <file>Aircraft/AN-225-Mrija/Nasal/autopilot.nas</file>
       <file>Aircraft/AN-225-Mrija/Nasal/AN225engines.nas</file>
