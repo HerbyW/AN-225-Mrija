@@ -23,7 +23,7 @@ AN225 model/animation config.
   
   
   
-  <path>AN225-c.ac</path>
+  <path>AN225-e.ac</path>
   
   <nasal>
     <load>
@@ -333,7 +333,12 @@ AN225 model/animation config.
     <object-name>R-MG-7-CDoor</object-name>
     <object-name>L-NG-CDoor</object-name>
     <object-name>R-NG-CDoor</object-name>
-    
+    <object-name>Engine-LO-Casing.002</object-name>
+    <object-name>Engine-LM-Casing.002</object-name>
+    <object-name>Engine-LI-Casing.002</object-name>
+    <object-name>Engine-RO-Casing.002</object-name>
+    <object-name>Engine-RM-Casing.002</object-name>
+    <object-name>Engine-RI-Casing.002</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>AN225-tx-001.png</texture>
@@ -643,6 +648,13 @@ AN225 model/animation config.
     <object-name>R-MG-7-CDoor</object-name>
     <object-name>L-NG-CDoor</object-name>
     <object-name>R-NG-CDoor</object-name>
+    <object-name>Engine-LO-Casing.002</object-name>
+    <object-name>Engine-LM-Casing.002</object-name>
+    <object-name>Engine-LI-Casing.002</object-name>
+    <object-name>Engine-RO-Casing.002</object-name>
+    <object-name>Engine-RM-Casing.002</object-name>
+    <object-name>Engine-RI-Casing.002</object-name>
+    <property-base>sim/model/livery</property-base>
   </effect>
   
 <effect>
@@ -6811,7 +6823,23 @@ AN225 model/animation config.
       </axis>
     </animation>
 
-    
+    <animation>
+		<type>translate</type>
+		<object-name>Engine-LO-Casing.002</object-name>
+		<object-name>Engine-LM-Casing.002</object-name>
+		<object-name>Engine-LI-Casing.002</object-name>
+		<object-name>Engine-RO-Casing.002</object-name>
+		<object-name>Engine-RM-Casing.002</object-name>
+		<object-name>Engine-RI-Casing.002</object-name>
+		<property>surface-positions/reverser-norm</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+    </animation>
+
 <!--runway effect -->
 
 <model> 
