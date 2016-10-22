@@ -67,6 +67,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     </engines>
     <gear>
       <brake-parking type="double">1</brake-parking>
+      <runway type="double">0</runway>
     </gear>
     <ice>
 	<ice type="int">0</ice>

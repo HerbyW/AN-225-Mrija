@@ -713,6 +713,7 @@ setlistener("controls/engines/engine[5]/ignition", func
 
 
 setprop("controls/gear/runway", 0);
+setprop("gear/gear[8]/compression-norm", 0);
 
 setlistener("gear/gear[8]/wow", func
 {
