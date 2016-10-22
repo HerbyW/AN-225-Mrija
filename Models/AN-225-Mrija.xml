@@ -23,12 +23,11 @@ AN225 model/animation config.
   
   
   
-  <path>AN225-a.ac</path>
+  <path>AN225-c.ac</path>
   
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/AN-225-Mrija/Models/Liveries", 10);
-      var self = cmdarg();
     </load>
 
     <unload>
@@ -47,6 +46,8 @@ AN225 model/animation config.
     <type>material</type>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
+    <object-name>DoorLeft</object-name>
+    <object-name>DoorLeft.001</object-name>
     <object-name>L-Wing-T</object-name>
     <object-name>R-Wing-T</object-name>
     <object-name>R-TailFin-OS</object-name>
@@ -355,6 +356,8 @@ AN225 model/animation config.
     </condition>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
+    <object-name>DoorLeft</object-name>
+    <object-name>DoorLeft.001</object-name>
     <object-name>L-Wing-T</object-name>
     <object-name>R-Wing-T</object-name>
     <object-name>R-TailFin-OS</object-name>
@@ -670,6 +673,8 @@ AN225 model/animation config.
     </condition>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
+    <object-name>DoorLeft</object-name>
+    <object-name>DoorLeft.001</object-name>
     <object-name>L-Wing-T</object-name>
     <object-name>R-Wing-T</object-name>
     <object-name>R-TailFin-OS</object-name>
@@ -1199,6 +1204,60 @@ AN225 model/animation config.
       <y>1.0</y>
       <z>0.0</z>
     </axis>
+  </animation>
+  
+  <!-- Left-Door -->
+  
+  <animation>
+   <type>translate</type>
+   <object-name>DoorLeft</object-name>
+   <object-name>DoorLeft.001</object-name>
+   <property>sim/multiplay/generic/float[7]</property>
+   <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.05</ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.08</ind><dep>  0.05 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.05 </dep></entry>      
+    </interpolation>    
+   <axis>
+     <x> 0 </x>
+     <y>-1 </y>
+     <z> 0 </z>
+   </axis>
+ </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>DoorLeft</object-name>
+    <object-name>DoorLeft.001</object-name>    
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.05 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.08 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> 125 </dep></entry>
+      <entry><ind> 1 </ind><dep> 125 </dep></entry>      
+    </interpolation>
+    <axis>
+      <x1-m>-17.942 </x1-m>
+      <y1-m> -3.470 </y1-m>
+      <z1-m> -1.447 </z1-m>
+      <x2-m>-16.877 </x2-m>
+      <y2-m> -3.469 </y2-m>
+      <z2-m> -1.448 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>DoorLeft</object-name>
+    <object-name>DoorLeft.001</object-name>
+    <condition>
+      <greater-than>
+	<property>sim/multiplay/generic/float[7]</property> 
+	<value>0.04</value>
+      </greater-than>
+    </condition>
   </animation>
   
   <!-- Rudder bits -->
@@ -2578,9 +2637,9 @@ AN225 model/animation config.
     <object-name>L-NG-IS-Hub</object-name>
     <object-name>L-NG-OS-Hub</object-name>
     <object-name>L-NG-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>-57.30</factor>
+    <factor>47.30</factor>
     <center>
       <x-m>-20.03</x-m>
       <y-m>-0.93</y-m>
@@ -2756,9 +2815,9 @@ AN225 model/animation config.
     <object-name>R-NG-IS-Hub</object-name>
     <object-name>R-NG-OS-Hub</object-name>
     <object-name>R-NG-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>-57.30</factor>
+    <factor>47.30</factor>
     <center>
       <x-m>-20.03</x-m>
       <y-m>0.93</y-m>
@@ -3475,9 +3534,9 @@ AN225 model/animation config.
     <object-name>L-MG-4-IS-Hub</object-name>
     <object-name>L-MG-4-OS-Hub</object-name>
     <object-name>L-MG-4-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>7</factor>
+    <factor>-7</factor>
     <center>
       <x-m>9.05</x-m>
       <y-m>-3.2</y-m>
@@ -3677,9 +3736,9 @@ AN225 model/animation config.
     <object-name>L-MG-5-IS-Hub</object-name>
     <object-name>L-MG-5-OS-Hub</object-name>
     <object-name>L-MG-5-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>12</factor>
+    <factor>-12</factor>
     <center>
       <x-m>10.72</x-m>
       <y-m>-3.2</y-m>
@@ -3879,9 +3938,9 @@ AN225 model/animation config.
     <object-name>L-MG-6-IS-Hub</object-name>
     <object-name>L-MG-6-OS-Hub</object-name>
     <object-name>L-MG-6-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>20</factor>
+    <factor>-20</factor>
     <center>
       <x-m>12.42</x-m>
       <y-m>-3.2</y-m>
@@ -4081,9 +4140,9 @@ AN225 model/animation config.
     <object-name>L-MG-7-IS-Hub</object-name>
     <object-name>L-MG-7-OS-Hub</object-name>
     <object-name>L-MG-7-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>30</factor>
+    <factor>-30</factor>
     <center>
       <x-m>14.10</x-m>
       <y-m>-3.2</y-m>
@@ -4823,9 +4882,9 @@ AN225 model/animation config.
     <object-name>R-MG-4-IS-Hub</object-name>
     <object-name>R-MG-4-OS-Hub</object-name>
     <object-name>R-MG-4-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>7</factor>
+    <factor>-7</factor>
     <center>
       <x-m>9.05</x-m>
       <y-m>3.2</y-m>
@@ -5025,9 +5084,9 @@ AN225 model/animation config.
     <object-name>R-MG-5-IS-Hub</object-name>
     <object-name>R-MG-5-OS-Hub</object-name>
     <object-name>R-MG-5-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>12</factor>
+    <factor>-12</factor>
     <center>
       <x-m>10.72</x-m>
       <y-m>3.2</y-m>
@@ -5227,9 +5286,9 @@ AN225 model/animation config.
     <object-name>R-MG-6-IS-Hub</object-name>
     <object-name>R-MG-6-OS-Hub</object-name>
     <object-name>R-MG-6-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>20</factor>
+    <factor>-20</factor>
     <center>
       <x-m>12.72</x-m>
       <y-m>3.2</y-m>
@@ -5429,9 +5488,9 @@ AN225 model/animation config.
     <object-name>R-MG-7-IS-Hub</object-name>
     <object-name>R-MG-7-OS-Hub</object-name>
     <object-name>R-MG-7-Strut</object-name>
-    <property>sim/multiplay/generic/float[4]</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <offset-deg>0</offset-deg>
-    <factor>30</factor>
+    <factor>-30</factor>
     <center>
       <x-m>14.10</x-m>
       <y-m>3.2</y-m>
@@ -6647,6 +6706,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-LO-Fan</object-name>
+      <object-name>Engine-LO-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[6]</property>
       <factor> -30 </factor>
       <center>
@@ -6664,6 +6724,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-LM-Fan</object-name>
+      <object-name>Engine-LM-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[8]</property>
       <factor> -30 </factor>
       <center>
@@ -6681,6 +6742,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-LI-Fan</object-name>
+      <object-name>Engine-LI-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[10]</property>
       <factor> -30 </factor>
       <center>
@@ -6698,6 +6760,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-RI-Fan</object-name>
+      <object-name>Engine-RI-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[12]</property>
       <factor> -30 </factor>
       <center>
@@ -6715,6 +6778,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-RM-Fan</object-name>
+      <object-name>Engine-RM-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[17]</property>
       <factor> -30 </factor>
       <center>
@@ -6732,6 +6796,7 @@ AN225 model/animation config.
     <animation>
       <type>spin</type>
       <object-name>Engine-RO-Fan</object-name>
+      <object-name>Engine-RO-Jetpipe-C</object-name>
       <property>sim/multiplay/generic/float[19]</property>
       <factor> -30 </factor>
       <center>
@@ -6745,7 +6810,52 @@ AN225 model/animation config.
 	<z>  0 </z>
       </axis>
     </animation>
-	
-	
-	</PropertyList>
+
+    
+<!--runway effect -->
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/tyres.xml</path>
+ <offsets> 
+      <x-m> 14.11 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/tyres.xml</path>
+ <offsets> 
+      <x-m> 14.11 </x-m>
+      <y-m>  2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/touch.xml</path>
+ <offsets> 
+      <x-m> 16.11 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/touch.xml</path>
+ <offsets> 
+      <x-m> 16.11 </x-m>
+      <y-m>  2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+ <!-- LOD for the model as a whole -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>25000</max-m>
+ </animation>
+ 
+</PropertyList>
 	

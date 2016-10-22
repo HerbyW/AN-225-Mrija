@@ -17,6 +17,9 @@
   <heading-deg>-180</heading-deg>
 </offsets>  
 
+<animation>
+    <name>solidbuster</name>    
+  </animation> 
 
 <!-- not in use now -->
 

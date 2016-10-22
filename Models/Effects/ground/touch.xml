@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+
+  <particlesystem>
+    <name>tyre-smoke-t</name>
+    <texture>smoke.png</texture>
+    <emissive>false</emissive>
+    <lighting>false</lighting>
+
+    <condition>
+      <greater-than>
+	  <property>sim/multiplay/generic/float[4]</property>
+	  <value>0.45</value>
+      </greater-than>
+      </condition>
+
+    <attach>world</attach>
+
+    <placer>
+      <type>point</type>
+    </placer>
+
+    <shooter>
+      <theta-min-deg>  45 </theta-min-deg>
+      <theta-max-deg>  85 </theta-max-deg>
+      <phi-min-deg>   -60 </phi-min-deg>
+      <phi-max-deg>    60 </phi-max-deg>
+      <speed-mps>
+        <value>  50 </value>
+        <spread>  5 </spread>
+      </speed-mps>
+      <rotation-speed>
+        <x-max-deg-sec>  55 </x-max-deg-sec>
+        <x-min-deg-sec> -55 </x-min-deg-sec>
+        <y-max-deg-sec>  55 </y-max-deg-sec>
+        <y-min-deg-sec> -55 </y-min-deg-sec>
+        <z-max-deg-sec>  55 </z-max-deg-sec>
+        <z-min-deg-sec> -55 </z-min-deg-sec>
+      </rotation-speed>
+    </shooter>
+
+    <counter>
+      <particles-per-sec>
+        <value>70</value>
+        <spread>5</spread>
+      </particles-per-sec>
+    </counter>
+
+    <align>billboard</align>
+
+    <particle>
+      <start>
+        <color>
+          <red><value>   0.55 </value></red>
+          <green><value> 0.55 </value></green>
+          <blue><value>  0.62 </value></blue>
+          <alpha><value> 0.53 </value></alpha>
+        </color>
+        <size><value> 5 </value></size>
+      </start>
+      <end>
+        <color>
+          <red><value>   0.85 </value></red>
+          <green><value> 0.85 </value></green>
+          <blue><value>  0.92 </value></blue>
+          <alpha><value> 0.16 </value></alpha>
+        </color>
+        <size><value> 27 </value></size>
+      </end>
+      <life-sec><value> 7 </value></life-sec>
+      <mass-kg>  0.025 </mass-kg>
+      <radius-m> 0.175 </radius-m>
+    </particle>
+
+    <program>
+      <fluid>   air  </fluid>
+      <gravity> true </gravity>
+      <wind>    true </wind>
+    </program>
+
+  </particlesystem>
+
+</PropertyList>

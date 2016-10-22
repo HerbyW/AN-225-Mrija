@@ -416,7 +416,7 @@ setlistener("/controls/shuttle/payload", func
 {
   if
     (getprop("/controls/shuttle/payload") == 3)    
-     setprop("/sim/weight[2]/weight-lb", 58546);
+     setprop("/sim/weight[2]/weight-lb", 180546);
   if
     (getprop("/controls/shuttle/payload") == 2)    
      setprop("/sim/weight[2]/weight-lb", 0);
@@ -707,3 +707,33 @@ setlistener("controls/engines/engine[5]/ignition", func
    if (getprop("controls/engines/engine[5]/ignition") == 0)
    setprop("controls/engines/engine[5]/starting", 0);
 });
+
+###############################################################################
+# runway effect
+
+
+setprop("controls/gear/runway", 0);
+
+setlistener("gear/gear[8]/wow", func
+{
+  if (getprop("gear/gear[8]/wow") == 0)
+    interpolate("controls/gear/runway", 0 , 0.1);
+  else
+  {
+  if ( ( getprop("gear/gear[8]/compression-norm") > 0.20 ) and ( getprop("gear/gear[8]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
+    interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
+  }
+}
+);
+
+setlistener("controls/gear/brake-parking", func
+{
+  if (getprop("controls/gear/brake-parking") == 0)
+    interpolate("controls/gear/runway", 0 , 0.1);
+  else
+  {
+  if ( ( getprop("controls/gear/brake-parking") == 1 ) and ( getprop("gear/gear[8]/rollspeed-ms") > 30) )
+    interpolate("controls/gear/runway", 1 , 1.2, 0 , 1.2);
+  }
+}
+);

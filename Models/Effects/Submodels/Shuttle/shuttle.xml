@@ -1,41 +1,7 @@
 <PropertyList>
   
   <!--
-  
-  author:             Aeromatic v 0.9
-  filecreationdate:        2009-04-09
-  version: 
-  description:       Models a shuttle
-  
-  Inputs:
-  name:          shuttle
-  type:          three-engine transonic transport
-  max weight:    240000 lb
-  wing span:     78.06 ft
-  length:        122.17 ft
-  wing area:     2691.25 sq-ft
-  gear type:     tricycle
-  retractable?:  yes
-  # engines:     3
-  engine type:   rocket
-  engine layout: aft fuselage
-  yaw damper?    yes
-  Outputs:
-  wing loading:  89.18 lb/sq-ft
-  CL-alpha:      4.4 per radian
-  CL-0:          0.2
-  CL-max:        1.2
-  CD-0:          0.019
-  K:             0.042
-  
-  flight-model:  jsb
-  author:        Gijs de Rooy, NASA (3D)
-  
-  download:      https://gitorious.org/space-shuttle
-  wiki:          http://wiki.flightgear.org/Space_Shuttle
-  
-  Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/2015
-  
+  Modification for transport on AN-225 with animation of cargo doors by HerbyW 01/2015 
   -->
   <!--
     ###################################################################################################
@@ -59,12 +25,12 @@
     <name>spaceshuttle</name>
     <property>sim/multiplay/generic/int[6]</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 150 </ind><dep> -0.5 </dep></entry>
-      <entry><ind> 250 </ind><dep> -5.0 </dep></entry>
-      <entry><ind> 850 </ind><dep> -60.0 </dep></entry>
-      <entry><ind> 1100 </ind><dep> -60.0 </dep></entry>
-      <entry><ind> 1200 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 1200 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1100 </ind><dep> -0.5 </dep></entry>
+      <entry><ind> 850 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 250 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 150 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -60.0 </dep></entry>
     </interpolation>
     <axis>
       <x> 0 </x>
@@ -78,12 +44,12 @@
     <name>spaceshuttle</name>
     <property>sim/multiplay/generic/int[6]</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 150 </ind><dep>  -1.0 </dep></entry>
-      <entry><ind> 250 </ind><dep>  -2.0 </dep></entry>
+      <entry><ind> 1200 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1100 </ind><dep>  -1.0 </dep></entry>
       <entry><ind> 850 </ind><dep>  -2.0 </dep></entry>
-      <entry><ind> 1100 </ind><dep>  10.0 </dep></entry>
-      <entry><ind> 1200 </ind><dep>  11.0 </dep></entry>
+      <entry><ind> 250 </ind><dep>  -2.0 </dep></entry>
+      <entry><ind> 150 </ind><dep>  10.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  11.0 </dep></entry>
     </interpolation>
     <axis>
       <x> 0 </x>
@@ -95,17 +61,19 @@
   <animation>
     <type>select</type>    
     <condition>
-      <or>
-      <equals>
-	<property>sim/multiplay/generic/int[7]</property>
-	<value>3</value>
-      </equals>
-      <less-than>
-	<property>sim/multiplay/generic/int[6]</property>
-	<value>1200</value>
-      </less-than>
-      </or>
-    </condition>
+      
+	<and>
+	  <less-than>
+	    <property>sim/multiplay/generic/int[6]</property>
+	    <value>1201</value>
+	  </less-than>
+	  <greater-than>
+	    <property>sim/multiplay/generic/int[6]</property>
+	    <value>0</value>
+	  </greater-than>
+	</and>
+      
+      </condition>
   </animation>
   
   <!--Lights-->

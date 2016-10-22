@@ -12,20 +12,72 @@
 -->
   
 	<path>et.ac</path>
+	
+	<animation>
+    <name>exfueltank</name>    
+  </animation> 
 		
 <offsets>
+  <x-m>10.25</x-m>
   <heading-deg>0</heading-deg>
   <pitch-deg>180</pitch-deg>
   </offsets>  
 
-<animation>
-<type>select</type>
-<condition>
-  <equals>
-   <property>sim/multiplay/generic/int[7]</property>
-   <value>1</value>
-  </equals>
-</condition>
-</animation>
+  
+  <animation>
+    <type>translate</type>
+    <name>exfueltank</name>
+    <property>sim/multiplay/generic/int[6]</property>
+    <interpolation>
+      <entry><ind> -1200 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> -1100 </ind><dep> -0.5 </dep></entry>
+      <entry><ind> -850 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> -250 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> -150 </ind><dep> -60.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -60.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <name>exfueltank</name>
+    <property>sim/multiplay/generic/int[6]</property>
+    <interpolation>
+      <entry><ind> -1200 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> -1100 </ind><dep>  1.0 </dep></entry>
+      <entry><ind> -850 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> -250 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> -150 </ind><dep>  -10.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  -11.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>select</type>    
+    <condition>
+      
+	<and>
+	  <less-than>
+	    <property>sim/multiplay/generic/int[6]</property>
+	    <value>0</value>
+	  </less-than>
+	  <greater-than>
+	    <property>sim/multiplay/generic/int[6]</property>
+	    <value>-1201</value>
+	  </greater-than>
+	</and>
+      
+    </condition>
+  </animation>
 
 </PropertyList>

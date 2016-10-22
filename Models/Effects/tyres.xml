@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) Herbert Wagner Dec2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+
+  <particlesystem>
+    <name>tyre-brakes</name>
+    <texture>tyres.png</texture>
+    <emissive>false</emissive>
+    <lighting>false</lighting>
+    <align>fixed</align>
+    <condition>
+      <greater-than>
+	  <property>sim/multiplay/generic/float[4]</property>
+	  <value>0.45</value>
+      </greater-than>
+      </condition>
+      
+    <attach>world</attach>
+
+    <placer>
+      <type>point</type>
+    </placer>
+
+    <shooter>
+      <theta-min-deg>  0 </theta-min-deg>
+      <theta-max-deg>  0 </theta-max-deg>
+      <phi-min-deg>    0 </phi-min-deg>
+      <phi-max-deg>    0 </phi-max-deg>
+      <speed-mps>
+        <value>  0 </value>
+        <spread> 0 </spread>
+      </speed-mps>
+      <rotation-speed>
+        <x-max-deg-sec>  0 </x-max-deg-sec>
+        <x-min-deg-sec>  0 </x-min-deg-sec>
+        <y-max-deg-sec>  0 </y-max-deg-sec>
+        <y-min-deg-sec>  0 </y-min-deg-sec>
+        <z-max-deg-sec>  0 </z-max-deg-sec>
+        <z-min-deg-sec>  0 </z-min-deg-sec>
+      </rotation-speed>
+    </shooter>
+
+    <counter>
+      <particles-per-sec>
+        <value>100</value>
+        <spread>0</spread>
+      </particles-per-sec>
+    </counter>
+
+    <particle>
+      <start>
+        <color>
+          <red><value>   0.0 </value></red>
+          <green><value> 0.0 </value></green>
+          <blue><value>  0.0 </value></blue>
+          <alpha><value> 1 </value></alpha>
+        </color>
+        <size><value> 0.65 </value></size>
+      </start>
+      <end>
+        <color>
+          <red><value>   0.0 </value></red>
+          <green><value> 0.0 </value></green>
+          <blue><value>  0.0 </value></blue>
+          <alpha><value> 1 </value></alpha>
+        </color>
+        <size><value> 0.65 </value></size>
+      </end>
+      <life-sec><value> 165 </value></life-sec>
+      <mass-kg>0.35</mass-kg>
+      <radius-m>0.40</radius-m>
+    </particle>
+
+    <program>
+      <fluid>   air  </fluid>
+      <gravity> false </gravity>
+      <wind>    false </wind>
+    </program>
+
+  </particlesystem>
+
+</PropertyList>

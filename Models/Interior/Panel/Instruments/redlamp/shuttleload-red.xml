@@ -45,31 +45,18 @@
     </emission>
 </animation>
 
-<!--Set-->
+    <!--Set-->
 <animation>
   <type>select</type>
   <object-name>_d_2</object-name>
    <condition>
-      <or>
-      <equals>
+     <property>/sim/model/lights/beacon/state</property>
+      <not-equals>
 	<property>sim/multiplay/generic/int[7]</property>
-	<value>3</value>
-      </equals>
-      <less-than>
-	<property>sim/multiplay/generic/int[6]</property>
-	<value>1200</value>
-      </less-than>
-      </or>
+	<value>2</value>
+      </not-equals>
     </condition>
 </animation>
-
-<animation>
-    <type>select</type>
-    <object-name>_d_2</object-name>
-    <condition>
-      <property>/sim/model/lights/beacon/state</property>
-    </condition>
-  </animation>
 
 
 </PropertyList>
