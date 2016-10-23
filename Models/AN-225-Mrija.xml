@@ -23,7 +23,7 @@ AN225 model/animation config.
   
   
   
-  <path>AN225-e.ac</path>
+  <path>AN225-f.ac</path>
   
   <nasal>
     <load>
@@ -38,6 +38,12 @@ AN225 model/animation config.
   <sound>      
     <path>Aircraft/AN-225-Mrija/Sounds/AN-225-Mrija-sound.xml</path>
   </sound>
+  
+    <!-- Interior -->
+  <model>
+    <name>Interior</name>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/interior.xml</path>
+  </model>
   
   <!--Lights, just a little bit more brilliance to the airplane-->
   
@@ -65,7 +71,6 @@ AN225 model/animation config.
     <object-name>L-Elevator-T</object-name>
     <object-name>L-Elevator-B</object-name>
     <object-name>L-TailFin-OS</object-name>
-    <object-name>CP-Liner</object-name>
     <object-name>UC-Blister</object-name>
     
     <object-name>Engine-RO-Casing</object-name>
@@ -94,7 +99,6 @@ AN225 model/animation config.
     <object-name>Engine-LM-Mount-IS</object-name>
     <object-name>Engine-LO-Mount-IS</object-name>
     
-    <object-name>CP-Liner-C</object-name>
     <object-name>R-Flap-1</object-name>
     <object-name>R-Flap-2</object-name>
     <object-name>R-Flap-3</object-name>
@@ -316,7 +320,6 @@ AN225 model/animation config.
     <object-name>RW-Spoilers-Outer</object-name>
     <object-name>RW-Spoilers-Inner</object-name>
     <object-name>LW-Spoilers-Inner</object-name>
-    <object-name>CP-Bulkheads</object-name>
     <object-name>L-MG-1-CDoor</object-name>
     <object-name>L-MG-2-CDoor</object-name>
     <object-name>L-MG-3-CDoor</object-name>
@@ -380,7 +383,6 @@ AN225 model/animation config.
     <object-name>L-Elevator-T</object-name>
     <object-name>L-Elevator-B</object-name>
     <object-name>L-TailFin-OS</object-name>
-    <object-name>CP-Liner</object-name>
     <object-name>UC-Blister</object-name>
     
     <object-name>Engine-RO-Casing</object-name>
@@ -408,8 +410,7 @@ AN225 model/animation config.
     <object-name>Engine-LI-Mount-IS</object-name>
     <object-name>Engine-LM-Mount-IS</object-name>
     <object-name>Engine-LO-Mount-IS</object-name>
-    
-    <object-name>CP-Liner-C</object-name>
+
     <object-name>R-Flap-1</object-name>
     <object-name>R-Flap-2</object-name>
     <object-name>R-Flap-3</object-name>
@@ -631,7 +632,6 @@ AN225 model/animation config.
     <object-name>RW-Spoilers-Outer</object-name>
     <object-name>RW-Spoilers-Inner</object-name>
     <object-name>LW-Spoilers-Inner</object-name>
-    <object-name>CP-Bulkheads</object-name>
     <object-name>L-MG-1-CDoor</object-name>
     <object-name>L-MG-2-CDoor</object-name>
     <object-name>L-MG-3-CDoor</object-name>
@@ -704,7 +704,6 @@ AN225 model/animation config.
     <object-name>L-Elevator-T</object-name>
     <object-name>L-Elevator-B</object-name>
     <object-name>L-TailFin-OS</object-name>
-    <object-name>CP-Liner</object-name>
     <object-name>UC-Blister</object-name>
     
     <object-name>Engine-RO-Casing</object-name>
@@ -733,7 +732,7 @@ AN225 model/animation config.
     <object-name>Engine-LM-Mount-IS</object-name>
     <object-name>Engine-LO-Mount-IS</object-name>
     
-    <object-name>CP-Liner-C</object-name>
+
     <object-name>R-Flap-1</object-name>
     <object-name>R-Flap-2</object-name>
     <object-name>R-Flap-3</object-name>
@@ -955,7 +954,6 @@ AN225 model/animation config.
     <object-name>RW-Spoilers-Outer</object-name>
     <object-name>RW-Spoilers-Inner</object-name>
     <object-name>LW-Spoilers-Inner</object-name>
-    <object-name>CP-Bulkheads</object-name>
     <object-name>L-MG-1-CDoor</object-name>
     <object-name>L-MG-2-CDoor</object-name>
     <object-name>L-MG-3-CDoor</object-name>
@@ -1000,9 +998,9 @@ AN225 model/animation config.
        <object-name>Fuselage-Windows</object-name>      
        <emission>
     <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.6 </blue>
+      <red>   0.1 </red>
+      <green> 0.1 </green>
+      <blue>  0.3 </blue>
     </emission>
 </animation>
 
@@ -1196,8 +1194,6 @@ AN225 model/animation config.
   <animation>
     <type>rotate</type>
     <object-name>FrontCargoDoor</object-name>
-    <object-name>Fuselage_LLogos.001</object-name>
-    <object-name>Fuselage_RLogos.001</object-name>
     <object-name>noselamps1</object-name>
     <object-name>noselamps2</object-name>
     <property>sim/multiplay/generic/float[7]</property>
@@ -6219,8 +6215,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_6.xml</path>
     <offsets>
       <x-m> 11.0 </x-m>
-      <y-m> 25.0 </y-m>
-      <z-m> 0.2 </z-m>
+      <y-m> 24.882 </y-m>
+      <z-m>  0.427 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast6.xml</path>
+    <offsets>
+      <x-m> 8.524 </x-m>
+	<y-m> 24.882 </y-m>
+	<z-m>  0.427 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6229,8 +6235,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail6.xml</path>
     <offsets>
       <x-m> 35.0 </x-m>
-      <y-m> 25.0 </y-m>
-      <z-m> 0.2 </z-m>
+      <y-m> 24.882 </y-m>
+      <z-m>  0.427 </z-m>
     </offsets>
   </model>
   
@@ -6238,8 +6244,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_5.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
-      <y-m> 17.2 </y-m>
-      <z-m> 0.4 </z-m>
+      <y-m> 17.284 </y-m>
+      <z-m>  0.706 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast5.xml</path>
+    <offsets>
+      <x-m> 3.7 </x-m>
+      <y-m> 17.284 </y-m>
+      <z-m>  0.706 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6248,8 +6264,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail5.xml</path>
     <offsets>
       <x-m> 30.0 </x-m>
-      <y-m> 17.2 </y-m>
-      <z-m> 0.4 </z-m>
+      <y-m> 17.284 </y-m>
+      <z-m>  0.706 </z-m>
     </offsets>
   </model>
   
@@ -6257,8 +6273,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_4.xml</path>
     <offsets>
       <x-m> 2.0 </x-m>
-      <y-m>  9.40 </y-m>
-      <z-m> 0.9 </z-m>
+      <y-m> 9.461 </y-m>
+      <z-m>  1.074 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast4.xml</path>
+    <offsets>
+      <x-m> -1.0 </x-m>
+      <y-m>  9.461 </y-m>
+      <z-m>  1.074 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6267,8 +6293,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail4.xml</path>
     <offsets>
       <x-m> 25.0 </x-m>
-      <y-m>  9.40 </y-m>
-      <z-m> 0.9 </z-m>
+      <y-m> 9.461 </y-m>
+      <z-m>  1.074 </z-m>
     </offsets>
   </model>
   
@@ -6277,8 +6303,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_3.xml</path>
     <offsets>
       <x-m> 2.0 </x-m>
-      <y-m>  -9.40 </y-m>
-      <z-m> 0.9 </z-m>
+      <y-m> -9.461 </y-m>
+      <z-m>  1.074 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast3.xml</path>
+    <offsets>
+      <x-m> -1.0 </x-m>
+      <y-m> -9.461 </y-m>
+      <z-m>  1.074 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6287,8 +6323,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail3.xml</path>
     <offsets>
       <x-m> 25.0 </x-m>
-      <y-m>  -9.40 </y-m>
-      <z-m> 0.9 </z-m>
+      <y-m> -9.461 </y-m>
+      <z-m>  1.074 </z-m>
     </offsets>
   </model>
   
@@ -6296,8 +6332,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_2.xml</path>
     <offsets>
       <x-m> 6.7 </x-m>
-      <y-m> -17.2 </y-m>
-      <z-m> 0.4 </z-m>
+      <y-m> -17.284 </y-m>
+      <z-m>  0.706 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast2.xml</path>
+    <offsets>
+      <x-m> 3.7 </x-m>
+      <y-m> -17.284 </y-m>
+      <z-m>  0.706 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6306,8 +6352,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail2.xml</path>
     <offsets>
       <x-m> 30.0 </x-m>
-      <y-m> -17.2 </y-m>
-      <z-m> 0.4 </z-m>
+      <y-m> -17.284 </y-m>
+      <z-m>  0.706 </z-m>
     </offsets>
   </model>
   
@@ -6316,8 +6362,18 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/smoke/smoke_1.xml</path>
     <offsets>
       <x-m> 11.0 </x-m>
-      <y-m> -25.0 </y-m>
-      <z-m> 0.2 </z-m>
+      <y-m> -24.882 </y-m>
+      <z-m>  0.427 </z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/engines/engblast1.xml</path>
+    <offsets>
+      <x-m> 8.524 </x-m>
+	<y-m> -24.882 </y-m>
+	<z-m>  0.427 </z-m>
       <pitch-deg>90</pitch-deg>
     </offsets>
   </model>
@@ -6326,8 +6382,8 @@ AN225 model/animation config.
     <path>Aircraft/AN-225-Mrija/Models/Effects/trail/trail1.xml</path>
     <offsets>
       <x-m> 35.0 </x-m>
-      <y-m> -25.0 </y-m>
-      <z-m> 0.2 </z-m>
+      <y-m> -24.882 </y-m>
+      <z-m>  0.427 </z-m>
     </offsets>
   </model>
   

@@ -113,7 +113,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   
    <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-   <aircraft-version>4.0.2</aircraft-version>    
+   <aircraft-version>4.0.3</aircraft-version>    
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
@@ -135,7 +135,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	  <file type="string">AN-225-Mrija</file>
 	  <!--liveries from: eagel 10/2016 -->
 	  </livery>
-      <an225><version type="string">4.0.2</version></an225>
+      <an225><version type="string">4.0.3</version></an225>
     </model>
     
     <sound>      
@@ -271,7 +271,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<name>y</name>
 	<desc>Change Pilot Ramp View</desc>
       </key>
-<text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 4.0.2
+<text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 4.0.3
 
 Autostart: press s and make the 2 additional settings!
 

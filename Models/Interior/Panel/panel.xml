@@ -2805,15 +2805,48 @@ SKAWK</text>
     </offsets>
   </model>
   
+     <!-- Version Number -->
+  
+  <text>
+        <name>Version</name>
+        <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.15 </z-m>
+    </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/generic/string[1]</property>
+        <format type="string">%.7s</format>
+        <font>arial_black.txf</font>
+        <character-size>0.01</character-size>
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+  </text>
+    
+    <animation>
+        <type>material</type>
+         <object-name>Version</object-name>         
+        <emission>
+            <red>0.35</red>
+            <green>0.35</green>
+            <blue>0.50</blue>
+        </emission>        
+    </animation>
+  
       <!-- Ramp Control Panel (red box at ramp)-->
     
     <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
     <offsets>
       <x-m>  2.2 </x-m>
-      <y-m> 3.46</y-m>
-      <z-m> -3.30 </z-m>
-      <heading-deg>100.0</heading-deg>
+      <y-m> 3.18</y-m>
+      <z-m> -3.40 </z-m>
+      <heading-deg>85.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
   </model>
