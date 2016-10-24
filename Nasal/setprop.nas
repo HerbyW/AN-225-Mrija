@@ -369,13 +369,13 @@ if
 (  getprop("/controls/engines/engine[0]/reverser") == 0) 
 {
 setprop("/controls/reverser", 0);
-setprop("/controls/engines/engine[0]/reverserminus", 1.0);
+interpolate("/controls/engines/engine[0]/reverserminus", 1.0, 1);
 
 }
 else
 {  
 setprop("/controls/reverser", 1);
-setprop("/controls/engines/engine[0]/reverserminus", -0.150);
+interpolate("/controls/engines/engine[0]/reverserminus", -0.150, 1);
 }
  }
 );
@@ -392,7 +392,7 @@ setprop("/controls/engines/engine[2]/reverser", 0);
 setprop("/controls/engines/engine[3]/reverser", 0);
 setprop("/controls/engines/engine[4]/reverser", 0);
 setprop("/controls/engines/engine[5]/reverser", 0);
-setprop("/controls/engines/engine[0]/reverserminus", 1.0);
+interpolate("/controls/engines/engine[0]/reverserminus", 1.0, 1);
 }
 else
 {  
@@ -402,7 +402,7 @@ setprop("/controls/engines/engine[2]/reverser", 1);
 setprop("/controls/engines/engine[3]/reverser", 1);
 setprop("/controls/engines/engine[4]/reverser", 1);
 setprop("/controls/engines/engine[5]/reverser", 1);
-setprop("/controls/engines/engine[0]/reverserminus", -0.150);
+interpolate("/controls/engines/engine[0]/reverserminus", -0.150, 1);
 }
  }
 );

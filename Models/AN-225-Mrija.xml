@@ -6887,8 +6887,11 @@ AN225 model/animation config.
 		<object-name>Engine-RO-Casing.002</object-name>
 		<object-name>Engine-RM-Casing.002</object-name>
 		<object-name>Engine-RI-Casing.002</object-name>
-		<property>surface-positions/reverser-norm</property>
-		<factor>0.5</factor>
+		<property>sim/multiplay/generic/float[14]</property>
+		<interpolation>
+		  <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+		  <entry><ind> -0.15 </ind><dep>  0.65 </dep></entry>      
+		</interpolation>
 		<axis>
 			<x>1.0</x>
 			<y>0.0</y>
