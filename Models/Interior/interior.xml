@@ -10,8 +10,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <PropertyList>
 
-  <path>an-225interior-h.ac</path>
-
+  <path>an-225interior-i.ac</path>
   
   <animation>
     <type>rotate</type>

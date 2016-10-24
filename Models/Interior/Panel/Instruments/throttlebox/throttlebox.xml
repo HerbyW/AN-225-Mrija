@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+  <PropertyList>
+    
+    <path>throttlebox225.ac</path>
+
+    <!--Lights -->
+
+  <animation>
+    <type>material</type>    
+      
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.15 </blue>
+    </emission>
+  </animation>
+  
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>T1</object-name>    
+    <expression>
+      <product>
+	<property>controls/engines/engine[0]/throttle-lever</property>
+	<property>controls/engines/engine[0]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+    <offset-deg>0</offset-deg>
+    <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T2</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[1]/throttle-lever</property>
+	<property>controls/engines/engine[1]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>T3</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[2]/throttle-lever</property>
+	<property>controls/engines/engine[2]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T4</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[3]/throttle-lever</property>
+	<property>controls/engines/engine[3]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>T5</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[4]/throttle-lever</property>
+	<property>controls/engines/engine[4]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>T6</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[5]/throttle-lever</property>
+	<property>controls/engines/engine[5]/ignition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flaps</object-name>
+  <property>controls/flight/flaps</property>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>slats</object-name>
+  <property>controls/flight/slats</property>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>spoiler</object-name>
+  <property>controls/flight/spoilers</property>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+</PropertyList>

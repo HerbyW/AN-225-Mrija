@@ -41,7 +41,7 @@
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
       <x-offset-m archive="y">   0.790 </x-offset-m> <!-- Right -->
       <y-offset-m archive="y">  4.0 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -21.26 </z-offset-m> <!-- Back  -->
+      <z-offset-m archive="y"> -19.26 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -2 </pitch-offset-deg>
       <default-field-of-view-deg type="double"> 80 </default-field-of-view-deg>
       <heading-offset-deg type="double">180 </heading-offset-deg>

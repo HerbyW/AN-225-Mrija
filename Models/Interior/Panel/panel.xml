@@ -21,7 +21,7 @@
 <PropertyList>
 
   
-  <path>panel.ac</path>
+  <path>panel-225-b.ac</path>
 
   <animation>
     <!-- Objets opaques -->
@@ -32,6 +32,20 @@
     
     <!-- Objets transparents -->
   </animation>  
+  
+        <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
+    <offsets>
+      <x-m>  2.2 </x-m>
+      <y-m> 3.18</y-m>
+      <z-m> -3.40 </z-m>
+      <heading-deg>85.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+
   
   <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
@@ -954,13 +968,13 @@
    <!--Throttle, Propeller-Pitch, Mixture Control Panel -->
  
  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/quadrant/quadrant.xml</path>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/throttlebox/throttlebox.xml</path>
     <offsets>
-      <x-m> -0.00</x-m>
-      <y-m> -0.28 </y-m>
-      <z-m> -0.35 </z-m>
+      <x-m> 0</x-m>
+      <y-m> 0.20 </y-m>
+      <z-m> 0 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>43</pitch-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
@@ -968,8 +982,8 @@
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switch/reverser.xml</path>
     <offsets>
       <x-m> 0.078</x-m>
-      <y-m> -0.35 </y-m>
-      <z-m> -0.292 </z-m>
+      <y-m> -0.24 </y-m>
+      <z-m> -0.297 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-47</pitch-deg>
     </offsets>
@@ -978,79 +992,79 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-reverser.xml</path>
     <offsets>
-      <x-m> 0.05</x-m>
-      <y-m> -0.35 </y-m>
-      <z-m> -0.285 </z-m>
+      <x-m> 0.035</x-m>
+      <y-m> -0.24 </y-m>
+      <z-m> -0.29 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-43</pitch-deg>
     </offsets>
   </model>
   
-  <!--USH, USHDB ADF and VOR Navigation Compasses -->
+  <!--USH, USHDB ADF and VOR Navigation Compasses : Navigator View-->
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
     <offsets>
-      <x-m> 0.05</x-m>
-      <y-m> 0.10 </y-m>
-      <z-m> -0.30 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.50 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> -0.173 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ushdb/ushdb_selector.xml</path>
     <offsets>
-      <x-m> 0.104</x-m>
-      <y-m> 0.10 </y-m>
-      <z-m> -0.383 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.50 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> -0.32 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
     <offsets>
-      <x-m> 0.102</x-m>
-      <y-m> 0.063 </y-m>
-      <z-m> -0.416 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.45 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> -0.27 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
     <offsets>
-      <x-m> 0.102</x-m>
-      <y-m> 0.139 </y-m>
-      <z-m> -0.416 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.45 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> -0.34 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav1.xml</path>
     <offsets>
-      <x-m> 0.075</x-m>
-      <y-m> 0.063 </y-m>
-      <z-m> -0.377 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.55 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> -0.27 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
     <offsets>
-      <x-m> 0.075</x-m>
-      <y-m> 0.139 </y-m>
-      <z-m> -0.377</z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.55 </x-m>
+      <y-m>  -1.291 </y-m>
+      <z-m> -0.34 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
@@ -1068,23 +1082,23 @@
     
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
+    <character-size type="double">0.010</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.09</max-height>
-    <max-width>0.07</max-width>
+    <max-height>0.11</max-height>
+    <max-width>0.10</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>
     </font-resolution>
     <alignment>center-center</alignment>
     <offsets>
-      <x-m> 0.104</x-m>
-      <y-m> 0.088 </y-m>
-      <z-m> -0.383 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
-    </offsets>
+      <x-m>  4.515 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> -0.32 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+      </offsets>
   </text>
   
   <animation>
@@ -1101,11 +1115,11 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ush/ush.xml</path>
     <offsets>
-      <x-m> 0.05</x-m>
-      <y-m> -0.05 </y-m>
-      <z-m> -0.30 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
+      <x-m>  4.30 </x-m>
+      <y-m>  -1.275 </y-m>
+      <z-m> -0.173 </z-m>
+      <heading-deg>90.0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
  
@@ -1118,7 +1132,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/skawk/skawk.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  1.050 </y-m>
       <z-m>  0.140 </z-m>
       <heading-deg>180</heading-deg>
@@ -1128,7 +1142,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/skawk-lamp-green.xml</path>
     <offsets>
-      <x-m>  2.487 </x-m>
+      <x-m>  4.987 </x-m>
       <y-m>  1.088 </y-m>
       <z-m>  0.149 </z-m>
       <heading-deg>180</heading-deg>
@@ -1138,7 +1152,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/km-5/km-5-1.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.85  </y-m>
       <z-m>  0.130 </z-m>
       <heading-deg>180</heading-deg>
@@ -1146,19 +1160,9 @@
   </model>
   
   <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pu-11/pu-11.xml</path>
-    <offsets>
-      <x-m>  2.47 </x-m>
-      <y-m>  0.65 </y-m>
-      <z-m>  0.130 </z-m>
-      <heading-deg>180</heading-deg>
-     </offsets>
-  </model>
-  
-  <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-1.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  1.00 </y-m>
       <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
@@ -1168,7 +1172,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-2.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.80 </y-m>
       <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
@@ -1178,7 +1182,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/radio/radio1.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  1.0 </y-m>
       <z-m>  -0.1065 </z-m>
       <heading-deg>180</heading-deg>
@@ -1188,7 +1192,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/dme/dme1.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.8 </y-m>
       <z-m> -0.1065 </z-m>
       <heading-deg>180</heading-deg>
@@ -1198,7 +1202,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/radio/radio2.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  1.0 </y-m>
       <z-m>  -0.185 </z-m>
       <heading-deg>180</heading-deg>
@@ -1208,7 +1212,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/dme/dme2.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.8 </y-m>
       <z-m> -0.185 </z-m>
       <heading-deg>180</heading-deg>
@@ -1218,7 +1222,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ark-15/ark-15-1.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.6 </y-m>
       <z-m> -0.017 </z-m>
       <heading-deg>180</heading-deg>
@@ -1228,7 +1232,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
     <offsets>
-      <x-m>  2.49 </x-m>
+      <x-m>  4.99 </x-m>
       <y-m>  0.6 </y-m>
       <z-m> -0.0 </z-m>
       <heading-deg>180</heading-deg>
@@ -1238,7 +1242,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ark-15/ark-15-2.xml</path>
     <offsets>
-      <x-m>  2.47 </x-m>
+      <x-m>  4.97 </x-m>
       <y-m>  0.6 </y-m>
       <z-m> -0.162 </z-m>
       <heading-deg>180</heading-deg>
@@ -1248,7 +1252,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
     <offsets>
-      <x-m>  2.49 </x-m>
+      <x-m>  4.99 </x-m>
       <y-m>  0.6 </y-m>
       <z-m> -0.145 </z-m>
       <heading-deg>180</heading-deg>
@@ -1261,7 +1265,7 @@
   <model>      
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm6.xml</path>
     <offsets>
-      <x-m>  2.00 </x-m>
+      <x-m>  4.50 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1271,7 +1275,7 @@
   <model>      
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm5.xml</path>
     <offsets>
-      <x-m>  1.90 </x-m>
+      <x-m>  4.40 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1281,7 +1285,7 @@
   <model>      
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
     <offsets>
-      <x-m>  1.80 </x-m>
+      <x-m>  4.30 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1291,7 +1295,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
     <offsets>
-      <x-m>  1.70 </x-m>
+      <x-m>  4.20 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1301,7 +1305,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
     <offsets>
-      <x-m>  1.60 </x-m>
+      <x-m>  4.10 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1311,7 +1315,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
     <offsets>
-      <x-m>  1.50 </x-m>
+      <x-m>  4.00 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1328,7 +1332,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel_knob.xml</path>
     <offsets>
-      <x-m>  2.10 </x-m>
+      <x-m>  4.60 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.264 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1338,7 +1342,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
     <offsets>
-      <x-m>  2.145 </x-m>
+      <x-m>  4.645 </x-m>
       <y-m>  1.295 </y-m>
       <z-m> -0.264 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1348,7 +1352,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel1-green.xml</path>
     <offsets>
-      <x-m>  2.065 </x-m>
+      <x-m>  4.565 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.22 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1358,7 +1362,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel2-green.xml</path>
     <offsets>
-      <x-m>  2.085 </x-m>
+      <x-m>  4.585 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.22 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1368,7 +1372,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel3-green.xml</path>
     <offsets>
-      <x-m>  2.105 </x-m>
+      <x-m>  4.605 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.22 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1378,7 +1382,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel4-green.xml</path>
     <offsets>
-      <x-m>  2.125 </x-m>
+      <x-m>  4.625 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.22 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1388,7 +1392,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/fuel5-green.xml</path>
     <offsets>
-      <x-m>  2.145 </x-m>
+      <x-m>  4.645 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.22 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1398,7 +1402,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
     <offsets>
-      <x-m>  2.0 </x-m>
+      <x-m>  4.5 </x-m>
       <y-m> 1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1408,7 +1412,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
     <offsets>
-      <x-m>  1.90 </x-m>
+      <x-m>  4.40 </x-m>
       <y-m> 1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1418,7 +1422,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel3_R1.xml</path>
     <offsets>
-      <x-m>  1.80 </x-m>
+      <x-m>  4.30 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1428,7 +1432,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel3_R.xml</path>
     <offsets>
-      <x-m>  1.70 </x-m>
+      <x-m>  4.20 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1438,7 +1442,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel2_R1.xml</path>
     <offsets>
-      <x-m>  1.60 </x-m>
+      <x-m>  4.10 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1448,7 +1452,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel2_R.xml</path>
     <offsets>
-      <x-m>  1.50 </x-m>
+      <x-m>  4.00 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1458,7 +1462,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/fuel/fuel4_R.xml</path>
     <offsets>
-      <x-m>  1.40 </x-m>
+      <x-m>  3.90 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.257 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1470,7 +1474,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_1.xml</path>
     <offsets>
-      <x-m>  1.500 </x-m>
+      <x-m>  4.00 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1480,7 +1484,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_2.xml</path>
     <offsets>
-      <x-m>  1.600 </x-m>
+      <x-m>  4.100 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1490,7 +1494,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_3.xml</path>
     <offsets>
-      <x-m>  1.700 </x-m>
+      <x-m>  4.200 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1500,7 +1504,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_4.xml</path>
     <offsets>
-      <x-m>  1.800 </x-m>
+      <x-m>  4.300 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1510,7 +1514,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_5.xml</path>
     <offsets>
-      <x-m>  1.900 </x-m>
+      <x-m>  4.400 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1520,7 +1524,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/pres4_2/pres42_6.xml</path>
     <offsets>
-      <x-m>  2.000 </x-m>
+      <x-m>  4.500 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.335 </z-m>
       <heading-deg>90.0</heading-deg>
@@ -1532,7 +1536,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-1.xml</path>
     <offsets>
-      <x-m>  1.4700 </x-m>
+      <x-m>  3.9700 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1542,7 +1546,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-2.xml</path>
     <offsets>
-      <x-m>  1.570 </x-m>
+      <x-m>  4.070 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1552,7 +1556,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-3.xml</path>
     <offsets>
-      <x-m>  1.670 </x-m>
+      <x-m>  4.170 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1562,7 +1566,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-4.xml</path>
     <offsets>
-      <x-m>  1.770 </x-m>
+      <x-m>  4.270 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1572,7 +1576,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-5.xml</path>
     <offsets>
-      <x-m>  1.870 </x-m>
+      <x-m>  4.370 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1582,7 +1586,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ut/ut7a-6.xml</path>
     <offsets>
-      <x-m>  1.970 </x-m>
+      <x-m>  4.470 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.402 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1595,7 +1599,7 @@
     <name>uiz-1</name>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-6.xml</path>    
     <offsets>
-      <x-m>  2.02 </x-m>
+      <x-m>  4.52 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>     
@@ -1606,7 +1610,7 @@
     <name>uiz-1</name>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-5.xml</path>    
     <offsets>
-      <x-m>  1.92 </x-m>
+      <x-m>  4.42 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>     
@@ -1617,7 +1621,7 @@
     <name>uiz-1</name>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>    
     <offsets>
-      <x-m>  1.82 </x-m>
+      <x-m>  4.32 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>     
@@ -1627,7 +1631,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>
     <offsets>
-      <x-m>  1.72 </x-m>
+      <x-m>  4.22 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1637,7 +1641,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>
     <offsets>
-      <x-m>  1.62 </x-m>
+      <x-m>  4.12 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1647,7 +1651,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>
     <offsets>
-      <x-m>  1.52 </x-m>
+      <x-m>  4.02 </x-m>
       <y-m>  1.275 </y-m>
       <z-m> -0.445 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1659,7 +1663,7 @@
    <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press6-green.xml</path>
     <offsets>
-      <x-m>  2.005 </x-m>
+      <x-m>  4.505 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1669,7 +1673,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press6-red.xml</path>
     <offsets>
-      <x-m>  2.02 </x-m>
+      <x-m>  4.52 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1679,7 +1683,7 @@
    <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press5-green.xml</path>
     <offsets>
-      <x-m>  1.905 </x-m>
+      <x-m>  4.405 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1689,7 +1693,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press5-red.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
+      <x-m>  4.42 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1699,7 +1703,7 @@
    <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press4-green.xml</path>
     <offsets>
-      <x-m>  1.805 </x-m>
+      <x-m>  4.305 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1709,7 +1713,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press4-red.xml</path>
     <offsets>
-      <x-m>  1.82 </x-m>
+      <x-m>  4.32 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1719,7 +1723,7 @@
      <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press3-green.xml</path>
     <offsets>
-      <x-m>  1.705 </x-m>
+      <x-m>  4.205 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1729,7 +1733,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press3-red.xml</path>
     <offsets>
-      <x-m>  1.72 </x-m>
+      <x-m>  4.22 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1739,7 +1743,7 @@
      <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press2-green.xml</path>
     <offsets>
-      <x-m>  1.605 </x-m>
+      <x-m>  4.105 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1749,7 +1753,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press2-red.xml</path>
     <offsets>
-      <x-m>  1.62 </x-m>
+      <x-m>  4.12 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1759,7 +1763,7 @@
      <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press1-green.xml</path>
     <offsets>
-      <x-m>  1.505 </x-m>
+      <x-m>  4.005 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1769,7 +1773,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/press1-red.xml</path>
     <offsets>
-      <x-m>  1.52 </x-m>
+      <x-m>  4.02 </x-m>
       <y-m>  1.285 </y-m>
       <z-m> -0.40 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1781,7 +1785,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/electrics/hz-200.xml</path>
     <offsets>
-      <x-m>  1.26 </x-m>
+      <x-m>  3.76 </x-m>
       <y-m>  1.277 </y-m>
       <z-m> -0.17 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1791,7 +1795,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/electrics/v-200.xml</path>
     <offsets>
-      <x-m>  1.33 </x-m>
+      <x-m>  3.83 </x-m>
       <y-m>  1.277 </y-m>
       <z-m> -0.17 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1801,7 +1805,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/electrics/a-200.xml</path>
     <offsets>
-      <x-m>  1.40 </x-m>
+      <x-m>  3.90 </x-m>
       <y-m>  1.277 </y-m>
       <z-m> -0.17 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1811,7 +1815,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/electrics/v-27.xml</path>
     <offsets>
-      <x-m>  1.29 </x-m>
+      <x-m>  3.79 </x-m>
       <y-m>  1.277 </y-m>
       <z-m> -0.36 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -1821,7 +1825,7 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/electrics/a-27.xml</path>
     <offsets>
-      <x-m>  1.37 </x-m>
+      <x-m>  3.87 </x-m>
       <y-m>  1.277 </y-m>
       <z-m> -0.36 </z-m>
       <heading-deg>270.0</heading-deg>
@@ -2355,400 +2359,8 @@ Lights</text>
       <z-m>  -0.55 </z-m>      
     </offsets>
   </model> 
-
-    <!-- Overhead Panel -->
-    
-    <!-- Switches block 5 MainBattery HelpBattery Inverter-->
   
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
-    <offsets>
-      <x-m>  0.350 </x-m>
-      <y-m>  -0.45 </y-m>
-      <z-m>  0.475 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </model>
-  
-  <!-- Text 1--> 
-
-  <text>
-    <name>text1</name>
-    <type type="string">literal</type>
-    <text type="string">Main
-Battery</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.505 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text1</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-
-    <!-- Text 2--> 
-
-  <text>
-    <name>text2</name>
-    <type type="string">literal</type>
-    <text type="string">Help
-Battery</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.453 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text2</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Text 3--> 
-
-  <text>
-    <name>text3</name>
-    <type type="string">literal</type>
-    <text type="string">Inverter</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.401 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text3</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-   <!-- Switches block 3 -->
-  
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano3.xml</path>
-    <offsets>
-      <x-m>  0.350 </x-m>
-      <y-m>  -0.278 </y-m>
-      <z-m>  0.475 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </model>
- 
-    <!-- Text 1--> 
-
-  <text>
-    <name>text1</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-ADF 1</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.333 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text1</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-
-    <!-- Text 2--> 
-
-  <text>
-    <name>text2</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-ADF 2</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.281 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text2</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Text 3--> 
-
-  <text>
-    <name>text3</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-HSI</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.229 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text3</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-  
-     <!-- Switches block 4 -->
-  
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano4.xml</path>
-    <offsets>
-      <x-m>  0.350 </x-m>
-      <y-m>  -0.106 </y-m>
-      <z-m>  0.475 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </model>
- 
-    <!-- Text 4 --> 
-
-  <text>
-    <name>text4</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-Kurs-MP1</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.161 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text4</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Text 5 --> 
-  
-  <text>
-    <name>text5</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-Kurs-MP2</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.109 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text5</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Text 6 --> 
-  
-    <text>
-    <name>text6</name>
-    <type type="string">literal</type>
-    <text type="string">Power
-SKAWK</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  0.332 </x-m>
-      <y-m>  -0.057 </y-m>
-      <z-m>  0.460 </z-m>
-      <pitch-deg>56</pitch-deg>
-    </offsets>
-  </text>
- 
- <animation>
-    <type>material</type>    
-    <object-name>text6</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-    <!-- Ikone Picture -->
-  
-  <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/ikone.xml</path>
-    <offsets>
-      <x-m>  0.473 </x-m>
-      <y-m>  -0.493 </y-m>
-      <z-m>  0.554 </z-m>
-      <pitch-deg>68</pitch-deg>
-    </offsets>
-  </model>
- 
-       <!-- Three Position Switch -->
+         <!-- Three Position Switch -->
       
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/switches-shuttle/azs_3.xml</path>
@@ -2837,17 +2449,396 @@ SKAWK</text>
             <blue>0.50</blue>
         </emission>        
     </animation>
-  
-      <!-- Ramp Control Panel (red box at ramp)-->
+
+    <!-- Overhead Panel -->
     
-    <model>
-    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
+    <!-- Switches block 5 MainBattery HelpBattery Inverter-->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
     <offsets>
-      <x-m>  2.2 </x-m>
-      <y-m> 3.18</y-m>
-      <z-m> -3.40 </z-m>
-      <heading-deg>85.0</heading-deg>
-      <pitch-deg>180</pitch-deg>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.45 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Text 1--> 
+
+  <text>
+    <name>text1</name>
+    <type type="string">literal</type>
+    <text type="string">Main
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.505 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text1</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Text 2--> 
+
+  <text>
+    <name>text2</name>
+    <type type="string">literal</type>
+    <text type="string">Help
+Battery</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.453 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text2</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 3--> 
+
+  <text>
+    <name>text3</name>
+    <type type="string">literal</type>
+    <text type="string">Inverter</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.401 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text3</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+   <!-- Switches block 3 -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano3.xml</path>
+    <offsets>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.278 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+ 
+    <!-- Text 1--> 
+
+  <text>
+    <name>text1</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+ADF 1</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.333 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text1</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+
+    <!-- Text 2--> 
+
+  <text>
+    <name>text2</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+ADF 2</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.281 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text2</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 3--> 
+
+  <text>
+    <name>text3</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+HSI</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.229 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text3</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  
+     <!-- Switches block 4 -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/bano4.xml</path>
+    <offsets>
+      <x-m>  0.550 </x-m>
+      <y-m>  -0.106 </y-m>
+      <z-m>  0.795 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+ 
+    <!-- Text 4 --> 
+
+  <text>
+    <name>text4</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+Kurs-MP1</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.161 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text4</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 5 --> 
+  
+  <text>
+    <name>text5</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+Kurs-MP2</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.109 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text5</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 6 --> 
+  
+    <text>
+    <name>text6</name>
+    <type type="string">literal</type>
+    <text type="string">Power
+SKAWK</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.532 </x-m>
+      <y-m>  -0.057 </y-m>
+      <z-m>  0.780 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text6</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+    <!-- Ikone Picture -->
+  
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/bano/ikone.xml</path>
+    <offsets>
+      <x-m>  0.673 </x-m>
+      <y-m>  -0.493 </y-m>
+      <z-m>  0.874 </z-m>
+      <pitch-deg>68</pitch-deg>
     </offsets>
   </model>
 
