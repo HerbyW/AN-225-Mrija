@@ -1887,7 +1887,7 @@ Lights</text>
   <text>
     <name>Navlights</name>
     <type type="string">literal</type>
-    <text type="string">NAV
+    <text type="string">Beacon NAV Strobe
 Lights</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
@@ -1895,7 +1895,7 @@ Lights</text>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
+    <max-width>0.075</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>

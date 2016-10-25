@@ -28,7 +28,8 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     <autostart type="int">0</autostart>
     <lighting>
        <nav-lights type="int">0</nav-lights>
-       <beacon type="int">0</beacon>
+       <beacon type="bool">false</beacon>
+       <strobe type="bool">false</strobe>
        <landing-lights type="int">0</landing-lights>
        <taxi-lights type="int">0</taxi-lights>
     </lighting>
@@ -113,7 +114,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   
    <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-   <aircraft-version>4.0.3</aircraft-version>    
+   <aircraft-version>4.0.4</aircraft-version>    
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
@@ -135,7 +136,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	  <file type="string">AN-225-Mrija</file>
 	  <!--liveries from: eagel 10/2016 -->
 	  </livery>
-      <an225><version type="string">4.0.3</version></an225>
+      <an225><version type="string">4.0.4</version></an225>
     </model>
     
     <sound>      
@@ -155,7 +156,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<int type="int" n="1" alias="/controls/ice/ice">  0 </int>
         <int type="int" n="2" alias="/controls/shuttle/door/position"> 0 </int>
         <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
-        <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
+        <int type="int" n="4" alias="/controls/lighting/beacon-state/state"/>
 	<int type="int" n="5" alias="/controls/switches/gauge-light"/>
 	<int type="int" n="6" alias="/controls/shuttle/position"> 0 </int>
         <int type="int" n="7" alias="/controls/shuttle/payload"> 2 </int>
@@ -163,7 +164,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
 	<int type="int" n="11" alias="/controls/switches/fuel">  0 </int>
-	<int type="int" n="12" alias="/controls/lighting/beacon"/>
+	<int type="int" n="12" alias="/controls/lighting/strobe-state/state"/>
 	<int type="int" n="13" alias="/controls/engines/engine[0]/starting">  0 </int>	
 	<int type="int" n="14" alias="/controls/engines/engine[1]/starting">  0 </int>	
 	<int type="int" n="15" alias="/controls/engines/engine[2]/starting">  0 </int>	
@@ -271,7 +272,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	<name>y</name>
 	<desc>Change Pilot Ramp View</desc>
       </key>
-<text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 4.0.3
+<text>Welcome to the heavy cargo lifter aircraft Antonow 225 Mrija Version 4.0.4
 
 Autostart: press s and make the 2 additional settings!
 

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-    ###################################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
-    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
-    ###################################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
 <PropertyList>
@@ -44,7 +38,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>/sim/model/lights/sbc1/state</property>
+      <property>sim/multiplay/generic/int[12]</property>
     </condition>
   </animation>
 
@@ -55,6 +49,7 @@
       <red>   2 </red>
       <green> 2 </green>
       <blue>  2 </blue>
+      <factor-prop>sim/multiplay/generic/int[12]</factor-prop>
     </emission>
   </animation>
 
@@ -62,18 +57,10 @@
     <type>dist-scale</type>
     <object-name>Light</object-name>
     <interpolation>
-      <entry><ind>    0 </ind><dep> 0.5 </dep></entry>
-      <entry><ind>   20 </ind><dep> 1.0 </dep></entry>
-      <entry><ind> 1500 </ind><dep> 10.00 </dep></entry>
+      <entry><ind>    0 </ind><dep> 0.25 </dep></entry>
+      <entry><ind>   20 </ind><dep> 0.50 </dep></entry>
+      <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>Light</object-name>
-    <condition>
-      <property>controls/lighting/nav-lights</property>
-    </condition>
-  </animation>
--->
+
 </PropertyList>

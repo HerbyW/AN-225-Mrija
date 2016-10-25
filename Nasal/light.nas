@@ -1,42 +1,13 @@
-#    ###################################################################################
-#    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-#    Development is ongoing, see latest version: www.github.com/HerbyW
-#    This file is licenced under the terms of the GNU General Public Licence V3 or later
-#    
-#    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-#    Eagel: Liveries
-#    ###################################################################################
+###########################################################################################
+#  Copyright (C) Herbert Wagner Dec2014-2016
 
+#  extract from 707 by Mark Kraus
+#  see Read-Me.txt for all copyrights in the base folder of this aircraft
+###########################################################################################
 
-var sbc1 = aircraft.light.new( "/sim/model/lights/sbc1", [0.5, 0.3] );
-sbc1.interval = 0.1;
-sbc1.switch( 1 );
-
-var sbc2 = aircraft.light.new( "/sim/model/lights/sbc2", [0.2, 0.3], "/sim/model/lights/sbc1/state" );
-sbc2.interval = 0;
-sbc2.switch( 1 );
-
-setlistener( "/sim/model/lights/sbc2/state", func(n) {
-  var bsbc1 = sbc1.stateN.getValue();
-  var bsbc2 = n.getBoolValue();
-  var b = 0;
-  if( bsbc1 and bsbc2 and getprop( "/controls/lighting/beacon") ) {
-    b = 1;
-  } else {
-    b = 0;
-  }
-  setprop( "/sim/model/lights/beacon/enabled", b );
-
-  if( bsbc1 and !bsbc2 and getprop( "/controls/lighting/strobe" ) ) {
-    b = 1;
-  } else {
-    b = 0;
-  }
-  setprop( "/sim/model/lights/strobe/enabled", b );
-});
-
-var beacon = aircraft.light.new( "/sim/model/lights/beacon", [0.05, 0.05] );
-beacon.interval = 0;
-
-var strobe = aircraft.light.new( "/sim/model/lights/strobe", [0.05, 0.05, 0.05, 1] );
-strobe.interval = 0;
+var LightBeacon = props.globals.initNode("/controls/lighting/switches/beacon",0,"BOOL");
+var LightStrobe = props.globals.initNode("/controls/lighting/switches/strobe",0,"BOOL");
+var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
+aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.20], strobe_switch);
+var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
+aircraft.light.new("controls/lighting/beacon-state", [0.05, 1.8], beacon_switch);
