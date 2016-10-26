@@ -23,7 +23,7 @@ AN225 model/animation config.
   
   
   
-  <path>AN225-f.ac</path>
+  <path>AN225-g.ac</path>
   
   <nasal>
     <load>
@@ -44,6 +44,12 @@ AN225 model/animation config.
     <name>Interior</name>
     <path>Aircraft/AN-225-Mrija/Models/Interior/interior.xml</path>
   </model>
+  
+  <!-- Stairsdown -->
+  <model>
+    <path>Aircraft/AN-225-Mrija/Models/stairdown.xml</path>
+  </model>
+  
   
   <!--Lights, just a little bit more brilliance to the airplane-->
   
@@ -1263,7 +1269,7 @@ AN225 model/animation config.
     <condition>
       <greater-than>
 	<property>sim/multiplay/generic/float[7]</property> 
-	<value>0.04</value>
+	<value>0.01</value>
       </greater-than>
     </condition>
   </animation>

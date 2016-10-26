@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<!--
+   
+-->
+
+<PropertyList>
+  
+  <path>stairdown.ac</path>
+    
+  <animation>
+    <type>translate</type>
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.05</ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.08</ind><dep>  0.05 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.05 </dep></entry>      
+    </interpolation>    
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.05 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.08 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> 125 </dep></entry>
+      <entry><ind> 1 </ind><dep> 125 </dep></entry>      
+    </interpolation>
+    <axis>
+      <x1-m>-17.942 </x1-m>
+      <y1-m> -3.470 </y1-m>
+      <z1-m> -1.447 </z1-m>
+      <x2-m>-16.877 </x2-m>
+      <y2-m> -3.469 </y2-m>
+      <z2-m> -1.448 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <property>sim/multiplay/generic/float[7]</property>
+    <interpolation>
+      <entry><ind> 0.15 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep> -190.0 </dep></entry>     
+    </interpolation>
+    <axis>
+      <x1-m>-17.407 </x1-m>
+      <y1-m> -4.99 </y1-m>
+      <z1-m> -2.71 </z1-m>
+      <x2-m>-18.407 </x2-m>
+      <y2-m> -4.99 </y2-m>
+      <z2-m> -2.71 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <condition>
+      <greater-than>
+	<property>sim/multiplay/generic/float[7]</property> 
+	<value>0.01</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  </PropertyList>
