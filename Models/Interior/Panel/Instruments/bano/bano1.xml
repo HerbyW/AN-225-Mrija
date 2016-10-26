@@ -35,7 +35,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </emission>
 </animation>
 
-
+<!--
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
@@ -50,6 +50,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <z>0.0</z>
   </axis>
 </animation>
+-->
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
@@ -107,7 +108,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </axis>
 </animation>
 
-<!--Control-->
+<!--Control  not used -->
+
 <animation>
   <type>pick</type>
   <object-name>hotspot_1</object-name>
@@ -115,12 +117,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <action>
     <button>0</button>
     <repeatable>false</repeatable>
-    <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("controls/electric/battery-switch", 1.0, 0.1 );
-      </script>
-    </binding>
+    
   </action>
 </animation>
 <animation>
@@ -130,12 +127,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <action>
     <button>0</button>
     <repeatable>false</repeatable>
-    <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("controls/electric/battery-switch", 0.0, 0.1 );
-      </script>
-    </binding>
+    
   </action>
 </animation>
 

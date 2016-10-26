@@ -1850,8 +1850,8 @@
   <text>
     <name>Beacon</name>
     <type type="string">literal</type>
-    <text type="string">Beacon
-Lights</text>
+    <text type="string">...
+...</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
