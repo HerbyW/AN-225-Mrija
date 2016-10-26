@@ -75,7 +75,7 @@
           <red><value>   0.65 </value></red>
           <green><value> 0.65 </value></green>
           <blue><value>  0.65 </value></blue>
-          <alpha><value> 0.24 </value></alpha>
+          <alpha><value> 0.44 </value></alpha>
         </color>
         <size>
           <value>3.5</value>
@@ -87,10 +87,10 @@
           <red><value>   0.85 </value></red>
           <green><value> 0.85 </value></green>
           <blue><value>  0.85 </value></blue>
-          <alpha><value> 0.38 </value></alpha>
+          <alpha><value> 0.68 </value></alpha>
         </color>
         <size>
-          <value>6</value>
+          <value>7</value>
         </size>
       </end>
 
