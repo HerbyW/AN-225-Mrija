@@ -80,12 +80,172 @@
 	  <type>float</type> 
 	  <property type="string">surface-positions/slat-pos-norm</property>
 	</signal>
-	
-	<signal>
-	  <type>float</type>
-	  <property type="string">surface-positions/spoiler-pos-norm</property>
-	</signal>
-	
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[0]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[1]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[2]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[3]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[4]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[5]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[6]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[7]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[8]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[9]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[10]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[11]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[12]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[13]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[14]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[15]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[16]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[17]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[18]</property>
+            </signal>
+	    <signal>
+                <type>int</type>
+                <property type="string">/sim/multiplay/generic/int[19]</property>
+            </signal>
+	    
+	    <signal>
+	        <type>float</type>
+	        <property type="string">surface-positions/spoiler-pos-norm</property>
+	    </signal>
+	    <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[0]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[1]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[2]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[3]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[4]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[5]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[6]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[7]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[8]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[9]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[10]</property>
+            </signal>
+	    <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[11]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[12]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[13]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[14]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[15]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[16]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[17]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[18]</property>
+            </signal>
+	    <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[19]</property>
+            </signal>
+	    
 	</config>
       </flight-recorder>
    
