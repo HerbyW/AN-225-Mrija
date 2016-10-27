@@ -72,6 +72,9 @@
 	<signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
 	  <count type="int">6</count>
 	</signals>
+	<signals include="/Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+            <count type="int">16</count>
+        </signals>
 	<signal>
 	  <type>float</type> 
 	  <property type="string">surface-positions/reverser-norm</property>
@@ -80,6 +83,10 @@
 	  <type>float</type> 
 	  <property type="string">surface-positions/slat-pos-norm</property>
 	</signal>
+	<signal>
+	        <type>float</type>
+	        <property type="string">surface-positions/spoiler-pos-norm</property>
+	    </signal>
 	    <signal>
                 <type>int</type>
                 <property type="string">/sim/multiplay/generic/int[0]</property>
@@ -160,11 +167,6 @@
                 <type>int</type>
                 <property type="string">/sim/multiplay/generic/int[19]</property>
             </signal>
-	    
-	    <signal>
-	        <type>float</type>
-	        <property type="string">surface-positions/spoiler-pos-norm</property>
-	    </signal>
 	    <signal>
                 <type>float</type>
                 <property type="string">/sim/multiplay/generic/float[0]</property>
