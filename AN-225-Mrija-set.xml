@@ -59,7 +59,35 @@
       <autopilot>
         <path>Aircraft/AN-225-Mrija/Nasal/AN-225-Mrija-autopilot.xml</path>
       </autopilot>      
-    </systems>   
+    </systems>
+    
+    <flight-recorder>
+      <replay-config type="int">0</replay-config>
+      <config n="0">
+	<name type="string">AN-225-Mrija Flight Recorder</name>
+	
+	<signals include="/Aircraft/Generic/flightrecorder/components/position.xml" />
+	<signals include="/Aircraft/Generic/flightrecorder/components/controls.xml" />
+	<signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+	<signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
+	  <count type="int">6</count>
+	</signals>
+	<signal>
+	  <type>float</type> 
+	  <property type="string">surface-positions/reverser-norm</property>
+	</signal>
+	<signal>
+	  <type>float</type> 
+	  <property type="string">surface-positions/slat-pos-norm</property>
+	</signal>
+	
+	<signal>
+	  <type>float</type>
+	  <property type="string">surface-positions/spoiler-pos-norm</property>
+	</signal>
+	
+	</config>
+      </flight-recorder>
    
   </sim>
 
