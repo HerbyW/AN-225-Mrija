@@ -64,17 +64,17 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z2-m> -2.71 </z2-m>
     </axis>
   </animation>
-  
+<!--  
   <animation>
     <type>select</type>
     <condition>
       <greater-than>
 	<property>sim/multiplay/generic/float[7]</property> 
-	<value>0.01</value>
+	<value>0.0</value>
       </greater-than>
     </condition>
   </animation>
-  
+  -->
   
   
   

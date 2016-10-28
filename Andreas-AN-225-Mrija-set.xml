@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+    ###################################################################################################
+-->
+
+<PropertyList include="AN-225-Mrija-yasim-cnf.xml">
+
+<sim>
+
+    <description>Antonov AN-225-Mrija (YASim)</description>
+    <author>Herbert Wagner (Instrumentation, Animation, FDM, 3D), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
+
+    
+    <weight n="0">
+        	    <name>Crew</name>
+        	    <weight-lb type="double">600</weight-lb>
+        	    <max-lb type="double">1800</max-lb>
+        	    <min-lb type="double">600</min-lb>
+    </weight>
+    
+    <weight n="1">
+		    <name>Cargo</name>
+		    <weight-lb type="double">100000.0</weight-lb><!--316000.0-->
+		    <max-lb type="double">551155.0.0</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+     </weight>
+		
+     <weight n="2">
+		    <name>Space Shuttle</name>
+		    <weight-lb type="double">0.0</weight-lb>
+		    <max-lb type="double">58546</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+     </weight>
+     
+     <weight n="3">
+		    <name>ICE2</name>
+		    <weight-lb type="double">0.0</weight-lb>
+		    <max-lb type="double">264000</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+     </weight>
+    
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+   
+   <systems>
+      <autopilot>
+        <path>Aircraft/AN-225-Mrija/Nasal/AN-225-Mrija-autopilot.xml</path>
+      </autopilot>      
+    </systems>
+    
+    <flight-recorder>
+      <replay-config type="int">0</replay-config>
+      <config n="0" include="/Aircraft/Generic/flightrecorder/generic-jet.xml">
+        <name type="string">AN-225-Mrija Flight Recorder</name>
+        <signal>
+          <type>float</type> 
+          <property type="string">surface-positions/reverser-norm</property>
+        </signal>
+        <signal>
+          <type>float</type> 
+          <property type="string">surface-positions/slat-pos-norm</property>
+        </signal>
+        
+        <signal>
+          <type>float</type>
+          <property type="string">surface-positions/spoiler-pos-norm</property>
+        </signal>
+       
+      </config>
+</flight-recorder>
+   
+  </sim>
+
+</PropertyList>

@@ -23,7 +23,7 @@ AN225 model/animation config.
   
   
   
-  <path>AN225-m.ac</path>
+  <path>AN225-o.ac</path>
   
   <nasal>
     <load>
@@ -1261,7 +1261,7 @@ AN225 model/animation config.
       <z2-m> -1.448 </z2-m>
     </axis>
   </animation>
-  
+ <!-- 
   <animation>
     <type>select</type>
     <object-name>DoorLeft</object-name>
@@ -1273,7 +1273,7 @@ AN225 model/animation config.
       </greater-than>
     </condition>
   </animation>
-  
+  -->
   <!-- Rudder bits -->
   <!-- Left-Upper -->
   <animation>
