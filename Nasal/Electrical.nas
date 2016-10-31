@@ -24,10 +24,10 @@ var lights_input=[];
 var lights_output=[];
 var lights_load=[];
 
-var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
-aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.30], strobe_switch);
-var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
-aircraft.light.new("controls/lighting/beacon-state", [1.0, 1.0], beacon_switch);
+# var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
+# aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.30], strobe_switch);
+# var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
+# aircraft.light.new("controls/lighting/beacon-state", [1.0, 1.0], beacon_switch);
 
 #var battery = Battery.new(switch-prop,volts,amps,amp_hours,charge_percent,charge_amps);
 var Battery = {

@@ -245,8 +245,6 @@ setlistener("/controls/chokes/activ", func
 # Cargo Door Control
 #
 #controls/cargodoor/signal
-#  {
-
 
 setlistener("controls/cargodoor/signal", func
 
@@ -258,9 +256,6 @@ setlistener("controls/cargodoor/signal", func
   } 
   else doors.cargo.toggle()
 });
-
-
-
 
 ########################################################################################################
 
@@ -489,6 +484,7 @@ var sw_show = func(s) {
 
 #############################################################################################################
 setprop("/autopilot/settings/target-altitude-ft", 0);
+setprop("/autopilot/settings/vertical-speed-fpm", 0);
 
 var adjustStep = func(value,amount,step=10){
 
@@ -601,8 +597,6 @@ setlistener("engines/engine/out-of-fuel", func
 
 #####################################################################################################
 # the starter sound is not playing once, so i have to make it playing once
-#
-#/controls/engines/engine[0]/starting
 
 setprop("controls/engines/engine[0]/starting", 0);
 setprop("controls/engines/engine[1]/starting", 0);

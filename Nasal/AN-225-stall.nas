@@ -1,6 +1,6 @@
 ## Learjet 35-A, stall and overspeed warning
 ## PH-JBO 20120130p
-# modified by Herbert Wagner for TU-160-Blackjack 12/2015
+# modified by Herbert Wagner for AN-225-Mrija 12/2015
 
 var aoaStall = 9;
 setprop("instrumentation/alerts/aoaStall",9);

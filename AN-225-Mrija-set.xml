@@ -57,7 +57,7 @@
    
    <systems>
       <autopilot>
-        <path>Aircraft/AN-225-Mrija/Nasal/AN-225-Mrija-autopilot.xml</path>
+        <path>Aircraft/AN-225-Mrija/Systems/AN-225-Mrija-autopilot.xml</path>
       </autopilot>      
     </systems>
     
