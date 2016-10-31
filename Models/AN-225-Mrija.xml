@@ -348,6 +348,7 @@ AN225 model/animation config.
     <object-name>Engine-RO-Casing.002</object-name>
     <object-name>Engine-RM-Casing.002</object-name>
     <object-name>Engine-RI-Casing.002</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>AN225-tx-001.png</texture>
