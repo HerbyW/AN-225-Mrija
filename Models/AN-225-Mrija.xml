@@ -6521,26 +6521,6 @@ AN225 model/animation config.
       </offsets>
     </model>
     
-    <model><!--noselamps -->
-      <name>noselamps1</name>
-      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
-      <offsets>
-	<x-m>-27.95 </x-m>
-	<y-m>  1.50 </y-m>
-	<z-m> -0.90 </z-m>
-      </offsets>
-    </model>
-    
-    <model>
-      <name>noselamps2</name>
-      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>    
-      <offsets>
-	<x-m>-27.95 </x-m>
-	<y-m> -1.50 </y-m>
-	<z-m> -0.90 </z-m>
-      </offsets>
-    </model>
-    
     <model>
       <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
       <offsets>
@@ -6596,171 +6576,17 @@ AN225 model/animation config.
       </offsets>
     </model>
     
-    
-    
-    <!-- Lighting Landing and Taxi, 3 lamps-->
+    <!-- Lighting Landing and Taxi, 2 lamps-->
+
     <model>
-      <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
-      <condition>
-	
-	<or>
-	  <property>sim/multiplay/generic/int[9]</property>
-	  <property>sim/multiplay/generic/int[10]</property>
-	</or>
-	
-	</condition>
+      <path>Aircraft/AN-225-Mrija/Models/light/AN-225-lights.xml</path>
 	<offsets>
-	  <x-m> 2.0 </x-m>
-	  <y-m>  -3.85 </y-m>
-	  <z-m>  -2.05 </z-m>
+	  <x-m> 0.0 </x-m>
+	  <y-m>  0.0 </y-m>
+	  <z-m>  0.0 </z-m>
 	</offsets>
       </model> 
-      
-      <model>
-	<path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
-	<condition>
-	  
-	  <or>
-	    <property>sim/multiplay/generic/int[9]</property>
-	    <property>sim/multiplay/generic/int[10]</property>
-	  </or>
-	  
-	  </condition>
-	  <offsets>
-	    <x-m> 2.0 </x-m>
-	    <y-m>   3.85 </y-m>
-	    <z-m>  -2.05 </z-m>
-	  </offsets>
-	</model>
-	
-	<model>  
-	  <path>Aircraft/AN-225-Mrija/Models/light/WhiteLight.xml</path>
-	  
-	  <condition>
-	    <and>
-	      <or>
-		<property>sim/multiplay/generic/int[9]</property>
-		<property>sim/multiplay/generic/int[10]</property>
-	      </or>       
-	      <property>gear/gear[0]/position-norm</property>       
-	    </and>
-	  </condition>
-	  
-	  <offsets>
-	    <x-m> -20.5 </x-m>
-	    <y-m>   0.0 </y-m>
-	    <z-m>  -2.5 </z-m>
-	  </offsets>
-	</model> 
-	
-	<!-- Lighting Landing 154 beginn, External lights for Rembrand-->
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
-	  <name>headlight_c</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-29.037</x-m>
-	    <y-m>0.0</y-m>
-	    <z-m>-0.55</z-m>
-	    <pitch-deg>90.0</pitch-deg>
-	  </offsets>
-	</model>
-	
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
-	  <name>headlight_l</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-13.71</x-m>
-	    <y-m>-3.81</y-m>
-	    <z-m>-0.1</z-m>
-	    <pitch-deg>86.8</pitch-deg>
-	  </offsets>
-	</model>
-	
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-landing.xml</path>
-	  <name>headlight_r</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-13.71</x-m>
-	    <y-m>3.81</y-m>
-	    <z-m>-0.1</z-m>
-	    <pitch-deg>86.8</pitch-deg>
-	  </offsets>
-	</model>
-	
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
-	  <name>taxilight_c</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-29.037</x-m>
-	    <y-m>0.0</y-m>
-	    <z-m>-0.55</z-m>
-	    <pitch-deg>70.0</pitch-deg>
-	  </offsets>
-	</model>
-	
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
-	  <name>taxilight_l</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-13.71</x-m>
-	    <y-m>-3.81</y-m>
-	    <z-m>-0.1</z-m>
-	    <pitch-deg>70.0</pitch-deg>
-	  </offsets>
-	</model>
-	
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/headlight-taxi.xml</path>
-	  <name>taxilight_r</name>
-	  <condition>
-	    <property>/sim/rendering/rembrandt/enabled</property>
-	  </condition>
-	  <offsets>
-	    <x-m>-13.71</x-m>
-	    <y-m>3.81</y-m>
-	    <z-m>-0.1</z-m>
-	    <pitch-deg>70.0</pitch-deg>
-	  </offsets>
-	</model>
-	<!-- Lighting Landing 154 end -->
-	
-	<!-- Lighting Landing without Rembrand -->
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/light-cone-707.xml</path>
-	  <name>taxilight_r</name>
-	  <offsets>
-	    <x-m> -8.0 </x-m>
-	    <y-m>  0.0 </y-m>
-	    <z-m>  -4.2 </z-m>
-	    <pitch-deg>0.10</pitch-deg>
-	  </offsets>
-	</model>
-	<model>
-	  <path>Aircraft/AN-225-Mrija/Models/light/light-cone-taxi-707.xml</path>
-	  <name>taxilight_r</name>
-	  <offsets>
-	    <x-m> -8.0 </x-m>
-	    <y-m>  0.0 </y-m>
-	    <z-m>  -1.25 </z-m>
-	    <pitch-deg>-2.0</pitch-deg>
-	  </offsets>
-	</model>
-	
+
 	    <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>
   <path>Aircraft/AN-225-Mrija/Models/light/headlight-tiny.xml</path>

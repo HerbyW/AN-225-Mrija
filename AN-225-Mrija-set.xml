@@ -36,7 +36,7 @@
      <weight n="2">
 		    <name>Space Shuttle</name>
 		    <weight-lb type="double">0.0</weight-lb>
-		    <max-lb type="double">58546</max-lb>
+		    <max-lb type="double">180546</max-lb>
 		    <min-lb type="double">0.0</min-lb>
      </weight>
      
