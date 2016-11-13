@@ -476,6 +476,11 @@ simplyfied by HerbyW Jan2015  -->
               <property>/autopilot/locks/altitude</property>
               <value type="string">gs1-hold</value>
             </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>/instrumentation/nav[0]/gs-rate-of-climb</property>
+              <value type="double">0</value>
+            </binding>
         </action>
     </animation>
 
