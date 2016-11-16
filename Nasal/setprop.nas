@@ -88,7 +88,7 @@ setlistener("/controls/switches/usvp-selector-trans", func
 #####################################################################################################################
 
 #Lights
-setprop("controls/switches/headlight-mode", 1);
+setprop("/controls/switches/headlight-mode", 1);
 
 ######################################################################################################################
 
@@ -141,26 +141,26 @@ setlistener("/controls/ALS/setting", func(v) {
 setlistener("controls/ALS/setting", func
 
  { 
-   if(getprop("sim/rendering/rembrandt/enabled") == 1)
+   if(getprop("/sim/rendering/rembrandt/enabled") == 1)
     {
-      setprop("sim/messages/copilot", "ALS is not working with Rembrandt");
+      setprop("/sim/messages/copilot", "ALS is not working with Rembrandt");
     }
     else
     { 
-      if(getprop("controls/ALS/setting") == 1)
+      if(getprop("/controls/ALS/setting") == 1)
       {
-      setprop("sim/rendering/shaders/skydome", 1);
-      setprop("sim/rendering/als-secondary-lights/landing-light1-offset-deg", -12);
-      setprop("sim/rendering/als-secondary-lights/landing-light2-offset-deg", 12);
-      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 1);
-      setprop("sim/rendering/als-secondary-lights/use-landing-light", 1);
-      setprop("sim/rendering/als-secondary-lights/use-searchlight", 1);
+      setprop("/sim/rendering/shaders/skydome", 1);
+      setprop("/sim/rendering/als-secondary-lights/landing-light1-offset-deg", -12);
+      setprop("/sim/rendering/als-secondary-lights/landing-light2-offset-deg", 12);
+      setprop("/sim/rendering/als-secondary-lights/use-alt-landing-light", 1);
+      setprop("/sim/rendering/als-secondary-lights/use-landing-light", 1);
+      setprop("/sim/rendering/als-secondary-lights/use-searchlight", 1);
       }
       else
       {
-      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 0);
-      setprop("sim/rendering/als-secondary-lights/use-landing-light", 0);
-      setprop("sim/rendering/als-secondary-lights/use-searchlight", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-alt-landing-light", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-landing-light", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-searchlight", 0);
       }
     }   
 
@@ -171,7 +171,7 @@ setlistener("controls/ALS/setting", func
 
 # SKAWK support
 
-setlistener("instrumentation/transponder/inputs/mode", func
+setlistener("/instrumentation/transponder/inputs/mode", func
 
 {
   
@@ -192,7 +192,7 @@ setprop("/instrumentation/transponder/serviceable", 0);
 
 # Parking Chokes and Brake Control
 
-setlistener("controls/gear/brake-parking", func
+setlistener("/controls/gear/brake-parking", func
 
 { if (getprop("/sim/replay/replay-state") == 0)
 
@@ -201,12 +201,12 @@ setlistener("controls/gear/brake-parking", func
     {
       if (getprop("/controls/chokes/activ") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Chokes are at the wheels! Parking Brake can not be lift");
+	  setprop("/sim/messages/copilot", "Parking Chokes are at the wheels! Parking Brake can not be lift");
           setprop("/controls/gear/brake-parking", 1);
         }
       else
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, aircraft is moving!");
+	  setprop("/sim/messages/copilot", "Parking Brake off, aircraft is moving!");
 	  setprop("/controls/gear/brake-parking", 0);  
 	}
      }
@@ -214,12 +214,12 @@ setlistener("controls/gear/brake-parking", func
      {
        if (getprop("/position/gear-agl-m") > 2)
         {
-	 setprop("sim/messages/copilot", "We are in the air, Brakes have no sense...");
+	 setprop("/sim/messages/copilot", "We are in the air, Brakes have no sense...");
 	 setprop("/controls/gear/brake-parking", 0);
         }
        else
         {
-	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed!");
+	  setprop("/sim/messages/copilot", "Parking Brake on, check if chokes are needed!");
 	}
      } 
 }});  
@@ -231,13 +231,13 @@ setlistener("/controls/chokes/activ", func
    if (getprop("/controls/chokes/activ") == 1)
    if (getprop("/controls/gear/brake-parking") == 0)
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, Chokes can not be set!");
+	  setprop("/sim/messages/copilot", "Parking Brake off, Chokes can not be set!");
 	  setprop("/controls/chokes/activ", 0);  
 	}
     if (getprop("/controls/chokes/activ") == 1)
     if (getprop("/controls/gear/brake-parking") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day!");
+	  setprop("/sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day!");
 	}
 }});
 
@@ -246,12 +246,12 @@ setlistener("/controls/chokes/activ", func
 #
 #controls/cargodoor/signal
 
-setlistener("controls/cargodoor/signal", func
+setlistener("/controls/cargodoor/signal", func
 
 { 
   if (getprop("/controls/chokes/activ") == 0)
   {
-     setprop("sim/messages/copilot", "Cargo Door can only move if chokes and brake are set!");
+     setprop("/sim/messages/copilot", "Cargo Door can only move if chokes and brake are set!");
       
   } 
   else doors.cargo.toggle()
@@ -262,37 +262,37 @@ setlistener("controls/cargodoor/signal", func
 # Landing Gears Control with help from: 707 Hangar of Constance
 
 # prevent retraction of the landing gear when any of the wheels are compressed
-setlistener("controls/gear/gear-down", func
+setlistener("/controls/gear/gear-down", func
  {
- var down = props.globals.getNode("controls/gear/gear-down").getBoolValue();
- var crashed = getprop("sim/crashed") or 0;
- if (!down and (getprop("gear/gear[0]/wow") or getprop("gear/gear[2]/wow") or getprop("gear/gear[15]/wow")))
+ var down = props.globals.getNode("/controls/gear/gear-down").getBoolValue();
+ var crashed = getprop("/sim/crashed") or 0;
+ if (!down and (getprop("/gear/gear[0]/wow") or getprop("/gear/gear[2]/wow") or getprop("/gear/gear[15]/wow")))
   {
     if(!crashed){
-  		props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
+  		props.globals.getNode("/controls/gear/gear-down").setBoolValue(1);
     }else{
-  		props.globals.getNode("controls/gear/gear-down").setBoolValue(0);
+  		props.globals.getNode("/controls/gear/gear-down").setBoolValue(0);
     }
   }
  });
  
 var gearstate = 0;
-setlistener("gear/gear/position-norm", func
-  { if (getprop("gear/gear/position-norm") == 1)
+setlistener("/gear/gear/position-norm", func
+  { if (getprop("/gear/gear/position-norm") == 1)
     { gearstate = 0 ;}
-    if (getprop("gear/gear/position-norm") < 1)
+    if (getprop("/gear/gear/position-norm") < 1)
     { gearstate = 1 ;}
-    if (getprop("gear/gear/position-norm") == 0)
+    if (getprop("/gear/gear/position-norm") == 0)
     { gearstate = 0 ;}
-    setprop("gear/state", gearstate)
+    setprop("/gear/state", gearstate)
   }
 );
 
-setlistener("position/gear-agl-m", func
+setlistener("/position/gear-agl-m", func
   {
-    if ((getprop("gear/gear/position-norm") == 0) and (getprop("position/gear-agl-m") < 100))
-    {setprop("gear/warning", 1);}
-      else setprop("gear/warning", 0)
+    if ((getprop("/gear/gear/position-norm") == 0) and (getprop("/position/gear-agl-m") < 100))
+    {setprop("/gear/warning", 1);}
+      else setprop("/gear/warning", 0)
   });
 
 #############################################################################################################
@@ -345,10 +345,10 @@ calc.start();
 #############################################################################################################
 
 
-setprop("sim/messages/copilot", "Hello");
-setprop("sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
-setprop("sim/messages/copilot", "Have fun with the Antonov-225");
-setprop("sim/messages/copilot", "For Autostart hit the s key!");
+setprop("/sim/messages/copilot", "Hello");
+setprop("/sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
+setprop("/sim/messages/copilot", "Have fun with the Antonov-225");
+setprop("/sim/messages/copilot", "For Autostart hit the s key!");
 
 
 ####################################################################################################################
@@ -538,13 +538,13 @@ setlistener("/sim/airport/closest-airport-id", func
 # Flaps Control with speed limits
 # prevent demage of flaps due to speed
 
-setlistener("controls/flight/flaps", func
+setlistener("/controls/flight/flaps", func
  { 
- if ((getprop("controls/flight/flaps") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 240  ))
+ if ((getprop("/controls/flight/flaps") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 240  ))
   {
-    setprop("controls/flight/flaps", 0);
-    setprop("sim/flaps/current-setting", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 240)????");    
+    setprop("/controls/flight/flaps", 0);
+    setprop("/sim/flaps/current-setting", 0);
+    setprop("/sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 240)????");    
   }
 });
 
@@ -553,12 +553,12 @@ setlistener("controls/flight/flaps", func
 # Slats Control with speed limits
 # prevent demage of slats due to speed
 
-setlistener("controls/flight/slats", func
+setlistener("/controls/flight/slats", func
  { 
- if ((getprop("controls/flight/slats") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 260  ))
+ if ((getprop("/controls/flight/slats") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 260  ))
   {
-    setprop("controls/flight/slats", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the slats due to overspeed (max 260)????");    
+    setprop("/controls/flight/slats", 0);
+    setprop("/sim/messages/copilot", "Do you want to destroy the slats due to overspeed (max 260)????");    
   }
 });
  
@@ -567,13 +567,13 @@ setlistener("controls/flight/slats", func
 # Spoiler Control with speed limits
 # prevent demage of spoilers due to speed
 
-setlistener("controls/flight/spoilers", func
+setlistener("/controls/flight/spoilers", func
  { 
- if ((getprop("controls/flight/spoilers") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 280  ))
+ if ((getprop("/controls/flight/spoilers") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 280  ))
   {
-    setprop("controls/flight/spoilers", 0);
-    setprop("sim/spoilers/current-setting", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed (max 280)????");    
+    setprop("/controls/flight/spoilers", 0);
+    setprop("/sim/spoilers/current-setting", 0);
+    setprop("/sim/messages/copilot", "Do you want to destroy the spoilers due to overspeed (max 280)????");    
   }
 });
 
@@ -581,154 +581,130 @@ setlistener("controls/flight/spoilers", func
 
 # Engine running or not
 
-setprop("controls/engines/running", 0);
+setprop("/controls/engines/running", 0);
 
-setlistener("engines/engine/out-of-fuel", func
+setlistener("/engines/engine/out-of-fuel", func
  { 
- if (getprop("engines/engine/out-of-fuel") == 1  )
+ if (getprop("/engines/engine/out-of-fuel") == 1  )
   {
-    setprop("controls/engines/running", 0);    
+    setprop("/controls/engines/running", 0);    
   }
   else 
   {
-    setprop("controls/engines/running", 1);
+    setprop("/controls/engines/running", 1);
   }
 });
 
 #####################################################################################################
 # the starter sound is not playing once, so i have to make it playing once
 
-setprop("controls/engines/engine[0]/starting", 0);
-setprop("controls/engines/engine[1]/starting", 0);
-setprop("controls/engines/engine[2]/starting", 0);
-setprop("controls/engines/engine[3]/starting", 0);
-setprop("controls/engines/engine[4]/starting", 0);
-setprop("controls/engines/engine[5]/starting", 0);
+setprop("/controls/engines/engine[0]/starting", 0);
+setprop("/controls/engines/engine[1]/starting", 0);
+setprop("/controls/engines/engine[2]/starting", 0);
+setprop("/controls/engines/engine[3]/starting", 0);
+setprop("/controls/engines/engine[4]/starting", 0);
+setprop("/controls/engines/engine[5]/starting", 0);
 
-setlistener("controls/engines/engine[0]/starter", func
+setlistener("/controls/engines/engine[0]/starter", func
  { 
-   if ((getprop("controls/engines/engine[0]/starter") == 1) and (getprop("controls/engines/engine[0]/ignition") == 1) and  (getprop("controls/electric/engine[0]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[0]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[0]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[0]/starter") == 1) and (getprop("/controls/engines/engine[0]/ignition") == 1) and  (getprop("/controls/electric/engine[0]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[0]/starting", 1);
 });
 
-setlistener("controls/engines/engine[1]/starter", func
+setlistener("/controls/engines/engine[1]/starter", func
  { 
-   if ((getprop("controls/engines/engine[1]/starter") == 1) and (getprop("controls/engines/engine[1]/ignition") == 1) and  (getprop("controls/electric/engine[1]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[1]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[1]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[1]/starter") == 1) and (getprop("/controls/engines/engine[1]/ignition") == 1) and  (getprop("/controls/electric/engine[1]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[1]/starting", 1);
 });
 
-setlistener("controls/engines/engine[2]/starter", func
+setlistener("/controls/engines/engine[2]/starter", func
  { 
-   if ((getprop("controls/engines/engine[2]/starter") == 1) and (getprop("controls/engines/engine[2]/ignition") == 1) and  (getprop("controls/electric/engine[2]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[2]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[2]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[2]/starter") == 1) and (getprop("/controls/engines/engine[2]/ignition") == 1) and  (getprop("/controls/electric/engine[2]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[2]/starting", 1);
 });
 
-setlistener("controls/engines/engine[3]/starter", func
+setlistener("/controls/engines/engine[3]/starter", func
  { 
-   if ((getprop("controls/engines/engine[3]/starter") == 1) and (getprop("controls/engines/engine[3]/ignition") == 1) and  (getprop("controls/electric/engine[3]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[3]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[3]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[3]/starter") == 1) and (getprop("/controls/engines/engine[3]/ignition") == 1) and  (getprop("/controls/electric/engine[3]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[3]/starting", 1);
 });
 
-setlistener("controls/engines/engine[4]/starter", func
+setlistener("/controls/engines/engine[4]/starter", func
  { 
-   if ((getprop("controls/engines/engine[4]/starter") == 1) and (getprop("controls/engines/engine[4]/ignition") == 1) and  (getprop("controls/electric/engine[4]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[4]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[4]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[4]/starter") == 1) and (getprop("/controls/engines/engine[4]/ignition") == 1) and  (getprop("/controls/electric/engine[4]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[4]/starting", 1);
 });
 
-setlistener("controls/engines/engine[5]/starter", func
+setlistener("/controls/engines/engine[5]/starter", func
  { 
-   if ((getprop("controls/engines/engine[5]/starter") == 1) and (getprop("controls/engines/engine[5]/ignition") == 1) and  (getprop("controls/electric/engine[5]/generator") == 1) and  (getprop("controls/switches/fuel") > 0))
-   setprop("controls/engines/engine[5]/starting", 1);
-  # else 
-  #{
-  #  setprop("controls/engines/engine[3]/starting", 0);
-  #}
+   if ((getprop("/controls/engines/engine[5]/starter") == 1) and (getprop("/controls/engines/engine[5]/ignition") == 1) and  (getprop("/controls/electric/engine[5]/generator") == 1) and  (getprop("/controls/switches/fuel") > 0))
+   setprop("/controls/engines/engine[5]/starting", 1);
 });
 
 
-setlistener("controls/engines/engine[0]/ignition", func
+setlistener("/controls/engines/engine[0]/ignition", func
  { 
-   if (getprop("controls/engines/engine[0]/ignition") == 0)
-   setprop("controls/engines/engine[0]/starting", 0);
+   if (getprop("/controls/engines/engine[0]/ignition") == 0)
+   setprop("/controls/engines/engine[0]/starting", 0);
 });
 
-setlistener("controls/engines/engine[1]/ignition", func
+setlistener("/controls/engines/engine[1]/ignition", func
  { 
-   if (getprop("controls/engines/engine[1]/ignition") == 0)
-   setprop("controls/engines/engine[1]/starting", 0);
+   if (getprop("/controls/engines/engine[1]/ignition") == 0)
+   setprop("/controls/engines/engine[1]/starting", 0);
 });
 
-setlistener("controls/engines/engine[2]/ignition", func
+setlistener("/controls/engines/engine[2]/ignition", func
  { 
-   if (getprop("controls/engines/engine[2]/ignition") == 0)
-   setprop("controls/engines/engine[2]/starting", 0);
+   if (getprop("/controls/engines/engine[2]/ignition") == 0)
+   setprop("/controls/engines/engine[2]/starting", 0);
 });
 
-setlistener("controls/engines/engine[3]/ignition", func
+setlistener("/controls/engines/engine[3]/ignition", func
  { 
-   if (getprop("controls/engines/engine[3]/ignition") == 0)
-   setprop("controls/engines/engine[3]/starting", 0);
+   if (getprop("/controls/engines/engine[3]/ignition") == 0)
+   setprop("/controls/engines/engine[3]/starting", 0);
 });
 
-setlistener("controls/engines/engine[4]/ignition", func
+setlistener("/controls/engines/engine[4]/ignition", func
  { 
-   if (getprop("controls/engines/engine[4]/ignition") == 0)
-   setprop("controls/engines/engine[4]/starting", 0);
+   if (getprop("/controls/engines/engine[4]/ignition") == 0)
+   setprop("/controls/engines/engine[4]/starting", 0);
 });
 
-setlistener("controls/engines/engine[5]/ignition", func
+setlistener("/controls/engines/engine[5]/ignition", func
  { 
-   if (getprop("controls/engines/engine[5]/ignition") == 0)
-   setprop("controls/engines/engine[5]/starting", 0);
+   if (getprop("/controls/engines/engine[5]/ignition") == 0)
+   setprop("/controls/engines/engine[5]/starting", 0);
 });
 
 ###############################################################################
 # runway effect
 
 
-setprop("controls/gear/runway", 0);
-setprop("gear/gear[8]/compression-norm", 0);
+setprop("/controls/gear/runway", 0);
+setprop("/gear/gear[8]/compression-norm", 0);
 
-setlistener("gear/gear[8]/wow", func
+setlistener("/gear/gear[8]/wow", func
 {
-  if (getprop("gear/gear[8]/wow") == 0)
-    interpolate("controls/gear/runway", 0 , 0.1);
+  if (getprop("/gear/gear[8]/wow") == 0)
+    interpolate("/controls/gear/runway", 0 , 0.1);
   else
   {
-  if ( ( getprop("gear/gear[8]/compression-norm") > 0.20 ) and ( getprop("gear/gear[8]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
-    interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
+  if ( ( getprop("/gear/gear[8]/compression-norm") > 0.20 ) and ( getprop("/gear/gear[8]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
+    interpolate("/controls/gear/runway", 1 , 0.3, 0 , 0.3);
   }
 }
 );
 
-setlistener("controls/gear/brake-parking", func
+setlistener("/controls/gear/brake-parking", func
 {
-  if (getprop("controls/gear/brake-parking") == 0)
-    interpolate("controls/gear/runway", 0 , 0.1);
+  if (getprop("/controls/gear/brake-parking") == 0)
+    interpolate("/controls/gear/runway", 0 , 0.1);
   else
   {
-  if ( ( getprop("controls/gear/brake-parking") == 1 ) and ( getprop("gear/gear[8]/rollspeed-ms") > 30) )
-    interpolate("controls/gear/runway", 1 , 1.2, 0 , 1.2);
+  if ( ( getprop("/controls/gear/brake-parking") == 1 ) and ( getprop("/gear/gear[8]/rollspeed-ms") > 30) )
+    interpolate("/controls/gear/runway", 1 , 1.2, 0 , 1.2);
   }
 }
 );

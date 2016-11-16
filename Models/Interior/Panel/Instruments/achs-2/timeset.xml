@@ -44,7 +44,7 @@
  <animation>
    <type>translate</type>
    <object-name>time.stop</object-name>
-   <property>/instrumentation/stopwatch/running</property>
+   <property>instrumentation/stopwatch/running</property>
    <factor>0.005</factor>
    <axis>
      <x> 1.0</x>

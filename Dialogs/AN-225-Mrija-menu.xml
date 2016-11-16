@@ -23,7 +23,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<label>Autostart</label>
 	<binding>
 	  <command>property-toggle</command>
-	  <property>sim/model/autostart</property>
+	  <property>/sim/model/autostart</property>
 	</binding>
       </item>
     </menu>

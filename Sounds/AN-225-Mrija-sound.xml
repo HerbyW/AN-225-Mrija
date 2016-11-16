@@ -171,7 +171,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[6]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -204,7 +204,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[8]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -237,7 +237,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[10]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -270,7 +270,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[12]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -303,7 +303,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[17]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -336,7 +336,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[19]</property>    
-          <value>34</value>
+          <value>33</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -368,7 +368,7 @@
 	     	<value>0.1</value>
 		</greater-than>
 			<equals>
-				<property>sim/current-view/view-number</property>
+				<property>/sim/current-view/view-number</property>
 				<value>6</value>
 			</equals>
 			</and>
@@ -385,220 +385,6 @@
 		</volume>
 			
     </flyby>
-
- <!--old
-
-    <engine>
-      <name>engine0</name>
-      <path>Aircraft/AN-225-Mrija/Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[0]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[0]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.20</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine0</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[0]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[0]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[0]/n2</property>
-        <factor>0.010</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>engine1</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[1]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[1]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[1]/n1</property>
-        <factor>0.21</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine1</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[1]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[1]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[1]/n2</property>
-        <factor>0.011</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>engine2</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[2]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[2]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/n1</property>
-        <factor>0.22</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine2</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[2]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[2]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/n2</property>
-        <factor>0.012</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>engine3</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[3]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[3]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/n1</property>
-        <factor>0.23</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine3</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[3]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[3]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/n2</property>
-        <factor>0.013</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>engine4</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[4]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[4]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[4]/n1</property>
-        <factor>0.23</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine4</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[4]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[4]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[4]/n2</property>
-        <factor>0.013</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>engine5</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[5]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[5]/prop-thrust</property>
-        <factor type="double">0.000019</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[5]/n1</property>
-        <factor>0.22</factor>
-      </pitch>
-    </engine>
-
-    <engine>
-      <name>whine5</name>
-      <path>Sounds/whine.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[5]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[5]/n2</property>
-        <factor>0.0005</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[5]/n2</property>
-        <factor>0.012</factor>
-        <offset>0.15</offset>
-      </pitch>
-    </engine>
-    
-    -->
 
 <!-- Rumble -->
     <rumble>
@@ -772,7 +558,7 @@
       <path>Aircraft/AN-225-Mrija/Sounds/dinamik_pr2.wav</path>
        <condition>
         <greater-than>
-	 <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+	 <property>/instrumentation/airspeed-indicator/true-speed-kt</property>
 	 <value>459</value>
          </greater-than>
         </condition> 
@@ -793,15 +579,15 @@
    <path>Aircraft/AN-225-Mrija/Sounds/stall.wav</path>
    <condition>
      <and>
-       <property>instrumentation/alerts/stall</property>
+       <property>/instrumentation/alerts/stall</property>
        <greater-than>
-	 <property>sim/time/elapsed-sec</property>
+	 <property>/sim/time/elapsed-sec</property>
 	 <value>100</value>
        </greater-than>
      </and>
    </condition>    
    <volume>
-     <property>instrumentation/alerts/stall</property>
+     <property>/instrumentation/alerts/stall</property>
      <max>1.0</max>
    </volume>
    <reference-dist>10</reference-dist>
@@ -816,8 +602,8 @@
 -      <path>Aircraft/AN-225-Mrija/Sounds/omi_1.wav</path>
 -      <condition>
 -    <less-than>
--      <property>position/altitude-agl-ft</property>
--      <property>instrumentation/altimeter/decision-height</property>      
+-      <property>/position/altitude-agl-ft</property>
+-      <property>/instrumentation/altimeter/decision-height</property>      
 -    </less-than>
 -  </condition>
 -      <volume>
@@ -930,7 +716,7 @@
           <property>/instrumentation/adf[0]/in-range</property>         
        </condition>
       <volume>
-	<property>instrumentation/adf[0]/volume</property>	
+	<property>/instrumentation/adf[0]/volume</property>	
         <min>0.00</min>
         <max>1.0</max>
       </volume>      
@@ -946,7 +732,7 @@
           <property>/instrumentation/adf[1]/in-range</property>        
        </condition>
       <volume>	
-	<property>instrumentation/adf[1]/volume</property>
+	<property>/instrumentation/adf[1]/volume</property>
         <min>0.00</min>
         <max>1.0</max>
       </volume>      

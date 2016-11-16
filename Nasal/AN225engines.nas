@@ -6,8 +6,8 @@
 var JetEngine = {
     new : func(eng_num){
         m = { parents : [JetEngine]};
-        m.fdensity = getprop("consumables/fuel/tank/density-ppg") or 6.72;
-        m.eng = props.globals.getNode("engines/engine["~eng_num~"]",1);
+        m.fdensity = getprop("/consumables/fuel/tank/density-ppg") or 6.72;
+        m.eng = props.globals.getNode("/engines/engine["~eng_num~"]",1);
         m.running = m.eng.initNode("running",0,"BOOL");
         m.n1 = m.eng.getNode("n1",1);
         m.n2 = m.eng.getNode("n2",1);
@@ -15,12 +15,12 @@ var JetEngine = {
         m.cycle_up = 0;
         m.engine_off=1;
         m.turbine = m.eng.initNode("turbine",0,"DOUBLE");
-        m.throttle_lever = props.globals.initNode("controls/engines/engine["~eng_num~"]/throttle-lever",0,"DOUBLE");
-        m.throttle = props.globals.initNode("controls/engines/engine["~eng_num~"]/throttle",0,"DOUBLE");
-        m.ignition = props.globals.initNode("controls/engines/engine["~eng_num~"]/ignition",0,"DOUBLE");
-        m.cutoff = props.globals.initNode("controls/engines/engine["~eng_num~"]/cutoff",1,"BOOL");
-        m.fuel_out = props.globals.initNode("engines/engine["~eng_num~"]/out-of-fuel",0,"BOOL");
-        m.starter = props.globals.initNode("controls/engines/engine["~eng_num~"]/starter",0,"BOOL");
+        m.throttle_lever = props.globals.initNode("/controls/engines/engine["~eng_num~"]/throttle-lever",0,"DOUBLE");
+        m.throttle = props.globals.initNode("/controls/engines/engine["~eng_num~"]/throttle",0,"DOUBLE");
+        m.ignition = props.globals.initNode("/controls/engines/engine["~eng_num~"]/ignition",0,"DOUBLE");
+        m.cutoff = props.globals.initNode("/controls/engines/engine["~eng_num~"]/cutoff",1,"BOOL");
+        m.fuel_out = props.globals.initNode("/engines/engine["~eng_num~"]/out-of-fuel",0,"BOOL");
+        m.starter = props.globals.initNode("/controls/engines/engine["~eng_num~"]/starter",0,"BOOL");
         m.fuel_pph=m.eng.initNode("fuel-flow_pph",0,"DOUBLE");
         m.fuel_gph=m.eng.initNode("fuel-flow-gph");
 
@@ -34,7 +34,7 @@ var JetEngine = {
         if(!me.engine_off){
             me.fan.setValue(me.n1.getValue());
             me.turbine.setValue(me.n2.getValue());
-            if(getprop("controls/engines/grnd_idle"))thr *=0.92;
+            if(getprop("/controls/engines/grnd_idle"))thr *=0.92;
             me.throttle_lever.setValue(thr);
         }else{
             me.throttle_lever.setValue(0);
@@ -46,7 +46,7 @@ var JetEngine = {
             }else{
                 var tmprpm = me.fan.getValue();
                 if(tmprpm > 0.0){
-                    tmprpm -= getprop("sim/time/delta-sec") * 2;
+                    tmprpm -= getprop("/sim/time/delta-sec") * 2;
                     me.fan.setValue(tmprpm);
                     me.turbine.setValue(tmprpm);
                 }
@@ -63,9 +63,9 @@ var JetEngine = {
         var n2=me.n2.getValue() ;
         var n2factor = n2/scnds;
         var tmprpm = me.fan.getValue();
-            tmprpm += getprop("sim/time/delta-sec") * n1factor;
+            tmprpm += getprop("/sim/time/delta-sec") * n1factor;
             var tmprpm2 = me.turbine.getValue();
-            tmprpm2 += getprop("sim/time/delta-sec") * n2factor;
+            tmprpm2 += getprop("/sim/time/delta-sec") * n2factor;
             me.fan.setValue(tmprpm);
             me.turbine.setValue(tmprpm2);
             if(tmprpm >= me.n1.getValue()){
@@ -85,13 +85,13 @@ var JetEngine = {
 };
 
 var FDM="";
-var Grd_Idle=props.globals.initNode("controls/engines/grnd-idle",1,"BOOL");
-var Annun = props.globals.getNode("instrumentation/annunciators",1);
+var Grd_Idle=props.globals.initNode("/controls/engines/grnd-idle",1,"BOOL");
+var Annun = props.globals.getNode("/instrumentation/annunciators",1);
 var MstrWarn =Annun.getNode("master-warning",1);
 var MstrCaution = Annun.getNode("master-caution",1);
 var PWR2 =0;
 #                                                                                         aircraft.livery.init("Aircraft/CitationX/Models/Liveries");
-aircraft.light.new("instrumentation/annunciators", [0.5, 0.5], MstrCaution);
+aircraft.light.new("/instrumentation/annunciators", [0.5, 0.5], MstrCaution);
 var FHmeter = aircraft.timer.new("/instrumentation/clock/flight-meter-sec", 10,1);
 var LOHeng= JetEngine.new(0);
 var LIHeng= JetEngine.new(1);
@@ -107,7 +107,7 @@ var fdm_init = func(){
     MstrWarn.setBoolValue(0);
     MstrCaution.setBoolValue(0);
     FDM=getprop("/sim/flight-model");
-    setprop("controls/engines/N1-limit",95.0);
+    setprop("/controls/engines/N1-limit",95.0);
 }
 
 setlistener("/sim/signals/fdm-initialized", func {
@@ -124,7 +124,7 @@ setlistener("/sim/crashed", func(cr){
     }
 },1,0);
 
-setlistener("sim/model/autostart", func(strt){
+setlistener("/sim/model/autostart", func(strt){
     if(strt.getBoolValue()){
         Startup();
     }else{
@@ -188,7 +188,7 @@ var Startup = func{
         setprop("/controls/lighting/nav-lights", 1);
 	setprop("/controls/lighting/beacon", 1);
 	
-	setprop("sim/messages/copilot", "Main power and lights are on");
+	setprop("/sim/messages/copilot", "Main power and lights are on");
 	
 	setprop("/instrumentation/adf[0]/power-btn", 1);
 	setprop("/instrumentation/adf[1]/power-btn", 1);
@@ -197,7 +197,7 @@ var Startup = func{
 	setprop("/instrumentation/nav[1]/power-btn", 1);
 	setprop("/instrumentation/transponder/serviceable", 1);
 	
-	setprop("sim/messages/copilot", "Instruments are powered");
+	setprop("/sim/messages/copilot", "Instruments are powered");
 	
 	setprop("/controls/switches/fuel", 1);
         setprop("/consumables/fuel/tank[0]/selected", 1);
@@ -220,33 +220,33 @@ var Startup = func{
 	interpolate("/controls/engines/engine[2]/starter", 0, 67, 1, 16, 0, 1);
 	interpolate("/controls/engines/engine[3]/starter", 0, 84, 1, 16, 0, 1);
 	
-	interpolate("controls/engines/engine[0]/throttle", 0.13, 17);
-	interpolate("controls/engines/engine[5]/throttle", 0, 17, 0.13, 17);
-	interpolate("controls/engines/engine[1]/throttle", 0, 34, 0.13, 17);
-	interpolate("controls/engines/engine[4]/throttle", 0, 51, 0.13, 17);
-	interpolate("controls/engines/engine[2]/throttle", 0, 68, 0.13, 17);
-	interpolate("controls/engines/engine[3]/throttle", 0, 85, 0.13, 17);
+	interpolate("/controls/engines/engine[0]/throttle", 0.13, 17);
+	interpolate("/controls/engines/engine[5]/throttle", 0, 17, 0.13, 17);
+	interpolate("/controls/engines/engine[1]/throttle", 0, 34, 0.13, 17);
+	interpolate("/controls/engines/engine[4]/throttle", 0, 51, 0.13, 17);
+	interpolate("/controls/engines/engine[2]/throttle", 0, 68, 0.13, 17);
+	interpolate("/controls/engines/engine[3]/throttle", 0, 85, 0.13, 17);
 	
-	setprop("sim/messages/copilot", "Engines 1-6 starting up, wait 102 seconds till idle position");
-	setprop("sim/messages/copilot", "Press < to control all engine lamps going to green");
+	setprop("/sim/messages/copilot", "Engines 1-6 starting up, wait 102 seconds till idle position");
+	setprop("/sim/messages/copilot", "Press < to control all engine lamps going to green");
 }
 
 var Shutdown = func{
-    setprop("sim/messages/copilot", "Shuting down everyting!");
-    setprop("controls/electric/engine[0]/generator",0);
-    setprop("controls/electric/engine[1]/generator",0);
-    setprop("controls/electric/engine[2]/generator",0);
-    setprop("controls/electric/engine[3]/generator",0);
-    setprop("controls/electric/engine[4]/generator",0);
-    setprop("controls/electric/engine[5]/generator",0);
-    setprop("controls/electric/avionics-switch",0);
-    setprop("controls/electric/battery-switch",0);
-    setprop("controls/electric/battery-switch[1]",0);
-    setprop("controls/electric/inverter-switch",0);
-    setprop("controls/lighting/instrument-lights",0);
-    setprop("controls/lighting/nav-lights",0);
-    setprop("controls/lighting/beacon",0);
-    setprop("controls/lighting/strobe",0);
+    setprop("/sim/messages/copilot", "Shuting down everyting!");
+    setprop("/controls/electric/engine[0]/generator",0);
+    setprop("/controls/electric/engine[1]/generator",0);
+    setprop("/controls/electric/engine[2]/generator",0);
+    setprop("/controls/electric/engine[3]/generator",0);
+    setprop("/controls/electric/engine[4]/generator",0);
+    setprop("/controls/electric/engine[5]/generator",0);
+    setprop("/controls/electric/avionics-switch",0);
+    setprop("/controls/electric/battery-switch",0);
+    setprop("/controls/electric/battery-switch[1]",0);
+    setprop("/controls/electric/inverter-switch",0);
+    setprop("/controls/lighting/instrument-lights",0);
+    setprop("/controls/lighting/nav-lights",0);
+    setprop("/controls/lighting/beacon",0);
+    setprop("/controls/lighting/strobe",0);
     setprop("/controls/switches/gauge-light", 0);
     setprop("/instrumentation/adf[0]/power-btn", 0);
     setprop("/instrumentation/adf[1]/power-btn", 0);
@@ -254,38 +254,38 @@ var Shutdown = func{
     setprop("/instrumentation/nav[0]/power-btn", 0);
     setprop("/instrumentation/nav[1]/power-btn", 0);
     setprop("/instrumentation/transponder/serviceable", 0);
-    setprop("controls/switches/fuel",0);
-    setprop("controls/engines/engine[0]/cutoff",1);
-    setprop("controls/engines/engine[1]/cutoff",1);
-    setprop("controls/engines/engine[2]/cutoff",1);
-    setprop("controls/engines/engine[3]/cutoff",1);
-    setprop("controls/engines/engine[4]/cutoff",1);
-    setprop("controls/engines/engine[5]/cutoff",1);
-    setprop("controls/engines/engine[0]/ignition",0);
-    setprop("controls/engines/engine[1]/ignition",0);
-    setprop("controls/engines/engine[2]/ignition",0);
-    setprop("controls/engines/engine[3]/ignition",0);
-    setprop("controls/engines/engine[4]/ignition",0);
-    setprop("controls/engines/engine[5]/ignition",0);
-    setprop("engines/engine[0]/running",0);
-    setprop("engines/engine[1]/running",0);
-    setprop("engines/engine[2]/running",0);
-    setprop("engines/engine[3]/running",0);
-    setprop("engines/engine[4]/running",0);
-    setprop("engines/engine[5]/running",0);
+    setprop("/controls/switches/fuel",0);
+    setprop("/controls/engines/engine[0]/cutoff",1);
+    setprop("/controls/engines/engine[1]/cutoff",1);
+    setprop("/controls/engines/engine[2]/cutoff",1);
+    setprop("/controls/engines/engine[3]/cutoff",1);
+    setprop("/controls/engines/engine[4]/cutoff",1);
+    setprop("/controls/engines/engine[5]/cutoff",1);
+    setprop("/controls/engines/engine[0]/ignition",0);
+    setprop("/controls/engines/engine[1]/ignition",0);
+    setprop("/controls/engines/engine[2]/ignition",0);
+    setprop("/controls/engines/engine[3]/ignition",0);
+    setprop("/controls/engines/engine[4]/ignition",0);
+    setprop("/controls/engines/engine[5]/ignition",0);
+    setprop("/engines/engine[0]/running",0);
+    setprop("/engines/engine[1]/running",0);
+    setprop("/engines/engine[2]/running",0);
+    setprop("/engines/engine[3]/running",0);
+    setprop("/engines/engine[4]/running",0);
+    setprop("/engines/engine[5]/running",0);
 }
 
 var FHupdate = func(tenths){
         var fmeter = getprop("/instrumentation/clock/flight-meter-sec");
         var fhour = fmeter/3600;
-        setprop("instrumentation/clock/flight-meter-hour",fhour);
+        setprop("/instrumentation/clock/flight-meter-hour",fhour);
         var fmin = fhour - int(fhour);
         if(tenths !=0){
             fmin *=100;
         }else{
             fmin *=60;
         }
-        setprop("instrumentation/clock/flight-meter-min",int(fmin));
+        setprop("/instrumentation/clock/flight-meter-min",int(fmin));
     }
 
 ########## MAIN ##############

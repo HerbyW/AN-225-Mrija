@@ -40,7 +40,7 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/ice/load-signal</property>
+        <property>controls/ice/load-signal</property>
       </binding>      
     </action>
   </animation>
@@ -48,7 +48,7 @@
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>/controls/ice/load-signal</property>
+    <property>controls/ice/load-signal</property>
     <factor> -50 </factor>
     <center>
       <x-m> 0 </x-m>

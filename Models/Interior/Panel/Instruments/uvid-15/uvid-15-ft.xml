@@ -248,7 +248,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>/instrumentation/altimeter/setting-inhg</property>
+  <property>instrumentation/altimeter/setting-inhg</property>
   <factor>3600</factor>
   <center>
     <x-m>-0.01257</x-m>
@@ -269,11 +269,11 @@
     <product>
       <difference>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhgN</property>
+          <property>instrumentation/altimeter/setting-inhgN</property>
           <value>1</value>
         </mod>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhgN</property>
+          <property>instrumentation/altimeter/setting-inhgN</property>
           <value>0.1</value>
         </mod>	
       </difference>
@@ -299,11 +299,11 @@
     <product>
       <difference>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>10</value>
         </mod>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>1</value>
         </mod>
       </difference>
@@ -329,11 +329,11 @@
     <product>
       <difference>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>100</value>
         </mod>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>10</value>
         </mod>
       </difference>
@@ -361,7 +361,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>/instrumentation/altimeter/setting-inhg</property>
+      <property>instrumentation/altimeter/setting-inhg</property>
       <factor>0.01</factor>
       <min>28.10</min>
       <max>31.00</max>

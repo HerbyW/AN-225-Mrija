@@ -51,7 +51,7 @@
   <object-name>_d_2</object-name>
   <condition>
     <equals>
-     <property>/instrumentation/nav/in-range</property>    
+     <property>instrumentation/nav/in-range</property>    
      <value>0</value>
     </equals>
   </condition>

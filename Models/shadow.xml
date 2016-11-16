@@ -34,7 +34,7 @@
      <and>
        <not><property>/sim/rendering/rembrandt/enabled</property></not>
        <property>/sim/rendering/shadows/enabled</property>
-       <not><property>/sim/replay/replay-state</property></not>      
+       <not><property>sim/replay/replay-state</property></not>      
      </and>
     </condition>
   </animation>

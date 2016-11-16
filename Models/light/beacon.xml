@@ -18,7 +18,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>strobe</object-name>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   </effect>
 

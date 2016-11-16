@@ -49,20 +49,20 @@ while (load_page(page) != nil)
     page += 1;
 print("Map case page loader done");
 
-setprop("instrumentation/mapcase/page", 1);
+setprop("/instrumentation/mapcase/page", 1);
 
 var switch_page = func(i) {
     var pages = size(root.getChildren());
     if (!pages)
         return;
-    var page = getprop("instrumentation/mapcase/page");
+    var page = getprop("/instrumentation/mapcase/page");
     root.getElementById(page).hide();
     page += i;
     if (page < 1)
         page = pages;
     else if (page > pages)
         page = 1;
-    setprop("instrumentation/mapcase/page", page);
+    setprop("/instrumentation/mapcase/page", page);
     root.getElementById(page).show();
 }
 switch_page(0);

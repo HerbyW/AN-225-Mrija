@@ -61,7 +61,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>APalt1</object-name>
-        <property>/autopilot/settings/target-altitude-ft</property>
+        <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.00001</factor>
         <step>10000</step>
         <axis>
@@ -74,7 +74,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>APalt2</object-name>
-        <property>/autopilot/settings/target-altitude-ft</property>
+        <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.0001</factor>
         <step>1000</step>
         <axis>
@@ -87,7 +87,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>APalt3</object-name>
-        <property>/autopilot/settings/target-altitude-ft</property>
+        <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.001</factor>
         <step>100</step>
         <axis>
@@ -100,7 +100,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>APalt4</object-name>
-        <property>/autopilot/settings/target-altitude-ft</property>
+        <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.01</factor>
         <step>10</step>
         <axis>
@@ -113,7 +113,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>APalt5</object-name>
-        <property>/autopilot/settings/target-altitude-ft</property>
+        <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.1</factor>
         <step>1</step>
         <axis>
@@ -128,7 +128,7 @@
 		<animation>
 		    <type>translate</type>
 		    <object-name>AltSet.cancel</object-name>
-		    <property>/instrumentation/alt-set/knob-pos</property>
+		    <property>instrumentation/alt-set/knob-pos</property>
 		    <factor>-0.003</factor>
 		    <axis>
 		        <x> 1.0</x>
@@ -150,7 +150,7 @@
 	  <button>0</button>	  
 	  <binding>
 	    <command>property-assign</command>
-	    <property>/autopilot/settings/target-altitude-ft</property>
+	    <property>autopilot/settings/target-altitude-ft</property>
 	    <value>0.0</value>
 	  </binding>	  
 	</action>
@@ -159,7 +159,7 @@
     <animation>
       <type>rotate</type>
       <object-name>AltSet.knob</object-name>
-      <property>/autopilot/settings/target-altitude-ft</property>
+      <property>autopilot/settings/target-altitude-ft</property>
         <factor>0.1</factor>
       <center>
       <x-m> 0.0</x-m>
@@ -187,7 +187,7 @@
 	    <not><property>devices/status/keyboard/super</property></not>
 	  </condition>
 	  <command>property-adjust</command>
-	  <property>/autopilot/settings/target-altitude-ft</property>
+	  <property>autopilot/settings/target-altitude-ft</property>
 	  <step>-1</step>
 	  <min>0.0</min>
 	  <max>49000.0</max>
@@ -201,7 +201,7 @@
 	    </or>
 	  </condition>
 	  <command>property-adjust</command>
-	  <property>/autopilot/settings/target-altitude-ft</property>
+	  <property>autopilot/settings/target-altitude-ft</property>
 	  <step>-10</step>
 	  <min>0.0</min>
 	  <max>49000.0</max>
@@ -219,7 +219,7 @@
 	    <not><property>devices/status/keyboard/super</property></not>
 	  </condition>
 	  <command>property-adjust</command>
-	  <property>/autopilot/settings/target-altitude-ft</property>
+	  <property>autopilot/settings/target-altitude-ft</property>
 	  <step>1</step>
 	  <min>0.0</min>
 	  <max>49000.0</max>
@@ -233,7 +233,7 @@
 	    </or>
 	  </condition>
 	  <command>property-adjust</command>
-	  <property>/autopilot/settings/target-altitude-ft</property>
+	  <property>autopilot/settings/target-altitude-ft</property>
 	  <step>10</step>
 	  <min>0.0</min>
 	  <max>49000.0</max>

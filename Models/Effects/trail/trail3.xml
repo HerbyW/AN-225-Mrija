@@ -90,12 +90,12 @@
           <alpha><value> 0.68 </value></alpha>
         </color>
         <size>
-          <value>7</value>
+          <value>9</value>
         </size>
       </end>
 
       <life-sec>
-        <value>25</value>
+        <value>35</value>
       </life-sec>
         
       <mass-kg>  0.5 </mass-kg>

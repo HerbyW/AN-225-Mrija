@@ -61,7 +61,7 @@
     <button>0</button>
     <binding>
       <command>property-assign</command>
-      <property>/autopilot/settings/vertical-speed-fpm</property>
+      <property>autopilot/settings/vertical-speed-fpm</property>
       <value>0.0</value>
     </binding> 
   </action>

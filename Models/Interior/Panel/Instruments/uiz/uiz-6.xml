@@ -78,7 +78,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine[5]/n2</property>
+    <property>engines/engine[5]/n2</property>
     <factor> 0.0703 </factor>
     <interpolation>
       <entry><ind>   0 </ind><dep>  0 </dep></entry>
@@ -102,7 +102,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>/engines/engine[5]/n2</property>
+    <property>engines/engine[5]/n2</property>
     <interpolation>
       <entry><ind>   0 </ind><dep> 0 </dep></entry>
       <entry><ind>  60 </ind><dep> 40 </dep></entry>
@@ -125,7 +125,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle_3</object-name>
-    <property>/engines/engine[5]/n2</property>    
+    <property>engines/engine[5]/n2</property>    
     <interpolation>
       <entry><ind>   0 </ind><dep> 0 </dep></entry>
       <entry><ind>  60 </ind><dep> 40 </dep></entry>

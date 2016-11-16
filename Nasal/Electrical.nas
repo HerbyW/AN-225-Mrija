@@ -24,10 +24,10 @@ var lights_input=[];
 var lights_output=[];
 var lights_load=[];
 
-# var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
-# aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.30], strobe_switch);
-# var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
-# aircraft.light.new("controls/lighting/beacon-state", [1.0, 1.0], beacon_switch);
+# var strobe_switch = props.globals.getNode("/controls/lighting/strobe", 1);
+# aircraft.light.new("/controls/lighting/strobe-state", [0.05, 1.30], strobe_switch);
+# var beacon_switch = props.globals.getNode("/controls/lighting/beacon", 1);
+# aircraft.light.new("/controls/lighting/beacon-state", [1.0, 1.0], beacon_switch);
 
 #var battery = Battery.new(switch-prop,volts,amps,amp_hours,charge_percent,charge_amps);
 var Battery = {
@@ -85,9 +85,9 @@ var Alternator = {
         m = { parents : [Alternator] };
         m.switch =  props.globals.getNode(switch,1);
         m.switch.setBoolValue(0);
-        m.meter =  props.globals.getNode("systems/electrical/gen-load["~num~"]",1);
+        m.meter =  props.globals.getNode("/systems/electrical/gen-load["~num~"]",1);
         m.meter.setDoubleValue(0);
-        m.gen_output =  props.globals.getNode("engines/engine["~num~"]/amp-v",1);
+        m.gen_output =  props.globals.getNode("/engines/engine["~num~"]/amp-v",1);
         m.gen_output.setDoubleValue(0);
         m.meter.setDoubleValue(0);
         m.rpm_source =  props.globals.getNode(src,1);
@@ -136,8 +136,8 @@ var Alternator = {
 
 var battery = Battery.new("/controls/electric/battery-switch",24,30,34,1.0,7.0);
 var battery1 = Battery.new("/controls/electric/battery-switch[1]",24,30,34,1.0,7.0);
-var alternator1 = Alternator.new(0,"controls/electric/engine[0]/generator","/engines/engine[0]/fan",20.0,28.0,60.0);
-var alternator2 = Alternator.new(1,"controls/electric/engine[1]/generator","/engines/engine[1]/fan",20.0,28.0,60.0);
+var alternator1 = Alternator.new(0,"/controls/electric/engine[0]/generator","/engines/engine[0]/fan",20.0,28.0,60.0);
+var alternator2 = Alternator.new(1,"/controls/electric/engine[1]/generator","/engines/engine[1]/fan",20.0,28.0,60.0);
 
 #####################################
 setlistener("/sim/signals/fdm-initialized", func {
@@ -147,138 +147,138 @@ setlistener("/sim/signals/fdm-initialized", func {
 });
 
 var init_switches = func{
-    var AVswitch=props.globals.initNode("controls/electric/avionics-switch",0,"BOOL");
-    setprop("controls/lighting/instruments-norm",0.8);
-    setprop("controls/lighting/engines-norm",0.8);
-    props.globals.initNode("controls/electric/ammeter-switch",0,"BOOL");
-    props.globals.getNode("systems/electrical/serviceable",0,"BOOL");
-    props.globals.getNode("controls/electric/external-power",0,"BOOL");
-    setprop("controls/lighting/instrument-lights-norm",0.8);
-    setprop("controls/lighting/efis-norm",0.8);
-    setprop("controls/lighting/panel-norm",0.8);
+    var AVswitch=props.globals.initNode("/controls/electric/avionics-switch",0,"BOOL");
+    setprop("/controls/lighting/instruments-norm",0.8);
+    setprop("/controls/lighting/engines-norm",0.8);
+    props.globals.initNode("/controls/electric/ammeter-switch",0,"BOOL");
+    props.globals.getNode("/systems/electrical/serviceable",0,"BOOL");
+    props.globals.getNode("/controls/electric/external-power",0,"BOOL");
+    setprop("/controls/lighting/instrument-lights-norm",0.8);
+    setprop("/controls/lighting/efis-norm",0.8);
+    setprop("/controls/lighting/panel-norm",0.8);
 
-    append(lights_input,props.globals.initNode("controls/lighting/landing-light[0]",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light[0]",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/landing-light[0]",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/landing-light[0]",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/landing-light[1]",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light[1]",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/landing-light[1]",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/landing-light[1]",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/nav-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/nav-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/nav-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/nav-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/cabin-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/cabin-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/cabin-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/cabin-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/instrument-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/instrument-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/instrument-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/instrument-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/map-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/map-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/map-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/map-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/wing-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/wing-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/wing-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/wing-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/recog-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/recog-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/recog-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/recog-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/logo-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/logo-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/logo-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/logo-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/taxi-lights",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/taxi-lights",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/taxi-lights",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/taxi-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/beacon-state/state",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/beacon",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/beacon-state/state",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/beacon",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/strobe-state/state",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/strobe",0,"DOUBLE"));
+    append(lights_input,props.globals.initNode("/controls/lighting/strobe-state/state",0,"BOOL"));
+    append(lights_output,props.globals.initNode("/systems/electrical/outputs/strobe",0,"DOUBLE"));
     append(lights_load,1);
-    append(rbus_input,props.globals.initNode("controls/electric/wiper-switch",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/wiper",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/electric/wiper-switch",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/wiper",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[0]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[0]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[0]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[0]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[1]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[1]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[1]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[1]",0,"DOUBLE"));
     append(rbus_load,1);    
-    append(rbus_input,props.globals.initNode("controls/engines/engine[2]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[2]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[2]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[2]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[3]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[3]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[3]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[3]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[4]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[4]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[4]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[4]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[5]/fuel-pump",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/fuel-pump[5]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[5]/fuel-pump",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/fuel-pump[5]",0,"DOUBLE"));
     append(rbus_load,1);    
-    append(rbus_input,props.globals.initNode("controls/engines/engine[0]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[0]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[1]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter[1]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[1]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter[1]",0,"DOUBLE"));
     append(rbus_load,1);    
-    append(rbus_input,props.globals.initNode("controls/engines/engine[2]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter[2]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[2]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter[2]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[3]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter[3]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[3]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter[3]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[4]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter[4]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[4]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter[4]",0,"DOUBLE"));
     append(rbus_load,1);
-    append(rbus_input,props.globals.initNode("controls/engines/engine[5]/starter",0,"BOOL"));
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/starter[5]",0,"DOUBLE"));
+    append(rbus_input,props.globals.initNode("/controls/engines/engine[5]/starter",0,"BOOL"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/starter[5]",0,"DOUBLE"));
     append(rbus_load,1);
     
     append(rbus_input,AVswitch);
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/KNS80",0,"DOUBLE"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/KNS80",0,"DOUBLE"));
     append(rbus_load,1);
     append(rbus_input,AVswitch);
-    append(rbus_output,props.globals.initNode("systems/electrical/outputs/efis",0,"DOUBLE"));
+    append(rbus_output,props.globals.initNode("/systems/electrical/outputs/efis",0,"DOUBLE"));
     append(rbus_load,1);
 
 
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/adf",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/adf",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/dme",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/dme",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/gps",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/gps",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/DG",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/DG",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/transponder",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/transponder",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/mk-viii",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/mk-viii",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/turn-coordinator",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/turn-coordinator",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/comm",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/comm",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/comm[1]",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/comm[1]",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/nav",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/nav",0,"DOUBLE"));
     append(lbus_load,1);
     append(lbus_input,AVswitch);
-    append(lbus_output,props.globals.initNode("systems/electrical/outputs/nav[1]",0,"DOUBLE"));
+    append(lbus_output,props.globals.initNode("/systems/electrical/outputs/nav[1]",0,"DOUBLE"));
     append(lbus_load,1);
 }
 
 
 update_virtual_bus = func( dt ) {
-    var PWR = getprop("systems/electrical/serviceable");
+    var PWR = getprop("/systems/electrical/serviceable");
     var xtie=0;
     load = 0.0;
     power_source = nil;
@@ -362,7 +362,7 @@ lh_bus = func(bv) {
         lbus_output[i].setValue(bv * srvc);
     }
 
-    setprop("systems/electrical/outputs/flaps",bv);
+    setprop("/systems/electrical/outputs/flaps",bv);
     return load;
 }
 
@@ -381,7 +381,7 @@ return load;
 }
 
 update_electrical = func {
-    var scnd = getprop("sim/time/delta-sec");
+    var scnd = getprop("/sim/time/delta-sec");
     update_virtual_bus( scnd );
 settimer(update_electrical, 0);
 }

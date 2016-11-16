@@ -311,7 +311,7 @@
   <animation>
     <type>rotate</type>
     <object-name>drift</object-name>
-    <property>/instrumentation/drift</property>
+    <property>instrumentation/drift</property>
     <factor>1</factor>
     <max-deg>20.0</max-deg>
     <min-deg>-20.0</min-deg>

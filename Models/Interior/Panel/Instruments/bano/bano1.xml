@@ -82,7 +82,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>handle_4</object-name>
-  <property>/controls/lighting/beacon</property>  
+  <property>controls/lighting/beacon</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -96,7 +96,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>handle_5</object-name>
-  <property>/controls/lighting/strobe</property>  
+  <property>controls/lighting/strobe</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -229,7 +229,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <binding>
         <command>nasal</command>
           <script>
-             interpolate("/controls/lighting/beacon", 0.0, 0.1 );
+             interpolate("controls/lighting/beacon", 0.0, 0.1 );
           </script>
      </binding>
   </action>
@@ -247,7 +247,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <binding>
         <command>nasal</command>
           <script>
-             interpolate("/controls/lighting/strobe", 1.0, 0.1 );
+             interpolate("controls/lighting/strobe", 1.0, 0.1 );
           </script>
      </binding>
   </action>
@@ -265,7 +265,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <binding>
         <command>nasal</command>
           <script>
-             interpolate("/controls/lighting/strobe", 0.0, 0.1 );
+             interpolate("controls/lighting/strobe", 0.0, 0.1 );
           </script>
      </binding>
   </action>

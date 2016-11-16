@@ -37,7 +37,7 @@
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>disk</object-name>
   </effect>
@@ -60,7 +60,7 @@
 <animation>
   <type>rotate</type>
   <object-name>rect2</object-name>
-  <property>/gear/gear/position-norm</property>
+  <property>gear/gear/position-norm</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>    -120</dep></entry> 
    <entry><ind> 0.07</ind><dep>  -115</dep></entry>
@@ -83,7 +83,7 @@
  <animation>
   <type>rotate</type>
   <object-name>rect1</object-name>
-  <property>/gear/gear/position-norm</property>
+  <property>gear/gear/position-norm</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>    -120</dep></entry> 
    <entry><ind> 0.07</ind><dep>  -115</dep></entry>

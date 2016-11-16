@@ -70,7 +70,7 @@
       <command>set-tooltip</command>
       <tooltip-id>Drift</tooltip-id>
       <label>Wind Drift: %5.2f</label>
-      <property>/instrumentation/drift</property>      
+      <property>instrumentation/drift</property>      
     </binding>
   </hovered> 
   
@@ -107,7 +107,7 @@
   <type>rotate</type>
   <object-name>needle_1</object-name>
   <object-name>needle_2</object-name>
-  <property>/orientation/heading-deg</property>
+  <property>orientation/heading-deg</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -118,7 +118,7 @@
 <animation>
   <type>rotate</type>
   <object-name>needle_2</object-name>  
-  <property>/instrumentation/drift</property>
+  <property>instrumentation/drift</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>

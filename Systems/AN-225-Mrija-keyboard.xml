@@ -39,7 +39,7 @@
     <desc>Autostart</desc>
     <binding>
       <command>property-toggle</command>
-      <property>sim/model/autostart</property>
+      <property>/sim/model/autostart</property>
       <value>true</value>
     </binding>
   </key>
@@ -49,7 +49,7 @@
     <desc>Change Pilot Engineer View</desc>
     <binding>
       <command>property-cycle</command>
-      <property>sim/current-view/view-number</property>  
+      <property>/sim/current-view/view-number</property>  
       <value>0</value>
       <value>9</value>
     </binding>
@@ -60,7 +60,7 @@
     <desc>Change Pilot Ramp View</desc>
     <binding>
       <command>property-cycle</command>
-      <property>sim/current-view/view-number</property>  
+      <property>/sim/current-view/view-number</property>  
       <value>0</value>
       <value>10</value>
     </binding>
@@ -71,7 +71,7 @@
     <desc>Toggle Reversers</desc>	
     <binding>
       <command>property-toggle</command>
-      <property>controls/reverser</property>
+      <property>/controls/reverser</property>
     </binding>
   </key>
   
@@ -80,7 +80,7 @@
     <desc>Front Cargo Door</desc>
     <binding>
         <command>property-toggle</command>
-        <property>controls/cargodoor/signal</property>
+        <property>/controls/cargodoor/signal</property>
       </binding>   
   </key>
   

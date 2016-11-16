@@ -51,7 +51,7 @@
   <object-name>_d_2</object-name>
   <condition>
     <greater-than>
-    <property>/engines/engine[4]/turbine</property>
+    <property>engines/engine[4]/turbine</property>
     <value> 62.5 </value>
     </greater-than>
   </condition>

@@ -36,7 +36,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/controls/gear/gear-down</factor-prop>
+    <factor-prop>controls/gear/gear-down</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -46,7 +46,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/controls/gear/gear-down</factor-prop>
+    <factor-prop>controls/gear/gear-down</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -56,7 +56,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/controls/gear/gear-down</factor-prop>
+    <factor-prop>controls/gear/gear-down</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -66,7 +66,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/gear/state</factor-prop>
+    <factor-prop>gear/state</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -76,7 +76,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/gear/state</factor-prop>
+    <factor-prop>gear/state</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -86,7 +86,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/gear/state</factor-prop>
+    <factor-prop>gear/state</factor-prop>
   </emission>
 </animation>
 <animation>
@@ -96,7 +96,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>/gear/warning</factor-prop>
+    <factor-prop>gear/warning</factor-prop>
   </emission>
 </animation>
 

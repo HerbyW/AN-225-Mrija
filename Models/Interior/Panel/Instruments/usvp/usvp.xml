@@ -51,11 +51,6 @@
     </axis>
 </animation>
 
-
-
-           
-
-
 <animation>
   <type>rotate</type>
   <object-name>handle</object-name>

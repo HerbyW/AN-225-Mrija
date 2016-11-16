@@ -349,7 +349,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>/instrumentation/altimeter/setting-inhg</property>
+      <property>instrumentation/altimeter/setting-inhg</property>
       <factor>0.01</factor>
       <min>28.10</min>
       <max>31.00</max>
@@ -361,7 +361,7 @@
       <command>set-tooltip</command>
       <tooltip-id>mm-to-hPa</tooltip-id>      
       <label>hPa: %6.2f</label>
-      <property>/instrumentation/altimeter/setting-hapa</property> 
+      <property>instrumentation/altimeter/setting-hapa</property> 
     </binding>
   </hovered>
   

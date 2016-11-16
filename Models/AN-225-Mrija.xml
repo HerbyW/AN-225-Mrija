@@ -367,7 +367,7 @@ AN225 model/animation config.
   <effect>
     <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/c182sreflect-uber_body</inherits-from>
     <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
@@ -667,7 +667,7 @@ AN225 model/animation config.
 <effect>
     <inherits-from>Aircraft/AN-225-Mrija/Models/Effects/c182sreflect-uber</inherits-from> 
     <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>    
     <object-name>L-Wing-Slat</object-name>
     <object-name>R-Wing-Slat</object-name>
@@ -688,7 +688,7 @@ AN225 model/animation config.
 <effect>
     <inherits-from>Effects/model-combined-deferred</inherits-from>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>Fuselage</object-name>
     <object-name>FrontCargoDoor</object-name>
@@ -1014,7 +1014,7 @@ AN225 model/animation config.
 <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>Fuselage-Windows</object-name>
   </effect>
@@ -6765,6 +6765,33 @@ AN225 model/animation config.
  <path>Aircraft/AN-225-Mrija/Models/Effects/ground/touch.xml</path>
  <offsets> 
       <x-m> 16.11 </x-m>
+      <y-m>  2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/ground0.xml</path>
+ <offsets> 
+      <x-m>-20.03</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-4.0</z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/ground1.xml</path>
+ <offsets> 
+      <x-m> 15.11 </x-m>
+      <y-m> -2.635 </y-m>
+      <z-m>  -4.044 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-225-Mrija/Models/Effects/ground/ground2.xml</path>
+ <offsets> 
+      <x-m> 15.11 </x-m>
       <y-m>  2.635 </y-m>
       <z-m>  -4.044 </z-m>
  </offsets>

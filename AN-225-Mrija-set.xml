@@ -61,6 +61,12 @@
       </autopilot>      
     </systems>
     
+    <import>
+      <path>Huds/Sets/controls.xml</path>
+      <x-offset>-100</x-offset>
+      <y-offset>70</y-offset>
+    </import> 
+    
     <flight-recorder>
       <replay-config type="int">0</replay-config>
       <config n="0">
@@ -77,15 +83,15 @@
         </signals>
 	<signal>
 	  <type>float</type> 
-	  <property type="string">surface-positions/reverser-norm</property>
+	  <property type="string">/surface-positions/reverser-norm</property>
 	</signal>
 	<signal>
 	  <type>float</type> 
-	  <property type="string">surface-positions/slat-pos-norm</property>
+	  <property type="string">/surface-positions/slat-pos-norm</property>
 	</signal>
 	<signal>
 	        <type>float</type>
-	        <property type="string">surface-positions/spoiler-pos-norm</property>
+	        <property type="string">/surface-positions/spoiler-pos-norm</property>
 	    </signal>
 	    <signal>
                 <type>int</type>
