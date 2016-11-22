@@ -7,15 +7,8 @@
     #############################################################################	  
     -->
 <!--
-
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-    Eagel: Liveries
-    ###################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 <!-- KURS-MP control gauge
 3D instrument for Tu-154 -->
@@ -280,7 +273,7 @@
       <property>instrumentation/kurs-mp-2/digit-h-ones</property>
       <step>-1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>false</wrap>
     </binding>
     <binding>
@@ -302,7 +295,7 @@
       <property>instrumentation/kurs-mp-2/digit-h-ones</property>
       <step>1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>true</wrap>
     </binding>
     <binding>
@@ -417,7 +410,7 @@
       <property>instrumentation/kurs-mp-2/digit-h-ones</property>
       <step>-1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>false</wrap>
     </binding>
     <binding>
@@ -440,7 +433,7 @@
       <property>instrumentation/kurs-mp-2/digit-h-ones</property>
       <step>1.0</step>
       <min>0.0</min>
-      <max>9.0</max>
+      <max>10.0</max>
       <wrap>true</wrap>
     </binding>
     <binding>

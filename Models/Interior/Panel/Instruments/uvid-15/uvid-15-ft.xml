@@ -62,7 +62,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>controls/switches/gauge-light</factor-prop>
+    <factor-prop>sim/signals/fdm-initialized</factor-prop>
   </emission>
 </animation>
 
@@ -70,13 +70,12 @@
   <type>select</type>
   <object-name>lamp</object-name>
   <condition>    
-       <greater-than>
-      	<property>controls/switches/gauge-light</property>
-        <value>0.5</value>
-       </greater-than>       
+       <equals>
+      	<property>/instrumentation/altimeter/setting-inhg</property>
+        <value>29.92</value>
+       </equals>       
   </condition>
 </animation>
-
   
 <!--Needles-->
 <animation>
