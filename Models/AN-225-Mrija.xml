@@ -1076,7 +1076,7 @@ AN225 model/animation config.
       <z-m>10.50</z-m>
     </offsets>
   </model>
-  
+
   <model>
     <name>ICE</name>
     <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/ICE/ICE-firstcarL.xml</path>
@@ -1093,6 +1093,10 @@ AN225 model/animation config.
       <equals>
 	<property>sim/multiplay/generic/int[16]</property>
 	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>ICE</value>
       </equals>
     </and>
   </condition>
@@ -1120,6 +1124,10 @@ AN225 model/animation config.
 	<property>sim/multiplay/generic/int[16]</property>
 	<value>1</value>
       </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>ICE</value>
+      </equals>
     </and>
   </condition>
     <offsets>
@@ -1146,6 +1154,10 @@ AN225 model/animation config.
 	<property>sim/multiplay/generic/int[16]</property>
 	<value>1</value>
       </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>ICE</value>
+      </equals>
     </and>
   </condition>
     <offsets>
@@ -1171,6 +1183,131 @@ AN225 model/animation config.
       <equals>
 	<property>sim/multiplay/generic/int[16]</property>
 	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>ICE</value>
+      </equals>
+    </and>
+  </condition>
+    <offsets>
+      <x-m>5.0</x-m>
+      <y-m>3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>  
+
+  
+  <model>
+    <name>coach</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/coach/coach1.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>COACH</value>
+      </equals>
+    </and>
+  </condition>
+    <offsets>
+      <x-m>-21.0</x-m>
+      <y-m>-3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>coach</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/coach/coach2.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>COACH</value>
+      </equals>
+    </and>
+  </condition>
+    <offsets>
+      <x-m>5.0</x-m>
+      <y-m>-3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>coach</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/coach/coach3.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>COACH</value>
+      </equals>
+    </and>
+  </condition>
+    <offsets>
+      <x-m>-21.0</x-m>
+      <y-m>3.5</y-m>
+      <z-m>-1.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>coach</name>
+    <path>Aircraft/AN-225-Mrija/Models/Effects/Submodels/coach/coach4.xml</path>
+    <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[3]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[2]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+      <equals>
+	<property>sim/multiplay/generic/string[2]</property>
+	<value>COACH</value>
       </equals>
     </and>
   </condition>

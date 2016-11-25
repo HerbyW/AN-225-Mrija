@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>coach.ac</path>
+	
+	<offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+
+	<animation>
+		<enable-hot type="bool">false</enable-hot>
+	</animation>
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>20000</max-m>
+	</animation>
+
+<animation>
+    <type>material</type>
+    <condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.35</red>
+      <green>0.35 </green>
+      <blue> 0.35 </blue>
+    </emission>
+  </animation>
+ 
+ <!-- leftright -->
+    
+    <animation>
+    <type>translate</type>
+    
+    <property>sim/multiplay/generic/float[3]</property>
+    <interpolation>
+      <entry><ind> 66000 </ind><dep>  -2 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  -2 </dep></entry>
+      <entry><ind> 33000 </ind><dep>  -3.5 </dep></entry> 
+      <entry><ind> 16500 </ind><dep>  -3.5 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>    
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+    
+    <!-- up-down -->
+    
+  <animation>
+    <type>translate</type>
+    
+    <property>sim/multiplay/generic/float[3]</property>
+    <interpolation>
+      <entry><ind> 66000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 25000 </ind><dep>  0.0 </dep></entry> 
+      <entry><ind> 10500 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 1 </ind><dep>  3.40 </dep></entry>
+      <entry><ind> 0 </ind><dep>  3.40 </dep></entry>
+    </interpolation>    
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  -1 </z>
+    </axis>
+  </animation>
+
+  <!-- forward-backward -->
+  
+ <animation>
+   <type>translate</type>
+   
+   <property>sim/multiplay/generic/float[3]</property>
+   <interpolation>
+      <entry><ind> 66000 </ind><dep>  -11.13 </dep></entry>
+      <entry><ind> 49500 </ind><dep>  -11.13 </dep></entry>
+      <entry><ind> 33000 </ind><dep> 30.0 </dep></entry> 
+      <entry><ind> 16500 </ind><dep> 45.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60.0 </dep></entry>
+    </interpolation>    
+   <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+   </axis>
+ </animation>
+
+
+</PropertyList>

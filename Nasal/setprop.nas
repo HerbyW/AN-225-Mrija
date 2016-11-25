@@ -12,7 +12,17 @@
 #    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
 #    Thanks for helping with some coding: D-LEON
 ###################################################################################################
-  
+setprop("/sim/model/an225/payload", "ICE");
+
+setlistener("/sim/model/livery/file", func
+{
+  if (getprop("/sim/model/livery/file") == "AN-225-Mrija")
+      setprop("/sim/model/an225/payload", "ICE");
+    else
+      setprop("/sim/model/an225/payload", "COACH");
+}, 1, 0);
+
+#############################################################################################################
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
 

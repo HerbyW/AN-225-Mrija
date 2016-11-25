@@ -118,7 +118,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
   
    <description>Antonov AN-225-Mrija heavy/outsize cargo aircraft (YASim fdm)</description>
    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-   <aircraft-version>5.0.0</aircraft-version>    
+   <aircraft-version>5.0.1</aircraft-version>    
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
@@ -140,7 +140,10 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 	  <file type="string">AN-225-Mrija</file>
 	  <!--liveries from: eagel 10/2016 -->
 	  </livery>
-      <an225><version type="string">5.0.0</version></an225>
+      <an225>
+	<version type="string">5.0.1</version>
+	<payload type="string">ICE</payload>
+      </an225>
     </model>
     
     <sound>      
@@ -200,6 +203,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
              
         <string  alias="/sim/multiplay/callsign"/>
         <string n="1" type="string" alias="/sim/model/an225/version"/>
+        <string n="2" type="string" alias="/sim/model/an225/payload"/>
         
      </generic>
     </multiplay>

@@ -6,20 +6,12 @@
 		###################################################################################
 simplyfied by HerbyW Jan2015  -->
 <!--
-
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-    Eagel: Liveries
-    ###################################################################################
-225-->
-
+Copyright (C) Herbert Wagner Nov2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
 
 <PropertyList>
-    <path>ap-fg.ac</path>
+    <path>ap-mach.ac</path>
 
     <animation>
       <type>material</type>
@@ -43,6 +35,7 @@ simplyfied by HerbyW Jan2015  -->
         <object-name>apprOn</object-name>
         <object-name>gpsOn</object-name>
         <object-name>pitchOn</object-name>
+	<object-name>machOn</object-name>
 		<emission>
 			<red>0.6</red>
 			<green>0.6</green>
@@ -71,6 +64,8 @@ simplyfied by HerbyW Jan2015  -->
         <object-name>navOff</object-name>        
         <object-name>gpsOff</object-name>
         <object-name>pitchOff</object-name>
+	<object-name>machOn</object-name>
+	<object-name>machOff</object-name>
 	<object-name>shadow</object-name>
 		
 		<emission>
@@ -101,6 +96,7 @@ simplyfied by HerbyW Jan2015  -->
         <object-name>navOn</object-name>        
         <object-name>gpsOn</object-name>
         <object-name>pitchOn</object-name>
+	<object-name>machOn</object-name>
         <condition>
         	<greater-than>
 		 <property>controls/switches/gauge-light</property>
@@ -450,7 +446,7 @@ simplyfied by HerbyW Jan2015  -->
          </action>
     </animation>
 
-    <!-- Approach / Glideslope -->
+    <!-- Approach / Glideslope  -->
     
     <animation>
         <type>select</type>
@@ -497,4 +493,54 @@ simplyfied by HerbyW Jan2015  -->
             </binding>            
         </action>
     </animation>
+    
+        <!-- Mach Hold -->
+    
+    <animation>
+        <type>select</type>
+        <object-name>machOff</object-name>
+        <condition>
+              <not>
+               <equals>
+                 <property>autopilot/locks/speed</property>
+                 <value type="string">mach-with-throttle</value>
+               </equals>
+              </not>           
+        </condition>
+    </animation>    
+
+    <animation>
+        <type>pick</type>
+        <visible>true</visible>
+        <object-name>machOff</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+              <command>property-assign</command>
+              <property>autopilot/locks/speed</property>
+              <value type="string">mach-with-throttle</value>
+            </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>autopilot/settings/target-speed-mach</property>
+              <property>velocities/mach</property>
+            </binding> 
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <visible>true</visible>
+        <object-name>machOn</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+              <command>property-assign</command>
+              <property>autopilot/locks/speed</property>
+              <value type="string"></value>
+            </binding>            
+        </action>
+    </animation>
+
+    
 </PropertyList>
