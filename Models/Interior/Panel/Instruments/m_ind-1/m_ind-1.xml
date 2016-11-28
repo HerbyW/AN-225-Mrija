@@ -31,7 +31,7 @@
   <animation>
     <type>rotate</type>
     <object-name>rect1</object-name>
-    <property>/velocities/mach</property>
+    <property>velocities/mach</property>
     <interpolation>
       <entry><ind>  0.0</ind><dep>    0</dep></entry>
       <entry><ind> 0.5</ind><dep>  180</dep></entry>
@@ -76,11 +76,11 @@
     <condition>
       <and>
 	<greater-than>
-	  <property>/velocities/mach</property>   
+	  <property>velocities/mach</property>   
 	  <value>0.95</value>
 	</greater-than>
 	<less-than>
-	  <property>/velocities/mach</property>   
+	  <property>velocities/mach</property>   
 	  <value>1.05</value>
 	</less-than>
       </and>
