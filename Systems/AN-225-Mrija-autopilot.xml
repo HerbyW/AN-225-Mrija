@@ -257,11 +257,50 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
                           <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>       <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>-1.0</u_min> <!-- minimum output clamp -->
-      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-0.80</u_min> <!-- minimum output clamp -->
+      <u_max>0.80</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
+        <!-- Rudder Control -->
+    <pi-simple-controller>
+      <name>Rudder Control</name>
+      <debug>false</debug>
+      <enable>
+	<condition>
+	  <or>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>dg-heading-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>true-heading-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>nav1-hold</value>
+	    </equals>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>wing-leveler</value>
+	    </equals>
+	  </or>
+	</condition>
+      </enable>
+      <input>
+	<property>/orientation/roll-deg</property>
+      </input>
+      <reference>0.0</reference>
+      <output>
+	<property>/controls/flight/rudder-trim</property>
+      </output>
+      <config>
+	<Kp>-0.004</Kp>
+	<u_min>-0.4</u_min>
+	<u_max>0.4</u_max>
+      </config>
+    </pi-simple-controller>
 
  <!-- =============================================================== -->
  <!-- Pitch Axis Modes                                                -->
@@ -466,10 +505,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>1.50</Kp>          <!-- proportional gain -->
+      <Kp>2.0</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -->
-      <u_max>15.0</u_max>   <!-- maximum output clamp -->
+      <u_max>2.0</u_max>   <!-- maximum output clamp -->
     </config>
   </pi-simple-controller>  
   
@@ -527,7 +566,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </input>
     <output>/controls/flight/elevator-trim</output>
     <type>noise-spike</type>
-    <max-rate-of-change>1.0</max-rate-of-change>
+    <max-rate-of-change>2.0</max-rate-of-change>
   </filter>
 
   <!-- vertical speed hold -->

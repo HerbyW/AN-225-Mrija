@@ -171,7 +171,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[6]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -204,7 +204,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[8]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -237,7 +237,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[10]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -270,7 +270,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[12]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -303,7 +303,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[17]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
@@ -336,7 +336,7 @@
 	 </greater-than>
 	 <greater-than>
           <property>sim/multiplay/generic/float[19]</property>    
-          <value>33</value>
+          <value>32</value>
          </greater-than>
 	 </and>
         </condition>  
