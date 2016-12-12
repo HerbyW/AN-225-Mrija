@@ -1038,9 +1038,9 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
     <offsets>
-      <x-m>  4.45 </x-m>
+      <x-m>  4.55 </x-m>
       <y-m>  -1.291 </y-m>
-      <z-m> -0.27 </z-m>
+      <z-m> -0.34 </z-m>
       <heading-deg>90.0</heading-deg>
       <pitch-deg>0</pitch-deg>
     </offsets>
@@ -1071,9 +1071,9 @@
   <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
     <offsets>
-      <x-m>  4.55 </x-m>
+      <x-m>  4.45 </x-m>
       <y-m>  -1.291 </y-m>
-      <z-m> -0.34 </z-m>
+      <z-m> -0.27 </z-m>
       <heading-deg>90.0</heading-deg>
       <pitch-deg>0</pitch-deg>
     </offsets>
