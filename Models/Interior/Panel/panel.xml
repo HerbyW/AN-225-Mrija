@@ -1011,6 +1011,18 @@
     </offsets>
   </model>
   
+       <!--wind indicator -->
+ 
+ <model>
+    <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/windcompass/windcompass.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> -0.32 </y-m>
+      <z-m> -0.085 </z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+  
   <!--USH, USHDB ADF and VOR Navigation Compasses : Navigator View-->
   
   <model>
