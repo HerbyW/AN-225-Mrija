@@ -19,24 +19,6 @@
 		<min-m>0</min-m>
 		<max-m>20000</max-m>
 	</animation>
-	
-	<animation> 
-    <type>textranslate</type> 
-    <object-name>Plane</object-name> 
-    <property>/sim/time/sun-angle-rad</property>
-    <step> 1.57 </step>
-    <factor>0.318471338</factor>
-    <center>
-     <x-m> 0 </x-m>
-     <y-m> 0 </y-m>
-     <z-m> 0 </z-m>
-    </center>
-    <axis> 
-      <x> -1 </x> 
-      <y>  0 </y> 
-      <z>  0 </z> 
-    </axis> 
-  </animation>
 
   <animation>
     <type>material</type>

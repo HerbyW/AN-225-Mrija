@@ -32,7 +32,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<red>0.60</red>
 	<green>0.60</green>
 	<blue>1.0</blue>
-	<factor-prop>sim/multiplay/generic/int[16]</factor-prop>
+	<factor-prop>sim/multiplay/generic/int[1]</factor-prop>
       </emission>
     </animation>
     
@@ -42,7 +42,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	  <not><property>/sim/rendering/rembrandt/enabled</property></not>
-	  <property>sim/multiplay/generic/int[16]</property>
+	  <property>sim/multiplay/generic/int[1]</property>
 	</and>
       </condition>
     </animation>
@@ -91,7 +91,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	  <property>/sim/rendering/rembrandt/enabled</property>
-	  <property>sim/multiplay/generic/int[16]</property>
+	  <property>sim/multiplay/generic/int[1]</property>
 	  <greater-than>
             <property>/sim/time/sun-angle-rad</property>
             <value>1.57</value>
