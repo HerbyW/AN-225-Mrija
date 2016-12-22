@@ -6716,13 +6716,112 @@ AN225 model/animation config.
     <!-- Lighting Landing and Taxi, 2 lamps-->
 
     <model>
-      <path>Aircraft/AN-225-Mrija/Models/light/AN-225-lights.xml</path>
+      <path>Aircraft/AN-225-Mrija/Models/light/AN225m-lights.xml</path>
 	<offsets>
 	  <x-m> 0.0 </x-m>
 	  <y-m>  0.0 </y-m>
 	  <z-m>  0.0 </z-m>
 	</offsets>
-      </model> 
+      </model>
+      
+      <!-- Ambient Lighting-->
+    
+    <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  -17.407 </x-m>
+	  <y-m> -3.662 </y-m>
+	  <z-m> 0.818 </z-m>
+	</offsets>
+      </model>
+    <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  -19.502 </x-m>
+	  <y-m> 0.0 </y-m>
+	  <z-m> -2.503 </z-m>
+	</offsets>
+      </model>
+    <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  2.449 </x-m>
+	  <y-m> -2.047 </y-m>
+	  <z-m> -3.167 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  2.449 </x-m>
+	  <y-m>  2.047 </y-m>
+	  <z-m> -3.167 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  15.272 </x-m>
+	  <y-m> -2.046 </y-m>
+	  <z-m> -3.206 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  15.272 </x-m>
+	  <y-m>  2.046 </y-m>
+	  <z-m> -3.206 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  3.546 </x-m>
+	  <y-m> -14.44 </y-m>
+	  <z-m>  3.177 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  3.546 </x-m>
+	  <y-m>  14.44 </y-m>
+	  <z-m>  3.177 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  7.71 </x-m>
+	  <y-m> -22.25 </y-m>
+	  <z-m>  2.741 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  7.71 </x-m>
+	  <y-m> 22.25 </y-m>
+	  <z-m>  2.741 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  3.275 </x-m>
+	  <y-m> -5.898 </y-m>
+	  <z-m>  3.108 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+	<offsets>
+	  <x-m>  3.275 </x-m>
+	  <y-m>  5.898 </y-m>
+	  <z-m>  3.108 </z-m>
+	</offsets>
+      </model>
 
 	    <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>

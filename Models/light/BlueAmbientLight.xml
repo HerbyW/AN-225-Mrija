@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <path>BlueAmbientLight.ac</path>  
+  
+  <!-- No preview for fgrun-->
+  <animation>
+    <object-name>Volume</object-name> 
+    <object-name>LightGlow</object-name>
+    <object-name>Lamp</object-name>
+    <nopreview/>
+    </animation>
+    
+    <!-- Special Shaders -->
+    
+    <animation>
+      <type>noshadow</type>      
+      <object-name>Volume</object-name> 
+      <object-name>LightGlow</object-name>
+      <object-name>Lamp</object-name>
+    </animation>
+    
+    <animation>
+      <type>material</type>
+      <object-name>Lamp</object-name>
+      <emission>
+	<red>0.60</red>
+	<green>0.60</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/multiplay/generic/int[16]</factor-prop>
+      </emission>
+    </animation>
+    
+    <animation>
+      <type>select</type>
+      <object-name>LightGlow</object-name>
+      <condition>
+	<and>
+	  <not><property>/sim/rendering/rembrandt/enabled</property></not>
+	  <property>sim/multiplay/generic/int[16]</property>
+	</and>
+      </condition>
+    </animation>
+    
+    <!-- beacon red top -->
+    <animation>
+      <type>light</type>
+      <light-type>point</light-type>
+      <name>AmbientBlue</name>
+      <object-name>Volume</object-name>
+      <position>
+	<x> 0.0</x>
+	<y> 0.0</y>
+	<z> -0.16</z>
+      </position>
+      <ambient>
+	<r>0.03</r>
+        <g>0.03</g>
+        <b>0.03</b>
+	<a>1.0</a>
+      </ambient>
+      <diffuse>
+	<r>0.6</r>
+	<g>0.7</g>
+	<b>1.0</b>
+	<a>1.0</a>
+      </diffuse>
+      <specular>
+	<r>0.6</r>
+	<g>0.7</g>
+	<b>1.0</b>
+	<a>1.0</a>
+      </specular>
+      <attenuation>
+	<c>1.0</c>
+	<l>0.7</l>
+	<q>0.5</q>
+      </attenuation>
+      <near-m>0.015</near-m>
+      <far-m>50</far-m>
+    </animation>
+    
+    <animation>
+      <type>select</type>
+      <object-name>AmbientBlue</object-name> 
+      <condition>
+	<and>
+	  <property>/sim/rendering/rembrandt/enabled</property>
+	  <property>sim/multiplay/generic/int[16]</property>
+	  <greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+         </greater-than>
+	</and>
+      </condition>
+    </animation>
+    
+    </PropertyList>

@@ -12,6 +12,21 @@
 #    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
 #    Thanks for helping with some coding: D-LEON
 ###################################################################################################
+setprop("/sim/signals/fdm-ready", 0);
+
+
+var fdmready = maketimer(3, func {
+  
+  if (getprop ("/sim/time/elapsed-sec") > 15 )  
+  setprop("/sim/signals/fdm-ready", 1); 
+    
+});
+
+fdmready.start();
+
+
+###################################################################################
+
 setprop("/sim/model/an225/payload", "ICE");
 
 setlistener("/sim/model/livery/file", func

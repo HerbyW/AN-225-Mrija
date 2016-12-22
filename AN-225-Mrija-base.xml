@@ -129,6 +129,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     </rating>
     
     <fuel-fraction>0.6</fuel-fraction>
+    <signals><fdm-ready type="int">0</fdm-ready></signals>
     
     <startup>
       <splash-texture>Aircraft/AN-225-Mrija/AN-225-Mrija-splash.png</splash-texture>
@@ -159,8 +160,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
       <chat_display>1</chat_display>
       <generic> 
         
-        <int type="int" n="0" alias="/controls/ice/trigger/state">  0 </int>	  
-	<int type="int" n="1" alias="/controls/ice/ice">  0 </int>
+        <int type="int" n="1" alias="/sim/signals/fdm-ready" />
         <int type="int" n="2" alias="/controls/shuttle/door/position"> 0 </int>
         <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/controls/lighting/beacon-state/state"/>
