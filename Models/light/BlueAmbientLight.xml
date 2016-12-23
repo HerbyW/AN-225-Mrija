@@ -47,6 +47,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <property>/sim/time/sun-angle-rad</property>
             <value>1.57</value>
          </greater-than>
+	 <less-than>
+	    <property>sim/multiplay/generic/float[5]</property>
+	    <value>3</value>
+	  </less-than>
 	</and>
       </condition>
     </animation>
