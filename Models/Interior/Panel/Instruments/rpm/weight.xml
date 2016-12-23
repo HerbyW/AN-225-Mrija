@@ -45,8 +45,7 @@
   <property>yasim/gross-weight-lbs</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry>    
-   <entry><ind> 551155</ind><dep>  310</dep></entry>
-   <entry><ind> 570000</ind><dep>  360</dep></entry>
+   <entry><ind> 1470000</ind><dep>  340</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>

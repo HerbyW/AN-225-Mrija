@@ -6725,6 +6725,15 @@ AN225 model/animation config.
       </model>
       
       <!-- Ambient Lighting-->
+      
+      <model>
+      <path>Aircraft/AN-225-Mrija/Models/light/ground.xml</path>
+	<offsets>
+	  <x-m>  0 </x-m>
+	  <y-m>  0 </y-m>
+	  <z-m>  0.32 </z-m>
+	</offsets>
+      </model>
     
     <model>
       <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>

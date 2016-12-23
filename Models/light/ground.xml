@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+
+  <path>ground.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>ground</object-name>
+    <condition>
+      <and>
+	  <not><property>/sim/rendering/rembrandt/enabled</property></not>
+	  <property>sim/multiplay/generic/int[1]</property>
+	  <greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+         </greater-than>
+	</and>
+    </condition>
+  </animation>
+
+</PropertyList>

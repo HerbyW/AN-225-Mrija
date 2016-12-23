@@ -6,7 +6,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <PropertyList>
   
-  <path>BlueAmbientLight.ac</path>  
+  <path>BlueAmbientLight2.ac</path>  
   
   <!-- No preview for fgrun-->
   <animation>
@@ -43,11 +43,24 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<and>
 	  <not><property>/sim/rendering/rembrandt/enabled</property></not>
 	  <property>sim/multiplay/generic/int[1]</property>
+	  <greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+         </greater-than>
 	</and>
       </condition>
     </animation>
     
-    <!-- beacon red top -->
+    <animation>
+    <type>dist-scale</type>
+    <object-name>LightGlow</object-name>
+    <interpolation>
+      <entry><ind>    0 </ind><dep> 0.5 </dep></entry>
+      <entry><ind>   20 </ind><dep> 1.0 </dep></entry>
+      <entry><ind> 1500 </ind><dep> 2 </dep></entry>
+    </interpolation>
+  </animation>
+
     <animation>
       <type>light</type>
       <light-type>point</light-type>
@@ -87,7 +100,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     
     <animation>
       <type>select</type>
-      <object-name>AmbientBlue</object-name> 
+      <object-name>AmbientBlue</object-name>
       <condition>
 	<and>
 	  <property>/sim/rendering/rembrandt/enabled</property>
