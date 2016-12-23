@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1.0000 1.0000 1.0000  amb 0.2000 0.2000 0.2000  emis 0.0000 0.0000 0.0000  spec 0.5000 0.5000 0.5000  shi 10 trans 0.0000
-MATERIAL "blue" rgb 0.0093 0.5050 0.9176  amb 0.4773 0.4773 0.4773  emis 0.0000 0.0000 0.0000  spec 0.0298 0.4775 0.9176  shi 100 trans 0.5000
+MATERIAL "blue" rgb 0.0093 0.5050 0.9176  amb 0.0093 0.5050 0.9176  emis 0.0000 0.0000 0.0000  spec 0.0298 0.4775 0.9176  shi 100 trans 0.5000
 MATERIAL "LightGlow" rgb 1.0000 1.0000 1.0000  amb 1.0000 1.0000 1.0000  emis 1.0000 1.0000 1.0000  spec 0.0005 0.0005 0.0005  shi 0 trans 0.2000
 OBJECT world
 name "Blender_export__BlueAmbientLight2.ac"

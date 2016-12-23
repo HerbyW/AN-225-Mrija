@@ -6,7 +6,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <PropertyList>
   
-  <path>BlueAmbientLight2.ac</path>  
+  <path>BlueAmbientLight.ac</path>  
   
   <!-- No preview for fgrun-->
   <animation>
@@ -29,9 +29,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <type>material</type>
       <object-name>Lamp</object-name>
       <emission>
-	<red>0.60</red>
-	<green>0.60</green>
-	<blue>1.0</blue>
+	<red>0.0093</red>
+	<green>0.505</green>
+	<blue>0.9176</blue>
 	<factor-prop>sim/multiplay/generic/int[1]</factor-prop>
       </emission>
     </animation>
@@ -47,10 +47,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <property>/sim/time/sun-angle-rad</property>
             <value>1.57</value>
          </greater-than>
-	 <less-than>
-	    <property>sim/multiplay/generic/float[5]</property>
-	    <value>3</value>
-	  </less-than>
 	</and>
       </condition>
     </animation>

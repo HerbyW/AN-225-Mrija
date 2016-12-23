@@ -361,14 +361,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>LandinglightL</name>
       <object-name>LightVolumeLL</object-name> 
       <position>
-	<x>-21.33</x>
-	<y> -3.39</y>
-	<z>-4.549</z>
+	<x>-25.927</x>
+	<y> -1.641</y>
+	<z>-1.4</z>
       </position>
       <direction>
-	<x>-2059</x>
-	<y>-103.4</y>
-	<z>-288.57</z>
+	<x>-2071.6</x>
+	<y>-101.6</y>
+	<z>-285.4</z>
       </direction>
       <diffuse>
 	<r>1.0</r>
@@ -399,14 +399,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>LandinglightR</name>
       <object-name>LightVolumeRL</object-name>
       <position>
-	<x>-21.33</x>
-	<y> 3.38</y>
-	<z>-4.549</z>
+	<x>-25.927</x>
+	<y> 1.621</y>
+	<z>-1.4</z>
       </position>
       <direction>
-	<x>-2059</x>
-	<y> 103.4</y>
-	<z>-288.57</z>
+	<x>-2071.6</x>
+	<y> 101.6</y>
+	<z>-285.4</z>
       </direction>
       <diffuse>
 	<r>1.0</r>
@@ -437,14 +437,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>TaxilightL</name>
       <object-name>LightVolumeLT</object-name> 
       <position>
-	<x>-21.3</x>
-	<y> -3.39</y>
-	<z>-4.55</z>
+	<x>-25.9</x>
+	<y> -1.64</y>
+	<z>-1.4</z>
       </position>
       <direction>
-	<x>-329.3</x>
-	<y>-63.39</y>
-	<z>-103.96</z>
+	<x>-341.9</x>
+	<y>-61.64</y>
+	<z>-100.81</z>
       </direction>
       <diffuse>
 	<r>1.0</r>
@@ -475,14 +475,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>TaxilightR</name>
       <object-name>LightVolumeRT</object-name>
       <position>
-	<x>-21.3</x>
-	<y> 3.39</y>
-	<z>-4.55</z>
+	<x>-25.9</x>
+	<y> 1.64</y>
+	<z>-1.4</z>
       </position>
       <direction>
-	<x>-329.3</x>
-	<y> 63.39</y>
-	<z>-103.96</z>
+	<x>-341.9</x>
+	<y> 61.64</y>
+	<z>-100.81</z>
       </direction>
       <diffuse>
 	<r>1.0</r>
@@ -505,8 +505,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <near-m>0.05</near-m>
       <far-m>350</far-m>
       <cutoff>300</cutoff>
-    </animation>
-    
-    
+    </animation>    
     
 </PropertyList>

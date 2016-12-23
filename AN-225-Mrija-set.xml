@@ -95,10 +95,6 @@
 	    </signal>
 	    <signal>
                 <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[0]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
                 <property type="string">/sim/multiplay/generic/int[1]</property>
             </signal>
 	    <signal>
@@ -253,11 +249,6 @@
                 <type>float</type>
                 <property type="string">/sim/multiplay/generic/float[19]</property>
             </signal>
-	    <signal>
-                <type>string</type>
-                <property type="string">/sim/multiplay/generic/string[2]</property>
-            </signal>
-	    
 	</config>
       </flight-recorder>
    

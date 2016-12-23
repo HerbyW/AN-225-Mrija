@@ -6736,11 +6736,48 @@ AN225 model/animation config.
       </model>
     
     <model>
+      <name>CrewRight</name>
       <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+      <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[7]</property>
+			<value>0.05</value>
+		</greater-than>
+	</condition>
 	<offsets>
-	  <x-m>  -17.407 </x-m>
-	  <y-m> -3.662 </y-m>
-	  <z-m> 0.818 </z-m>
+	  <x-m>  -17.425 </x-m>
+	  <y-m> -3.539 </y-m>
+	  <z-m> 0.56 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <name>CargoL</name>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+      <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[7]</property>
+			<value>0.05</value>
+		</greater-than>
+	</condition>
+	<offsets>
+	  <x-m>  -23.313 </x-m>
+	  <y-m> 1.527 </y-m>
+	  <z-m> 2.592 </z-m>
+	</offsets>
+      </model>
+      <model>
+      <name>CargoR</name>
+      <path>Aircraft/AN-225-Mrija/Models/light/BlueAmbientLight.xml</path>
+      <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[7]</property>
+			<value>0.05</value>
+		</greater-than>
+	</condition>
+	<offsets>
+	  <x-m>  -23.313 </x-m>
+	  <y-m> -1.527 </y-m>
+	  <z-m> 2.592 </z-m>
 	</offsets>
       </model>
     <model>
