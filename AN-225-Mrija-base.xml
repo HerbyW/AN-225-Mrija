@@ -76,6 +76,7 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
     </ice>
     
     <switches>
+      <startpanel-cover type="double">0</startpanel-cover>
       <fuel type="int">0</fuel>
       <gauge-light type="int">0</gauge-light>
       <adf-1-selector type="double">0</adf-1-selector>
