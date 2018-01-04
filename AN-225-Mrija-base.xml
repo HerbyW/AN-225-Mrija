@@ -6,8 +6,8 @@
 Modifications on all animations,
 adding of space shuttle,
 autopilot settings,
-instrumentation                by HerbyW 12/2014-05/2015
-modeling                       by firefly
+instrumentation                by HerbyW 12/2014-01/2018
+modeling                       by firefly and Herbert Wagner
 fdm and autopilot adjustments  by ph-cor
 testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
 -->
@@ -123,10 +123,10 @@ testing and helping with coding: 3m, D-leon, eagle, D-MK1 and many others
    <status>advanced production</status>
    <aero>AN-225-Mrija-yasim</aero>
     <rating>
-     <FDM type="int">3</FDM>
-     <systems type="int">3</systems>
-     <cockpit type="int">3</cockpit>
-     <model type="int">3</model>
+     <FDM type="int">4</FDM>
+     <systems type="int">4</systems>
+     <cockpit type="int">4</cockpit>
+     <model type="int">5</model>
     </rating>
     
     <fuel-fraction>0.6</fuel-fraction>

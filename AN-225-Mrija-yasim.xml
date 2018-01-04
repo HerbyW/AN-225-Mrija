@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--  AN-225-Mrija yasim config.
-Notes.
-AN225 with full fuel load, no weapon load.
-This config cannot be regarded as an accurate representation
-of an AN225.  I've used the real numbers, where I've been able
-to find them, but a lot of this config is semi-educated
-guesswork.  I think all the bits are in the right places but
-many of the numbers were obtained either by measuring a h/c
-of the 3-view I used as a template for modelling or by reading
-them out of my 3d modeller.
--->
 <!--
     ###################################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2018
     Development is ongoing, see latest version: github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
