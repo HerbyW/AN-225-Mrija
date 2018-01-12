@@ -43,9 +43,9 @@
 <object-name>w100</object-name>
     <emission>
       <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.55 </red>
-      <green> 0.55 </green>
-      <blue>  0.55 </blue>
+      <red>   0.65 </red>
+      <green> 0.65 </green>
+      <blue>  0.65 </blue>
     </emission>
   </animation>
   

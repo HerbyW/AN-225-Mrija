@@ -8,4 +8,6 @@ New Instrumentation, new panels, new interior and hundreds of addings to the off
 
 LICENSE: This aircraft is released under the GNU GPL v2 License, see COPYING file.
 
-Instalation: Unzip and copy into the aircraft folder.
+Installation: Unzip and copy into the aircraft folder.
+
+See aircraft help for detailed instructions.
