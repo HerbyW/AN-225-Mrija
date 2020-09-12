@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList include="AN-225-Mrija-base.xml">
-
-
-<!--
+    
+    
+    <!--
     ###################################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
     Development is ongoing, see latest version: www.github.com/HerbyW
@@ -12,16 +12,16 @@
     Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
     slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
     ###################################################################################################
--->
-
-  <sim>
-
-    <description>Antonov AN-225-Mrija (YASim)</description>
-    <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-    <flight-model>yasim</flight-model>
-    <aero>AN-225-Mrija-yasim</aero>
-
-  </sim>
-
+    -->
+    
+    <sim>
+        
+        <description>Antonov AN-225-Mrija (YASim)</description>
+        <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
+        <flight-model>yasim</flight-model>
+        <aero>AN-225-Mrija-yasim</aero>
+        
+    </sim>
+    
 </PropertyList>
 

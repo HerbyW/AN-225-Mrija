@@ -436,6 +436,16 @@
   <!-- Gear Indicator -->
   
   <model>
+        <name>Gear-ctl</name>
+        <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/gear-ctl/gear-control-unit.xml</path>
+        <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> 0.330 </y-m>
+      <z-m>  -0.142 </z-m>
+    </offsets>
+    </model>
+  
+  <model>
     <path>Aircraft/AN-225-Mrija/Models/Interior/Panel/Instruments/gear-warning/ind_14.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
@@ -2379,7 +2389,7 @@ Lights</text>
     <offsets>
       <x-m>  -0.545 </x-m>
       <y-m> 0.157 </y-m>
-      <z-m>  -0.55 </z-m>      
+      <z-m>  -0.542 </z-m>      
     </offsets>
   </model> 
   
@@ -2441,7 +2451,7 @@ Lights</text>
     </offsets>
   </model>
   
-     <!-- Version Number -->
+     <!-- Version Number  -->
   
   <text>
         <name>Version</name>
@@ -2453,7 +2463,7 @@ Lights</text>
         <alignment>center-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">text-value</type>
-        <property type="string">sim/multiplay/generic/string[1]</property>
+        <property type="string">sim/model/an225/version</property>
         <format type="string">%.7s</format>
         <font>arial_black.txf</font>
         <character-size>0.01</character-size>

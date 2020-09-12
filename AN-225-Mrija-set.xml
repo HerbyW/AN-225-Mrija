@@ -1,257 +1,251 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-    ###################################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2018
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
-    slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
-    ###################################################################################################
+###################################################################################################
+Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2018
+Development is ongoing, see latest version: www.github.com/HerbyW
+This file is licenced under the terms of the GNU General Public Licence V3 or later
+
+Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
+slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
+###################################################################################################
 -->
 
 <PropertyList include="AN-225-Mrija-yasim-cnf.xml">
+    
+    <sim>
+        
+        <description>Antonov AN-225-Mrija (YASim)</description>
+        <author>Herbert Wagner (Instrumentation, Animation, FDM, 3D), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
+        
+        
+        <weight n="0">
+            <name>Crew</name>
+            <weight-lb type="double">600</weight-lb>
+            <max-lb type="double">1800</max-lb>
+            <min-lb type="double">600</min-lb>
+        </weight>
+        
+        <weight n="1">
+            <name>Cargo</name>
+            <weight-lb type="double">100000.0</weight-lb><!--316000.0-->
+            <max-lb type="double">551155.0.0</max-lb>
+            <min-lb type="double">0.0</min-lb>
+        </weight>
+        
+        <weight n="2">
+            <name>Space Shuttle</name>
+            <weight-lb type="double">0.0</weight-lb>
+            <max-lb type="double">180546</max-lb>
+            <min-lb type="double">0.0</min-lb>
+        </weight>
+        
+        <weight n="3">
+            <name>ICE2</name>
+            <weight-lb type="double">0.0</weight-lb>
+            <max-lb type="double">264000</max-lb>
+            <min-lb type="double">0.0</min-lb>
+        </weight>
+        
+        
+        <rating>
+            <FDM type="int">     4 </FDM>
+            <systems type="int"> 4 </systems>
+            <cockpit type="int"> 4 </cockpit>
+            <model type="int">   5 </model>
+        </rating>
 
-<sim>
-
-    <description>Antonov AN-225-Mrija (YASim)</description>
-    <author>Herbert Wagner (Instrumentation, Animation, FDM, 3D), firefly graphic blender design for interior and panel, Lee Elliott (3D/FDM-original)</author>
-
+        <import>
+            <path>Huds/Sets/controls.xml</path>
+            <x-offset>-100</x-offset>
+            <y-offset>70</y-offset>
+        </import> 
+        
+        <flight-recorder>
+            <replay-config type="int">0</replay-config>
+            <config n="0">
+                <name type="string">AN-225-Mrija Flight Recorder</name>
+                
+                <signals include="/Aircraft/Generic/flightrecorder/components/position.xml" />
+                <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml" />
+                <signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+                <signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
+                    <count type="int">6</count>
+                </signals>
+                <signals include="/Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+                    <count type="int">16</count>
+                </signals>
+                <signal>
+                    <type>float</type> 
+                    <property type="string">/surface-positions/reverser-norm</property>
+                </signal>
+                <signal>
+                    <type>float</type> 
+                    <property type="string">/surface-positions/slat-pos-norm</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/surface-positions/spoiler-pos-norm</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[1]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[2]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[3]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[4]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[5]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[6]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[7]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[8]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[9]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[10]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[11]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[12]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[13]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[14]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[15]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[16]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[17]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[18]</property>
+                </signal>
+                <signal>
+                    <type>int</type>
+                    <property type="string">/sim/multiplay/generic/int[19]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[0]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[1]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[2]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[3]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[4]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[5]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[6]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[7]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[8]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[9]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[10]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[11]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[12]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[13]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[14]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[15]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[16]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[17]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[18]</property>
+                </signal>
+                <signal>
+                    <type>float</type>
+                    <property type="string">/sim/multiplay/generic/float[19]</property>
+                </signal>
+            </config>
+        </flight-recorder>
+        
+    </sim>
     
-    <weight n="0">
-        	    <name>Crew</name>
-        	    <weight-lb type="double">600</weight-lb>
-        	    <max-lb type="double">1800</max-lb>
-        	    <min-lb type="double">600</min-lb>
-    </weight>
-    
-    <weight n="1">
-		    <name>Cargo</name>
-		    <weight-lb type="double">100000.0</weight-lb><!--316000.0-->
-		    <max-lb type="double">551155.0.0</max-lb>
-		    <min-lb type="double">0.0</min-lb>
-     </weight>
-		
-     <weight n="2">
-		    <name>Space Shuttle</name>
-		    <weight-lb type="double">0.0</weight-lb>
-		    <max-lb type="double">180546</max-lb>
-		    <min-lb type="double">0.0</min-lb>
-     </weight>
-     
-     <weight n="3">
-		    <name>ICE2</name>
-		    <weight-lb type="double">0.0</weight-lb>
-		    <max-lb type="double">264000</max-lb>
-		    <min-lb type="double">0.0</min-lb>
-     </weight>
-    
-    
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   5 </model>
-    </rating>
-   
-   <systems>
-      <autopilot>
-        <path>Aircraft/AN-225-Mrija/Systems/AN-225-Mrija-autopilot.xml</path>
-      </autopilot>      
-    </systems>
-    
-    <import>
-      <path>Huds/Sets/controls.xml</path>
-      <x-offset>-100</x-offset>
-      <y-offset>70</y-offset>
-    </import> 
-    
-    <flight-recorder>
-      <replay-config type="int">0</replay-config>
-      <config n="0">
-	<name type="string">AN-225-Mrija Flight Recorder</name>
-	
-	<signals include="/Aircraft/Generic/flightrecorder/components/position.xml" />
-	<signals include="/Aircraft/Generic/flightrecorder/components/controls.xml" />
-	<signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
-	<signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
-	  <count type="int">6</count>
-	</signals>
-	<signals include="/Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
-            <count type="int">16</count>
-        </signals>
-	<signal>
-	  <type>float</type> 
-	  <property type="string">/surface-positions/reverser-norm</property>
-	</signal>
-	<signal>
-	  <type>float</type> 
-	  <property type="string">/surface-positions/slat-pos-norm</property>
-	</signal>
-	<signal>
-	        <type>float</type>
-	        <property type="string">/surface-positions/spoiler-pos-norm</property>
-	    </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[1]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[2]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[3]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[4]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[5]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[6]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[7]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[8]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[9]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[10]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[11]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[12]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[13]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[14]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[15]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[16]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[17]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[18]</property>
-            </signal>
-	    <signal>
-                <type>int</type>
-                <property type="string">/sim/multiplay/generic/int[19]</property>
-            </signal>
-	    <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[0]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[1]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[2]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[3]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[4]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[5]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[6]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[7]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[8]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[9]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[10]</property>
-            </signal>
-	    <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[11]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[12]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[13]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[14]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[15]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[16]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[17]</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[18]</property>
-            </signal>
-	    <signal>
-                <type>float</type>
-                <property type="string">/sim/multiplay/generic/float[19]</property>
-            </signal>
-	</config>
-      </flight-recorder>
-   
-  </sim>
-
 </PropertyList>

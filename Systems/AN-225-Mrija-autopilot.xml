@@ -76,8 +76,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-20.0</u_min> <!-- minimum output clamp -->
-      <u_max>20.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-32.0</u_min> <!-- minimum output clamp -->
+      <u_max>32.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -99,7 +99,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.65</Kp>        <!-- proportional gain -->
+      <Kp>0.1</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -133,7 +133,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </input>
     <output>/controls/flight/aileron-trim</output>
     <type>noise-spike</type>
-    <max-rate-of-change>2.0</max-rate-of-change>
+    <max-rate-of-change>20.20</max-rate-of-change>
   </filter>
 
   <!-- True Heading hold.  2 stage cascade controller. -->
@@ -164,8 +164,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-20.0</u_min> <!-- minimum output clamp -->
-      <u_max>20.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-30.0</u_min> <!-- minimum output clamp -->
+      <u_max>30.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -227,8 +227,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-18.0</u_min> <!-- minimum output clamp -->
-      <u_max>18.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-25.0</u_min> <!-- minimum output clamp -->
+      <u_max>25.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 

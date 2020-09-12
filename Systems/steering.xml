@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Variation from McDonnnell Douglas DC-10 for AN-225-Nrija by HerbyW 09/2020-->
+<!-- Flight control system -->
+
+<PropertyList>
+    
+    
+    
+    <!-- Nose gear steering -->
+    <filter>
+        <name>Tiller disabled nose gear steer</name>
+        <type>gain</type>
+        <debug type="bool">false</debug>
+        <gain>1</gain>
+        <enable>
+            <condition>            
+                    <property>gear/gear[0]/wow</property>
+            </condition>
+        </enable>
+        <input>
+            <property>controls/flight/rudder</property>
+        </input>
+        <output>/controls/gear/steering-n</output>
+    </filter>
+    
+    <!-- Speed depending steering -->
+    <filter>
+        <name>Nose gear rudder steer</name>
+        <type>gain</type>
+        <debug type="bool">false</debug>
+        <gain>0.1</gain>
+        <enable>
+            <condition>
+                <and>
+                    <greater-than>
+                        <property>velosities/groundspeed-kt</property>
+                        <value>20.0001</value>
+                    </greater-than>
+                    <property>gear/gear[0]/wow</property>
+                </and>
+            </condition>
+        </enable>
+        <input>
+            <property>controls/flight/rudder</property>
+        </input>
+        <output>/controls/gear/steering-n</output>
+    </filter>
+    
+    <filter>
+        <name>Nose gear tiller steer</name>
+        <type>gain</type>
+        <debug type="bool">false</debug>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <and>
+                    <less-than>
+                        <property>velosities/groundspeed-kt</property>
+                        <value>20</value>
+                    </less-than>
+                    <property>gear/gear[0]/wow</property>
+                </and>
+            </condition>
+        </enable>
+        <input>
+            <property>controls/flight/rudder</property>
+        </input>
+        <output>/controls/gear/steering-n</output>
+    </filter>
+    
+    <filter>
+        <name>Nose gear center</name>
+        <type>noise-spike</type>
+        <debug type="bool">false</debug>
+        <max-rate-of-change>26.666666667</max-rate-of-change>
+        <enable>
+            <condition>
+                <not><property>gear/gear[0]/wow</property></not>
+            </condition>
+        </enable>
+        <input>
+            <value>0</value>
+        </input>
+        <output>/controls/gear/steering-n</output>
+    </filter>
+    
+    
+    
+</PropertyList>
+

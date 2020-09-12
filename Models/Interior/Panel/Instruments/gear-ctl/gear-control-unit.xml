@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>gear-control-unit.ac</path>
+    
+    <!-- Gear-Lever -->
+    
+   <animation>
+		<type>select</type>
+		<object-name>gear_unlk</object-name>
+		<condition>
+				<and>
+					<not-equals>
+						<property>gear/gear[1]/position-norm</property>
+						<value>0</value>
+					</not-equals>
+					<not-equals>
+						<property>gear/gear[1]/position-norm</property>
+						<value>1</value>
+					</not-equals>
+				</and>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>gear_down</object-name>
+		<condition>
+				<equals>
+					<property>gear/gear[1]/position-norm</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>GearLever</object-name>
+        <property>controls/gear/gear-down</property>
+        <factor>23</factor>
+        <center>
+            <x-m>-0.056</x-m>
+            <y-m>0</y-m>
+            <z-m>0.010</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>GearLever</object-name>
+        <action>
+            <button>1</button>
+            <binding>
+                <command>nasal</command>
+                <script>controls.gearDown(-1)</script>
+            </binding>
+            <mod-up>
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.gearDown(0)</script>
+                </binding>
+            </mod-up>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>GearLever</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+                <script>controls.gearDown(1)</script>
+            </binding>
+            <mod-up>
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.gearDown(0)</script>
+                </binding>
+            </mod-up>
+        </action>
+    </animation>
+    
+    	<!-- Autobrakes -->
+    
+	<animation>
+		<type>select</type>
+		<object-name>dec_low_on</object-name>
+		<condition>
+				<and>
+					<equals>
+						<property>/autopilot/autobrake/step</property>
+						<value>1</value>
+					</equals>
+					<equals>
+						<property>/autopilot/autobrake/engaged</property>
+						<value>1</value>
+					</equals>
+				</and>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>dec_med_on</object-name>
+		<condition>
+				<and>
+					<equals>
+						<property>/autopilot/autobrake/step</property>
+						<value>2</value>
+					</equals>
+					<equals>
+						<property>/autopilot/autobrake/engaged</property>
+						<value>1</value>
+					</equals>
+				</and>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>dec_max_on</object-name>
+		<condition>
+				<and>
+					<equals>
+						<property>/autopilot/autobrake/step</property>
+						<value>3</value>
+					</equals>
+					<equals>
+						<property>/autopilot/autobrake/engaged</property>
+						<value>1</value>
+					</equals>
+				</and>
+		</condition>
+	</animation>
+    
+    <animation>
+		<type>select</type>
+		<object-name>dec_rto_on</object-name>
+		<condition>
+				<and>
+					<equals>
+						<property>/autopilot/autobrake/step</property>
+						<value>-2</value>
+					</equals>
+					<equals>
+						<property>/autopilot/autobrake/engaged</property>
+						<value>1</value>
+					</equals>
+				</and>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>abs_low_on</object-name>
+		<condition>
+				<equals>
+					<property>/autopilot/autobrake/step</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>abs_med_on</object-name>
+		<condition>
+				<equals>
+					<property>/autopilot/autobrake/step</property>
+					<value>2</value>
+				</equals>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>abs_max_on</object-name>
+		<condition>
+				<equals>
+					<property>/autopilot/autobrake/step</property>
+					<value>3</value>
+				</equals>
+		</condition>
+	</animation>
+    
+    	<animation>
+		<type>select</type>
+		<object-name>abs_rto_on</object-name>
+		<condition>
+				<equals>
+					<property>/autopilot/autobrake/step</property>
+					<value>-2</value>
+				</equals>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>abs_low</object-name>
+		<object-name>abs_low_on</object-name>
+		<object-name>dec_low_on</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				
+				<command>nasal</command>
+				<script>
+				if (getprop("/autopilot/autobrake/step") == 1) {
+					setprop("/autopilot/autobrake/step", 0);
+				} else {
+				if (getprop("/autopilot/autobrake/step") != 1) {
+					setprop("/autopilot/autobrake/step", 1)}};
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>abs_med</object-name>
+		<object-name>abs_med_on</object-name>
+		<object-name>dec_med_on</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				
+				<command>nasal</command>
+				<script>
+				if (getprop("/autopilot/autobrake/step") == 2) {
+					setprop("/autopilot/autobrake/step", 0);
+				} else {
+				if (getprop("/autopilot/autobrake/step") != 2) {
+					setprop("/autopilot/autobrake/step", 2)}};
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>abs_max</object-name>
+		<object-name>abs_max_on</object-name>
+		<object-name>dec_max_on</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				
+				<command>nasal</command>
+				<script>
+				if (getprop("/autopilot/autobrake/step") == 3) {
+					setprop("/autopilot/autobrake/step", 0);
+				} else {
+				if (getprop("/autopilot/autobrake/step") != 3) {
+					setprop("/autopilot/autobrake/step", 3)}};
+				</script>
+			</binding>
+		</action>
+	</animation>
+    
+    <animation>
+		<type>pick</type>
+		<object-name>abs_rto</object-name>
+		<object-name>abs_rto_on</object-name>
+		<object-name>dec_rto_on</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				
+				<command>nasal</command>
+				<script>
+				if (getprop("/autopilot/autobrake/step") == -2) {
+					setprop("/autopilot/autobrake/step", 0);
+				} else {
+				if (getprop("/autopilot/autobrake/step") != -2) {
+					setprop("/autopilot/autobrake/step", -2)}};
+				</script>
+			</binding>
+		</action>
+	</animation>
+    -->
+    
+</PropertyList>
