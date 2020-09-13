@@ -9,6 +9,7 @@ This file is licenced under the terms of the GNU General Public Licence V3 or la
 Reverser, SpaceShuttle, Instrumentation and all Animations for gears, tail-gear-steering, flaps,
 slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembrandt added.
 ###################################################################################################
+some sounds are from tu-154b
 -->
 
 <PropertyList>
@@ -858,6 +859,57 @@ slats, spoilers, rudder, aelerion and lights for MP-modus with and without Rembr
             </position>
         </voice>
         
+        <!--Navigator speed count-->
+        <voice>
+            <name>s_v_r</name>
+            <path>Aircraft/AN-225-Mrija/Sounds/St_VR.wav</path>
+            <condition>
+                <greater-than>
+                    <property>/velocities/airspeed-kt</property>
+                    <value>139.0</value>
+                </greater-than>
+            </condition>
+            <mode>once</mode>
+            <position>
+                <x>-22</x>
+                <y>0</y>
+                <z>5</z>
+            </position>
+        </voice>
+        
+        <voice>
+            <name>s_v_2</name>
+            <path>Aircraft/AN-225-Mrija/Sounds/St_V2.wav</path>
+            <condition>
+                <greater-than>
+                    <property>/velocities/airspeed-kt</property>
+                    <value>145.0</value>
+                </greater-than>
+            </condition>
+            <mode>once</mode>
+            <position>
+                <x>-22</x>
+                <y>0</y>
+                <z>5</z>
+            </position>
+        </voice>
+        
+        <voice>
+            <name>s_v_1</name>
+            <path>Aircraft/AN-225-Mrija/Sounds/St_V1.wav</path>
+            <condition>
+                <greater-than>
+                    <property>/velocities/airspeed-kt</property>
+                    <value>128.0</value>
+                </greater-than>
+            </condition>
+            <mode>once</mode>
+            <position>
+                <x>-22</x>
+                <y>0</y>
+                <z>5</z>
+            </position>
+        </voice>
         
     </fx>
     
